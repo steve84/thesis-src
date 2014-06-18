@@ -1,0 +1,460 @@
+// begin:71d1
+__HITs = {
+	"real:2P1VCNHMVHVKCLXI6NT78J7C473135" : {
+		"url" : "https://www.mturk.com/mturk/preview?groupId=24LSCXKNQY2RCLHN82ME7HR0KRFP09"
+	},
+	"real:31MCUE39BJL4XFTX7ZJEPCGQH5P3GU" : {
+		"url" : "https://www.mturk.com/mturk/preview?groupId=24LSCXKNQY2RCLHN82ME7HR0KRFP09"
+	},
+	"real:3RHLQY6EDS3M3R2A5NNPTW5ZIGSD48" : {
+		"url" : "https://www.mturk.com/mturk/preview?groupId=24LSCXKNQY2RCLHN82ME7HR0KRFP09"
+	}
+}
+__S3_Objects = {
+}
+__stackFrames = {
+	"for-real" : {
+		"sequencialFrames" : [
+			{
+				"creationTime" : 1.395422941327E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.createHITRaw(params);\n}\n",
+				"returnValue" : "2P1VCNHMVHVKCLXI6NT78J7C473135",
+				"returnTime" : 1.395422942532E12,
+				"printOutput" : "created HIT: 2P1VCNHMVHVKCLXI6NT78J7C473135\r\n        url: https://www.mturk.com/mturk/preview?groupId=24LSCXKNQY2RCLHN82ME7HR0KRFP09\r\n"
+			},
+			{
+				"creationTime" : 1.395422942538E12,
+				"onceFunc" : "\nfunction () {\n    if (!me.waitForHIT_callCount) {\n        me.waitForHIT_callCount = 0;\n        var a = me.getReviewableHITs(1);\n        if (a.totalNumResults == a.length) {\n            me.waitForHIT_reviewableHITs = new Set(a);\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n        me.waitForHIT_waitCount = Math.ceil(a.totalNumResults / 100);\n    }\n    me.waitForHIT_callCount++;\n    if (me.waitForHIT_callCount >= me.waitForHIT_waitCount) {\n        if (!me.waitForHIT_reviewableHITs || (time() > me.waitForHIT_reviewableHITsTime + (1000 * 60))) {\n            me.waitForHIT_reviewableHITs = new Set(me.getReviewableHITs());\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n    }\n    if (me.waitForHIT_reviewableHITs) {\n        if (!me.waitForHIT_reviewableHITs[hitId]) {\n            stop();\n        }\n    }\n    var hit = mturk.getHIT(hitId);\n    if (!hit.done) {\n        stop();\n    }\n    verbosePrint(\"hit completed: \" + hitId);\n    return hit;\n}\n",
+				"returnValue" : {
+					"hitId" : "2P1VCNHMVHVKCLXI6NT78J7C473135",
+					"hitTypeId" : "24LSCXKNQY2RCLHN82ME7HR0KRFP09",
+					"title" : "Improve/extend description of auction item(s) on pictures",
+					"description" : "Improve and/or extend the description of an auction item based on three images",
+					"keywords" : null,
+					"reward" : 0.2,
+					"question" : "<QuestionForm xmlns=\"http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2005-10-01/QuestionForm.xsd\">\n  <Question>\n    <QuestionIdentifier>newText</QuestionIdentifier>\n    <IsRequired>true</IsRequired>\n    <QuestionContent>\n      <FormattedContent><![CDATA[The goal of the requester of the HIT is to generate eBay auctions by MTurk workers based on images of the item.<br /><br />\n\t\t\t\t\t<b>Instructions</b>: Improve and/or extend the description of the auction item(s) on the images. Keep in mind the following remarks:\n\t\t\t\t\t<ul>\n\t\t\t\t\t<li>If the description doesn\'t contain approximately <b>5 sentences</b> then try to add more text\n\t\t\t\t\t<ul>\n\t\t\t\t\t\t<li>Include specific information like size, shape, color, age, manufacture date, company/artist/author, and notable features or markings if possible</li>\n\t\t\t\t\t\t<li>Make the description as readable as possible</li>\n\t\t\t\t\t\t<li>Don\'t say anything that isn\'t true.</li>\n\t\t\t\t\t\t<li>Don\'t use all caps</li>\n\t\t\t\t\t\t<li>Don\'t include email addresses and some links</li>\n\t\t\t\t\t</ul>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li>If the description is long enough then try to improve it</li>\n\t\t\t\t\t</ul>\n\t\t\t\t\t<table><tr>\n\t\t\t\t\t<td><img src=\"http://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/bDoAAOxyCGNTLGtR/$_1.JPG?set_id=8800005007\" alt=\"Image 1\" width=\"250\" border=\"2\"></img></td>\n\t\t\t\t\t<td><img src=\"http://i.ebayimg.com/00/s/MTYwMFgxMjAw/z/3iUAAOxyTMdTLGth/$_1.JPG?set_id=8800005007\" alt=\"Image 2\" width=\"250\" border=\"2\"></img></td>\n\t\t\t\t\t<td><img src=\"http://i.ebayimg.com/00/s/MTM5NlgxMDEy/z/CzoAAOxykmZTLGtz/$_1.JPG?set_id=8800005007\" alt=\"Image 3\" width=\"250\" border=\"2\"></img></td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t<td><a href=\"http://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/bDoAAOxyCGNTLGtR/$_1.JPG?set_id=8800005007\" target=\"_blank\">Link to full size image 1 (new window)</a></td>\n\t\t\t\t\t<td><a href=\"http://i.ebayimg.com/00/s/MTYwMFgxMjAw/z/3iUAAOxyTMdTLGth/$_1.JPG?set_id=8800005007\" target=\"_blank\">Link to full size image 2 (new window)</a></td>\n\t\t\t\t\t<td><a href=\"http://i.ebayimg.com/00/s/MTM5NlgxMDEy/z/CzoAAOxykmZTLGtz/$_1.JPG?set_id=8800005007\" target=\"_blank\">Link to full size image 3 (new window)</a></td>\n\t\t\t\t\t</tr></table>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <FreeTextAnswer>\n        <Constraints>\n          <Length maxLength=\"5000\" minLength=\"40\"/>\n          <AnswerFormatRegex errorText=\"The description cannot be blank.\" regex=\"\\S\"/>\n        </Constraints>\n        <DefaultText/>\n        <NumberOfLinesSuggestion>10</NumberOfLinesSuggestion>\n      </FreeTextAnswer>\n    </AnswerSpecification>\n  </Question>\n  <Question>\n    <QuestionIdentifier>description_improve_feedback</QuestionIdentifier>\n    <QuestionContent>\n      <Title>Your personal feedback (optional)</Title>\n      <FormattedContent><![CDATA[Give your personal feedback about the task. This <b>can</b> contain one of the following aspects:\n        <ul>\n        <li>Problems of the task (e.g. images are not visible)</li>\n        <li>Instructions are not clear enough</li>\n        </ul>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <FreeTextAnswer>\n        <NumberOfLinesSuggestion>3</NumberOfLinesSuggestion>\n      </FreeTextAnswer>\n    </AnswerSpecification>\n  </Question>\n</QuestionForm>",
+					"maxAssignments" : 1,
+					"assignmentDurationInSeconds" : 7200,
+					"autoApprovalDelayInSeconds" : 2592000,
+					"requesterAnnotation" : null,
+					"hitStatus" : "Reviewable",
+					"hitReviewStatus" : "NotReviewed",
+					"creationTime" : 1.395422945E12,
+					"expiration" : 1.396027745E12,
+					"assignments" : [
+						{
+							"assignmentId" : "2REVHVKCJ011K44LOA0KUW64PGY866",
+							"workerId" : "A12VU5YSHGQH2V",
+							"hitId" : "2P1VCNHMVHVKCLXI6NT78J7C473135",
+							"assignmentStatus" : "Approved",
+							"autoApprovalTime" : 1.398101609E12,
+							"acceptTime" : 1.395509561E12,
+							"submitTime" : 1.395509609E12,
+							"answer" : {
+								"newText" : "Apple iPhone 4 with charger. Rarely used with no cracks.",
+								"description_improve_feedback" : ""
+							},
+							"requesterFeedback" : null,
+							"approvalTime" : 1.395570512E12,
+							"deadline" : null,
+							"rejectionTime" : null
+						}
+					],
+					"done" : true
+				},
+				"returnTime" : 1.395767091296E12,
+				"printOutput" : "hit completed: 2P1VCNHMVHVKCLXI6NT78J7C473135\r\n"
+			},
+			{
+				"creationTime" : 1.395855802824E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.approveAssignmentRaw(assignment, reason);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.39585580311E12,
+				"printOutput" : "approved assignment 2REVHVKCJ011K44LOA0KUW64PGY866\r\n"
+			},
+			{
+				"creationTime" : 1.395767091312E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.createHITRaw(params);\n}\n",
+				"returnValue" : "31MCUE39BJL4XFTX7ZJEPCGQH5P3GU",
+				"returnTime" : 1.395767091765E12,
+				"printOutput" : "created HIT: 31MCUE39BJL4XFTX7ZJEPCGQH5P3GU\r\n        url: https://www.mturk.com/mturk/preview?groupId=24LSCXKNQY2RCLHN82ME7HR0KRFP09\r\n"
+			},
+			{
+				"creationTime" : 1.395767091765E12,
+				"onceFunc" : "\nfunction () {\n    if (!me.waitForHIT_callCount) {\n        me.waitForHIT_callCount = 0;\n        var a = me.getReviewableHITs(1);\n        if (a.totalNumResults == a.length) {\n            me.waitForHIT_reviewableHITs = new Set(a);\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n        me.waitForHIT_waitCount = Math.ceil(a.totalNumResults / 100);\n    }\n    me.waitForHIT_callCount++;\n    if (me.waitForHIT_callCount >= me.waitForHIT_waitCount) {\n        if (!me.waitForHIT_reviewableHITs || (time() > me.waitForHIT_reviewableHITsTime + (1000 * 60))) {\n            me.waitForHIT_reviewableHITs = new Set(me.getReviewableHITs());\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n    }\n    if (me.waitForHIT_reviewableHITs) {\n        if (!me.waitForHIT_reviewableHITs[hitId]) {\n            stop();\n        }\n    }\n    var hit = mturk.getHIT(hitId);\n    if (!hit.done) {\n        stop();\n    }\n    verbosePrint(\"hit completed: \" + hitId);\n    return hit;\n}\n",
+				"returnValue" : {
+					"hitId" : "31MCUE39BJL4XFTX7ZJEPCGQH5P3GU",
+					"hitTypeId" : "24LSCXKNQY2RCLHN82ME7HR0KRFP09",
+					"title" : "Improve/extend description of auction item(s) on pictures",
+					"description" : "Improve and/or extend the description of an auction item based on three images",
+					"keywords" : null,
+					"reward" : 0.2,
+					"question" : "<QuestionForm xmlns=\"http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2005-10-01/QuestionForm.xsd\">\n  <Question>\n    <QuestionIdentifier>newText</QuestionIdentifier>\n    <IsRequired>true</IsRequired>\n    <QuestionContent>\n      <FormattedContent><![CDATA[The goal of the requester of the HIT is to generate eBay auctions by MTurk workers based on images of the item.<br /><br />\n\t\t\t\t\t<b>Instructions</b>: Improve and/or extend the description of the auction item(s) on the images. Keep in mind the following remarks:\n\t\t\t\t\t<ul>\n\t\t\t\t\t<li>If the description doesn\'t contain approximately <b>5 sentences</b> then try to add more text\n\t\t\t\t\t<ul>\n\t\t\t\t\t\t<li>Include specific information like size, shape, color, age, manufacture date, company/artist/author, and notable features or markings if possible</li>\n\t\t\t\t\t\t<li>Make the description as readable as possible</li>\n\t\t\t\t\t\t<li>Don\'t say anything that isn\'t true.</li>\n\t\t\t\t\t\t<li>Don\'t use all caps</li>\n\t\t\t\t\t\t<li>Don\'t include email addresses and some links</li>\n\t\t\t\t\t</ul>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li>If the description is long enough then try to improve it</li>\n\t\t\t\t\t</ul>\n\t\t\t\t\t<table><tr>\n\t\t\t\t\t<td><img src=\"http://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/bDoAAOxyCGNTLGtR/$_1.JPG?set_id=8800005007\" alt=\"Image 1\" width=\"250\" border=\"2\"></img></td>\n\t\t\t\t\t<td><img src=\"http://i.ebayimg.com/00/s/MTYwMFgxMjAw/z/3iUAAOxyTMdTLGth/$_1.JPG?set_id=8800005007\" alt=\"Image 2\" width=\"250\" border=\"2\"></img></td>\n\t\t\t\t\t<td><img src=\"http://i.ebayimg.com/00/s/MTM5NlgxMDEy/z/CzoAAOxykmZTLGtz/$_1.JPG?set_id=8800005007\" alt=\"Image 3\" width=\"250\" border=\"2\"></img></td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t<td><a href=\"http://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/bDoAAOxyCGNTLGtR/$_1.JPG?set_id=8800005007\" target=\"_blank\">Link to full size image 1 (new window)</a></td>\n\t\t\t\t\t<td><a href=\"http://i.ebayimg.com/00/s/MTYwMFgxMjAw/z/3iUAAOxyTMdTLGth/$_1.JPG?set_id=8800005007\" target=\"_blank\">Link to full size image 2 (new window)</a></td>\n\t\t\t\t\t<td><a href=\"http://i.ebayimg.com/00/s/MTM5NlgxMDEy/z/CzoAAOxykmZTLGtz/$_1.JPG?set_id=8800005007\" target=\"_blank\">Link to full size image 3 (new window)</a></td>\n\t\t\t\t\t</tr></table>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <FreeTextAnswer>\n        <Constraints>\n          <Length maxLength=\"5000\" minLength=\"80\"/>\n          <AnswerFormatRegex errorText=\"The description cannot be blank.\" regex=\"\\S\"/>\n        </Constraints>\n        <DefaultText>Apple iPhone 4 with charger. Rarely used with no cracks.</DefaultText>\n        <NumberOfLinesSuggestion>10</NumberOfLinesSuggestion>\n      </FreeTextAnswer>\n    </AnswerSpecification>\n  </Question>\n  <Question>\n    <QuestionIdentifier>description_improve_feedback</QuestionIdentifier>\n    <QuestionContent>\n      <Title>Your personal feedback (optional)</Title>\n      <FormattedContent><![CDATA[Give your personal feedback about the task. This <b>can</b> contain one of the following aspects:\n        <ul>\n        <li>Problems of the task (e.g. images are not visible)</li>\n        <li>Instructions are not clear enough</li>\n        </ul>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <FreeTextAnswer>\n        <NumberOfLinesSuggestion>3</NumberOfLinesSuggestion>\n      </FreeTextAnswer>\n    </AnswerSpecification>\n  </Question>\n</QuestionForm>",
+					"maxAssignments" : 1,
+					"assignmentDurationInSeconds" : 7200,
+					"autoApprovalDelayInSeconds" : 2592000,
+					"requesterAnnotation" : null,
+					"hitStatus" : "Reviewable",
+					"hitReviewStatus" : "NotReviewed",
+					"creationTime" : 1.395767102E12,
+					"expiration" : 1.396371902E12,
+					"assignments" : [
+						{
+							"assignmentId" : "3ZAK8W07I4DU8PTPYKVEFDETJ6D0U6",
+							"workerId" : "A2UFB6FRY90EAB",
+							"hitId" : "31MCUE39BJL4XFTX7ZJEPCGQH5P3GU",
+							"assignmentStatus" : "Submitted",
+							"autoApprovalTime" : 1.398359608E12,
+							"acceptTime" : 1.395767397E12,
+							"submitTime" : 1.395767608E12,
+							"answer" : {
+								"newText" : "Black Apple iPhone 4.  Rarely used with no scratches or cracks.  Comes in original box with USB Charger.  In great condition, good as new.",
+								"description_improve_feedback" : ""
+							},
+							"requesterFeedback" : null,
+							"approvalTime" : null,
+							"deadline" : null,
+							"rejectionTime" : null
+						}
+					],
+					"done" : true
+				},
+				"returnTime" : 1.395857048183E12,
+				"printOutput" : "hit completed: 31MCUE39BJL4XFTX7ZJEPCGQH5P3GU\r\n"
+			},
+			{
+				"creationTime" : 1.395857048214E12,
+				"onceFunc" : "\nfunction () {\n    return Math.random();\n}\n",
+				"returnValue" : 0.5904352700732974,
+				"returnTime" : 1.395857048214E12,
+				"printOutput" : ""
+			},
+			{
+				"creationTime" : 1.395857048214E12,
+				"onceFunc" : "\nfunction () {\n    return Math.random();\n}\n",
+				"returnValue" : 0.2521051070018494,
+				"returnTime" : 1.39585704823E12,
+				"printOutput" : ""
+			},
+			{
+				"creationTime" : 1.395857048245E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.createHITRaw(params);\n}\n",
+				"returnValue" : "3IV1AEQ4DQC0PEP4RMZDD6GHPLW8JX",
+				"returnTime" : 1.395857048699E12,
+				"printOutput" : "created HIT: 3IV1AEQ4DQC0PEP4RMZDD6GHPLW8JX\r\n        url: https://www.mturk.com/mturk/preview?groupId=38E1HBOA1QEDDZX1Z7UNFGUC0R380D\r\n"
+			},
+			{
+				"creationTime" : 1.395857048699E12,
+				"onceFunc" : "\nfunction () {\n    if (!me.waitForHIT_callCount) {\n        me.waitForHIT_callCount = 0;\n        var a = me.getReviewableHITs(1);\n        if (a.totalNumResults == a.length) {\n            me.waitForHIT_reviewableHITs = new Set(a);\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n        me.waitForHIT_waitCount = Math.ceil(a.totalNumResults / 100);\n    }\n    me.waitForHIT_callCount++;\n    if (me.waitForHIT_callCount >= me.waitForHIT_waitCount) {\n        if (!me.waitForHIT_reviewableHITs || (time() > me.waitForHIT_reviewableHITsTime + (1000 * 60))) {\n            me.waitForHIT_reviewableHITs = new Set(me.getReviewableHITs());\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n    }\n    if (me.waitForHIT_reviewableHITs) {\n        if (!me.waitForHIT_reviewableHITs[hitId]) {\n            stop();\n        }\n    }\n    var hit = mturk.getHIT(hitId);\n    if (!hit.done) {\n        stop();\n    }\n    verbosePrint(\"hit completed: \" + hitId);\n    return hit;\n}\n",
+				"returnValue" : {
+					"hitId" : "3IV1AEQ4DQC0PEP4RMZDD6GHPLW8JX",
+					"hitTypeId" : "38E1HBOA1QEDDZX1Z7UNFGUC0R380D",
+					"title" : "Vote on auction item description improvements",
+					"description" : "Decide which auction item description is better/suitable for the item(s) on three pictures",
+					"keywords" : null,
+					"reward" : 0.01,
+					"question" : "<QuestionForm xmlns=\"http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2005-10-01/QuestionForm.xsd\">\n  <Question>\n    <QuestionIdentifier>vote</QuestionIdentifier>\n    <IsRequired>true</IsRequired>\n    <QuestionContent>\n      <FormattedContent><![CDATA[<b>Instructions:</b> Which description of the auction item(s) on the pictures is better? The following factors <b>can</b> affect your decision: \n\t\t\t\t\t<ul>\n\t\t\t\t\t\t<li>One description is more informative than the other</li>\n\t\t\t\t\t\t<li>One description contains more information about the auction item then the other</li>\n\t\t\t\t\t\t<li>One description contains wrong information</li>\n\t\t\t\t\t\t<li>One description has spelling mistakes</li>\n\t\t\t\t\t</ul>\n\t\t\t\t\t<table><tr>\n\t\t\t\t\t<td><img src=\"http://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/bDoAAOxyCGNTLGtR/$_1.JPG?set_id=8800005007\" alt=\"Image 1\" width=\"250\" border=\"2\"></img></td>\n\t\t\t\t\t<td><img src=\"http://i.ebayimg.com/00/s/MTYwMFgxMjAw/z/3iUAAOxyTMdTLGth/$_1.JPG?set_id=8800005007\" alt=\"Image 2\" width=\"250\" border=\"2\"></img></td>\n\t\t\t\t\t<td><img src=\"http://i.ebayimg.com/00/s/MTM5NlgxMDEy/z/CzoAAOxykmZTLGtz/$_1.JPG?set_id=8800005007\" alt=\"Image 3\" width=\"250\" border=\"2\"></img></td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t<td><a href=\"http://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/bDoAAOxyCGNTLGtR/$_1.JPG?set_id=8800005007\" target=\"_blank\">Link to full size image 1 (new window)</a></td>\n\t\t\t\t\t<td><a href=\"http://i.ebayimg.com/00/s/MTYwMFgxMjAw/z/3iUAAOxyTMdTLGth/$_1.JPG?set_id=8800005007\" target=\"_blank\">Link to full size image 2 (new window)</a></td>\n\t\t\t\t\t<td><a href=\"http://i.ebayimg.com/00/s/MTM5NlgxMDEy/z/CzoAAOxykmZTLGtz/$_1.JPG?set_id=8800005007\" target=\"_blank\">Link to full size image 3 (new window)</a></td>\n\t\t\t\t\t</tr></table>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <SelectionAnswer>\n        <Selections>\n          <Selection>\n            <SelectionIdentifier>a</SelectionIdentifier>\n            <Text>Apple iPhone 4 with charger. Rarely used with no cracks.</Text>\n          </Selection>\n          <Selection>\n            <SelectionIdentifier>b</SelectionIdentifier>\n            <Text>Black Apple iPhone 4.  Rarely used with no scratches or cracks.  Comes in original box with USB Charger.  In great condition, good as new.</Text>\n          </Selection>\n        </Selections>\n      </SelectionAnswer>\n    </AnswerSpecification>\n  </Question>\n  <Question>\n    <QuestionIdentifier>description_vote_feedback</QuestionIdentifier>\n    <QuestionContent>\n      <Title>Your personal feedback (optional)</Title>\n      <FormattedContent><![CDATA[Give your personal feedback about the task. This <b>can</b> contain one of the following aspects:\n        <ul>\n        <li>Problems of the task (e.g. images are not visible)</li>\n        <li>Instructions are not clear enough</li>\n        </ul>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <FreeTextAnswer>\n        <NumberOfLinesSuggestion>3</NumberOfLinesSuggestion>\n      </FreeTextAnswer>\n    </AnswerSpecification>\n  </Question>\n</QuestionForm>",
+					"maxAssignments" : 3,
+					"assignmentDurationInSeconds" : 1800,
+					"autoApprovalDelayInSeconds" : 2592000,
+					"requesterAnnotation" : null,
+					"hitStatus" : "Reviewable",
+					"hitReviewStatus" : "NotReviewed",
+					"creationTime" : 1.395857061E12,
+					"expiration" : 1.396461861E12,
+					"assignments" : [
+						{
+							"assignmentId" : "3NOKK93PR17CAJBXGRFOWKUUSQTEE4",
+							"workerId" : "A3066746SS2O8Z",
+							"hitId" : "3IV1AEQ4DQC0PEP4RMZDD6GHPLW8JX",
+							"assignmentStatus" : "Submitted",
+							"autoApprovalTime" : 1.398449109E12,
+							"acceptTime" : 1.39585709E12,
+							"submitTime" : 1.395857109E12,
+							"answer" : {
+								"vote" : [
+									"b"
+								],
+								"description_vote_feedback" : ""
+							},
+							"requesterFeedback" : null,
+							"approvalTime" : null,
+							"deadline" : null,
+							"rejectionTime" : null
+						},
+						{
+							"assignmentId" : "3NS0A6KXC4785SYKI9JPHXGOTCHGZT",
+							"workerId" : "A1LJKHC0NH9TIX",
+							"hitId" : "3IV1AEQ4DQC0PEP4RMZDD6GHPLW8JX",
+							"assignmentStatus" : "Submitted",
+							"autoApprovalTime" : 1.398449164E12,
+							"acceptTime" : 1.395857079E12,
+							"submitTime" : 1.395857164E12,
+							"answer" : {
+								"vote" : [
+									"b"
+								],
+								"description_vote_feedback" : ""
+							},
+							"requesterFeedback" : null,
+							"approvalTime" : null,
+							"deadline" : null,
+							"rejectionTime" : null
+						},
+						{
+							"assignmentId" : "3WR9XG3T63A992ZU4DP5HOQMTE374D",
+							"workerId" : "A3L99RGPK6FZGH",
+							"hitId" : "3IV1AEQ4DQC0PEP4RMZDD6GHPLW8JX",
+							"assignmentStatus" : "Submitted",
+							"autoApprovalTime" : 1.398450927E12,
+							"acceptTime" : 1.395858905E12,
+							"submitTime" : 1.395858927E12,
+							"answer" : {
+								"vote" : [
+									"b"
+								],
+								"description_vote_feedback" : ""
+							},
+							"requesterFeedback" : null,
+							"approvalTime" : null,
+							"deadline" : null,
+							"rejectionTime" : null
+						}
+					],
+					"done" : true
+				},
+				"returnTime" : 1.395939651766E12,
+				"printOutput" : "hit completed: 3IV1AEQ4DQC0PEP4RMZDD6GHPLW8JX\r\n"
+			},
+			{
+				"creationTime" : 1.395939651782E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.approveAssignmentRaw(assignment, reason);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.395939652032E12,
+				"printOutput" : "approved assignment 3NOKK93PR17CAJBXGRFOWKUUSQTEE4\r\n"
+			},
+			{
+				"creationTime" : 1.395939652032E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.approveAssignmentRaw(assignment, reason);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.395939652313E12,
+				"printOutput" : "approved assignment 3NS0A6KXC4785SYKI9JPHXGOTCHGZT\r\n"
+			},
+			{
+				"creationTime" : 1.395939652313E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.approveAssignmentRaw(assignment, reason);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.395939652626E12,
+				"printOutput" : "approved assignment 3WR9XG3T63A992ZU4DP5HOQMTE374D\r\n"
+			},
+			{
+				"creationTime" : 1.395939652626E12,
+				"onceFunc" : "\nfunction () {\n    mturk.deleteHITRaw(hit);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.395939652923E12,
+				"printOutput" : "disabled HIT: 3IV1AEQ4DQC0PEP4RMZDD6GHPLW8JX\r\n"
+			},
+			{
+				"creationTime" : 1.395939652938E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.approveAssignmentRaw(assignment, reason);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.395939653157E12,
+				"printOutput" : "approved assignment 3ZAK8W07I4DU8PTPYKVEFDETJ6D0U6\r\n"
+			},
+			{
+				"creationTime" : 1.395939653173E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.createHITRaw(params);\n}\n",
+				"returnValue" : "3RHLQY6EDS3M3R2A5NNPTW5ZIGSD48",
+				"returnTime" : 1.395939653548E12,
+				"printOutput" : "created HIT: 3RHLQY6EDS3M3R2A5NNPTW5ZIGSD48\r\n        url: https://www.mturk.com/mturk/preview?groupId=24LSCXKNQY2RCLHN82ME7HR0KRFP09\r\n"
+			},
+			{
+				"creationTime" : 1.395939653548E12,
+				"onceFunc" : "\nfunction () {\n    if (!me.waitForHIT_callCount) {\n        me.waitForHIT_callCount = 0;\n        var a = me.getReviewableHITs(1);\n        if (a.totalNumResults == a.length) {\n            me.waitForHIT_reviewableHITs = new Set(a);\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n        me.waitForHIT_waitCount = Math.ceil(a.totalNumResults / 100);\n    }\n    me.waitForHIT_callCount++;\n    if (me.waitForHIT_callCount >= me.waitForHIT_waitCount) {\n        if (!me.waitForHIT_reviewableHITs || (time() > me.waitForHIT_reviewableHITsTime + (1000 * 60))) {\n            me.waitForHIT_reviewableHITs = new Set(me.getReviewableHITs());\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n    }\n    if (me.waitForHIT_reviewableHITs) {\n        if (!me.waitForHIT_reviewableHITs[hitId]) {\n            stop();\n        }\n    }\n    var hit = mturk.getHIT(hitId);\n    if (!hit.done) {\n        stop();\n    }\n    verbosePrint(\"hit completed: \" + hitId);\n    return hit;\n}\n",
+				"returnValue" : {
+					"hitId" : "3RHLQY6EDS3M3R2A5NNPTW5ZIGSD48",
+					"hitTypeId" : "24LSCXKNQY2RCLHN82ME7HR0KRFP09",
+					"title" : "Improve/extend description of auction item(s) on pictures",
+					"description" : "Improve and/or extend the description of an auction item based on three images",
+					"keywords" : null,
+					"reward" : 0.2,
+					"question" : "<QuestionForm xmlns=\"http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2005-10-01/QuestionForm.xsd\">\n  <Question>\n    <QuestionIdentifier>newText</QuestionIdentifier>\n    <IsRequired>true</IsRequired>\n    <QuestionContent>\n      <FormattedContent><![CDATA[The goal of the requester of the HIT is to generate eBay auctions by MTurk workers based on images of the item.<br /><br />\n\t\t\t\t\t<b>Instructions</b>: Improve and/or extend the description of the auction item(s) on the images. Keep in mind the following remarks:\n\t\t\t\t\t<ul>\n\t\t\t\t\t<li>If the description doesn\'t contain approximately <b>5 sentences</b> then try to add more text\n\t\t\t\t\t<ul>\n\t\t\t\t\t\t<li>Include specific information like size, shape, color, age, manufacture date, company/artist/author, and notable features or markings if possible</li>\n\t\t\t\t\t\t<li>Make the description as readable as possible</li>\n\t\t\t\t\t\t<li>Don\'t say anything that isn\'t true.</li>\n\t\t\t\t\t\t<li>Don\'t use all caps</li>\n\t\t\t\t\t\t<li>Don\'t include email addresses and some links</li>\n\t\t\t\t\t</ul>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li>If the description is long enough then try to improve it</li>\n\t\t\t\t\t</ul>\n\t\t\t\t\t<table><tr>\n\t\t\t\t\t<td><img src=\"http://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/bDoAAOxyCGNTLGtR/$_1.JPG?set_id=8800005007\" alt=\"Image 1\" width=\"250\" border=\"2\"></img></td>\n\t\t\t\t\t<td><img src=\"http://i.ebayimg.com/00/s/MTYwMFgxMjAw/z/3iUAAOxyTMdTLGth/$_1.JPG?set_id=8800005007\" alt=\"Image 2\" width=\"250\" border=\"2\"></img></td>\n\t\t\t\t\t<td><img src=\"http://i.ebayimg.com/00/s/MTM5NlgxMDEy/z/CzoAAOxykmZTLGtz/$_1.JPG?set_id=8800005007\" alt=\"Image 3\" width=\"250\" border=\"2\"></img></td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t<td><a href=\"http://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/bDoAAOxyCGNTLGtR/$_1.JPG?set_id=8800005007\" target=\"_blank\">Link to full size image 1 (new window)</a></td>\n\t\t\t\t\t<td><a href=\"http://i.ebayimg.com/00/s/MTYwMFgxMjAw/z/3iUAAOxyTMdTLGth/$_1.JPG?set_id=8800005007\" target=\"_blank\">Link to full size image 2 (new window)</a></td>\n\t\t\t\t\t<td><a href=\"http://i.ebayimg.com/00/s/MTM5NlgxMDEy/z/CzoAAOxykmZTLGtz/$_1.JPG?set_id=8800005007\" target=\"_blank\">Link to full size image 3 (new window)</a></td>\n\t\t\t\t\t</tr></table>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <FreeTextAnswer>\n        <Constraints>\n          <Length maxLength=\"5000\" minLength=\"120\"/>\n          <AnswerFormatRegex errorText=\"The description cannot be blank.\" regex=\"\\S\"/>\n        </Constraints>\n        <DefaultText>Black Apple iPhone 4.  Rarely used with no scratches or cracks.  Comes in original box with USB Charger.  In great condition, good as new.</DefaultText>\n        <NumberOfLinesSuggestion>10</NumberOfLinesSuggestion>\n      </FreeTextAnswer>\n    </AnswerSpecification>\n  </Question>\n  <Question>\n    <QuestionIdentifier>description_improve_feedback</QuestionIdentifier>\n    <QuestionContent>\n      <Title>Your personal feedback (optional)</Title>\n      <FormattedContent><![CDATA[Give your personal feedback about the task. This <b>can</b> contain one of the following aspects:\n        <ul>\n        <li>Problems of the task (e.g. images are not visible)</li>\n        <li>Instructions are not clear enough</li>\n        </ul>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <FreeTextAnswer>\n        <NumberOfLinesSuggestion>3</NumberOfLinesSuggestion>\n      </FreeTextAnswer>\n    </AnswerSpecification>\n  </Question>\n</QuestionForm>",
+					"maxAssignments" : 1,
+					"assignmentDurationInSeconds" : 7200,
+					"autoApprovalDelayInSeconds" : 2592000,
+					"requesterAnnotation" : null,
+					"hitStatus" : "Reviewable",
+					"hitReviewStatus" : "NotReviewed",
+					"creationTime" : 1.395939668E12,
+					"expiration" : 1.396544468E12,
+					"assignments" : [
+						{
+							"assignmentId" : "3IX2EGZR7BI9U32UGYAFS765CVDRJT",
+							"workerId" : "A1IA4CST74I1Q8",
+							"hitId" : "3RHLQY6EDS3M3R2A5NNPTW5ZIGSD48",
+							"assignmentStatus" : "Submitted",
+							"autoApprovalTime" : 1.398535595E12,
+							"acceptTime" : 1.395943538E12,
+							"submitTime" : 1.395943595E12,
+							"answer" : {
+								"newText" : "Black Apple iPhone 4.  Rarely used with no scratches or cracks.  Comes in original box with USB Charger.  In great condition, good as new. High quality.",
+								"description_improve_feedback" : "instructions are clear"
+							},
+							"requesterFeedback" : null,
+							"approvalTime" : null,
+							"deadline" : null,
+							"rejectionTime" : null
+						}
+					],
+					"done" : true
+				},
+				"returnTime" : 1.396026411165E12,
+				"printOutput" : "hit completed: 3RHLQY6EDS3M3R2A5NNPTW5ZIGSD48\r\n"
+			},
+			{
+				"creationTime" : 1.396026411181E12,
+				"onceFunc" : "\nfunction () {\n    return Math.random();\n}\n",
+				"returnValue" : 0.9110137354342539,
+				"returnTime" : 1.396026411196E12,
+				"printOutput" : ""
+			},
+			{
+				"creationTime" : 1.396026411196E12,
+				"onceFunc" : "\nfunction () {\n    return Math.random();\n}\n",
+				"returnValue" : 0.8680448407931931,
+				"returnTime" : 1.396026411196E12,
+				"printOutput" : ""
+			},
+			{
+				"creationTime" : 1.396026411212E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.createHITRaw(params);\n}\n",
+				"returnValue" : "371Q3BEXDG888D9HN684IR48KHCZSD",
+				"returnTime" : 1.396026411681E12,
+				"printOutput" : "created HIT: 371Q3BEXDG888D9HN684IR48KHCZSD\r\n        url: https://www.mturk.com/mturk/preview?groupId=38E1HBOA1QEDDZX1Z7UNFGUC0R380D\r\n"
+			},
+			{
+				"creationTime" : 1.396026411681E12,
+				"onceFunc" : "\nfunction () {\n    if (!me.waitForHIT_callCount) {\n        me.waitForHIT_callCount = 0;\n        var a = me.getReviewableHITs(1);\n        if (a.totalNumResults == a.length) {\n            me.waitForHIT_reviewableHITs = new Set(a);\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n        me.waitForHIT_waitCount = Math.ceil(a.totalNumResults / 100);\n    }\n    me.waitForHIT_callCount++;\n    if (me.waitForHIT_callCount >= me.waitForHIT_waitCount) {\n        if (!me.waitForHIT_reviewableHITs || (time() > me.waitForHIT_reviewableHITsTime + (1000 * 60))) {\n            me.waitForHIT_reviewableHITs = new Set(me.getReviewableHITs());\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n    }\n    if (me.waitForHIT_reviewableHITs) {\n        if (!me.waitForHIT_reviewableHITs[hitId]) {\n            stop();\n        }\n    }\n    var hit = mturk.getHIT(hitId);\n    if (!hit.done) {\n        stop();\n    }\n    verbosePrint(\"hit completed: \" + hitId);\n    return hit;\n}\n",
+				"returnValue" : {
+					"hitId" : "371Q3BEXDG888D9HN684IR48KHCZSD",
+					"hitTypeId" : "38E1HBOA1QEDDZX1Z7UNFGUC0R380D",
+					"title" : "Vote on auction item description improvements",
+					"description" : "Decide which auction item description is better/suitable for the item(s) on three pictures",
+					"keywords" : null,
+					"reward" : 0.01,
+					"question" : "<QuestionForm xmlns=\"http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2005-10-01/QuestionForm.xsd\">\n  <Question>\n    <QuestionIdentifier>vote</QuestionIdentifier>\n    <IsRequired>true</IsRequired>\n    <QuestionContent>\n      <FormattedContent><![CDATA[<b>Instructions:</b> Which description of the auction item(s) on the pictures is better? The following factors <b>can</b> affect your decision: \n\t\t\t\t\t<ul>\n\t\t\t\t\t\t<li>One description is more informative than the other</li>\n\t\t\t\t\t\t<li>One description contains more information about the auction item then the other</li>\n\t\t\t\t\t\t<li>One description contains wrong information</li>\n\t\t\t\t\t\t<li>One description has spelling mistakes</li>\n\t\t\t\t\t</ul>\n\t\t\t\t\t<table><tr>\n\t\t\t\t\t<td><img src=\"http://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/bDoAAOxyCGNTLGtR/$_1.JPG?set_id=8800005007\" alt=\"Image 1\" width=\"250\" border=\"2\"></img></td>\n\t\t\t\t\t<td><img src=\"http://i.ebayimg.com/00/s/MTYwMFgxMjAw/z/3iUAAOxyTMdTLGth/$_1.JPG?set_id=8800005007\" alt=\"Image 2\" width=\"250\" border=\"2\"></img></td>\n\t\t\t\t\t<td><img src=\"http://i.ebayimg.com/00/s/MTM5NlgxMDEy/z/CzoAAOxykmZTLGtz/$_1.JPG?set_id=8800005007\" alt=\"Image 3\" width=\"250\" border=\"2\"></img></td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t<td><a href=\"http://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/bDoAAOxyCGNTLGtR/$_1.JPG?set_id=8800005007\" target=\"_blank\">Link to full size image 1 (new window)</a></td>\n\t\t\t\t\t<td><a href=\"http://i.ebayimg.com/00/s/MTYwMFgxMjAw/z/3iUAAOxyTMdTLGth/$_1.JPG?set_id=8800005007\" target=\"_blank\">Link to full size image 2 (new window)</a></td>\n\t\t\t\t\t<td><a href=\"http://i.ebayimg.com/00/s/MTM5NlgxMDEy/z/CzoAAOxykmZTLGtz/$_1.JPG?set_id=8800005007\" target=\"_blank\">Link to full size image 3 (new window)</a></td>\n\t\t\t\t\t</tr></table>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <SelectionAnswer>\n        <Selections>\n          <Selection>\n            <SelectionIdentifier>b</SelectionIdentifier>\n            <Text>Black Apple iPhone 4.  Rarely used with no scratches or cracks.  Comes in original box with USB Charger.  In great condition, good as new. High quality.</Text>\n          </Selection>\n          <Selection>\n            <SelectionIdentifier>a</SelectionIdentifier>\n            <Text>Black Apple iPhone 4.  Rarely used with no scratches or cracks.  Comes in original box with USB Charger.  In great condition, good as new.</Text>\n          </Selection>\n        </Selections>\n      </SelectionAnswer>\n    </AnswerSpecification>\n  </Question>\n  <Question>\n    <QuestionIdentifier>description_vote_feedback</QuestionIdentifier>\n    <QuestionContent>\n      <Title>Your personal feedback (optional)</Title>\n      <FormattedContent><![CDATA[Give your personal feedback about the task. This <b>can</b> contain one of the following aspects:\n        <ul>\n        <li>Problems of the task (e.g. images are not visible)</li>\n        <li>Instructions are not clear enough</li>\n        </ul>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <FreeTextAnswer>\n        <NumberOfLinesSuggestion>3</NumberOfLinesSuggestion>\n      </FreeTextAnswer>\n    </AnswerSpecification>\n  </Question>\n</QuestionForm>",
+					"maxAssignments" : 3,
+					"assignmentDurationInSeconds" : 1800,
+					"autoApprovalDelayInSeconds" : 2592000,
+					"requesterAnnotation" : null,
+					"hitStatus" : "Reviewable",
+					"hitReviewStatus" : "NotReviewed",
+					"creationTime" : 1.396026428E12,
+					"expiration" : 1.396631228E12,
+					"assignments" : [
+						{
+							"assignmentId" : "3NVC2EB65QY76QCRR8AMKWIDJREY3A",
+							"workerId" : "A3KG85LTX4J6N0",
+							"hitId" : "371Q3BEXDG888D9HN684IR48KHCZSD",
+							"assignmentStatus" : "Submitted",
+							"autoApprovalTime" : 1.398618485E12,
+							"acceptTime" : 1.396026464E12,
+							"submitTime" : 1.396026485E12,
+							"answer" : {
+								"vote" : [
+									"b"
+								],
+								"description_vote_feedback" : ""
+							},
+							"requesterFeedback" : null,
+							"approvalTime" : null,
+							"deadline" : null,
+							"rejectionTime" : null
+						},
+						{
+							"assignmentId" : "3FQ5JJ512LNJQPGK5CTAK218QTZNKN",
+							"workerId" : "A291KO368YRYCR",
+							"hitId" : "371Q3BEXDG888D9HN684IR48KHCZSD",
+							"assignmentStatus" : "Submitted",
+							"autoApprovalTime" : 1.398619835E12,
+							"acceptTime" : 1.396027403E12,
+							"submitTime" : 1.396027835E12,
+							"answer" : {
+								"vote" : [
+									"b"
+								],
+								"description_vote_feedback" : ""
+							},
+							"requesterFeedback" : null,
+							"approvalTime" : null,
+							"deadline" : null,
+							"rejectionTime" : null
+						},
+						{
+							"assignmentId" : "3HMIGG0U4L5T7NIX3P5IBDQOZDQY8M",
+							"workerId" : "AFLY5JTSSM0ZB",
+							"hitId" : "371Q3BEXDG888D9HN684IR48KHCZSD",
+							"assignmentStatus" : "Submitted",
+							"autoApprovalTime" : 1.398624328E12,
+							"acceptTime" : 1.396032322E12,
+							"submitTime" : 1.396032328E12,
+							"answer" : {
+								"vote" : [
+									"b"
+								],
+								"description_vote_feedback" : ""
+							},
+							"requesterFeedback" : null,
+							"approvalTime" : null,
+							"deadline" : null,
+							"rejectionTime" : null
+						}
+					],
+					"done" : true
+				},
+				"returnTime" : 1.39603991319E12,
+				"printOutput" : "hit completed: 371Q3BEXDG888D9HN684IR48KHCZSD\r\n"
+			},
+			{
+				"creationTime" : 1.396039913203E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.approveAssignmentRaw(assignment, reason);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.396039913576E12,
+				"printOutput" : "approved assignment 3NVC2EB65QY76QCRR8AMKWIDJREY3A\r\n"
+			},
+			{
+				"creationTime" : 1.396039913581E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.approveAssignmentRaw(assignment, reason);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.396039913944E12,
+				"printOutput" : "approved assignment 3FQ5JJ512LNJQPGK5CTAK218QTZNKN\r\n"
+			},
+			{
+				"creationTime" : 1.39603991395E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.approveAssignmentRaw(assignment, reason);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.396039914293E12,
+				"printOutput" : "approved assignment 3HMIGG0U4L5T7NIX3P5IBDQOZDQY8M\r\n"
+			},
+			{
+				"creationTime" : 1.396039914299E12,
+				"onceFunc" : "\nfunction () {\n    mturk.deleteHITRaw(hit);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.396039914521E12,
+				"printOutput" : "disabled HIT: 371Q3BEXDG888D9HN684IR48KHCZSD\r\n"
+			},
+			{
+				"creationTime" : 1.396039914526E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.approveAssignmentRaw(assignment, reason);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.396039914734E12,
+				"printOutput" : "approved assignment 3IX2EGZR7BI9U32UGYAFS765CVDRJT\r\n"
+			}
+		]
+	}
+}
+__safetyCounters = {
+	"moneySpent" : 0.6600000000000001,
+	"hitsCreated" : 5
+}
+// end:71d1

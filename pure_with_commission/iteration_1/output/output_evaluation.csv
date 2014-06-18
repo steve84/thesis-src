@@ -1,0 +1,8 @@
+"Ground truth number","Evaluation","Votes of crowdsourced content with commission (in %)","Average working time (s)","Average finishing time (s)","Average reaction time (s)"
+"1","Pure crowdsourced content (with commission)","0.8","131.6","5187.4","5055.8"
+"2","Pure crowdsourced content (with commission)","0.6","112.0","6176.0","6064.0"
+"3","Pure crowdsourced content","0.4","70.8","5327.4","5256.6"
+"4","Pure crowdsourced content","0.4","114.0","7262.6","7148.6"
+"5","Pure crowdsourced content (with commission)","0.6","106.0","4229.4","4123.4"
+"6","Pure crowdsourced content (with commission)","1.0","171.8","3124.2","2952.4"
+"7","Pure crowdsourced content","0.2","129.2","6127.0","5997.8"

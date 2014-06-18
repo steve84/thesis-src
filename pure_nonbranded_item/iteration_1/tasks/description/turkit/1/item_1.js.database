@@ -1,0 +1,408 @@
+// begin:eba9
+__HITs = {
+	"real:3OND0WXMHVEL7945GPIST3WOQJAEHU" : {
+		"url" : "https://www.mturk.com/mturk/preview?groupId=24LSCXKNQY2RCLHN82ME7HR0KRFP09"
+	},
+	"real:3SX4X51T8Z8S9D9G4XBWHT3YHUJAOK" : {
+		"url" : "https://www.mturk.com/mturk/preview?groupId=24LSCXKNQY2RCLHN82ME7HR0KRFP09"
+	},
+	"real:3KQC8JMJGBRIXBO8R51WACSRZ5TH31" : {
+		"url" : "https://www.mturk.com/mturk/preview?groupId=24LSCXKNQY2RCLHN82ME7HR0KRFP09"
+	}
+}
+__S3_Objects = {
+}
+__stackFrames = {
+	"for-real" : {
+		"sequencialFrames" : [
+			{
+				"creationTime" : 1.399911045097E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.createHITRaw(params);\n}\n",
+				"returnValue" : "3OND0WXMHVEL7945GPIST3WOQJAEHU",
+				"returnTime" : 1.399911047086E12,
+				"printOutput" : "created HIT: 3OND0WXMHVEL7945GPIST3WOQJAEHU\r\n        url: https://www.mturk.com/mturk/preview?groupId=24LSCXKNQY2RCLHN82ME7HR0KRFP09\r\n"
+			},
+			{
+				"creationTime" : 1.399911047092E12,
+				"onceFunc" : "\nfunction () {\n    if (!me.waitForHIT_callCount) {\n        me.waitForHIT_callCount = 0;\n        var a = me.getReviewableHITs(1);\n        if (a.totalNumResults == a.length) {\n            me.waitForHIT_reviewableHITs = new Set(a);\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n        me.waitForHIT_waitCount = Math.ceil(a.totalNumResults / 100);\n    }\n    me.waitForHIT_callCount++;\n    if (me.waitForHIT_callCount >= me.waitForHIT_waitCount) {\n        if (!me.waitForHIT_reviewableHITs || (time() > me.waitForHIT_reviewableHITsTime + (1000 * 60))) {\n            me.waitForHIT_reviewableHITs = new Set(me.getReviewableHITs());\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n    }\n    if (me.waitForHIT_reviewableHITs) {\n        if (!me.waitForHIT_reviewableHITs[hitId]) {\n            stop();\n        }\n    }\n    var hit = mturk.getHIT(hitId);\n    if (!hit.done) {\n        stop();\n    }\n    verbosePrint(\"hit completed: \" + hitId);\n    return hit;\n}\n",
+				"returnValue" : {
+					"hitId" : "3OND0WXMHVEL7945GPIST3WOQJAEHU",
+					"hitTypeId" : "24LSCXKNQY2RCLHN82ME7HR0KRFP09",
+					"title" : "Improve/extend description of auction item(s) on pictures",
+					"description" : "Improve and/or extend the description of an auction item based on three images",
+					"keywords" : null,
+					"reward" : 0.2,
+					"question" : "<QuestionForm xmlns=\"http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2005-10-01/QuestionForm.xsd\">\n  <Question>\n    <QuestionIdentifier>newText</QuestionIdentifier>\n    <IsRequired>true</IsRequired>\n    <QuestionContent>\n      <FormattedContent><![CDATA[The goal of the requester of the HIT is to generate eBay auctions by MTurk workers based on images of the item.<br /><br />\n\t\t\t\t\t<b>Instructions</b>: Improve and/or extend the description of the auction item(s) on the images. Keep in mind the following remarks:\n\t\t\t\t\t<ul>\n\t\t\t\t\t<li>If the description doesn\'t contain approximately <b>5 sentences</b> then try to add more text\n\t\t\t\t\t<ul>\n\t\t\t\t\t\t<li>Include specific information like size, shape, color, age, manufacture date, company/artist/author, and notable features or markings if possible</li>\n\t\t\t\t\t\t<li>Make the description as readable as possible</li>\n\t\t\t\t\t\t<li>Don\'t say anything that isn\'t true.</li>\n\t\t\t\t\t\t<li>Don\'t use all caps</li>\n\t\t\t\t\t\t<li>Don\'t include email addresses and some links</li>\n\t\t\t\t\t</ul>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li>If the description is long enough then try to improve it</li>\n\t\t\t\t\t</ul>\n\t\t\t\t\t<table><tr>\n\t\t\t\t\t<td><img src=\"http://i.ebayimg.com/00/s/MTA2NlgxNjAw/z/OyQAAMXQDnpTa962/$_1.JPG?set_id=880000500F\" alt=\"Image 1\" width=\"250\" border=\"2\"></img></td>\n\t\t\t\t\t<td><img src=\"http://i.ebayimg.com/00/s/MTA2NlgxNjAw/z/b~AAAOxy2CZTa96y/$_1.JPG?set_id=880000500F\" alt=\"Image 2\" width=\"250\" border=\"2\"></img></td>\n\t\t\t\t\t<td><img src=\"http://i.ebayimg.com/00/s/MTA2NlgxNjAw/z/GYgAAOxy9X5Ta961/$_1.JPG?set_id=880000500F\" alt=\"Image 3\" width=\"250\" border=\"2\"></img></td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t<td><a href=\"http://i.ebayimg.com/00/s/MTA2NlgxNjAw/z/OyQAAMXQDnpTa962/$_1.JPG?set_id=880000500F\" target=\"_blank\">Link to full size image 1 (new window)</a></td>\n\t\t\t\t\t<td><a href=\"http://i.ebayimg.com/00/s/MTA2NlgxNjAw/z/b~AAAOxy2CZTa96y/$_1.JPG?set_id=880000500F\" target=\"_blank\">Link to full size image 2 (new window)</a></td>\n\t\t\t\t\t<td><a href=\"http://i.ebayimg.com/00/s/MTA2NlgxNjAw/z/GYgAAOxy9X5Ta961/$_1.JPG?set_id=880000500F\" target=\"_blank\">Link to full size image 3 (new window)</a></td>\n\t\t\t\t\t</tr></table>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <FreeTextAnswer>\n        <Constraints>\n          <Length maxLength=\"5000\" minLength=\"40\"/>\n          <AnswerFormatRegex errorText=\"The description cannot be blank.\" regex=\"\\S\"/>\n        </Constraints>\n        <DefaultText/>\n        <NumberOfLinesSuggestion>10</NumberOfLinesSuggestion>\n      </FreeTextAnswer>\n    </AnswerSpecification>\n  </Question>\n  <Question>\n    <QuestionIdentifier>description_improve_feedback</QuestionIdentifier>\n    <QuestionContent>\n      <Title>Your personal feedback (optional)</Title>\n      <FormattedContent><![CDATA[Give your personal feedback about the task. This <b>can</b> contain one of the following aspects:\n        <ul>\n        <li>Problems of the task (e.g. images are not visible)</li>\n        <li>Instructions are not clear enough</li>\n        </ul>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <FreeTextAnswer>\n        <NumberOfLinesSuggestion>3</NumberOfLinesSuggestion>\n      </FreeTextAnswer>\n    </AnswerSpecification>\n  </Question>\n</QuestionForm>",
+					"maxAssignments" : 1,
+					"assignmentDurationInSeconds" : 7200,
+					"autoApprovalDelayInSeconds" : 2592000,
+					"requesterAnnotation" : null,
+					"hitStatus" : "Reviewable",
+					"hitReviewStatus" : "NotReviewed",
+					"creationTime" : 1.399911063E12,
+					"expiration" : 1.400515863E12,
+					"assignments" : [
+						{
+							"assignmentId" : "3CP1TO84PT0KJK6OC6RKQPFSO0752D",
+							"workerId" : "A2PAW29EKKHGV8",
+							"hitId" : "3OND0WXMHVEL7945GPIST3WOQJAEHU",
+							"assignmentStatus" : "Submitted",
+							"autoApprovalTime" : 1.402509674E12,
+							"acceptTime" : 1.399917363E12,
+							"submitTime" : 1.399917674E12,
+							"answer" : {
+								"newText" : "1)Perfect Round White Table.\r\n2)height 3ft comfortable in adjusting \r\n3)Full Proper Space to share all your stuff on same table\r\n4)finished with board which give it extra shine\r\n5)Light weight to carry easy from one place to another",
+								"description_improve_feedback" : ""
+							},
+							"requesterFeedback" : null,
+							"approvalTime" : null,
+							"deadline" : null,
+							"rejectionTime" : null
+						}
+					],
+					"done" : true
+				},
+				"returnTime" : 1.399997005605E12,
+				"printOutput" : "hit completed: 3OND0WXMHVEL7945GPIST3WOQJAEHU\r\n"
+			},
+			{
+				"creationTime" : 1.399997005652E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.approveAssignmentRaw(assignment, reason);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.399997005917E12,
+				"printOutput" : "approved assignment 3CP1TO84PT0KJK6OC6RKQPFSO0752D\r\n"
+			},
+			{
+				"creationTime" : 1.399997005933E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.createHITRaw(params);\n}\n",
+				"returnValue" : "3SX4X51T8Z8S9D9G4XBWHT3YHUJAOK",
+				"returnTime" : 1.399997006464E12,
+				"printOutput" : "created HIT: 3SX4X51T8Z8S9D9G4XBWHT3YHUJAOK\r\n        url: https://www.mturk.com/mturk/preview?groupId=24LSCXKNQY2RCLHN82ME7HR0KRFP09\r\n"
+			},
+			{
+				"creationTime" : 1.399997006464E12,
+				"onceFunc" : "\nfunction () {\n    if (!me.waitForHIT_callCount) {\n        me.waitForHIT_callCount = 0;\n        var a = me.getReviewableHITs(1);\n        if (a.totalNumResults == a.length) {\n            me.waitForHIT_reviewableHITs = new Set(a);\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n        me.waitForHIT_waitCount = Math.ceil(a.totalNumResults / 100);\n    }\n    me.waitForHIT_callCount++;\n    if (me.waitForHIT_callCount >= me.waitForHIT_waitCount) {\n        if (!me.waitForHIT_reviewableHITs || (time() > me.waitForHIT_reviewableHITsTime + (1000 * 60))) {\n            me.waitForHIT_reviewableHITs = new Set(me.getReviewableHITs());\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n    }\n    if (me.waitForHIT_reviewableHITs) {\n        if (!me.waitForHIT_reviewableHITs[hitId]) {\n            stop();\n        }\n    }\n    var hit = mturk.getHIT(hitId);\n    if (!hit.done) {\n        stop();\n    }\n    verbosePrint(\"hit completed: \" + hitId);\n    return hit;\n}\n",
+				"returnValue" : {
+					"hitId" : "3SX4X51T8Z8S9D9G4XBWHT3YHUJAOK",
+					"hitTypeId" : "24LSCXKNQY2RCLHN82ME7HR0KRFP09",
+					"title" : "Improve/extend description of auction item(s) on pictures",
+					"description" : "Improve and/or extend the description of an auction item based on three images",
+					"keywords" : null,
+					"reward" : 0.2,
+					"question" : "<QuestionForm xmlns=\"http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2005-10-01/QuestionForm.xsd\">\n  <Question>\n    <QuestionIdentifier>newText</QuestionIdentifier>\n    <IsRequired>true</IsRequired>\n    <QuestionContent>\n      <FormattedContent><![CDATA[The goal of the requester of the HIT is to generate eBay auctions by MTurk workers based on images of the item.<br /><br />\n\t\t\t\t\t<b>Instructions</b>: Improve and/or extend the description of the auction item(s) on the images. Keep in mind the following remarks:\n\t\t\t\t\t<ul>\n\t\t\t\t\t<li>If the description doesn\'t contain approximately <b>5 sentences</b> then try to add more text\n\t\t\t\t\t<ul>\n\t\t\t\t\t\t<li>Include specific information like size, shape, color, age, manufacture date, company/artist/author, and notable features or markings if possible</li>\n\t\t\t\t\t\t<li>Make the description as readable as possible</li>\n\t\t\t\t\t\t<li>Don\'t say anything that isn\'t true.</li>\n\t\t\t\t\t\t<li>Don\'t use all caps</li>\n\t\t\t\t\t\t<li>Don\'t include email addresses and some links</li>\n\t\t\t\t\t</ul>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li>If the description is long enough then try to improve it</li>\n\t\t\t\t\t</ul>\n\t\t\t\t\t<table><tr>\n\t\t\t\t\t<td><img src=\"http://i.ebayimg.com/00/s/MTA2NlgxNjAw/z/OyQAAMXQDnpTa962/$_1.JPG?set_id=880000500F\" alt=\"Image 1\" width=\"250\" border=\"2\"></img></td>\n\t\t\t\t\t<td><img src=\"http://i.ebayimg.com/00/s/MTA2NlgxNjAw/z/b~AAAOxy2CZTa96y/$_1.JPG?set_id=880000500F\" alt=\"Image 2\" width=\"250\" border=\"2\"></img></td>\n\t\t\t\t\t<td><img src=\"http://i.ebayimg.com/00/s/MTA2NlgxNjAw/z/GYgAAOxy9X5Ta961/$_1.JPG?set_id=880000500F\" alt=\"Image 3\" width=\"250\" border=\"2\"></img></td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t<td><a href=\"http://i.ebayimg.com/00/s/MTA2NlgxNjAw/z/OyQAAMXQDnpTa962/$_1.JPG?set_id=880000500F\" target=\"_blank\">Link to full size image 1 (new window)</a></td>\n\t\t\t\t\t<td><a href=\"http://i.ebayimg.com/00/s/MTA2NlgxNjAw/z/b~AAAOxy2CZTa96y/$_1.JPG?set_id=880000500F\" target=\"_blank\">Link to full size image 2 (new window)</a></td>\n\t\t\t\t\t<td><a href=\"http://i.ebayimg.com/00/s/MTA2NlgxNjAw/z/GYgAAOxy9X5Ta961/$_1.JPG?set_id=880000500F\" target=\"_blank\">Link to full size image 3 (new window)</a></td>\n\t\t\t\t\t</tr></table>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <FreeTextAnswer>\n        <Constraints>\n          <Length maxLength=\"5000\" minLength=\"80\"/>\n          <AnswerFormatRegex errorText=\"The description cannot be blank.\" regex=\"\\S\"/>\n        </Constraints>\n        <DefaultText>1)Perfect Round White Table.&#13;\n2)height 3ft comfortable in adjusting &#13;\n3)Full Proper Space to share all your stuff on same table&#13;\n4)finished with board which give it extra shine&#13;\n5)Light weight to carry easy from one place to another</DefaultText>\n        <NumberOfLinesSuggestion>10</NumberOfLinesSuggestion>\n      </FreeTextAnswer>\n    </AnswerSpecification>\n  </Question>\n  <Question>\n    <QuestionIdentifier>description_improve_feedback</QuestionIdentifier>\n    <QuestionContent>\n      <Title>Your personal feedback (optional)</Title>\n      <FormattedContent><![CDATA[Give your personal feedback about the task. This <b>can</b> contain one of the following aspects:\n        <ul>\n        <li>Problems of the task (e.g. images are not visible)</li>\n        <li>Instructions are not clear enough</li>\n        </ul>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <FreeTextAnswer>\n        <NumberOfLinesSuggestion>3</NumberOfLinesSuggestion>\n      </FreeTextAnswer>\n    </AnswerSpecification>\n  </Question>\n</QuestionForm>",
+					"maxAssignments" : 1,
+					"assignmentDurationInSeconds" : 7200,
+					"autoApprovalDelayInSeconds" : 2592000,
+					"requesterAnnotation" : null,
+					"hitStatus" : "Reviewable",
+					"hitReviewStatus" : "NotReviewed",
+					"creationTime" : 1.399997024E12,
+					"expiration" : 1.400601824E12,
+					"assignments" : [
+						{
+							"assignmentId" : "3GLB5JMZFXU52RTOQRUSQ5XLB7JDGZ",
+							"workerId" : "AVF0FJNEZP7V8",
+							"hitId" : "3SX4X51T8Z8S9D9G4XBWHT3YHUJAOK",
+							"assignmentStatus" : "Submitted",
+							"autoApprovalTime" : 1.402604867E12,
+							"acceptTime" : 1.400012637E12,
+							"submitTime" : 1.400012867E12,
+							"answer" : {
+								"newText" : "1) Perfect round white table.\r\n2) Height 3ft diameter 6 ft.\r\n3) Great spacious surface; scratch resistant.\r\n4) Finished with Board which give it extra shine.\r\n5) Light weight to move easily from one place to another.",
+								"description_improve_feedback" : "No information was given about the product except in the 1-5 list which was already written.  Not sure if the information given was accurate.  Other than that, perfect hit.  Thanks!"
+							},
+							"requesterFeedback" : null,
+							"approvalTime" : null,
+							"deadline" : null,
+							"rejectionTime" : null
+						}
+					],
+					"done" : true
+				},
+				"returnTime" : 1.400083386379E12,
+				"printOutput" : "hit completed: 3SX4X51T8Z8S9D9G4XBWHT3YHUJAOK\r\n"
+			},
+			{
+				"creationTime" : 1.400083386395E12,
+				"onceFunc" : "\nfunction () {\n    return Math.random();\n}\n",
+				"returnValue" : 0.9008706473742653,
+				"returnTime" : 1.400083386395E12,
+				"printOutput" : ""
+			},
+			{
+				"creationTime" : 1.40008338641E12,
+				"onceFunc" : "\nfunction () {\n    return Math.random();\n}\n",
+				"returnValue" : 0.29457025012343707,
+				"returnTime" : 1.40008338641E12,
+				"printOutput" : ""
+			},
+			{
+				"creationTime" : 1.400083386426E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.createHITRaw(params);\n}\n",
+				"returnValue" : "33KGGVH24TGJ9YA8955ZP51OP7SX14",
+				"returnTime" : 1.400083387082E12,
+				"printOutput" : "created HIT: 33KGGVH24TGJ9YA8955ZP51OP7SX14\r\n        url: https://www.mturk.com/mturk/preview?groupId=38E1HBOA1QEDDZX1Z7UNFGUC0R380D\r\n"
+			},
+			{
+				"creationTime" : 1.400083387098E12,
+				"onceFunc" : "\nfunction () {\n    if (!me.waitForHIT_callCount) {\n        me.waitForHIT_callCount = 0;\n        var a = me.getReviewableHITs(1);\n        if (a.totalNumResults == a.length) {\n            me.waitForHIT_reviewableHITs = new Set(a);\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n        me.waitForHIT_waitCount = Math.ceil(a.totalNumResults / 100);\n    }\n    me.waitForHIT_callCount++;\n    if (me.waitForHIT_callCount >= me.waitForHIT_waitCount) {\n        if (!me.waitForHIT_reviewableHITs || (time() > me.waitForHIT_reviewableHITsTime + (1000 * 60))) {\n            me.waitForHIT_reviewableHITs = new Set(me.getReviewableHITs());\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n    }\n    if (me.waitForHIT_reviewableHITs) {\n        if (!me.waitForHIT_reviewableHITs[hitId]) {\n            stop();\n        }\n    }\n    var hit = mturk.getHIT(hitId);\n    if (!hit.done) {\n        stop();\n    }\n    verbosePrint(\"hit completed: \" + hitId);\n    return hit;\n}\n",
+				"returnValue" : {
+					"hitId" : "33KGGVH24TGJ9YA8955ZP51OP7SX14",
+					"hitTypeId" : "38E1HBOA1QEDDZX1Z7UNFGUC0R380D",
+					"title" : "Vote on auction item description improvements",
+					"description" : "Decide which auction item description is better/suitable for the item(s) on three pictures",
+					"keywords" : null,
+					"reward" : 0.01,
+					"question" : "<QuestionForm xmlns=\"http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2005-10-01/QuestionForm.xsd\">\n  <Question>\n    <QuestionIdentifier>vote</QuestionIdentifier>\n    <IsRequired>true</IsRequired>\n    <QuestionContent>\n      <FormattedContent><![CDATA[<b>Instructions:</b> Which description of the auction item(s) on the pictures is better? The following factors <b>can</b> affect your decision: \n\t\t\t\t\t<ul>\n\t\t\t\t\t\t<li>One description is more informative than the other</li>\n\t\t\t\t\t\t<li>One description contains more information about the auction item then the other</li>\n\t\t\t\t\t\t<li>One description contains wrong information</li>\n\t\t\t\t\t\t<li>One description has spelling mistakes</li>\n\t\t\t\t\t</ul>\n\t\t\t\t\t<table><tr>\n\t\t\t\t\t<td><img src=\"http://i.ebayimg.com/00/s/MTA2NlgxNjAw/z/OyQAAMXQDnpTa962/$_1.JPG?set_id=880000500F\" alt=\"Image 1\" width=\"250\" border=\"2\"></img></td>\n\t\t\t\t\t<td><img src=\"http://i.ebayimg.com/00/s/MTA2NlgxNjAw/z/b~AAAOxy2CZTa96y/$_1.JPG?set_id=880000500F\" alt=\"Image 2\" width=\"250\" border=\"2\"></img></td>\n\t\t\t\t\t<td><img src=\"http://i.ebayimg.com/00/s/MTA2NlgxNjAw/z/GYgAAOxy9X5Ta961/$_1.JPG?set_id=880000500F\" alt=\"Image 3\" width=\"250\" border=\"2\"></img></td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t<td><a href=\"http://i.ebayimg.com/00/s/MTA2NlgxNjAw/z/OyQAAMXQDnpTa962/$_1.JPG?set_id=880000500F\" target=\"_blank\">Link to full size image 1 (new window)</a></td>\n\t\t\t\t\t<td><a href=\"http://i.ebayimg.com/00/s/MTA2NlgxNjAw/z/b~AAAOxy2CZTa96y/$_1.JPG?set_id=880000500F\" target=\"_blank\">Link to full size image 2 (new window)</a></td>\n\t\t\t\t\t<td><a href=\"http://i.ebayimg.com/00/s/MTA2NlgxNjAw/z/GYgAAOxy9X5Ta961/$_1.JPG?set_id=880000500F\" target=\"_blank\">Link to full size image 3 (new window)</a></td>\n\t\t\t\t\t</tr></table>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <SelectionAnswer>\n        <Selections>\n          <Selection>\n            <SelectionIdentifier>a</SelectionIdentifier>\n            <Text>1)Perfect Round White Table.&#13;\n2)height 3ft comfortable in adjusting &#13;\n3)Full Proper Space to share all your stuff on same table&#13;\n4)finished with board which give it extra shine&#13;\n5)Light weight to carry easy from one place to another</Text>\n          </Selection>\n          <Selection>\n            <SelectionIdentifier>b</SelectionIdentifier>\n            <Text>1) Perfect round white table.&#13;\n2) Height 3ft diameter 6 ft.&#13;\n3) Great spacious surface; scratch resistant.&#13;\n4) Finished with Board which give it extra shine.&#13;\n5) Light weight to move easily from one place to another.</Text>\n          </Selection>\n        </Selections>\n      </SelectionAnswer>\n    </AnswerSpecification>\n  </Question>\n  <Question>\n    <QuestionIdentifier>description_vote_feedback</QuestionIdentifier>\n    <QuestionContent>\n      <Title>Your personal feedback (optional)</Title>\n      <FormattedContent><![CDATA[Give your personal feedback about the task. This <b>can</b> contain one of the following aspects:\n        <ul>\n        <li>Problems of the task (e.g. images are not visible)</li>\n        <li>Instructions are not clear enough</li>\n        </ul>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <FreeTextAnswer>\n        <NumberOfLinesSuggestion>3</NumberOfLinesSuggestion>\n      </FreeTextAnswer>\n    </AnswerSpecification>\n  </Question>\n</QuestionForm>",
+					"maxAssignments" : 2,
+					"assignmentDurationInSeconds" : 1800,
+					"autoApprovalDelayInSeconds" : 2592000,
+					"requesterAnnotation" : null,
+					"hitStatus" : "Reviewable",
+					"hitReviewStatus" : "NotReviewed",
+					"creationTime" : 1.400083407E12,
+					"expiration" : 1.400688207E12,
+					"assignments" : [
+						{
+							"assignmentId" : "3WETL7AQWT794227G65P9ZKKUPO53R",
+							"workerId" : "A1ETJBNTO9ZWZ8",
+							"hitId" : "33KGGVH24TGJ9YA8955ZP51OP7SX14",
+							"assignmentStatus" : "Submitted",
+							"autoApprovalTime" : 1.402675909E12,
+							"acceptTime" : 1.400083902E12,
+							"submitTime" : 1.400083909E12,
+							"answer" : {
+								"vote" : [
+									"b"
+								],
+								"description_vote_feedback" : ""
+							},
+							"requesterFeedback" : null,
+							"approvalTime" : null,
+							"deadline" : null,
+							"rejectionTime" : null
+						},
+						{
+							"assignmentId" : "3TXD01ZLD4GB7DBQHLIGRG4677R4U9",
+							"workerId" : "A2KCG73A6QCNCW",
+							"hitId" : "33KGGVH24TGJ9YA8955ZP51OP7SX14",
+							"assignmentStatus" : "Submitted",
+							"autoApprovalTime" : 1.402678163E12,
+							"acceptTime" : 1.400086141E12,
+							"submitTime" : 1.400086163E12,
+							"answer" : {
+								"vote" : [
+									"b"
+								],
+								"description_vote_feedback" : ""
+							},
+							"requesterFeedback" : null,
+							"approvalTime" : null,
+							"deadline" : null,
+							"rejectionTime" : null
+						}
+					],
+					"done" : true
+				},
+				"returnTime" : 1.400169759891E12,
+				"printOutput" : "hit completed: 33KGGVH24TGJ9YA8955ZP51OP7SX14\r\n"
+			},
+			{
+				"creationTime" : 1.400169759907E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.approveAssignmentRaw(assignment, reason);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.400169760266E12,
+				"printOutput" : "approved assignment 3WETL7AQWT794227G65P9ZKKUPO53R\r\n"
+			},
+			{
+				"creationTime" : 1.400169760266E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.approveAssignmentRaw(assignment, reason);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.400169760672E12,
+				"printOutput" : "approved assignment 3TXD01ZLD4GB7DBQHLIGRG4677R4U9\r\n"
+			},
+			{
+				"creationTime" : 1.400169760688E12,
+				"onceFunc" : "\nfunction () {\n    mturk.deleteHITRaw(hit);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.400169761079E12,
+				"printOutput" : "disabled HIT: 33KGGVH24TGJ9YA8955ZP51OP7SX14\r\n"
+			},
+			{
+				"creationTime" : 1.400169761094E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.approveAssignmentRaw(assignment, reason);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.400169761485E12,
+				"printOutput" : "approved assignment 3GLB5JMZFXU52RTOQRUSQ5XLB7JDGZ\r\n"
+			},
+			{
+				"creationTime" : 1.400169761501E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.createHITRaw(params);\n}\n",
+				"returnValue" : "3KQC8JMJGBRIXBO8R51WACSRZ5TH31",
+				"returnTime" : 1.400169762016E12,
+				"printOutput" : "created HIT: 3KQC8JMJGBRIXBO8R51WACSRZ5TH31\r\n        url: https://www.mturk.com/mturk/preview?groupId=24LSCXKNQY2RCLHN82ME7HR0KRFP09\r\n"
+			},
+			{
+				"creationTime" : 1.400169762016E12,
+				"onceFunc" : "\nfunction () {\n    if (!me.waitForHIT_callCount) {\n        me.waitForHIT_callCount = 0;\n        var a = me.getReviewableHITs(1);\n        if (a.totalNumResults == a.length) {\n            me.waitForHIT_reviewableHITs = new Set(a);\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n        me.waitForHIT_waitCount = Math.ceil(a.totalNumResults / 100);\n    }\n    me.waitForHIT_callCount++;\n    if (me.waitForHIT_callCount >= me.waitForHIT_waitCount) {\n        if (!me.waitForHIT_reviewableHITs || (time() > me.waitForHIT_reviewableHITsTime + (1000 * 60))) {\n            me.waitForHIT_reviewableHITs = new Set(me.getReviewableHITs());\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n    }\n    if (me.waitForHIT_reviewableHITs) {\n        if (!me.waitForHIT_reviewableHITs[hitId]) {\n            stop();\n        }\n    }\n    var hit = mturk.getHIT(hitId);\n    if (!hit.done) {\n        stop();\n    }\n    verbosePrint(\"hit completed: \" + hitId);\n    return hit;\n}\n",
+				"returnValue" : {
+					"hitId" : "3KQC8JMJGBRIXBO8R51WACSRZ5TH31",
+					"hitTypeId" : "24LSCXKNQY2RCLHN82ME7HR0KRFP09",
+					"title" : "Improve/extend description of auction item(s) on pictures",
+					"description" : "Improve and/or extend the description of an auction item based on three images",
+					"keywords" : null,
+					"reward" : 0.2,
+					"question" : "<QuestionForm xmlns=\"http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2005-10-01/QuestionForm.xsd\">\n  <Question>\n    <QuestionIdentifier>newText</QuestionIdentifier>\n    <IsRequired>true</IsRequired>\n    <QuestionContent>\n      <FormattedContent><![CDATA[The goal of the requester of the HIT is to generate eBay auctions by MTurk workers based on images of the item.<br /><br />\n\t\t\t\t\t<b>Instructions</b>: Improve and/or extend the description of the auction item(s) on the images. Keep in mind the following remarks:\n\t\t\t\t\t<ul>\n\t\t\t\t\t<li>If the description doesn\'t contain approximately <b>5 sentences</b> then try to add more text\n\t\t\t\t\t<ul>\n\t\t\t\t\t\t<li>Include specific information like size, shape, color, age, manufacture date, company/artist/author, and notable features or markings if possible</li>\n\t\t\t\t\t\t<li>Make the description as readable as possible</li>\n\t\t\t\t\t\t<li>Don\'t say anything that isn\'t true.</li>\n\t\t\t\t\t\t<li>Don\'t use all caps</li>\n\t\t\t\t\t\t<li>Don\'t include email addresses and some links</li>\n\t\t\t\t\t</ul>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li>If the description is long enough then try to improve it</li>\n\t\t\t\t\t</ul>\n\t\t\t\t\t<table><tr>\n\t\t\t\t\t<td><img src=\"http://i.ebayimg.com/00/s/MTA2NlgxNjAw/z/OyQAAMXQDnpTa962/$_1.JPG?set_id=880000500F\" alt=\"Image 1\" width=\"250\" border=\"2\"></img></td>\n\t\t\t\t\t<td><img src=\"http://i.ebayimg.com/00/s/MTA2NlgxNjAw/z/b~AAAOxy2CZTa96y/$_1.JPG?set_id=880000500F\" alt=\"Image 2\" width=\"250\" border=\"2\"></img></td>\n\t\t\t\t\t<td><img src=\"http://i.ebayimg.com/00/s/MTA2NlgxNjAw/z/GYgAAOxy9X5Ta961/$_1.JPG?set_id=880000500F\" alt=\"Image 3\" width=\"250\" border=\"2\"></img></td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t<td><a href=\"http://i.ebayimg.com/00/s/MTA2NlgxNjAw/z/OyQAAMXQDnpTa962/$_1.JPG?set_id=880000500F\" target=\"_blank\">Link to full size image 1 (new window)</a></td>\n\t\t\t\t\t<td><a href=\"http://i.ebayimg.com/00/s/MTA2NlgxNjAw/z/b~AAAOxy2CZTa96y/$_1.JPG?set_id=880000500F\" target=\"_blank\">Link to full size image 2 (new window)</a></td>\n\t\t\t\t\t<td><a href=\"http://i.ebayimg.com/00/s/MTA2NlgxNjAw/z/GYgAAOxy9X5Ta961/$_1.JPG?set_id=880000500F\" target=\"_blank\">Link to full size image 3 (new window)</a></td>\n\t\t\t\t\t</tr></table>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <FreeTextAnswer>\n        <Constraints>\n          <Length maxLength=\"5000\" minLength=\"120\"/>\n          <AnswerFormatRegex errorText=\"The description cannot be blank.\" regex=\"\\S\"/>\n        </Constraints>\n        <DefaultText>1) Perfect round white table.&#13;\n2) Height 3ft diameter 6 ft.&#13;\n3) Great spacious surface; scratch resistant.&#13;\n4) Finished with Board which give it extra shine.&#13;\n5) Light weight to move easily from one place to another.</DefaultText>\n        <NumberOfLinesSuggestion>10</NumberOfLinesSuggestion>\n      </FreeTextAnswer>\n    </AnswerSpecification>\n  </Question>\n  <Question>\n    <QuestionIdentifier>description_improve_feedback</QuestionIdentifier>\n    <QuestionContent>\n      <Title>Your personal feedback (optional)</Title>\n      <FormattedContent><![CDATA[Give your personal feedback about the task. This <b>can</b> contain one of the following aspects:\n        <ul>\n        <li>Problems of the task (e.g. images are not visible)</li>\n        <li>Instructions are not clear enough</li>\n        </ul>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <FreeTextAnswer>\n        <NumberOfLinesSuggestion>3</NumberOfLinesSuggestion>\n      </FreeTextAnswer>\n    </AnswerSpecification>\n  </Question>\n</QuestionForm>",
+					"maxAssignments" : 1,
+					"assignmentDurationInSeconds" : 7200,
+					"autoApprovalDelayInSeconds" : 2592000,
+					"requesterAnnotation" : null,
+					"hitStatus" : "Reviewable",
+					"hitReviewStatus" : "NotReviewed",
+					"creationTime" : 1.400169784E12,
+					"expiration" : 1.400774584E12,
+					"assignments" : [
+						{
+							"assignmentId" : "3VW04L3ZLT5UMJTV61V88Y08UQUXX2",
+							"workerId" : "A16CDD9GGDTZVE",
+							"hitId" : "3KQC8JMJGBRIXBO8R51WACSRZ5TH31",
+							"assignmentStatus" : "Submitted",
+							"autoApprovalTime" : 1.402771879E12,
+							"acceptTime" : 1.400179785E12,
+							"submitTime" : 1.400179879E12,
+							"answer" : {
+								"newText" : "1) Perfect round white table.\r\n2) Height 3ft diameter 6 ft.\r\n3) Great spacious surface; scratch resistant.\r\n4) Finished with Board which give it extra shine.\r\n5) Light weight to move easily from one place to another.\r\n6) Perfect for board/card games.",
+								"description_improve_feedback" : ""
+							},
+							"requesterFeedback" : null,
+							"approvalTime" : null,
+							"deadline" : null,
+							"rejectionTime" : null
+						}
+					],
+					"done" : true
+				},
+				"returnTime" : 1.40025598254E12,
+				"printOutput" : "hit completed: 3KQC8JMJGBRIXBO8R51WACSRZ5TH31\r\n"
+			},
+			{
+				"creationTime" : 1.400255982556E12,
+				"onceFunc" : "\nfunction () {\n    return Math.random();\n}\n",
+				"returnValue" : 0.7085143083869071,
+				"returnTime" : 1.400255982571E12,
+				"printOutput" : ""
+			},
+			{
+				"creationTime" : 1.400255982571E12,
+				"onceFunc" : "\nfunction () {\n    return Math.random();\n}\n",
+				"returnValue" : 0.8835610645351484,
+				"returnTime" : 1.400255982571E12,
+				"printOutput" : ""
+			},
+			{
+				"creationTime" : 1.400255982587E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.createHITRaw(params);\n}\n",
+				"returnValue" : "31HLTCK4BKUO9OVGR9PK8789BRUGVN",
+				"returnTime" : 1.400255983118E12,
+				"printOutput" : "created HIT: 31HLTCK4BKUO9OVGR9PK8789BRUGVN\r\n        url: https://www.mturk.com/mturk/preview?groupId=38E1HBOA1QEDDZX1Z7UNFGUC0R380D\r\n"
+			},
+			{
+				"creationTime" : 1.400255983134E12,
+				"onceFunc" : "\nfunction () {\n    if (!me.waitForHIT_callCount) {\n        me.waitForHIT_callCount = 0;\n        var a = me.getReviewableHITs(1);\n        if (a.totalNumResults == a.length) {\n            me.waitForHIT_reviewableHITs = new Set(a);\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n        me.waitForHIT_waitCount = Math.ceil(a.totalNumResults / 100);\n    }\n    me.waitForHIT_callCount++;\n    if (me.waitForHIT_callCount >= me.waitForHIT_waitCount) {\n        if (!me.waitForHIT_reviewableHITs || (time() > me.waitForHIT_reviewableHITsTime + (1000 * 60))) {\n            me.waitForHIT_reviewableHITs = new Set(me.getReviewableHITs());\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n    }\n    if (me.waitForHIT_reviewableHITs) {\n        if (!me.waitForHIT_reviewableHITs[hitId]) {\n            stop();\n        }\n    }\n    var hit = mturk.getHIT(hitId);\n    if (!hit.done) {\n        stop();\n    }\n    verbosePrint(\"hit completed: \" + hitId);\n    return hit;\n}\n",
+				"returnValue" : {
+					"hitId" : "31HLTCK4BKUO9OVGR9PK8789BRUGVN",
+					"hitTypeId" : "38E1HBOA1QEDDZX1Z7UNFGUC0R380D",
+					"title" : "Vote on auction item description improvements",
+					"description" : "Decide which auction item description is better/suitable for the item(s) on three pictures",
+					"keywords" : null,
+					"reward" : 0.01,
+					"question" : "<QuestionForm xmlns=\"http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2005-10-01/QuestionForm.xsd\">\n  <Question>\n    <QuestionIdentifier>vote</QuestionIdentifier>\n    <IsRequired>true</IsRequired>\n    <QuestionContent>\n      <FormattedContent><![CDATA[<b>Instructions:</b> Which description of the auction item(s) on the pictures is better? The following factors <b>can</b> affect your decision: \n\t\t\t\t\t<ul>\n\t\t\t\t\t\t<li>One description is more informative than the other</li>\n\t\t\t\t\t\t<li>One description contains more information about the auction item then the other</li>\n\t\t\t\t\t\t<li>One description contains wrong information</li>\n\t\t\t\t\t\t<li>One description has spelling mistakes</li>\n\t\t\t\t\t</ul>\n\t\t\t\t\t<table><tr>\n\t\t\t\t\t<td><img src=\"http://i.ebayimg.com/00/s/MTA2NlgxNjAw/z/OyQAAMXQDnpTa962/$_1.JPG?set_id=880000500F\" alt=\"Image 1\" width=\"250\" border=\"2\"></img></td>\n\t\t\t\t\t<td><img src=\"http://i.ebayimg.com/00/s/MTA2NlgxNjAw/z/b~AAAOxy2CZTa96y/$_1.JPG?set_id=880000500F\" alt=\"Image 2\" width=\"250\" border=\"2\"></img></td>\n\t\t\t\t\t<td><img src=\"http://i.ebayimg.com/00/s/MTA2NlgxNjAw/z/GYgAAOxy9X5Ta961/$_1.JPG?set_id=880000500F\" alt=\"Image 3\" width=\"250\" border=\"2\"></img></td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t<td><a href=\"http://i.ebayimg.com/00/s/MTA2NlgxNjAw/z/OyQAAMXQDnpTa962/$_1.JPG?set_id=880000500F\" target=\"_blank\">Link to full size image 1 (new window)</a></td>\n\t\t\t\t\t<td><a href=\"http://i.ebayimg.com/00/s/MTA2NlgxNjAw/z/b~AAAOxy2CZTa96y/$_1.JPG?set_id=880000500F\" target=\"_blank\">Link to full size image 2 (new window)</a></td>\n\t\t\t\t\t<td><a href=\"http://i.ebayimg.com/00/s/MTA2NlgxNjAw/z/GYgAAOxy9X5Ta961/$_1.JPG?set_id=880000500F\" target=\"_blank\">Link to full size image 3 (new window)</a></td>\n\t\t\t\t\t</tr></table>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <SelectionAnswer>\n        <Selections>\n          <Selection>\n            <SelectionIdentifier>b</SelectionIdentifier>\n            <Text>1) Perfect round white table.&#13;\n2) Height 3ft diameter 6 ft.&#13;\n3) Great spacious surface; scratch resistant.&#13;\n4) Finished with Board which give it extra shine.&#13;\n5) Light weight to move easily from one place to another.&#13;\n6) Perfect for board/card games.</Text>\n          </Selection>\n          <Selection>\n            <SelectionIdentifier>a</SelectionIdentifier>\n            <Text>1) Perfect round white table.&#13;\n2) Height 3ft diameter 6 ft.&#13;\n3) Great spacious surface; scratch resistant.&#13;\n4) Finished with Board which give it extra shine.&#13;\n5) Light weight to move easily from one place to another.</Text>\n          </Selection>\n        </Selections>\n      </SelectionAnswer>\n    </AnswerSpecification>\n  </Question>\n  <Question>\n    <QuestionIdentifier>description_vote_feedback</QuestionIdentifier>\n    <QuestionContent>\n      <Title>Your personal feedback (optional)</Title>\n      <FormattedContent><![CDATA[Give your personal feedback about the task. This <b>can</b> contain one of the following aspects:\n        <ul>\n        <li>Problems of the task (e.g. images are not visible)</li>\n        <li>Instructions are not clear enough</li>\n        </ul>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <FreeTextAnswer>\n        <NumberOfLinesSuggestion>3</NumberOfLinesSuggestion>\n      </FreeTextAnswer>\n    </AnswerSpecification>\n  </Question>\n</QuestionForm>",
+					"maxAssignments" : 2,
+					"assignmentDurationInSeconds" : 1800,
+					"autoApprovalDelayInSeconds" : 2592000,
+					"requesterAnnotation" : null,
+					"hitStatus" : "Reviewable",
+					"hitReviewStatus" : "NotReviewed",
+					"creationTime" : 1.400255982E12,
+					"expiration" : 1.400860782E12,
+					"assignments" : [
+						{
+							"assignmentId" : "3AWETUDC92RM1J4F8XJS29T4ELJZIC",
+							"workerId" : "A2J843CHDXF45T",
+							"hitId" : "31HLTCK4BKUO9OVGR9PK8789BRUGVN",
+							"assignmentStatus" : "Submitted",
+							"autoApprovalTime" : 1.402885994E12,
+							"acceptTime" : 1.400293987E12,
+							"submitTime" : 1.400293994E12,
+							"answer" : {
+								"vote" : [
+									"b"
+								],
+								"description_vote_feedback" : ""
+							},
+							"requesterFeedback" : null,
+							"approvalTime" : null,
+							"deadline" : null,
+							"rejectionTime" : null
+						},
+						{
+							"assignmentId" : "3WETL7AQWT794227G65P9ZKKU4F35A",
+							"workerId" : "A598XIWFQVKS8",
+							"hitId" : "31HLTCK4BKUO9OVGR9PK8789BRUGVN",
+							"assignmentStatus" : "Submitted",
+							"autoApprovalTime" : 1.402886214E12,
+							"acceptTime" : 1.400294156E12,
+							"submitTime" : 1.400294214E12,
+							"answer" : {
+								"vote" : [
+									"b"
+								],
+								"description_vote_feedback" : "Both contain the grammatically incorrect sentence #4."
+							},
+							"requesterFeedback" : null,
+							"approvalTime" : null,
+							"deadline" : null,
+							"rejectionTime" : null
+						}
+					],
+					"done" : true
+				},
+				"returnTime" : 1.400516515956E12,
+				"printOutput" : "hit completed: 31HLTCK4BKUO9OVGR9PK8789BRUGVN\r\n"
+			},
+			{
+				"creationTime" : 1.400516515956E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.approveAssignmentRaw(assignment, reason);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.400516516315E12,
+				"printOutput" : "approved assignment 3AWETUDC92RM1J4F8XJS29T4ELJZIC\r\n"
+			},
+			{
+				"creationTime" : 1.400516516315E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.approveAssignmentRaw(assignment, reason);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.400516516737E12,
+				"printOutput" : "approved assignment 3WETL7AQWT794227G65P9ZKKU4F35A\r\n"
+			},
+			{
+				"creationTime" : 1.400516516737E12,
+				"onceFunc" : "\nfunction () {\n    mturk.deleteHITRaw(hit);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.40051651705E12,
+				"printOutput" : "disabled HIT: 31HLTCK4BKUO9OVGR9PK8789BRUGVN\r\n"
+			},
+			{
+				"creationTime" : 1.40051651705E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.approveAssignmentRaw(assignment, reason);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.400516517347E12,
+				"printOutput" : "approved assignment 3VW04L3ZLT5UMJTV61V88Y08UQUXX2\r\n"
+			}
+		]
+	}
+}
+__safetyCounters = {
+	"moneySpent" : 0.6400000000000001,
+	"hitsCreated" : 5
+}
+// end:eba9

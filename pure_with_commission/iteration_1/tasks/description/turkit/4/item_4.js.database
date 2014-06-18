@@ -1,0 +1,505 @@
+// begin:c670
+__HITs = {
+	"real:31MCUE39BJL4XFTX7ZJEPCGQIFV3GL" : {
+		"url" : "https://www.mturk.com/mturk/preview?groupId=356P7NIWHJM2LF84AIOIA11OHRUFVU"
+	},
+	"real:3MIVREZQVGX162VIV1GP0C1UZTBQK9" : {
+		"url" : "https://www.mturk.com/mturk/preview?groupId=356P7NIWHJM2LF84AIOIA11OHRUFVU"
+	},
+	"real:3FO95NVK5BZZ6MNQDPERWO29CKESR3" : {
+		"url" : "https://www.mturk.com/mturk/preview?groupId=356P7NIWHJM2LF84AIOIA11OHRUFVU"
+	}
+}
+__S3_Objects = {
+}
+__stackFrames = {
+	"for-real" : {
+		"sequencialFrames" : [
+			{
+				"creationTime" : 1.396282198149E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.createHITRaw(params);\n}\n",
+				"returnValue" : "31MCUE39BJL4XFTX7ZJEPCGQIFV3GL",
+				"returnTime" : 1.396282200214E12,
+				"printOutput" : "created HIT: 31MCUE39BJL4XFTX7ZJEPCGQIFV3GL\r\n        url: https://www.mturk.com/mturk/preview?groupId=356P7NIWHJM2LF84AIOIA11OHRUFVU\r\n"
+			},
+			{
+				"creationTime" : 1.39628220022E12,
+				"onceFunc" : "\nfunction () {\n    if (!me.waitForHIT_callCount) {\n        me.waitForHIT_callCount = 0;\n        var a = me.getReviewableHITs(1);\n        if (a.totalNumResults == a.length) {\n            me.waitForHIT_reviewableHITs = new Set(a);\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n        me.waitForHIT_waitCount = Math.ceil(a.totalNumResults / 100);\n    }\n    me.waitForHIT_callCount++;\n    if (me.waitForHIT_callCount >= me.waitForHIT_waitCount) {\n        if (!me.waitForHIT_reviewableHITs || (time() > me.waitForHIT_reviewableHITsTime + (1000 * 60))) {\n            me.waitForHIT_reviewableHITs = new Set(me.getReviewableHITs());\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n    }\n    if (me.waitForHIT_reviewableHITs) {\n        if (!me.waitForHIT_reviewableHITs[hitId]) {\n            stop();\n        }\n    }\n    var hit = mturk.getHIT(hitId);\n    if (!hit.done) {\n        stop();\n    }\n    verbosePrint(\"hit completed: \" + hitId);\n    return hit;\n}\n",
+				"returnValue" : {
+					"hitId" : "31MCUE39BJL4XFTX7ZJEPCGQIFV3GL",
+					"hitTypeId" : "356P7NIWHJM2LF84AIOIA11OHRUFVU",
+					"title" : "Improve/extend description of auction item(s) on pictures (receive a commission for good work)",
+					"description" : "Improve and/or extend the description of an auction item based on three images",
+					"keywords" : null,
+					"reward" : 0.2,
+					"question" : "<QuestionForm xmlns=\"http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2005-10-01/QuestionForm.xsd\">\n  <Question>\n    <QuestionIdentifier>newText</QuestionIdentifier>\n    <IsRequired>true</IsRequired>\n    <QuestionContent>\n      <FormattedContent><![CDATA[All the workers who have done a similar task in the past are excluded from this HIT. If you find your worker ID in the following table, your work <b>will be rejected</b>.<br /><br />\n\t\t\t\t\t<table border= \"1\">\n\t\t\t\t\t<tr><td><b>Worker ID</b></td></tr>\n\t\t\t\t\t<tr><td>ALWGGK7LJCILU</td></tr>\n\t\t\t\t\t<tr><td>A37W3K5DH78REU</td></tr>\n\t\t\t\t\t<tr><td>A2UFB6FRY90EAB</td></tr>\n\t\t\t\t\t<tr><td>A291KO368YRYCR</td></tr>\n\t\t\t\t\t<tr><td>A3L99RGPK6FZGH</td></tr>\n\t\t\t\t\t<tr><td>A12VU5YSHGQH2V</td></tr>\n\t\t\t\t\t<tr><td>A10QVKS005YVLL</td></tr>\n\t\t\t\t\t<tr><td>A3MTARDZ80DNV8</td></tr>\n\t\t\t\t\t<tr><td>A1OVAN2YSCBNVQ</td></tr>\n\t\t\t\t\t<tr><td>A3066746SS2O8Z</td></tr>\n\t\t\t\t\t<tr><td>A1Y922ZJ90N8WA</td></tr>\n\t\t\t\t\t</table>\n\t\t\t\t\t<hr />\n\t\t\t\t\tThe goal of the requester of the HIT is to generate eBay auctions by MTurk workers based on images of the item.<br /><br />\n\t\t\t\t\tIf the auction will be sucessful then the creator of the final description will receive <b>1% of the selling price as a bonus</b>. The final description will be determined by a voting procedure.<br /><br />\n\t\t\t\t\t<b>Instructions</b>: Improve and/or extend the description of the auction item(s) on the images. Keep in mind the following remarks:\n\t\t\t\t\t<ul>\n\t\t\t\t\t<li>If the description doesn\'t contain approximately <b>5 sentences</b> then try to add more text\n\t\t\t\t\t<ul>\n\t\t\t\t\t\t<li>Include specific information like size, shape, color, age, manufacture date, company/artist/author, and notable features or markings if possible</li>\n\t\t\t\t\t\t<li>Make the description as readable as possible</li>\n\t\t\t\t\t\t<li>Don\'t say anything that isn\'t true.</li>\n\t\t\t\t\t\t<li>Don\'t use all caps</li>\n\t\t\t\t\t\t<li>Don\'t include email addresses and some links</li>\n\t\t\t\t\t</ul>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li>If the description is long enough then try to improve it</li>\n\t\t\t\t\t</ul>\n\t\t\t\t\t<table><tr>\n\t\t\t\t\t<td><img src=\"http://i.ebayimg.com/00/s/NjI5WDYzOA==/z/laMAAOxy4fVTDKKV/$_12.JPG?set_id=880000500F\" alt=\"Image 1\" width=\"250\" border=\"2\"></img></td>\n\t\t\t\t\t<td><img src=\"http://i.ebayimg.com/00/s/NTU3WDgwMA==/z/zNoAAOxyni9TDKJx/$_12.JPG?set_id=880000500F\" alt=\"Image 2\" width=\"250\" border=\"2\"></img></td>\n\t\t\t\t\t<td><img src=\"http://i.ebayimg.com/00/s/NjA3WDg5MQ==/z/1hoAAOxyJX1TDKJo/$_12.JPG?set_id=880000500F\" alt=\"Image 3\" width=\"250\" border=\"2\"></img></td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t<td><a href=\"http://i.ebayimg.com/00/s/NjI5WDYzOA==/z/laMAAOxy4fVTDKKV/$_12.JPG?set_id=880000500F\" target=\"_blank\">Link to full size image 1 (new window)</a></td>\n\t\t\t\t\t<td><a href=\"http://i.ebayimg.com/00/s/NTU3WDgwMA==/z/zNoAAOxyni9TDKJx/$_12.JPG?set_id=880000500F\" target=\"_blank\">Link to full size image 2 (new window)</a></td>\n\t\t\t\t\t<td><a href=\"http://i.ebayimg.com/00/s/NjA3WDg5MQ==/z/1hoAAOxyJX1TDKJo/$_12.JPG?set_id=880000500F\" target=\"_blank\">Link to full size image 3 (new window)</a></td>\n\t\t\t\t\t</tr></table>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <FreeTextAnswer>\n        <Constraints>\n          <Length maxLength=\"5000\" minLength=\"40\"/>\n          <AnswerFormatRegex errorText=\"The description cannot be blank.\" regex=\"\\S\"/>\n        </Constraints>\n        <DefaultText/>\n        <NumberOfLinesSuggestion>10</NumberOfLinesSuggestion>\n      </FreeTextAnswer>\n    </AnswerSpecification>\n  </Question>\n  <Question>\n    <QuestionIdentifier>description_improve_feedback</QuestionIdentifier>\n    <QuestionContent>\n      <Title>Your personal feedback (optional)</Title>\n      <FormattedContent><![CDATA[Give your personal feedback about the task. This <b>can</b> contain one of the following aspects:\n        <ul>\n        <li>Problems of the task (e.g. images are not visible)</li>\n        <li>Instructions are not clear enough</li>\n        </ul>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <FreeTextAnswer>\n        <NumberOfLinesSuggestion>3</NumberOfLinesSuggestion>\n      </FreeTextAnswer>\n    </AnswerSpecification>\n  </Question>\n</QuestionForm>",
+					"maxAssignments" : 1,
+					"assignmentDurationInSeconds" : 7200,
+					"autoApprovalDelayInSeconds" : 2592000,
+					"requesterAnnotation" : null,
+					"hitStatus" : "Reviewable",
+					"hitReviewStatus" : "NotReviewed",
+					"creationTime" : 1.39628222E12,
+					"expiration" : 1.39688702E12,
+					"assignments" : [
+						{
+							"assignmentId" : "33JKGHPFYCTEGDGNQO6QZFTCFHJNMJ",
+							"workerId" : "ANJRINRP821LY",
+							"hitId" : "31MCUE39BJL4XFTX7ZJEPCGQIFV3GL",
+							"assignmentStatus" : "Submitted",
+							"autoApprovalTime" : 1.398903293E12,
+							"acceptTime" : 1.396311038E12,
+							"submitTime" : 1.396311293E12,
+							"answer" : {
+								"newText" : "Aeroccino Plus Milk Frother & Ciliz Coffee Machine, still with original packaging. Comes in the color red, and silver. Quick and easy to make great coffee. Also gives the opportunity for simple milk froth for anyone to experience fresh at home, rather than at an overpriced cafe.",
+								"description_improve_feedback" : ""
+							},
+							"requesterFeedback" : null,
+							"approvalTime" : null,
+							"deadline" : null,
+							"rejectionTime" : null
+						}
+					],
+					"done" : true
+				},
+				"returnTime" : 1.396454534483E12,
+				"printOutput" : "hit completed: 31MCUE39BJL4XFTX7ZJEPCGQIFV3GL\r\n"
+			},
+			{
+				"creationTime" : 1.396454534498E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.approveAssignmentRaw(assignment, reason);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.396454534873E12,
+				"printOutput" : "approved assignment 33JKGHPFYCTEGDGNQO6QZFTCFHJNMJ\r\n"
+			},
+			{
+				"creationTime" : 1.396454534889E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.createHITRaw(params);\n}\n",
+				"returnValue" : "3MIVREZQVGX162VIV1GP0C1UZTBQK9",
+				"returnTime" : 1.396454535904E12,
+				"printOutput" : "created HIT: 3MIVREZQVGX162VIV1GP0C1UZTBQK9\r\n        url: https://www.mturk.com/mturk/preview?groupId=356P7NIWHJM2LF84AIOIA11OHRUFVU\r\n"
+			},
+			{
+				"creationTime" : 1.39645453592E12,
+				"onceFunc" : "\nfunction () {\n    if (!me.waitForHIT_callCount) {\n        me.waitForHIT_callCount = 0;\n        var a = me.getReviewableHITs(1);\n        if (a.totalNumResults == a.length) {\n            me.waitForHIT_reviewableHITs = new Set(a);\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n        me.waitForHIT_waitCount = Math.ceil(a.totalNumResults / 100);\n    }\n    me.waitForHIT_callCount++;\n    if (me.waitForHIT_callCount >= me.waitForHIT_waitCount) {\n        if (!me.waitForHIT_reviewableHITs || (time() > me.waitForHIT_reviewableHITsTime + (1000 * 60))) {\n            me.waitForHIT_reviewableHITs = new Set(me.getReviewableHITs());\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n    }\n    if (me.waitForHIT_reviewableHITs) {\n        if (!me.waitForHIT_reviewableHITs[hitId]) {\n            stop();\n        }\n    }\n    var hit = mturk.getHIT(hitId);\n    if (!hit.done) {\n        stop();\n    }\n    verbosePrint(\"hit completed: \" + hitId);\n    return hit;\n}\n",
+				"returnValue" : {
+					"hitId" : "3MIVREZQVGX162VIV1GP0C1UZTBQK9",
+					"hitTypeId" : "356P7NIWHJM2LF84AIOIA11OHRUFVU",
+					"title" : "Improve/extend description of auction item(s) on pictures (receive a commission for good work)",
+					"description" : "Improve and/or extend the description of an auction item based on three images",
+					"keywords" : null,
+					"reward" : 0.2,
+					"question" : "<QuestionForm xmlns=\"http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2005-10-01/QuestionForm.xsd\">\n  <Question>\n    <QuestionIdentifier>newText</QuestionIdentifier>\n    <IsRequired>true</IsRequired>\n    <QuestionContent>\n      <FormattedContent><![CDATA[All the workers who have done a similar task in the past are excluded from this HIT. If you find your worker ID in the following table, your work <b>will be rejected</b>.<br /><br />\n\t\t\t\t\t<table border= \"1\">\n\t\t\t\t\t<tr><td><b>Worker ID</b></td></tr>\n\t\t\t\t\t<tr><td>ALWGGK7LJCILU</td></tr>\n\t\t\t\t\t<tr><td>A37W3K5DH78REU</td></tr>\n\t\t\t\t\t<tr><td>A2UFB6FRY90EAB</td></tr>\n\t\t\t\t\t<tr><td>A291KO368YRYCR</td></tr>\n\t\t\t\t\t<tr><td>A3L99RGPK6FZGH</td></tr>\n\t\t\t\t\t<tr><td>A12VU5YSHGQH2V</td></tr>\n\t\t\t\t\t<tr><td>A10QVKS005YVLL</td></tr>\n\t\t\t\t\t<tr><td>A3MTARDZ80DNV8</td></tr>\n\t\t\t\t\t<tr><td>A1OVAN2YSCBNVQ</td></tr>\n\t\t\t\t\t<tr><td>A3066746SS2O8Z</td></tr>\n\t\t\t\t\t<tr><td>A1Y922ZJ90N8WA</td></tr>\n\t\t\t\t\t</table>\n\t\t\t\t\t<hr />\n\t\t\t\t\tThe goal of the requester of the HIT is to generate eBay auctions by MTurk workers based on images of the item.<br /><br />\n\t\t\t\t\tIf the auction will be sucessful then the creator of the final description will receive <b>1% of the selling price as a bonus</b>. The final description will be determined by a voting procedure.<br /><br />\n\t\t\t\t\t<b>Instructions</b>: Improve and/or extend the description of the auction item(s) on the images. Keep in mind the following remarks:\n\t\t\t\t\t<ul>\n\t\t\t\t\t<li>If the description doesn\'t contain approximately <b>5 sentences</b> then try to add more text\n\t\t\t\t\t<ul>\n\t\t\t\t\t\t<li>Include specific information like size, shape, color, age, manufacture date, company/artist/author, and notable features or markings if possible</li>\n\t\t\t\t\t\t<li>Make the description as readable as possible</li>\n\t\t\t\t\t\t<li>Don\'t say anything that isn\'t true.</li>\n\t\t\t\t\t\t<li>Don\'t use all caps</li>\n\t\t\t\t\t\t<li>Don\'t include email addresses and some links</li>\n\t\t\t\t\t</ul>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li>If the description is long enough then try to improve it</li>\n\t\t\t\t\t</ul>\n\t\t\t\t\t<table><tr>\n\t\t\t\t\t<td><img src=\"http://i.ebayimg.com/00/s/NjI5WDYzOA==/z/laMAAOxy4fVTDKKV/$_12.JPG?set_id=880000500F\" alt=\"Image 1\" width=\"250\" border=\"2\"></img></td>\n\t\t\t\t\t<td><img src=\"http://i.ebayimg.com/00/s/NTU3WDgwMA==/z/zNoAAOxyni9TDKJx/$_12.JPG?set_id=880000500F\" alt=\"Image 2\" width=\"250\" border=\"2\"></img></td>\n\t\t\t\t\t<td><img src=\"http://i.ebayimg.com/00/s/NjA3WDg5MQ==/z/1hoAAOxyJX1TDKJo/$_12.JPG?set_id=880000500F\" alt=\"Image 3\" width=\"250\" border=\"2\"></img></td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t<td><a href=\"http://i.ebayimg.com/00/s/NjI5WDYzOA==/z/laMAAOxy4fVTDKKV/$_12.JPG?set_id=880000500F\" target=\"_blank\">Link to full size image 1 (new window)</a></td>\n\t\t\t\t\t<td><a href=\"http://i.ebayimg.com/00/s/NTU3WDgwMA==/z/zNoAAOxyni9TDKJx/$_12.JPG?set_id=880000500F\" target=\"_blank\">Link to full size image 2 (new window)</a></td>\n\t\t\t\t\t<td><a href=\"http://i.ebayimg.com/00/s/NjA3WDg5MQ==/z/1hoAAOxyJX1TDKJo/$_12.JPG?set_id=880000500F\" target=\"_blank\">Link to full size image 3 (new window)</a></td>\n\t\t\t\t\t</tr></table>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <FreeTextAnswer>\n        <Constraints>\n          <Length maxLength=\"5000\" minLength=\"80\"/>\n          <AnswerFormatRegex errorText=\"The description cannot be blank.\" regex=\"\\S\"/>\n        </Constraints>\n        <DefaultText>Aeroccino Plus Milk Frother &amp; Ciliz Coffee Machine, still with original packaging. Comes in the color red, and silver. Quick and easy to make great coffee. Also gives the opportunity for simple milk froth for anyone to experience fresh at home, rather than at an overpriced cafe.</DefaultText>\n        <NumberOfLinesSuggestion>10</NumberOfLinesSuggestion>\n      </FreeTextAnswer>\n    </AnswerSpecification>\n  </Question>\n  <Question>\n    <QuestionIdentifier>description_improve_feedback</QuestionIdentifier>\n    <QuestionContent>\n      <Title>Your personal feedback (optional)</Title>\n      <FormattedContent><![CDATA[Give your personal feedback about the task. This <b>can</b> contain one of the following aspects:\n        <ul>\n        <li>Problems of the task (e.g. images are not visible)</li>\n        <li>Instructions are not clear enough</li>\n        </ul>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <FreeTextAnswer>\n        <NumberOfLinesSuggestion>3</NumberOfLinesSuggestion>\n      </FreeTextAnswer>\n    </AnswerSpecification>\n  </Question>\n</QuestionForm>",
+					"maxAssignments" : 1,
+					"assignmentDurationInSeconds" : 7200,
+					"autoApprovalDelayInSeconds" : 2592000,
+					"requesterAnnotation" : null,
+					"hitStatus" : "Reviewable",
+					"hitReviewStatus" : "NotReviewed",
+					"creationTime" : 1.396454561E12,
+					"expiration" : 1.397059361E12,
+					"assignments" : [
+						{
+							"assignmentId" : "3TU5ZICBRD0KYLRBCFOOYRNM14DQ8G",
+							"workerId" : "A2UBEXX051I223",
+							"hitId" : "3MIVREZQVGX162VIV1GP0C1UZTBQK9",
+							"assignmentStatus" : "Submitted",
+							"autoApprovalTime" : 1.399145026E12,
+							"acceptTime" : 1.396552896E12,
+							"submitTime" : 1.396553026E12,
+							"answer" : {
+								"newText" : "Aeroccino Plus Milk Frother & Ciliz Coffee Machine, still with original packaging. Comes in the color red, and silver. Quick and easy to make great coffee. Also gives the opportunity for simple milk froth for anyone to experience fresh at home, rather than at an overpriced cafe. It is small and compact and doesn\'t take a lot of counter space. This is the best size on the market. It is sleek and attractive.",
+								"description_improve_feedback" : ""
+							},
+							"requesterFeedback" : null,
+							"approvalTime" : null,
+							"deadline" : null,
+							"rejectionTime" : null
+						}
+					],
+					"done" : true
+				},
+				"returnTime" : 1.396633827404E12,
+				"printOutput" : "hit completed: 3MIVREZQVGX162VIV1GP0C1UZTBQK9\r\n"
+			},
+			{
+				"creationTime" : 1.39663382742E12,
+				"onceFunc" : "\nfunction () {\n    return Math.random();\n}\n",
+				"returnValue" : 0.6966635747905646,
+				"returnTime" : 1.39663382742E12,
+				"printOutput" : ""
+			},
+			{
+				"creationTime" : 1.39663382742E12,
+				"onceFunc" : "\nfunction () {\n    return Math.random();\n}\n",
+				"returnValue" : 0.864632658646481,
+				"returnTime" : 1.39663382742E12,
+				"printOutput" : ""
+			},
+			{
+				"creationTime" : 1.39663382742E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.createHITRaw(params);\n}\n",
+				"returnValue" : "3PUV2Q8SV336OQNJK2XC1AB5TO2BD2",
+				"returnTime" : 1.396633827857E12,
+				"printOutput" : "created HIT: 3PUV2Q8SV336OQNJK2XC1AB5TO2BD2\r\n        url: https://www.mturk.com/mturk/preview?groupId=3KQ8X25AA414RWEXRRIYAH882AO67U\r\n"
+			},
+			{
+				"creationTime" : 1.396633827857E12,
+				"onceFunc" : "\nfunction () {\n    if (!me.waitForHIT_callCount) {\n        me.waitForHIT_callCount = 0;\n        var a = me.getReviewableHITs(1);\n        if (a.totalNumResults == a.length) {\n            me.waitForHIT_reviewableHITs = new Set(a);\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n        me.waitForHIT_waitCount = Math.ceil(a.totalNumResults / 100);\n    }\n    me.waitForHIT_callCount++;\n    if (me.waitForHIT_callCount >= me.waitForHIT_waitCount) {\n        if (!me.waitForHIT_reviewableHITs || (time() > me.waitForHIT_reviewableHITsTime + (1000 * 60))) {\n            me.waitForHIT_reviewableHITs = new Set(me.getReviewableHITs());\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n    }\n    if (me.waitForHIT_reviewableHITs) {\n        if (!me.waitForHIT_reviewableHITs[hitId]) {\n            stop();\n        }\n    }\n    var hit = mturk.getHIT(hitId);\n    if (!hit.done) {\n        stop();\n    }\n    verbosePrint(\"hit completed: \" + hitId);\n    return hit;\n}\n",
+				"returnValue" : {
+					"hitId" : "3PUV2Q8SV336OQNJK2XC1AB5TO2BD2",
+					"hitTypeId" : "3KQ8X25AA414RWEXRRIYAH882AO67U",
+					"title" : "Vote on auction item description improvements (receive a commission for good work)",
+					"description" : "Decide which auction item description is better/suitable for the item(s) on three pictures",
+					"keywords" : null,
+					"reward" : 0.01,
+					"question" : "<QuestionForm xmlns=\"http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2005-10-01/QuestionForm.xsd\">\n  <Question>\n    <QuestionIdentifier>vote</QuestionIdentifier>\n    <IsRequired>true</IsRequired>\n    <QuestionContent>\n      <FormattedContent><![CDATA[The goal of the requester of the HIT is to generate eBay auctions by MTurk workers based on images of the item.<br /><br />\n\t\t\t\t\tIf the auction will be sucessful then the voters, who voted for the final description, will receive <b>0.05% of the selling price as a bonus</b>.<br /><br />\t\t\t\t\t\t\t\t\n\t\t\t\t\t<b>Instructions:</b> Which description of the auction item(s) on the pictures is better? The following factors <b>can</b> affect your decision: \n\t\t\t\t\t<ul>\n\t\t\t\t\t\t<li>One description is more informative than the other</li>\n\t\t\t\t\t\t<li>One description contains more information about the auction item then the other</li>\n\t\t\t\t\t\t<li>One description contains wrong information</li>\n\t\t\t\t\t\t<li>One description has spelling mistakes</li>\n\t\t\t\t\t</ul>\n\t\t\t\t\t<table><tr>\n\t\t\t\t\t<td><img src=\"http://i.ebayimg.com/00/s/NjI5WDYzOA==/z/laMAAOxy4fVTDKKV/$_12.JPG?set_id=880000500F\" alt=\"Image 1\" width=\"250\" border=\"2\"></img></td>\n\t\t\t\t\t<td><img src=\"http://i.ebayimg.com/00/s/NTU3WDgwMA==/z/zNoAAOxyni9TDKJx/$_12.JPG?set_id=880000500F\" alt=\"Image 2\" width=\"250\" border=\"2\"></img></td>\n\t\t\t\t\t<td><img src=\"http://i.ebayimg.com/00/s/NjA3WDg5MQ==/z/1hoAAOxyJX1TDKJo/$_12.JPG?set_id=880000500F\" alt=\"Image 3\" width=\"250\" border=\"2\"></img></td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t<td><a href=\"http://i.ebayimg.com/00/s/NjI5WDYzOA==/z/laMAAOxy4fVTDKKV/$_12.JPG?set_id=880000500F\" target=\"_blank\">Link to full size image 1 (new window)</a></td>\n\t\t\t\t\t<td><a href=\"http://i.ebayimg.com/00/s/NTU3WDgwMA==/z/zNoAAOxyni9TDKJx/$_12.JPG?set_id=880000500F\" target=\"_blank\">Link to full size image 2 (new window)</a></td>\n\t\t\t\t\t<td><a href=\"http://i.ebayimg.com/00/s/NjA3WDg5MQ==/z/1hoAAOxyJX1TDKJo/$_12.JPG?set_id=880000500F\" target=\"_blank\">Link to full size image 3 (new window)</a></td>\n\t\t\t\t\t</tr></table>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <SelectionAnswer>\n        <Selections>\n          <Selection>\n            <SelectionIdentifier>b</SelectionIdentifier>\n            <Text>Aeroccino Plus Milk Frother &amp; Ciliz Coffee Machine, still with original packaging. Comes in the color red, and silver. Quick and easy to make great coffee. Also gives the opportunity for simple milk froth for anyone to experience fresh at home, rather than at an overpriced cafe. It is small and compact and doesn\'t take a lot of counter space. This is the best size on the market. It is sleek and attractive.</Text>\n          </Selection>\n          <Selection>\n            <SelectionIdentifier>a</SelectionIdentifier>\n            <Text>Aeroccino Plus Milk Frother &amp; Ciliz Coffee Machine, still with original packaging. Comes in the color red, and silver. Quick and easy to make great coffee. Also gives the opportunity for simple milk froth for anyone to experience fresh at home, rather than at an overpriced cafe.</Text>\n          </Selection>\n        </Selections>\n      </SelectionAnswer>\n    </AnswerSpecification>\n  </Question>\n  <Question>\n    <QuestionIdentifier>description_vote_feedback</QuestionIdentifier>\n    <QuestionContent>\n      <Title>Your personal feedback (optional)</Title>\n      <FormattedContent><![CDATA[Give your personal feedback about the task. This <b>can</b> contain one of the following aspects:\n        <ul>\n        <li>Problems of the task (e.g. images are not visible)</li>\n        <li>Instructions are not clear enough</li>\n        </ul>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <FreeTextAnswer>\n        <NumberOfLinesSuggestion>3</NumberOfLinesSuggestion>\n      </FreeTextAnswer>\n    </AnswerSpecification>\n  </Question>\n</QuestionForm>",
+					"maxAssignments" : 2,
+					"assignmentDurationInSeconds" : 1800,
+					"autoApprovalDelayInSeconds" : 2592000,
+					"requesterAnnotation" : null,
+					"hitStatus" : "Reviewable",
+					"hitReviewStatus" : "NotReviewed",
+					"creationTime" : 1.396633827E12,
+					"expiration" : 1.397238627E12,
+					"assignments" : [
+						{
+							"assignmentId" : "3R9WASFE2ZF2RS2P7PD7ZCGCTHSFZ9",
+							"workerId" : "A3KG85LTX4J6N0",
+							"hitId" : "3PUV2Q8SV336OQNJK2XC1AB5TO2BD2",
+							"assignmentStatus" : "Submitted",
+							"autoApprovalTime" : 1.399225981E12,
+							"acceptTime" : 1.396633956E12,
+							"submitTime" : 1.396633981E12,
+							"answer" : {
+								"vote" : [
+									"b"
+								],
+								"description_vote_feedback" : ""
+							},
+							"requesterFeedback" : null,
+							"approvalTime" : null,
+							"deadline" : null,
+							"rejectionTime" : null
+						},
+						{
+							"assignmentId" : "3ZSY5X72NXANVETRWB2K03NRC10ROE",
+							"workerId" : "AOVTBTA5Z0LY0",
+							"hitId" : "3PUV2Q8SV336OQNJK2XC1AB5TO2BD2",
+							"assignmentStatus" : "Submitted",
+							"autoApprovalTime" : 1.399226528E12,
+							"acceptTime" : 1.396634198E12,
+							"submitTime" : 1.396634528E12,
+							"answer" : {
+								"vote" : [
+									"a"
+								],
+								"description_vote_feedback" : "rather than at an overpriced cafe... should leave that out - it is a negative statement.\r\nand doesn\'t take a lot of counter space... how do you know how much counter space I have? This is the best size on the market... opinion or fact? It is sleek and attractive...opinion!"
+							},
+							"requesterFeedback" : null,
+							"approvalTime" : null,
+							"deadline" : null,
+							"rejectionTime" : null
+						}
+					],
+					"done" : true
+				},
+				"returnTime" : 1.396886717595E12,
+				"printOutput" : "hit completed: 3PUV2Q8SV336OQNJK2XC1AB5TO2BD2\r\n"
+			},
+			{
+				"creationTime" : 1.396886717608E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.extendHITRaw(hit, moreAssignments, moreSeconds);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.396886717955E12,
+				"printOutput" : "extended HIT: 3PUV2Q8SV336OQNJK2XC1AB5TO2BD2\r\n"
+			},
+			{
+				"creationTime" : 1.39688671796E12,
+				"onceFunc" : "\nfunction () {\n    if (!me.waitForHIT_callCount) {\n        me.waitForHIT_callCount = 0;\n        var a = me.getReviewableHITs(1);\n        if (a.totalNumResults == a.length) {\n            me.waitForHIT_reviewableHITs = new Set(a);\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n        me.waitForHIT_waitCount = Math.ceil(a.totalNumResults / 100);\n    }\n    me.waitForHIT_callCount++;\n    if (me.waitForHIT_callCount >= me.waitForHIT_waitCount) {\n        if (!me.waitForHIT_reviewableHITs || (time() > me.waitForHIT_reviewableHITsTime + (1000 * 60))) {\n            me.waitForHIT_reviewableHITs = new Set(me.getReviewableHITs());\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n    }\n    if (me.waitForHIT_reviewableHITs) {\n        if (!me.waitForHIT_reviewableHITs[hitId]) {\n            stop();\n        }\n    }\n    var hit = mturk.getHIT(hitId);\n    if (!hit.done) {\n        stop();\n    }\n    verbosePrint(\"hit completed: \" + hitId);\n    return hit;\n}\n",
+				"returnValue" : {
+					"hitId" : "3PUV2Q8SV336OQNJK2XC1AB5TO2BD2",
+					"hitTypeId" : "3KQ8X25AA414RWEXRRIYAH882AO67U",
+					"title" : "Vote on auction item description improvements (receive a commission for good work)",
+					"description" : "Decide which auction item description is better/suitable for the item(s) on three pictures",
+					"keywords" : null,
+					"reward" : 0.01,
+					"question" : "<QuestionForm xmlns=\"http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2005-10-01/QuestionForm.xsd\">\n  <Question>\n    <QuestionIdentifier>vote</QuestionIdentifier>\n    <IsRequired>true</IsRequired>\n    <QuestionContent>\n      <FormattedContent><![CDATA[The goal of the requester of the HIT is to generate eBay auctions by MTurk workers based on images of the item.<br /><br />\n\t\t\t\t\tIf the auction will be sucessful then the voters, who voted for the final description, will receive <b>0.05% of the selling price as a bonus</b>.<br /><br />\t\t\t\t\t\t\t\t\n\t\t\t\t\t<b>Instructions:</b> Which description of the auction item(s) on the pictures is better? The following factors <b>can</b> affect your decision: \n\t\t\t\t\t<ul>\n\t\t\t\t\t\t<li>One description is more informative than the other</li>\n\t\t\t\t\t\t<li>One description contains more information about the auction item then the other</li>\n\t\t\t\t\t\t<li>One description contains wrong information</li>\n\t\t\t\t\t\t<li>One description has spelling mistakes</li>\n\t\t\t\t\t</ul>\n\t\t\t\t\t<table><tr>\n\t\t\t\t\t<td><img src=\"http://i.ebayimg.com/00/s/NjI5WDYzOA==/z/laMAAOxy4fVTDKKV/$_12.JPG?set_id=880000500F\" alt=\"Image 1\" width=\"250\" border=\"2\"></img></td>\n\t\t\t\t\t<td><img src=\"http://i.ebayimg.com/00/s/NTU3WDgwMA==/z/zNoAAOxyni9TDKJx/$_12.JPG?set_id=880000500F\" alt=\"Image 2\" width=\"250\" border=\"2\"></img></td>\n\t\t\t\t\t<td><img src=\"http://i.ebayimg.com/00/s/NjA3WDg5MQ==/z/1hoAAOxyJX1TDKJo/$_12.JPG?set_id=880000500F\" alt=\"Image 3\" width=\"250\" border=\"2\"></img></td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t<td><a href=\"http://i.ebayimg.com/00/s/NjI5WDYzOA==/z/laMAAOxy4fVTDKKV/$_12.JPG?set_id=880000500F\" target=\"_blank\">Link to full size image 1 (new window)</a></td>\n\t\t\t\t\t<td><a href=\"http://i.ebayimg.com/00/s/NTU3WDgwMA==/z/zNoAAOxyni9TDKJx/$_12.JPG?set_id=880000500F\" target=\"_blank\">Link to full size image 2 (new window)</a></td>\n\t\t\t\t\t<td><a href=\"http://i.ebayimg.com/00/s/NjA3WDg5MQ==/z/1hoAAOxyJX1TDKJo/$_12.JPG?set_id=880000500F\" target=\"_blank\">Link to full size image 3 (new window)</a></td>\n\t\t\t\t\t</tr></table>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <SelectionAnswer>\n        <Selections>\n          <Selection>\n            <SelectionIdentifier>b</SelectionIdentifier>\n            <Text>Aeroccino Plus Milk Frother &amp; Ciliz Coffee Machine, still with original packaging. Comes in the color red, and silver. Quick and easy to make great coffee. Also gives the opportunity for simple milk froth for anyone to experience fresh at home, rather than at an overpriced cafe. It is small and compact and doesn\'t take a lot of counter space. This is the best size on the market. It is sleek and attractive.</Text>\n          </Selection>\n          <Selection>\n            <SelectionIdentifier>a</SelectionIdentifier>\n            <Text>Aeroccino Plus Milk Frother &amp; Ciliz Coffee Machine, still with original packaging. Comes in the color red, and silver. Quick and easy to make great coffee. Also gives the opportunity for simple milk froth for anyone to experience fresh at home, rather than at an overpriced cafe.</Text>\n          </Selection>\n        </Selections>\n      </SelectionAnswer>\n    </AnswerSpecification>\n  </Question>\n  <Question>\n    <QuestionIdentifier>description_vote_feedback</QuestionIdentifier>\n    <QuestionContent>\n      <Title>Your personal feedback (optional)</Title>\n      <FormattedContent><![CDATA[Give your personal feedback about the task. This <b>can</b> contain one of the following aspects:\n        <ul>\n        <li>Problems of the task (e.g. images are not visible)</li>\n        <li>Instructions are not clear enough</li>\n        </ul>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <FreeTextAnswer>\n        <NumberOfLinesSuggestion>3</NumberOfLinesSuggestion>\n      </FreeTextAnswer>\n    </AnswerSpecification>\n  </Question>\n</QuestionForm>",
+					"maxAssignments" : 3,
+					"assignmentDurationInSeconds" : 1800,
+					"autoApprovalDelayInSeconds" : 2592000,
+					"requesterAnnotation" : null,
+					"hitStatus" : "Reviewable",
+					"hitReviewStatus" : "NotReviewed",
+					"creationTime" : 1.396633827E12,
+					"expiration" : 1.397238627E12,
+					"assignments" : [
+						{
+							"assignmentId" : "3R9WASFE2ZF2RS2P7PD7ZCGCTHSFZ9",
+							"workerId" : "A3KG85LTX4J6N0",
+							"hitId" : "3PUV2Q8SV336OQNJK2XC1AB5TO2BD2",
+							"assignmentStatus" : "Submitted",
+							"autoApprovalTime" : 1.399225981E12,
+							"acceptTime" : 1.396633956E12,
+							"submitTime" : 1.396633981E12,
+							"answer" : {
+								"vote" : [
+									"b"
+								],
+								"description_vote_feedback" : ""
+							},
+							"requesterFeedback" : null,
+							"approvalTime" : null,
+							"deadline" : null,
+							"rejectionTime" : null
+						},
+						{
+							"assignmentId" : "3ZSY5X72NXANVETRWB2K03NRC10ROE",
+							"workerId" : "AOVTBTA5Z0LY0",
+							"hitId" : "3PUV2Q8SV336OQNJK2XC1AB5TO2BD2",
+							"assignmentStatus" : "Submitted",
+							"autoApprovalTime" : 1.399226528E12,
+							"acceptTime" : 1.396634198E12,
+							"submitTime" : 1.396634528E12,
+							"answer" : {
+								"vote" : [
+									"a"
+								],
+								"description_vote_feedback" : "rather than at an overpriced cafe... should leave that out - it is a negative statement.\r\nand doesn\'t take a lot of counter space... how do you know how much counter space I have? This is the best size on the market... opinion or fact? It is sleek and attractive...opinion!"
+							},
+							"requesterFeedback" : null,
+							"approvalTime" : null,
+							"deadline" : null,
+							"rejectionTime" : null
+						},
+						{
+							"assignmentId" : "3GU1KF0O4I0I07O3FET9POND4V8PBH",
+							"workerId" : "A2FF8HA1OWKS83",
+							"hitId" : "3PUV2Q8SV336OQNJK2XC1AB5TO2BD2",
+							"assignmentStatus" : "Submitted",
+							"autoApprovalTime" : 1.399478962E12,
+							"acceptTime" : 1.396886927E12,
+							"submitTime" : 1.396886962E12,
+							"answer" : {
+								"vote" : [
+									"b"
+								],
+								"description_vote_feedback" : ""
+							},
+							"requesterFeedback" : null,
+							"approvalTime" : null,
+							"deadline" : null,
+							"rejectionTime" : null
+						}
+					],
+					"done" : true
+				},
+				"returnTime" : 1.396973287131E12,
+				"printOutput" : "hit completed: 3PUV2Q8SV336OQNJK2XC1AB5TO2BD2\r\n"
+			},
+			{
+				"creationTime" : 1.396973287147E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.approveAssignmentRaw(assignment, reason);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.396973287506E12,
+				"printOutput" : "approved assignment 3R9WASFE2ZF2RS2P7PD7ZCGCTHSFZ9\r\n"
+			},
+			{
+				"creationTime" : 1.396973287506E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.approveAssignmentRaw(assignment, reason);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.396973288366E12,
+				"printOutput" : "approved assignment 3ZSY5X72NXANVETRWB2K03NRC10ROE\r\n"
+			},
+			{
+				"creationTime" : 1.396973288381E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.approveAssignmentRaw(assignment, reason);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.396973288975E12,
+				"printOutput" : "approved assignment 3GU1KF0O4I0I07O3FET9POND4V8PBH\r\n"
+			},
+			{
+				"creationTime" : 1.396973288991E12,
+				"onceFunc" : "\nfunction () {\n    mturk.deleteHITRaw(hit);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.3969732896E12,
+				"printOutput" : "disabled HIT: 3PUV2Q8SV336OQNJK2XC1AB5TO2BD2\r\n"
+			},
+			{
+				"creationTime" : 1.3969732896E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.approveAssignmentRaw(assignment, reason);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.396973290209E12,
+				"printOutput" : "approved assignment 3TU5ZICBRD0KYLRBCFOOYRNM14DQ8G\r\n"
+			},
+			{
+				"creationTime" : 1.396973290225E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.createHITRaw(params);\n}\n",
+				"returnValue" : "3FO95NVK5BZZ6MNQDPERWO29CKESR3",
+				"returnTime" : 1.396973290725E12,
+				"printOutput" : "created HIT: 3FO95NVK5BZZ6MNQDPERWO29CKESR3\r\n        url: https://www.mturk.com/mturk/preview?groupId=356P7NIWHJM2LF84AIOIA11OHRUFVU\r\n"
+			},
+			{
+				"creationTime" : 1.396973290741E12,
+				"onceFunc" : "\nfunction () {\n    if (!me.waitForHIT_callCount) {\n        me.waitForHIT_callCount = 0;\n        var a = me.getReviewableHITs(1);\n        if (a.totalNumResults == a.length) {\n            me.waitForHIT_reviewableHITs = new Set(a);\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n        me.waitForHIT_waitCount = Math.ceil(a.totalNumResults / 100);\n    }\n    me.waitForHIT_callCount++;\n    if (me.waitForHIT_callCount >= me.waitForHIT_waitCount) {\n        if (!me.waitForHIT_reviewableHITs || (time() > me.waitForHIT_reviewableHITsTime + (1000 * 60))) {\n            me.waitForHIT_reviewableHITs = new Set(me.getReviewableHITs());\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n    }\n    if (me.waitForHIT_reviewableHITs) {\n        if (!me.waitForHIT_reviewableHITs[hitId]) {\n            stop();\n        }\n    }\n    var hit = mturk.getHIT(hitId);\n    if (!hit.done) {\n        stop();\n    }\n    verbosePrint(\"hit completed: \" + hitId);\n    return hit;\n}\n",
+				"returnValue" : {
+					"hitId" : "3FO95NVK5BZZ6MNQDPERWO29CKESR3",
+					"hitTypeId" : "356P7NIWHJM2LF84AIOIA11OHRUFVU",
+					"title" : "Improve/extend description of auction item(s) on pictures (receive a commission for good work)",
+					"description" : "Improve and/or extend the description of an auction item based on three images",
+					"keywords" : null,
+					"reward" : 0.2,
+					"question" : "<QuestionForm xmlns=\"http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2005-10-01/QuestionForm.xsd\">\n  <Question>\n    <QuestionIdentifier>newText</QuestionIdentifier>\n    <IsRequired>true</IsRequired>\n    <QuestionContent>\n      <FormattedContent><![CDATA[All the workers who have done a similar task in the past are excluded from this HIT. If you find your worker ID in the following table, your work <b>will be rejected</b>.<br /><br />\n\t\t\t\t\t<table border= \"1\">\n\t\t\t\t\t<tr><td><b>Worker ID</b></td></tr>\n\t\t\t\t\t<tr><td>ALWGGK7LJCILU</td></tr>\n\t\t\t\t\t<tr><td>A37W3K5DH78REU</td></tr>\n\t\t\t\t\t<tr><td>A2UFB6FRY90EAB</td></tr>\n\t\t\t\t\t<tr><td>A291KO368YRYCR</td></tr>\n\t\t\t\t\t<tr><td>A3L99RGPK6FZGH</td></tr>\n\t\t\t\t\t<tr><td>A12VU5YSHGQH2V</td></tr>\n\t\t\t\t\t<tr><td>A10QVKS005YVLL</td></tr>\n\t\t\t\t\t<tr><td>A3MTARDZ80DNV8</td></tr>\n\t\t\t\t\t<tr><td>A1OVAN2YSCBNVQ</td></tr>\n\t\t\t\t\t<tr><td>A3066746SS2O8Z</td></tr>\n\t\t\t\t\t<tr><td>A1Y922ZJ90N8WA</td></tr>\n\t\t\t\t\t</table>\n\t\t\t\t\t<hr />\n\t\t\t\t\tThe goal of the requester of the HIT is to generate eBay auctions by MTurk workers based on images of the item.<br /><br />\n\t\t\t\t\tIf the auction will be sucessful then the creator of the final description will receive <b>1% of the selling price as a bonus</b>. The final description will be determined by a voting procedure.<br /><br />\n\t\t\t\t\t<b>Instructions</b>: Improve and/or extend the description of the auction item(s) on the images. Keep in mind the following remarks:\n\t\t\t\t\t<ul>\n\t\t\t\t\t<li>If the description doesn\'t contain approximately <b>5 sentences</b> then try to add more text\n\t\t\t\t\t<ul>\n\t\t\t\t\t\t<li>Include specific information like size, shape, color, age, manufacture date, company/artist/author, and notable features or markings if possible</li>\n\t\t\t\t\t\t<li>Make the description as readable as possible</li>\n\t\t\t\t\t\t<li>Don\'t say anything that isn\'t true.</li>\n\t\t\t\t\t\t<li>Don\'t use all caps</li>\n\t\t\t\t\t\t<li>Don\'t include email addresses and some links</li>\n\t\t\t\t\t</ul>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li>If the description is long enough then try to improve it</li>\n\t\t\t\t\t</ul>\n\t\t\t\t\t<table><tr>\n\t\t\t\t\t<td><img src=\"http://i.ebayimg.com/00/s/NjI5WDYzOA==/z/laMAAOxy4fVTDKKV/$_12.JPG?set_id=880000500F\" alt=\"Image 1\" width=\"250\" border=\"2\"></img></td>\n\t\t\t\t\t<td><img src=\"http://i.ebayimg.com/00/s/NTU3WDgwMA==/z/zNoAAOxyni9TDKJx/$_12.JPG?set_id=880000500F\" alt=\"Image 2\" width=\"250\" border=\"2\"></img></td>\n\t\t\t\t\t<td><img src=\"http://i.ebayimg.com/00/s/NjA3WDg5MQ==/z/1hoAAOxyJX1TDKJo/$_12.JPG?set_id=880000500F\" alt=\"Image 3\" width=\"250\" border=\"2\"></img></td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t<td><a href=\"http://i.ebayimg.com/00/s/NjI5WDYzOA==/z/laMAAOxy4fVTDKKV/$_12.JPG?set_id=880000500F\" target=\"_blank\">Link to full size image 1 (new window)</a></td>\n\t\t\t\t\t<td><a href=\"http://i.ebayimg.com/00/s/NTU3WDgwMA==/z/zNoAAOxyni9TDKJx/$_12.JPG?set_id=880000500F\" target=\"_blank\">Link to full size image 2 (new window)</a></td>\n\t\t\t\t\t<td><a href=\"http://i.ebayimg.com/00/s/NjA3WDg5MQ==/z/1hoAAOxyJX1TDKJo/$_12.JPG?set_id=880000500F\" target=\"_blank\">Link to full size image 3 (new window)</a></td>\n\t\t\t\t\t</tr></table>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <FreeTextAnswer>\n        <Constraints>\n          <Length maxLength=\"5000\" minLength=\"120\"/>\n          <AnswerFormatRegex errorText=\"The description cannot be blank.\" regex=\"\\S\"/>\n        </Constraints>\n        <DefaultText>Aeroccino Plus Milk Frother &amp; Ciliz Coffee Machine, still with original packaging. Comes in the color red, and silver. Quick and easy to make great coffee. Also gives the opportunity for simple milk froth for anyone to experience fresh at home, rather than at an overpriced cafe. It is small and compact and doesn\'t take a lot of counter space. This is the best size on the market. It is sleek and attractive.</DefaultText>\n        <NumberOfLinesSuggestion>10</NumberOfLinesSuggestion>\n      </FreeTextAnswer>\n    </AnswerSpecification>\n  </Question>\n  <Question>\n    <QuestionIdentifier>description_improve_feedback</QuestionIdentifier>\n    <QuestionContent>\n      <Title>Your personal feedback (optional)</Title>\n      <FormattedContent><![CDATA[Give your personal feedback about the task. This <b>can</b> contain one of the following aspects:\n        <ul>\n        <li>Problems of the task (e.g. images are not visible)</li>\n        <li>Instructions are not clear enough</li>\n        </ul>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <FreeTextAnswer>\n        <NumberOfLinesSuggestion>3</NumberOfLinesSuggestion>\n      </FreeTextAnswer>\n    </AnswerSpecification>\n  </Question>\n</QuestionForm>",
+					"maxAssignments" : 1,
+					"assignmentDurationInSeconds" : 7200,
+					"autoApprovalDelayInSeconds" : 2592000,
+					"requesterAnnotation" : null,
+					"hitStatus" : "Reviewable",
+					"hitReviewStatus" : "NotReviewed",
+					"creationTime" : 1.396973297E12,
+					"expiration" : 1.397578097E12,
+					"assignments" : [
+						{
+							"assignmentId" : "3YMU66OBIN7ME7YQCNDIHQCJZN8GHF",
+							"workerId" : "A3AJR1PM02424Y",
+							"hitId" : "3FO95NVK5BZZ6MNQDPERWO29CKESR3",
+							"assignmentStatus" : "Submitted",
+							"autoApprovalTime" : 1.399570835E12,
+							"acceptTime" : 1.396977904E12,
+							"submitTime" : 1.396978835E12,
+							"answer" : {
+								"newText" : "Nespresso CitiZ Espresso Machine & Aeroccino Plus Milk Frother. Compact brewing technology sure to please everyone. The modern design is unique as well as highly functional. Quick and easy in its use the combo gives the ability to make an exceptional brew of coffee no matter your preference. The Aeroccino Plus produces the perfect milk froth in seconds! The large capacity frother prepares cold or hot milk froth, plus also heats your milk for a latte!  Both the Nespresso CitiZ Espresso Machine and Aeroccino Plus Milk Frother are small and compact in design, don\'t take up a lot of counter space and are intuitive in their use.",
+								"description_improve_feedback" : ""
+							},
+							"requesterFeedback" : null,
+							"approvalTime" : null,
+							"deadline" : null,
+							"rejectionTime" : null
+						}
+					],
+					"done" : true
+				},
+				"returnTime" : 1.397059326092E12,
+				"printOutput" : "hit completed: 3FO95NVK5BZZ6MNQDPERWO29CKESR3\r\n"
+			},
+			{
+				"creationTime" : 1.397059326139E12,
+				"onceFunc" : "\nfunction () {\n    return Math.random();\n}\n",
+				"returnValue" : 0.18033089016454884,
+				"returnTime" : 1.397059326139E12,
+				"printOutput" : ""
+			},
+			{
+				"creationTime" : 1.397059326139E12,
+				"onceFunc" : "\nfunction () {\n    return Math.random();\n}\n",
+				"returnValue" : 0.9471943828134597,
+				"returnTime" : 1.397059326155E12,
+				"printOutput" : ""
+			},
+			{
+				"creationTime" : 1.397059326155E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.createHITRaw(params);\n}\n",
+				"returnValue" : "3ZZAYRN1I5QXO98PAX2DCYTQ3I8OTJ",
+				"returnTime" : 1.397059326608E12,
+				"printOutput" : "created HIT: 3ZZAYRN1I5QXO98PAX2DCYTQ3I8OTJ\r\n        url: https://www.mturk.com/mturk/preview?groupId=3KQ8X25AA414RWEXRRIYAH882AO67U\r\n"
+			},
+			{
+				"creationTime" : 1.397059326608E12,
+				"onceFunc" : "\nfunction () {\n    if (!me.waitForHIT_callCount) {\n        me.waitForHIT_callCount = 0;\n        var a = me.getReviewableHITs(1);\n        if (a.totalNumResults == a.length) {\n            me.waitForHIT_reviewableHITs = new Set(a);\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n        me.waitForHIT_waitCount = Math.ceil(a.totalNumResults / 100);\n    }\n    me.waitForHIT_callCount++;\n    if (me.waitForHIT_callCount >= me.waitForHIT_waitCount) {\n        if (!me.waitForHIT_reviewableHITs || (time() > me.waitForHIT_reviewableHITsTime + (1000 * 60))) {\n            me.waitForHIT_reviewableHITs = new Set(me.getReviewableHITs());\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n    }\n    if (me.waitForHIT_reviewableHITs) {\n        if (!me.waitForHIT_reviewableHITs[hitId]) {\n            stop();\n        }\n    }\n    var hit = mturk.getHIT(hitId);\n    if (!hit.done) {\n        stop();\n    }\n    verbosePrint(\"hit completed: \" + hitId);\n    return hit;\n}\n",
+				"returnValue" : {
+					"hitId" : "3ZZAYRN1I5QXO98PAX2DCYTQ3I8OTJ",
+					"hitTypeId" : "3KQ8X25AA414RWEXRRIYAH882AO67U",
+					"title" : "Vote on auction item description improvements (receive a commission for good work)",
+					"description" : "Decide which auction item description is better/suitable for the item(s) on three pictures",
+					"keywords" : null,
+					"reward" : 0.01,
+					"question" : "<QuestionForm xmlns=\"http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2005-10-01/QuestionForm.xsd\">\n  <Question>\n    <QuestionIdentifier>vote</QuestionIdentifier>\n    <IsRequired>true</IsRequired>\n    <QuestionContent>\n      <FormattedContent><![CDATA[The goal of the requester of the HIT is to generate eBay auctions by MTurk workers based on images of the item.<br /><br />\n\t\t\t\t\tIf the auction will be sucessful then the voters, who voted for the final description, will receive <b>0.05% of the selling price as a bonus</b>.<br /><br />\t\t\t\t\t\t\t\t\n\t\t\t\t\t<b>Instructions:</b> Which description of the auction item(s) on the pictures is better? The following factors <b>can</b> affect your decision: \n\t\t\t\t\t<ul>\n\t\t\t\t\t\t<li>One description is more informative than the other</li>\n\t\t\t\t\t\t<li>One description contains more information about the auction item then the other</li>\n\t\t\t\t\t\t<li>One description contains wrong information</li>\n\t\t\t\t\t\t<li>One description has spelling mistakes</li>\n\t\t\t\t\t</ul>\n\t\t\t\t\t<table><tr>\n\t\t\t\t\t<td><img src=\"http://i.ebayimg.com/00/s/NjI5WDYzOA==/z/laMAAOxy4fVTDKKV/$_12.JPG?set_id=880000500F\" alt=\"Image 1\" width=\"250\" border=\"2\"></img></td>\n\t\t\t\t\t<td><img src=\"http://i.ebayimg.com/00/s/NTU3WDgwMA==/z/zNoAAOxyni9TDKJx/$_12.JPG?set_id=880000500F\" alt=\"Image 2\" width=\"250\" border=\"2\"></img></td>\n\t\t\t\t\t<td><img src=\"http://i.ebayimg.com/00/s/NjA3WDg5MQ==/z/1hoAAOxyJX1TDKJo/$_12.JPG?set_id=880000500F\" alt=\"Image 3\" width=\"250\" border=\"2\"></img></td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t<td><a href=\"http://i.ebayimg.com/00/s/NjI5WDYzOA==/z/laMAAOxy4fVTDKKV/$_12.JPG?set_id=880000500F\" target=\"_blank\">Link to full size image 1 (new window)</a></td>\n\t\t\t\t\t<td><a href=\"http://i.ebayimg.com/00/s/NTU3WDgwMA==/z/zNoAAOxyni9TDKJx/$_12.JPG?set_id=880000500F\" target=\"_blank\">Link to full size image 2 (new window)</a></td>\n\t\t\t\t\t<td><a href=\"http://i.ebayimg.com/00/s/NjA3WDg5MQ==/z/1hoAAOxyJX1TDKJo/$_12.JPG?set_id=880000500F\" target=\"_blank\">Link to full size image 3 (new window)</a></td>\n\t\t\t\t\t</tr></table>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <SelectionAnswer>\n        <Selections>\n          <Selection>\n            <SelectionIdentifier>a</SelectionIdentifier>\n            <Text>Aeroccino Plus Milk Frother &amp; Ciliz Coffee Machine, still with original packaging. Comes in the color red, and silver. Quick and easy to make great coffee. Also gives the opportunity for simple milk froth for anyone to experience fresh at home, rather than at an overpriced cafe. It is small and compact and doesn\'t take a lot of counter space. This is the best size on the market. It is sleek and attractive.</Text>\n          </Selection>\n          <Selection>\n            <SelectionIdentifier>b</SelectionIdentifier>\n            <Text>Nespresso CitiZ Espresso Machine &amp; Aeroccino Plus Milk Frother. Compact brewing technology sure to please everyone. The modern design is unique as well as highly functional. Quick and easy in its use the combo gives the ability to make an exceptional brew of coffee no matter your preference. The Aeroccino Plus produces the perfect milk froth in seconds! The large capacity frother prepares cold or hot milk froth, plus also heats your milk for a latte!  Both the Nespresso CitiZ Espresso Machine and Aeroccino Plus Milk Frother are small and compact in design, don\'t take up a lot of counter space and are intuitive in their use.</Text>\n          </Selection>\n        </Selections>\n      </SelectionAnswer>\n    </AnswerSpecification>\n  </Question>\n  <Question>\n    <QuestionIdentifier>description_vote_feedback</QuestionIdentifier>\n    <QuestionContent>\n      <Title>Your personal feedback (optional)</Title>\n      <FormattedContent><![CDATA[Give your personal feedback about the task. This <b>can</b> contain one of the following aspects:\n        <ul>\n        <li>Problems of the task (e.g. images are not visible)</li>\n        <li>Instructions are not clear enough</li>\n        </ul>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <FreeTextAnswer>\n        <NumberOfLinesSuggestion>3</NumberOfLinesSuggestion>\n      </FreeTextAnswer>\n    </AnswerSpecification>\n  </Question>\n</QuestionForm>",
+					"maxAssignments" : 2,
+					"assignmentDurationInSeconds" : 1800,
+					"autoApprovalDelayInSeconds" : 2592000,
+					"requesterAnnotation" : null,
+					"hitStatus" : "Reviewable",
+					"hitReviewStatus" : "NotReviewed",
+					"creationTime" : 1.397059335E12,
+					"expiration" : 1.397664135E12,
+					"assignments" : [
+						{
+							"assignmentId" : "3QBD8R3Z21IGU8RTLZ67SACHL8VO4E",
+							"workerId" : "A1PDSVMUP0CHRP",
+							"hitId" : "3ZZAYRN1I5QXO98PAX2DCYTQ3I8OTJ",
+							"assignmentStatus" : "Submitted",
+							"autoApprovalTime" : 1.399651568E12,
+							"acceptTime" : 1.397059423E12,
+							"submitTime" : 1.397059568E12,
+							"answer" : {
+								"vote" : [
+									"b"
+								],
+								"description_vote_feedback" : "The first description contains less details than the second description, but more grammar errors. The second description needs some improvement but is definitely the better of the two."
+							},
+							"requesterFeedback" : null,
+							"approvalTime" : null,
+							"deadline" : null,
+							"rejectionTime" : null
+						},
+						{
+							"assignmentId" : "3C2NJ6JBKAGO99CUG6N6K6FEBKX2NK",
+							"workerId" : "A1ETJBNTO9ZWZ8",
+							"hitId" : "3ZZAYRN1I5QXO98PAX2DCYTQ3I8OTJ",
+							"assignmentStatus" : "Submitted",
+							"autoApprovalTime" : 1.399652319E12,
+							"acceptTime" : 1.397060202E12,
+							"submitTime" : 1.397060319E12,
+							"answer" : {
+								"vote" : [
+									"b"
+								],
+								"description_vote_feedback" : ""
+							},
+							"requesterFeedback" : null,
+							"approvalTime" : null,
+							"deadline" : null,
+							"rejectionTime" : null
+						}
+					],
+					"done" : true
+				},
+				"returnTime" : 1.397060870102E12,
+				"printOutput" : "hit completed: 3ZZAYRN1I5QXO98PAX2DCYTQ3I8OTJ\r\n"
+			},
+			{
+				"creationTime" : 1.397060870118E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.approveAssignmentRaw(assignment, reason);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.397060870499E12,
+				"printOutput" : "approved assignment 3QBD8R3Z21IGU8RTLZ67SACHL8VO4E\r\n"
+			},
+			{
+				"creationTime" : 1.397060870516E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.approveAssignmentRaw(assignment, reason);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.397060870906E12,
+				"printOutput" : "approved assignment 3C2NJ6JBKAGO99CUG6N6K6FEBKX2NK\r\n"
+			},
+			{
+				"creationTime" : 1.397060870912E12,
+				"onceFunc" : "\nfunction () {\n    mturk.deleteHITRaw(hit);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.397060871322E12,
+				"printOutput" : "disabled HIT: 3ZZAYRN1I5QXO98PAX2DCYTQ3I8OTJ\r\n"
+			},
+			{
+				"creationTime" : 1.397060871327E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.approveAssignmentRaw(assignment, reason);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.397060871725E12,
+				"printOutput" : "approved assignment 3YMU66OBIN7ME7YQCNDIHQCJZN8GHF\r\n"
+			}
+		]
+	}
+}
+__safetyCounters = {
+	"moneySpent" : 0.6500000000000001,
+	"hitsCreated" : 5
+}
+// end:c670

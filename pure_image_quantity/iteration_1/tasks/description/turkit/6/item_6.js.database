@@ -1,0 +1,408 @@
+// begin:a71a
+__HITs = {
+	"real:38VTL6WC49C7XL11FOTDB9LE3TT5Y2" : {
+		"url" : "https://www.mturk.com/mturk/preview?groupId=24LSCXKNQY2RCLHN82ME7HR0KRFP09"
+	},
+	"real:3NOEP8XAU31MQQTAU7GPQ1JMSR5XPN" : {
+		"url" : "https://www.mturk.com/mturk/preview?groupId=24LSCXKNQY2RCLHN82ME7HR0KRFP09"
+	},
+	"real:309D674SHYKWJYH5K621H4TNAEPBCJ" : {
+		"url" : "https://www.mturk.com/mturk/preview?groupId=24LSCXKNQY2RCLHN82ME7HR0KRFP09"
+	}
+}
+__S3_Objects = {
+}
+__stackFrames = {
+	"for-real" : {
+		"sequencialFrames" : [
+			{
+				"creationTime" : 1.400083583962E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.createHITRaw(params);\n}\n",
+				"returnValue" : "38VTL6WC49C7XL11FOTDB9LE3TT5Y2",
+				"returnTime" : 1.400083585039E12,
+				"printOutput" : "created HIT: 38VTL6WC49C7XL11FOTDB9LE3TT5Y2\r\n        url: https://www.mturk.com/mturk/preview?groupId=24LSCXKNQY2RCLHN82ME7HR0KRFP09\r\n"
+			},
+			{
+				"creationTime" : 1.400083585043E12,
+				"onceFunc" : "\nfunction () {\n    if (!me.waitForHIT_callCount) {\n        me.waitForHIT_callCount = 0;\n        var a = me.getReviewableHITs(1);\n        if (a.totalNumResults == a.length) {\n            me.waitForHIT_reviewableHITs = new Set(a);\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n        me.waitForHIT_waitCount = Math.ceil(a.totalNumResults / 100);\n    }\n    me.waitForHIT_callCount++;\n    if (me.waitForHIT_callCount >= me.waitForHIT_waitCount) {\n        if (!me.waitForHIT_reviewableHITs || (time() > me.waitForHIT_reviewableHITsTime + (1000 * 60))) {\n            me.waitForHIT_reviewableHITs = new Set(me.getReviewableHITs());\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n    }\n    if (me.waitForHIT_reviewableHITs) {\n        if (!me.waitForHIT_reviewableHITs[hitId]) {\n            stop();\n        }\n    }\n    var hit = mturk.getHIT(hitId);\n    if (!hit.done) {\n        stop();\n    }\n    verbosePrint(\"hit completed: \" + hitId);\n    return hit;\n}\n",
+				"returnValue" : {
+					"hitId" : "38VTL6WC49C7XL11FOTDB9LE3TT5Y2",
+					"hitTypeId" : "24LSCXKNQY2RCLHN82ME7HR0KRFP09",
+					"title" : "Improve/extend description of auction item(s) on pictures",
+					"description" : "Improve and/or extend the description of an auction item based on three images",
+					"keywords" : null,
+					"reward" : 0.2,
+					"question" : "<QuestionForm xmlns=\"http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2005-10-01/QuestionForm.xsd\">\n  <Question>\n    <QuestionIdentifier>newText</QuestionIdentifier>\n    <IsRequired>true</IsRequired>\n    <QuestionContent>\n      <FormattedContent><![CDATA[All the workers who have done a similar task in the past are excluded from this HIT. If you find your worker ID in the following table, your work <b>will be rejected</b>.<br /><br /><table border=\"1\"><tr><td>ANJRINRP821LY</td><td>A3J47737YMH6WK</td><td>A291KO368YRYCR</td><td>A3KUFIF1ULONV1</td><td>A3AJR1PM02424Y</td></tr><tr><td>A2SFEEI806WFP9</td><td>A2Y9ZNZ0F24GHB</td><td>A1IA4CST74I1Q8</td><td>A3JLB1N2CB27BZ</td><td>AJAOE1PSNKGUE</td></tr></table><hr /><table border=\"0\"><tr><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/6/image_1.JPG\" alt=\"Image 1\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/6/image_1.JPG\" target=\"_blank\">Link to full size image 1 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/6/image_2.JPG\" alt=\"Image 2\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/6/image_2.JPG\" target=\"_blank\">Link to full size image 2 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/6/image_3.JPG\" alt=\"Image 3\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/6/image_3.JPG\" target=\"_blank\">Link to full size image 3 (new window)</a></td><td></td><td></td></tr></table>\n\t\t\t\t\tThe goal of the requester of the HIT is to generate eBay auctions by MTurk workers based on images of the item.<br /><br />\n\t\t\t\t\t<b>Instructions</b>: Improve and/or extend the description of the auction item(s) on the images. Keep in mind the following remarks:\n\t\t\t\t\t<ul>\n\t\t\t\t\t<li>If the description doesn\'t contain approximately <b>5 sentences</b> then try to add more text\n\t\t\t\t\t<ul>\n\t\t\t\t\t\t<li>Include specific information like size, shape, color, age, manufacture date, company/artist/author, and notable features or markings if possible</li>\n\t\t\t\t\t\t<li>Make the description as readable as possible</li>\n\t\t\t\t\t\t<li>Don\'t say anything that isn\'t true.</li>\n\t\t\t\t\t\t<li>Don\'t use all caps</li>\n\t\t\t\t\t\t<li>Don\'t include email addresses and some links</li>\n\t\t\t\t\t</ul>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li>If the description is long enough then try to improve it</li>\n\t\t\t\t\t</ul>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <FreeTextAnswer>\n        <Constraints>\n          <Length maxLength=\"5000\" minLength=\"40\"/>\n          <AnswerFormatRegex errorText=\"The description cannot be blank.\" regex=\"\\S\"/>\n        </Constraints>\n        <DefaultText/>\n        <NumberOfLinesSuggestion>10</NumberOfLinesSuggestion>\n      </FreeTextAnswer>\n    </AnswerSpecification>\n  </Question>\n  <Question>\n    <QuestionIdentifier>description_improve_feedback</QuestionIdentifier>\n    <QuestionContent>\n      <Title>Your personal feedback (optional)</Title>\n      <FormattedContent><![CDATA[Give your personal feedback about the task. This <b>can</b> contain one of the following aspects:\n        <ul>\n        <li>Problems of the task (e.g. images are not visible)</li>\n        <li>Instructions are not clear enough</li>\n        </ul>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <FreeTextAnswer>\n        <NumberOfLinesSuggestion>3</NumberOfLinesSuggestion>\n      </FreeTextAnswer>\n    </AnswerSpecification>\n  </Question>\n</QuestionForm>",
+					"maxAssignments" : 1,
+					"assignmentDurationInSeconds" : 7200,
+					"autoApprovalDelayInSeconds" : 2592000,
+					"requesterAnnotation" : null,
+					"hitStatus" : "Reviewable",
+					"hitReviewStatus" : "NotReviewed",
+					"creationTime" : 1.400083605E12,
+					"expiration" : 1.400688405E12,
+					"assignments" : [
+						{
+							"assignmentId" : "3MD9PLUKKIDEFKF65DWK7HPL0BPNZA",
+							"workerId" : "A1RZIAVIA68FUE",
+							"hitId" : "38VTL6WC49C7XL11FOTDB9LE3TT5Y2",
+							"assignmentStatus" : "Submitted",
+							"autoApprovalTime" : 1.402762937E12,
+							"acceptTime" : 1.400170827E12,
+							"submitTime" : 1.400170937E12,
+							"answer" : {
+								"newText" : "Resident Evil Alexia figure. This is from series 2. She is brand new in the package. She comes complete and is in mint condition. The box may show a little wear.",
+								"description_improve_feedback" : ""
+							},
+							"requesterFeedback" : null,
+							"approvalTime" : null,
+							"deadline" : null,
+							"rejectionTime" : null
+						}
+					],
+					"done" : true
+				},
+				"returnTime" : 1.40017162304E12,
+				"printOutput" : "hit completed: 38VTL6WC49C7XL11FOTDB9LE3TT5Y2\r\n"
+			},
+			{
+				"creationTime" : 1.400171623071E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.approveAssignmentRaw(assignment, reason);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.400171623337E12,
+				"printOutput" : "approved assignment 3MD9PLUKKIDEFKF65DWK7HPL0BPNZA\r\n"
+			},
+			{
+				"creationTime" : 1.400171623337E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.createHITRaw(params);\n}\n",
+				"returnValue" : "3NOEP8XAU31MQQTAU7GPQ1JMSR5XPN",
+				"returnTime" : 1.400171623743E12,
+				"printOutput" : "created HIT: 3NOEP8XAU31MQQTAU7GPQ1JMSR5XPN\r\n        url: https://www.mturk.com/mturk/preview?groupId=24LSCXKNQY2RCLHN82ME7HR0KRFP09\r\n"
+			},
+			{
+				"creationTime" : 1.400171623743E12,
+				"onceFunc" : "\nfunction () {\n    if (!me.waitForHIT_callCount) {\n        me.waitForHIT_callCount = 0;\n        var a = me.getReviewableHITs(1);\n        if (a.totalNumResults == a.length) {\n            me.waitForHIT_reviewableHITs = new Set(a);\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n        me.waitForHIT_waitCount = Math.ceil(a.totalNumResults / 100);\n    }\n    me.waitForHIT_callCount++;\n    if (me.waitForHIT_callCount >= me.waitForHIT_waitCount) {\n        if (!me.waitForHIT_reviewableHITs || (time() > me.waitForHIT_reviewableHITsTime + (1000 * 60))) {\n            me.waitForHIT_reviewableHITs = new Set(me.getReviewableHITs());\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n    }\n    if (me.waitForHIT_reviewableHITs) {\n        if (!me.waitForHIT_reviewableHITs[hitId]) {\n            stop();\n        }\n    }\n    var hit = mturk.getHIT(hitId);\n    if (!hit.done) {\n        stop();\n    }\n    verbosePrint(\"hit completed: \" + hitId);\n    return hit;\n}\n",
+				"returnValue" : {
+					"hitId" : "3NOEP8XAU31MQQTAU7GPQ1JMSR5XPN",
+					"hitTypeId" : "24LSCXKNQY2RCLHN82ME7HR0KRFP09",
+					"title" : "Improve/extend description of auction item(s) on pictures",
+					"description" : "Improve and/or extend the description of an auction item based on three images",
+					"keywords" : null,
+					"reward" : 0.2,
+					"question" : "<QuestionForm xmlns=\"http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2005-10-01/QuestionForm.xsd\">\n  <Question>\n    <QuestionIdentifier>newText</QuestionIdentifier>\n    <IsRequired>true</IsRequired>\n    <QuestionContent>\n      <FormattedContent><![CDATA[All the workers who have done a similar task in the past are excluded from this HIT. If you find your worker ID in the following table, your work <b>will be rejected</b>.<br /><br /><table border=\"1\"><tr><td>ANJRINRP821LY</td><td>A3J47737YMH6WK</td><td>A291KO368YRYCR</td><td>A3KUFIF1ULONV1</td><td>A3AJR1PM02424Y</td></tr><tr><td>A2SFEEI806WFP9</td><td>A2Y9ZNZ0F24GHB</td><td>A1IA4CST74I1Q8</td><td>A3JLB1N2CB27BZ</td><td>AJAOE1PSNKGUE</td></tr></table><hr /><table border=\"0\"><tr><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/6/image_1.JPG\" alt=\"Image 1\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/6/image_1.JPG\" target=\"_blank\">Link to full size image 1 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/6/image_2.JPG\" alt=\"Image 2\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/6/image_2.JPG\" target=\"_blank\">Link to full size image 2 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/6/image_3.JPG\" alt=\"Image 3\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/6/image_3.JPG\" target=\"_blank\">Link to full size image 3 (new window)</a></td><td></td><td></td></tr></table>\n\t\t\t\t\tThe goal of the requester of the HIT is to generate eBay auctions by MTurk workers based on images of the item.<br /><br />\n\t\t\t\t\t<b>Instructions</b>: Improve and/or extend the description of the auction item(s) on the images. Keep in mind the following remarks:\n\t\t\t\t\t<ul>\n\t\t\t\t\t<li>If the description doesn\'t contain approximately <b>5 sentences</b> then try to add more text\n\t\t\t\t\t<ul>\n\t\t\t\t\t\t<li>Include specific information like size, shape, color, age, manufacture date, company/artist/author, and notable features or markings if possible</li>\n\t\t\t\t\t\t<li>Make the description as readable as possible</li>\n\t\t\t\t\t\t<li>Don\'t say anything that isn\'t true.</li>\n\t\t\t\t\t\t<li>Don\'t use all caps</li>\n\t\t\t\t\t\t<li>Don\'t include email addresses and some links</li>\n\t\t\t\t\t</ul>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li>If the description is long enough then try to improve it</li>\n\t\t\t\t\t</ul>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <FreeTextAnswer>\n        <Constraints>\n          <Length maxLength=\"5000\" minLength=\"80\"/>\n          <AnswerFormatRegex errorText=\"The description cannot be blank.\" regex=\"\\S\"/>\n        </Constraints>\n        <DefaultText>Resident Evil Alexia figure. This is from series 2. She is brand new in the package. She comes complete and is in mint condition. The box may show a little wear.</DefaultText>\n        <NumberOfLinesSuggestion>10</NumberOfLinesSuggestion>\n      </FreeTextAnswer>\n    </AnswerSpecification>\n  </Question>\n  <Question>\n    <QuestionIdentifier>description_improve_feedback</QuestionIdentifier>\n    <QuestionContent>\n      <Title>Your personal feedback (optional)</Title>\n      <FormattedContent><![CDATA[Give your personal feedback about the task. This <b>can</b> contain one of the following aspects:\n        <ul>\n        <li>Problems of the task (e.g. images are not visible)</li>\n        <li>Instructions are not clear enough</li>\n        </ul>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <FreeTextAnswer>\n        <NumberOfLinesSuggestion>3</NumberOfLinesSuggestion>\n      </FreeTextAnswer>\n    </AnswerSpecification>\n  </Question>\n</QuestionForm>",
+					"maxAssignments" : 1,
+					"assignmentDurationInSeconds" : 7200,
+					"autoApprovalDelayInSeconds" : 2592000,
+					"requesterAnnotation" : null,
+					"hitStatus" : "Reviewable",
+					"hitReviewStatus" : "NotReviewed",
+					"creationTime" : 1.400171646E12,
+					"expiration" : 1.400776446E12,
+					"assignments" : [
+						{
+							"assignmentId" : "30IQTZXKAK5MPTNK3P61ZKDXKJAX08",
+							"workerId" : "A16CDD9GGDTZVE",
+							"hitId" : "3NOEP8XAU31MQQTAU7GPQ1JMSR5XPN",
+							"assignmentStatus" : "Submitted",
+							"autoApprovalTime" : 1.40277205E12,
+							"acceptTime" : 1.400179987E12,
+							"submitTime" : 1.40018005E12,
+							"answer" : {
+								"newText" : "Resident Evil Alexia figure. This is from series 2. She is brand new in the package. She comes complete and is in mint condition. The box may show a little wear. Excellent collector\'s item. A great find for any Resident Evil fans! Add this to your collection today!",
+								"description_improve_feedback" : ""
+							},
+							"requesterFeedback" : null,
+							"approvalTime" : null,
+							"deadline" : null,
+							"rejectionTime" : null
+						}
+					],
+					"done" : true
+				},
+				"returnTime" : 1.400256126201E12,
+				"printOutput" : "hit completed: 3NOEP8XAU31MQQTAU7GPQ1JMSR5XPN\r\n"
+			},
+			{
+				"creationTime" : 1.400256126233E12,
+				"onceFunc" : "\nfunction () {\n    return Math.random();\n}\n",
+				"returnValue" : 0.5732440740292543,
+				"returnTime" : 1.400256126233E12,
+				"printOutput" : ""
+			},
+			{
+				"creationTime" : 1.400256126233E12,
+				"onceFunc" : "\nfunction () {\n    return Math.random();\n}\n",
+				"returnValue" : 0.36800447531775193,
+				"returnTime" : 1.400256126233E12,
+				"printOutput" : ""
+			},
+			{
+				"creationTime" : 1.400256126248E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.createHITRaw(params);\n}\n",
+				"returnValue" : "3TRB893CSI9MYYUK9BM42TS6P9N7GM",
+				"returnTime" : 1.400256126655E12,
+				"printOutput" : "created HIT: 3TRB893CSI9MYYUK9BM42TS6P9N7GM\r\n        url: https://www.mturk.com/mturk/preview?groupId=38E1HBOA1QEDDZX1Z7UNFGUC0R380D\r\n"
+			},
+			{
+				"creationTime" : 1.400256126655E12,
+				"onceFunc" : "\nfunction () {\n    if (!me.waitForHIT_callCount) {\n        me.waitForHIT_callCount = 0;\n        var a = me.getReviewableHITs(1);\n        if (a.totalNumResults == a.length) {\n            me.waitForHIT_reviewableHITs = new Set(a);\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n        me.waitForHIT_waitCount = Math.ceil(a.totalNumResults / 100);\n    }\n    me.waitForHIT_callCount++;\n    if (me.waitForHIT_callCount >= me.waitForHIT_waitCount) {\n        if (!me.waitForHIT_reviewableHITs || (time() > me.waitForHIT_reviewableHITsTime + (1000 * 60))) {\n            me.waitForHIT_reviewableHITs = new Set(me.getReviewableHITs());\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n    }\n    if (me.waitForHIT_reviewableHITs) {\n        if (!me.waitForHIT_reviewableHITs[hitId]) {\n            stop();\n        }\n    }\n    var hit = mturk.getHIT(hitId);\n    if (!hit.done) {\n        stop();\n    }\n    verbosePrint(\"hit completed: \" + hitId);\n    return hit;\n}\n",
+				"returnValue" : {
+					"hitId" : "3TRB893CSI9MYYUK9BM42TS6P9N7GM",
+					"hitTypeId" : "38E1HBOA1QEDDZX1Z7UNFGUC0R380D",
+					"title" : "Vote on auction item description improvements",
+					"description" : "Decide which auction item description is better/suitable for the item(s) on three pictures",
+					"keywords" : null,
+					"reward" : 0.01,
+					"question" : "<QuestionForm xmlns=\"http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2005-10-01/QuestionForm.xsd\">\n  <Question>\n    <QuestionIdentifier>vote</QuestionIdentifier>\n    <IsRequired>true</IsRequired>\n    <QuestionContent>\n      <FormattedContent><![CDATA[All the workers who have done a similar task in the past are excluded from this HIT. If you find your worker ID in the following table, your work <b>will be rejected</b>.<br /><br /><table border=\"1\"><tr><td>ANJRINRP821LY</td><td>A3J47737YMH6WK</td><td>A291KO368YRYCR</td><td>A3KUFIF1ULONV1</td><td>A3AJR1PM02424Y</td></tr><tr><td>A2SFEEI806WFP9</td><td>A2Y9ZNZ0F24GHB</td><td>A1IA4CST74I1Q8</td><td>A3JLB1N2CB27BZ</td><td>AJAOE1PSNKGUE</td></tr></table><hr /><table border=\"0\"><tr><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/6/image_1.JPG\" alt=\"Image 1\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/6/image_1.JPG\" target=\"_blank\">Link to full size image 1 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/6/image_2.JPG\" alt=\"Image 2\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/6/image_2.JPG\" target=\"_blank\">Link to full size image 2 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/6/image_3.JPG\" alt=\"Image 3\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/6/image_3.JPG\" target=\"_blank\">Link to full size image 3 (new window)</a></td><td></td><td></td></tr></table>\n\t\t\t\t\tThe goal of the requester of the HIT is to generate eBay auctions by MTurk workers based on images of the item.<br /><br />\n\t\t\t\t\t<b>Instructions:</b> Which description of the auction item(s) on the pictures is better? The following factors <b>can</b> affect your decision: \n\t\t\t\t\t<ul>\n\t\t\t\t\t\t<li>One description is more informative than the other</li>\n\t\t\t\t\t\t<li>One description contains more information about the auction item then the other</li>\n\t\t\t\t\t\t<li>One description contains wrong information</li>\n\t\t\t\t\t\t<li>One description has spelling mistakes</li>\n\t\t\t\t\t</ul>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <SelectionAnswer>\n        <Selections>\n          <Selection>\n            <SelectionIdentifier>a</SelectionIdentifier>\n            <Text>Resident Evil Alexia figure. This is from series 2. She is brand new in the package. She comes complete and is in mint condition. The box may show a little wear.</Text>\n          </Selection>\n          <Selection>\n            <SelectionIdentifier>b</SelectionIdentifier>\n            <Text>Resident Evil Alexia figure. This is from series 2. She is brand new in the package. She comes complete and is in mint condition. The box may show a little wear. Excellent collector\'s item. A great find for any Resident Evil fans! Add this to your collection today!</Text>\n          </Selection>\n        </Selections>\n      </SelectionAnswer>\n    </AnswerSpecification>\n  </Question>\n  <Question>\n    <QuestionIdentifier>description_vote_feedback</QuestionIdentifier>\n    <QuestionContent>\n      <Title>Your personal feedback (optional)</Title>\n      <FormattedContent><![CDATA[Give your personal feedback about the task. This <b>can</b> contain one of the following aspects:\n        <ul>\n        <li>Problems of the task (e.g. images are not visible)</li>\n        <li>Instructions are not clear enough</li>\n        </ul>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <FreeTextAnswer>\n        <NumberOfLinesSuggestion>3</NumberOfLinesSuggestion>\n      </FreeTextAnswer>\n    </AnswerSpecification>\n  </Question>\n</QuestionForm>",
+					"maxAssignments" : 2,
+					"assignmentDurationInSeconds" : 1800,
+					"autoApprovalDelayInSeconds" : 2592000,
+					"requesterAnnotation" : null,
+					"hitStatus" : "Reviewable",
+					"hitReviewStatus" : "NotReviewed",
+					"creationTime" : 1.400256126E12,
+					"expiration" : 1.400860926E12,
+					"assignments" : [
+						{
+							"assignmentId" : "3L6L49WXW0WUMYLBGKA8J4CQ84B54X",
+							"workerId" : "A2J843CHDXF45T",
+							"hitId" : "3TRB893CSI9MYYUK9BM42TS6P9N7GM",
+							"assignmentStatus" : "Submitted",
+							"autoApprovalTime" : 1.4028861E12,
+							"acceptTime" : 1.400294061E12,
+							"submitTime" : 1.4002941E12,
+							"answer" : {
+								"vote" : [
+									"b"
+								],
+								"description_vote_feedback" : ""
+							},
+							"requesterFeedback" : null,
+							"approvalTime" : null,
+							"deadline" : null,
+							"rejectionTime" : null
+						},
+						{
+							"assignmentId" : "38F5OAUN5NB3LENPJK9OBDZQ4GL7HV",
+							"workerId" : "A1PZ1YZAQEXRSQ",
+							"hitId" : "3TRB893CSI9MYYUK9BM42TS6P9N7GM",
+							"assignmentStatus" : "Submitted",
+							"autoApprovalTime" : 1.40290847E12,
+							"acceptTime" : 1.400316462E12,
+							"submitTime" : 1.40031647E12,
+							"answer" : {
+								"vote" : [
+									"b"
+								],
+								"description_vote_feedback" : ""
+							},
+							"requesterFeedback" : null,
+							"approvalTime" : null,
+							"deadline" : null,
+							"rejectionTime" : null
+						}
+					],
+					"done" : true
+				},
+				"returnTime" : 1.400516621905E12,
+				"printOutput" : "hit completed: 3TRB893CSI9MYYUK9BM42TS6P9N7GM\r\n"
+			},
+			{
+				"creationTime" : 1.40051662192E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.approveAssignmentRaw(assignment, reason);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.400516622124E12,
+				"printOutput" : "approved assignment 3L6L49WXW0WUMYLBGKA8J4CQ84B54X\r\n"
+			},
+			{
+				"creationTime" : 1.400516622124E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.approveAssignmentRaw(assignment, reason);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.400516622342E12,
+				"printOutput" : "approved assignment 38F5OAUN5NB3LENPJK9OBDZQ4GL7HV\r\n"
+			},
+			{
+				"creationTime" : 1.400516622342E12,
+				"onceFunc" : "\nfunction () {\n    mturk.deleteHITRaw(hit);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.400516622624E12,
+				"printOutput" : "disabled HIT: 3TRB893CSI9MYYUK9BM42TS6P9N7GM\r\n"
+			},
+			{
+				"creationTime" : 1.400516622624E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.approveAssignmentRaw(assignment, reason);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.400516622967E12,
+				"printOutput" : "approved assignment 30IQTZXKAK5MPTNK3P61ZKDXKJAX08\r\n"
+			},
+			{
+				"creationTime" : 1.400516622983E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.createHITRaw(params);\n}\n",
+				"returnValue" : "309D674SHYKWJYH5K621H4TNAEPBCJ",
+				"returnTime" : 1.400516623327E12,
+				"printOutput" : "created HIT: 309D674SHYKWJYH5K621H4TNAEPBCJ\r\n        url: https://www.mturk.com/mturk/preview?groupId=24LSCXKNQY2RCLHN82ME7HR0KRFP09\r\n"
+			},
+			{
+				"creationTime" : 1.400516623342E12,
+				"onceFunc" : "\nfunction () {\n    if (!me.waitForHIT_callCount) {\n        me.waitForHIT_callCount = 0;\n        var a = me.getReviewableHITs(1);\n        if (a.totalNumResults == a.length) {\n            me.waitForHIT_reviewableHITs = new Set(a);\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n        me.waitForHIT_waitCount = Math.ceil(a.totalNumResults / 100);\n    }\n    me.waitForHIT_callCount++;\n    if (me.waitForHIT_callCount >= me.waitForHIT_waitCount) {\n        if (!me.waitForHIT_reviewableHITs || (time() > me.waitForHIT_reviewableHITsTime + (1000 * 60))) {\n            me.waitForHIT_reviewableHITs = new Set(me.getReviewableHITs());\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n    }\n    if (me.waitForHIT_reviewableHITs) {\n        if (!me.waitForHIT_reviewableHITs[hitId]) {\n            stop();\n        }\n    }\n    var hit = mturk.getHIT(hitId);\n    if (!hit.done) {\n        stop();\n    }\n    verbosePrint(\"hit completed: \" + hitId);\n    return hit;\n}\n",
+				"returnValue" : {
+					"hitId" : "309D674SHYKWJYH5K621H4TNAEPBCJ",
+					"hitTypeId" : "24LSCXKNQY2RCLHN82ME7HR0KRFP09",
+					"title" : "Improve/extend description of auction item(s) on pictures",
+					"description" : "Improve and/or extend the description of an auction item based on three images",
+					"keywords" : null,
+					"reward" : 0.2,
+					"question" : "<QuestionForm xmlns=\"http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2005-10-01/QuestionForm.xsd\">\n  <Question>\n    <QuestionIdentifier>newText</QuestionIdentifier>\n    <IsRequired>true</IsRequired>\n    <QuestionContent>\n      <FormattedContent><![CDATA[All the workers who have done a similar task in the past are excluded from this HIT. If you find your worker ID in the following table, your work <b>will be rejected</b>.<br /><br /><table border=\"1\"><tr><td>ANJRINRP821LY</td><td>A3J47737YMH6WK</td><td>A291KO368YRYCR</td><td>A3KUFIF1ULONV1</td><td>A3AJR1PM02424Y</td></tr><tr><td>A2SFEEI806WFP9</td><td>A2Y9ZNZ0F24GHB</td><td>A1IA4CST74I1Q8</td><td>A3JLB1N2CB27BZ</td><td>AJAOE1PSNKGUE</td></tr></table><hr /><table border=\"0\"><tr><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/6/image_1.JPG\" alt=\"Image 1\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/6/image_1.JPG\" target=\"_blank\">Link to full size image 1 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/6/image_2.JPG\" alt=\"Image 2\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/6/image_2.JPG\" target=\"_blank\">Link to full size image 2 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/6/image_3.JPG\" alt=\"Image 3\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/6/image_3.JPG\" target=\"_blank\">Link to full size image 3 (new window)</a></td><td></td><td></td></tr></table>\n\t\t\t\t\tThe goal of the requester of the HIT is to generate eBay auctions by MTurk workers based on images of the item.<br /><br />\n\t\t\t\t\t<b>Instructions</b>: Improve and/or extend the description of the auction item(s) on the images. Keep in mind the following remarks:\n\t\t\t\t\t<ul>\n\t\t\t\t\t<li>If the description doesn\'t contain approximately <b>5 sentences</b> then try to add more text\n\t\t\t\t\t<ul>\n\t\t\t\t\t\t<li>Include specific information like size, shape, color, age, manufacture date, company/artist/author, and notable features or markings if possible</li>\n\t\t\t\t\t\t<li>Make the description as readable as possible</li>\n\t\t\t\t\t\t<li>Don\'t say anything that isn\'t true.</li>\n\t\t\t\t\t\t<li>Don\'t use all caps</li>\n\t\t\t\t\t\t<li>Don\'t include email addresses and some links</li>\n\t\t\t\t\t</ul>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li>If the description is long enough then try to improve it</li>\n\t\t\t\t\t</ul>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <FreeTextAnswer>\n        <Constraints>\n          <Length maxLength=\"5000\" minLength=\"120\"/>\n          <AnswerFormatRegex errorText=\"The description cannot be blank.\" regex=\"\\S\"/>\n        </Constraints>\n        <DefaultText>Resident Evil Alexia figure. This is from series 2. She is brand new in the package. She comes complete and is in mint condition. The box may show a little wear. Excellent collector\'s item. A great find for any Resident Evil fans! Add this to your collection today!</DefaultText>\n        <NumberOfLinesSuggestion>10</NumberOfLinesSuggestion>\n      </FreeTextAnswer>\n    </AnswerSpecification>\n  </Question>\n  <Question>\n    <QuestionIdentifier>description_improve_feedback</QuestionIdentifier>\n    <QuestionContent>\n      <Title>Your personal feedback (optional)</Title>\n      <FormattedContent><![CDATA[Give your personal feedback about the task. This <b>can</b> contain one of the following aspects:\n        <ul>\n        <li>Problems of the task (e.g. images are not visible)</li>\n        <li>Instructions are not clear enough</li>\n        </ul>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <FreeTextAnswer>\n        <NumberOfLinesSuggestion>3</NumberOfLinesSuggestion>\n      </FreeTextAnswer>\n    </AnswerSpecification>\n  </Question>\n</QuestionForm>",
+					"maxAssignments" : 1,
+					"assignmentDurationInSeconds" : 7200,
+					"autoApprovalDelayInSeconds" : 2592000,
+					"requesterAnnotation" : null,
+					"hitStatus" : "Reviewable",
+					"hitReviewStatus" : "NotReviewed",
+					"creationTime" : 1.400516627E12,
+					"expiration" : 1.401121427E12,
+					"assignments" : [
+						{
+							"assignmentId" : "39KFRKBFINUWSF5DA6UE8ZGOLEEOYY",
+							"workerId" : "ABVBWRI4D5O36",
+							"hitId" : "309D674SHYKWJYH5K621H4TNAEPBCJ",
+							"assignmentStatus" : "Submitted",
+							"autoApprovalTime" : 1.403161372E12,
+							"acceptTime" : 1.400567042E12,
+							"submitTime" : 1.400569372E12,
+							"answer" : {
+								"newText" : "Resident Evil Alexia figurine (series 2) from Palisades Toys. Based on the popular video game Resident Evil, this series has figures from two separate titles. This particular figurine is brand new and in the package. She comes complete with all pieces included. The box may show a little wear but otherwise in amazing condition. This is an excellent addition and a great find for any Resident Evil fan or collector!",
+								"description_improve_feedback" : "Everything was perfectly clear and required minimal research. Looking forward to accepting more hits. Thanks"
+							},
+							"requesterFeedback" : null,
+							"approvalTime" : null,
+							"deadline" : null,
+							"rejectionTime" : null
+						}
+					],
+					"done" : true
+				},
+				"returnTime" : 1.400602534852E12,
+				"printOutput" : "hit completed: 309D674SHYKWJYH5K621H4TNAEPBCJ\r\n"
+			},
+			{
+				"creationTime" : 1.400602534882E12,
+				"onceFunc" : "\nfunction () {\n    return Math.random();\n}\n",
+				"returnValue" : 0.9835332331019198,
+				"returnTime" : 1.400602534886E12,
+				"printOutput" : ""
+			},
+			{
+				"creationTime" : 1.400602534888E12,
+				"onceFunc" : "\nfunction () {\n    return Math.random();\n}\n",
+				"returnValue" : 0.22403722991797992,
+				"returnTime" : 1.400602534891E12,
+				"printOutput" : ""
+			},
+			{
+				"creationTime" : 1.400602534895E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.createHITRaw(params);\n}\n",
+				"returnValue" : "307L9TDWJXRA77AJU3W9FWPNMTQ3N9",
+				"returnTime" : 1.40060253536E12,
+				"printOutput" : "created HIT: 307L9TDWJXRA77AJU3W9FWPNMTQ3N9\r\n        url: https://www.mturk.com/mturk/preview?groupId=38E1HBOA1QEDDZX1Z7UNFGUC0R380D\r\n"
+			},
+			{
+				"creationTime" : 1.400602535366E12,
+				"onceFunc" : "\nfunction () {\n    if (!me.waitForHIT_callCount) {\n        me.waitForHIT_callCount = 0;\n        var a = me.getReviewableHITs(1);\n        if (a.totalNumResults == a.length) {\n            me.waitForHIT_reviewableHITs = new Set(a);\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n        me.waitForHIT_waitCount = Math.ceil(a.totalNumResults / 100);\n    }\n    me.waitForHIT_callCount++;\n    if (me.waitForHIT_callCount >= me.waitForHIT_waitCount) {\n        if (!me.waitForHIT_reviewableHITs || (time() > me.waitForHIT_reviewableHITsTime + (1000 * 60))) {\n            me.waitForHIT_reviewableHITs = new Set(me.getReviewableHITs());\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n    }\n    if (me.waitForHIT_reviewableHITs) {\n        if (!me.waitForHIT_reviewableHITs[hitId]) {\n            stop();\n        }\n    }\n    var hit = mturk.getHIT(hitId);\n    if (!hit.done) {\n        stop();\n    }\n    verbosePrint(\"hit completed: \" + hitId);\n    return hit;\n}\n",
+				"returnValue" : {
+					"hitId" : "307L9TDWJXRA77AJU3W9FWPNMTQ3N9",
+					"hitTypeId" : "38E1HBOA1QEDDZX1Z7UNFGUC0R380D",
+					"title" : "Vote on auction item description improvements",
+					"description" : "Decide which auction item description is better/suitable for the item(s) on three pictures",
+					"keywords" : null,
+					"reward" : 0.01,
+					"question" : "<QuestionForm xmlns=\"http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2005-10-01/QuestionForm.xsd\">\n  <Question>\n    <QuestionIdentifier>vote</QuestionIdentifier>\n    <IsRequired>true</IsRequired>\n    <QuestionContent>\n      <FormattedContent><![CDATA[All the workers who have done a similar task in the past are excluded from this HIT. If you find your worker ID in the following table, your work <b>will be rejected</b>.<br /><br /><table border=\"1\"><tr><td>ANJRINRP821LY</td><td>A3J47737YMH6WK</td><td>A291KO368YRYCR</td><td>A3KUFIF1ULONV1</td><td>A3AJR1PM02424Y</td></tr><tr><td>A2SFEEI806WFP9</td><td>A2Y9ZNZ0F24GHB</td><td>A1IA4CST74I1Q8</td><td>A3JLB1N2CB27BZ</td><td>AJAOE1PSNKGUE</td></tr></table><hr /><table border=\"0\"><tr><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/6/image_1.JPG\" alt=\"Image 1\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/6/image_1.JPG\" target=\"_blank\">Link to full size image 1 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/6/image_2.JPG\" alt=\"Image 2\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/6/image_2.JPG\" target=\"_blank\">Link to full size image 2 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/6/image_3.JPG\" alt=\"Image 3\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/6/image_3.JPG\" target=\"_blank\">Link to full size image 3 (new window)</a></td><td></td><td></td></tr></table>\n\t\t\t\t\tThe goal of the requester of the HIT is to generate eBay auctions by MTurk workers based on images of the item.<br /><br />\n\t\t\t\t\t<b>Instructions:</b> Which description of the auction item(s) on the pictures is better? The following factors <b>can</b> affect your decision: \n\t\t\t\t\t<ul>\n\t\t\t\t\t\t<li>One description is more informative than the other</li>\n\t\t\t\t\t\t<li>One description contains more information about the auction item then the other</li>\n\t\t\t\t\t\t<li>One description contains wrong information</li>\n\t\t\t\t\t\t<li>One description has spelling mistakes</li>\n\t\t\t\t\t</ul>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <SelectionAnswer>\n        <Selections>\n          <Selection>\n            <SelectionIdentifier>a</SelectionIdentifier>\n            <Text>Resident Evil Alexia figure. This is from series 2. She is brand new in the package. She comes complete and is in mint condition. The box may show a little wear. Excellent collector\'s item. A great find for any Resident Evil fans! Add this to your collection today!</Text>\n          </Selection>\n          <Selection>\n            <SelectionIdentifier>b</SelectionIdentifier>\n            <Text>Resident Evil Alexia figurine (series 2) from Palisades Toys. Based on the popular video game Resident Evil, this series has figures from two separate titles. This particular figurine is brand new and in the package. She comes complete with all pieces included. The box may show a little wear but otherwise in amazing condition. This is an excellent addition and a great find for any Resident Evil fan or collector!</Text>\n          </Selection>\n        </Selections>\n      </SelectionAnswer>\n    </AnswerSpecification>\n  </Question>\n  <Question>\n    <QuestionIdentifier>description_vote_feedback</QuestionIdentifier>\n    <QuestionContent>\n      <Title>Your personal feedback (optional)</Title>\n      <FormattedContent><![CDATA[Give your personal feedback about the task. This <b>can</b> contain one of the following aspects:\n        <ul>\n        <li>Problems of the task (e.g. images are not visible)</li>\n        <li>Instructions are not clear enough</li>\n        </ul>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <FreeTextAnswer>\n        <NumberOfLinesSuggestion>3</NumberOfLinesSuggestion>\n      </FreeTextAnswer>\n    </AnswerSpecification>\n  </Question>\n</QuestionForm>",
+					"maxAssignments" : 2,
+					"assignmentDurationInSeconds" : 1800,
+					"autoApprovalDelayInSeconds" : 2592000,
+					"requesterAnnotation" : null,
+					"hitStatus" : "Reviewable",
+					"hitReviewStatus" : "NotReviewed",
+					"creationTime" : 1.400602541E12,
+					"expiration" : 1.401207341E12,
+					"assignments" : [
+						{
+							"assignmentId" : "3E4GGUZ1T8QN13RRJTVQSEYAMWBK2Z",
+							"workerId" : "A2SY0XL28MLUTW",
+							"hitId" : "307L9TDWJXRA77AJU3W9FWPNMTQ3N9",
+							"assignmentStatus" : "Submitted",
+							"autoApprovalTime" : 1.403197107E12,
+							"acceptTime" : 1.400605038E12,
+							"submitTime" : 1.400605107E12,
+							"answer" : {
+								"vote" : [
+									"a"
+								],
+								"description_vote_feedback" : ""
+							},
+							"requesterFeedback" : null,
+							"approvalTime" : null,
+							"deadline" : null,
+							"rejectionTime" : null
+						},
+						{
+							"assignmentId" : "36W0OB37HWDM5OTV2F172XSPFSGHZI",
+							"workerId" : "A38Q7FV1GJ3YES",
+							"hitId" : "307L9TDWJXRA77AJU3W9FWPNMTQ3N9",
+							"assignmentStatus" : "Submitted",
+							"autoApprovalTime" : 1.403268038E12,
+							"acceptTime" : 1.400675894E12,
+							"submitTime" : 1.400676038E12,
+							"answer" : {
+								"vote" : [
+									"a"
+								],
+								"description_vote_feedback" : ""
+							},
+							"requesterFeedback" : null,
+							"approvalTime" : null,
+							"deadline" : null,
+							"rejectionTime" : null
+						}
+					],
+					"done" : true
+				},
+				"returnTime" : 1.400688484671E12,
+				"printOutput" : "hit completed: 307L9TDWJXRA77AJU3W9FWPNMTQ3N9\r\n"
+			},
+			{
+				"creationTime" : 1.400688484675E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.approveAssignmentRaw(assignment, reason);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.400688485071E12,
+				"printOutput" : "approved assignment 3E4GGUZ1T8QN13RRJTVQSEYAMWBK2Z\r\n"
+			},
+			{
+				"creationTime" : 1.400688485076E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.approveAssignmentRaw(assignment, reason);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.400688485475E12,
+				"printOutput" : "approved assignment 36W0OB37HWDM5OTV2F172XSPFSGHZI\r\n"
+			},
+			{
+				"creationTime" : 1.400688485477E12,
+				"onceFunc" : "\nfunction () {\n    mturk.deleteHITRaw(hit);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.400688485764E12,
+				"printOutput" : "disabled HIT: 307L9TDWJXRA77AJU3W9FWPNMTQ3N9\r\n"
+			},
+			{
+				"creationTime" : 1.400688485766E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.approveAssignmentRaw(assignment, reason);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.400688486295E12,
+				"printOutput" : "approved assignment 39KFRKBFINUWSF5DA6UE8ZGOLEEOYY\r\n"
+			}
+		]
+	}
+}
+__safetyCounters = {
+	"moneySpent" : 0.6400000000000001,
+	"hitsCreated" : 5
+}
+// end:a71a

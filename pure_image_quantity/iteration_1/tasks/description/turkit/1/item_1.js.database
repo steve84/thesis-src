@@ -1,0 +1,408 @@
+// begin:2341
+__HITs = {
+	"real:3DWGDA5POE3R595D9Q4H1K439WM1V7" : {
+		"url" : "https://www.mturk.com/mturk/preview?groupId=24LSCXKNQY2RCLHN82ME7HR0KRFP09"
+	},
+	"real:3RDTX9JRTX07JO7CV5GUAC6JLU7796" : {
+		"url" : "https://www.mturk.com/mturk/preview?groupId=24LSCXKNQY2RCLHN82ME7HR0KRFP09"
+	},
+	"real:39TX062QX0NFJ1ONW9JIDYGLNXXX3Z" : {
+		"url" : "https://www.mturk.com/mturk/preview?groupId=24LSCXKNQY2RCLHN82ME7HR0KRFP09"
+	}
+}
+__S3_Objects = {
+}
+__stackFrames = {
+	"for-real" : {
+		"sequencialFrames" : [
+			{
+				"creationTime" : 1.400083464281E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.createHITRaw(params);\n}\n",
+				"returnValue" : "3DWGDA5POE3R595D9Q4H1K439WM1V7",
+				"returnTime" : 1.400083467383E12,
+				"printOutput" : "created HIT: 3DWGDA5POE3R595D9Q4H1K439WM1V7\r\n        url: https://www.mturk.com/mturk/preview?groupId=24LSCXKNQY2RCLHN82ME7HR0KRFP09\r\n"
+			},
+			{
+				"creationTime" : 1.400083467389E12,
+				"onceFunc" : "\nfunction () {\n    if (!me.waitForHIT_callCount) {\n        me.waitForHIT_callCount = 0;\n        var a = me.getReviewableHITs(1);\n        if (a.totalNumResults == a.length) {\n            me.waitForHIT_reviewableHITs = new Set(a);\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n        me.waitForHIT_waitCount = Math.ceil(a.totalNumResults / 100);\n    }\n    me.waitForHIT_callCount++;\n    if (me.waitForHIT_callCount >= me.waitForHIT_waitCount) {\n        if (!me.waitForHIT_reviewableHITs || (time() > me.waitForHIT_reviewableHITsTime + (1000 * 60))) {\n            me.waitForHIT_reviewableHITs = new Set(me.getReviewableHITs());\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n    }\n    if (me.waitForHIT_reviewableHITs) {\n        if (!me.waitForHIT_reviewableHITs[hitId]) {\n            stop();\n        }\n    }\n    var hit = mturk.getHIT(hitId);\n    if (!hit.done) {\n        stop();\n    }\n    verbosePrint(\"hit completed: \" + hitId);\n    return hit;\n}\n",
+				"returnValue" : {
+					"hitId" : "3DWGDA5POE3R595D9Q4H1K439WM1V7",
+					"hitTypeId" : "24LSCXKNQY2RCLHN82ME7HR0KRFP09",
+					"title" : "Improve/extend description of auction item(s) on pictures",
+					"description" : "Improve and/or extend the description of an auction item based on three images",
+					"keywords" : null,
+					"reward" : 0.2,
+					"question" : "<QuestionForm xmlns=\"http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2005-10-01/QuestionForm.xsd\">\n  <Question>\n    <QuestionIdentifier>newText</QuestionIdentifier>\n    <IsRequired>true</IsRequired>\n    <QuestionContent>\n      <FormattedContent><![CDATA[All the workers who have done a similar task in the past are excluded from this HIT. If you find your worker ID in the following table, your work <b>will be rejected</b>.<br /><br /><table border=\"1\"><tr><td>ANJRINRP821LY</td><td>A3J47737YMH6WK</td><td>A291KO368YRYCR</td><td>A3KUFIF1ULONV1</td><td>A3AJR1PM02424Y</td></tr><tr><td>A2SFEEI806WFP9</td><td>A2Y9ZNZ0F24GHB</td><td>A1IA4CST74I1Q8</td><td>A3JLB1N2CB27BZ</td><td>AJAOE1PSNKGUE</td></tr></table><hr /><table border=\"0\"><tr><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/1/image_1.JPG\" alt=\"Image 1\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/1/image_1.JPG\" target=\"_blank\">Link to full size image 1 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/1/image_2.JPG\" alt=\"Image 2\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/1/image_2.JPG\" target=\"_blank\">Link to full size image 2 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/1/image_3.JPG\" alt=\"Image 3\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/1/image_3.JPG\" target=\"_blank\">Link to full size image 3 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/1/image_4.JPG\" alt=\"Image 4\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/1/image_4.JPG\" target=\"_blank\">Link to full size image 4 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/1/image_5.JPG\" alt=\"Image 5\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/1/image_5.JPG\" target=\"_blank\">Link to full size image 5 (new window)</a></td></tr><tr><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/1/image_6.JPG\" alt=\"Image 6\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/1/image_6.JPG\" target=\"_blank\">Link to full size image 6 (new window)</a></td><td></td><td></td><td></td><td></td></tr></table>\n\t\t\t\t\tThe goal of the requester of the HIT is to generate eBay auctions by MTurk workers based on images of the item.<br /><br />\n\t\t\t\t\t<b>Instructions</b>: Improve and/or extend the description of the auction item(s) on the images. Keep in mind the following remarks:\n\t\t\t\t\t<ul>\n\t\t\t\t\t<li>If the description doesn\'t contain approximately <b>5 sentences</b> then try to add more text\n\t\t\t\t\t<ul>\n\t\t\t\t\t\t<li>Include specific information like size, shape, color, age, manufacture date, company/artist/author, and notable features or markings if possible</li>\n\t\t\t\t\t\t<li>Make the description as readable as possible</li>\n\t\t\t\t\t\t<li>Don\'t say anything that isn\'t true.</li>\n\t\t\t\t\t\t<li>Don\'t use all caps</li>\n\t\t\t\t\t\t<li>Don\'t include email addresses and some links</li>\n\t\t\t\t\t</ul>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li>If the description is long enough then try to improve it</li>\n\t\t\t\t\t</ul>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <FreeTextAnswer>\n        <Constraints>\n          <Length maxLength=\"5000\" minLength=\"40\"/>\n          <AnswerFormatRegex errorText=\"The description cannot be blank.\" regex=\"\\S\"/>\n        </Constraints>\n        <DefaultText/>\n        <NumberOfLinesSuggestion>10</NumberOfLinesSuggestion>\n      </FreeTextAnswer>\n    </AnswerSpecification>\n  </Question>\n  <Question>\n    <QuestionIdentifier>description_improve_feedback</QuestionIdentifier>\n    <QuestionContent>\n      <Title>Your personal feedback (optional)</Title>\n      <FormattedContent><![CDATA[Give your personal feedback about the task. This <b>can</b> contain one of the following aspects:\n        <ul>\n        <li>Problems of the task (e.g. images are not visible)</li>\n        <li>Instructions are not clear enough</li>\n        </ul>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <FreeTextAnswer>\n        <NumberOfLinesSuggestion>3</NumberOfLinesSuggestion>\n      </FreeTextAnswer>\n    </AnswerSpecification>\n  </Question>\n</QuestionForm>",
+					"maxAssignments" : 1,
+					"assignmentDurationInSeconds" : 7200,
+					"autoApprovalDelayInSeconds" : 2592000,
+					"requesterAnnotation" : null,
+					"hitStatus" : "Reviewable",
+					"hitReviewStatus" : "NotReviewed",
+					"creationTime" : 1.400083487E12,
+					"expiration" : 1.400688287E12,
+					"assignments" : [
+						{
+							"assignmentId" : "3TR2532VIPTG8K4AOA7HHCF9MIG6JH",
+							"workerId" : "A980JNQCN4B46",
+							"hitId" : "3DWGDA5POE3R595D9Q4H1K439WM1V7",
+							"assignmentStatus" : "Submitted",
+							"autoApprovalTime" : 1.402682182E12,
+							"acceptTime" : 1.400089938E12,
+							"submitTime" : 1.400090182E12,
+							"answer" : {
+								"newText" : "This beautiful watch manufactured by Puma has very many different features on it.  Apart from it\'s sleek black band, the face of this watch is interchangeable, matching your team or country you want to represent. Not only does this watch serve as a stopwatch, it also lights up which is perfect for using at night.  This watch is made with stainless steel.  The watch is also water resistant.",
+								"description_improve_feedback" : ""
+							},
+							"requesterFeedback" : null,
+							"approvalTime" : null,
+							"deadline" : null,
+							"rejectionTime" : null
+						}
+					],
+					"done" : true
+				},
+				"returnTime" : 1.400170072197E12,
+				"printOutput" : "hit completed: 3DWGDA5POE3R595D9Q4H1K439WM1V7\r\n"
+			},
+			{
+				"creationTime" : 1.400170072228E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.approveAssignmentRaw(assignment, reason);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.400170072588E12,
+				"printOutput" : "approved assignment 3TR2532VIPTG8K4AOA7HHCF9MIG6JH\r\n"
+			},
+			{
+				"creationTime" : 1.400170072588E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.createHITRaw(params);\n}\n",
+				"returnValue" : "3RDTX9JRTX07JO7CV5GUAC6JLU7796",
+				"returnTime" : 1.400170073108E12,
+				"printOutput" : "created HIT: 3RDTX9JRTX07JO7CV5GUAC6JLU7796\r\n        url: https://www.mturk.com/mturk/preview?groupId=24LSCXKNQY2RCLHN82ME7HR0KRFP09\r\n"
+			},
+			{
+				"creationTime" : 1.400170073108E12,
+				"onceFunc" : "\nfunction () {\n    if (!me.waitForHIT_callCount) {\n        me.waitForHIT_callCount = 0;\n        var a = me.getReviewableHITs(1);\n        if (a.totalNumResults == a.length) {\n            me.waitForHIT_reviewableHITs = new Set(a);\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n        me.waitForHIT_waitCount = Math.ceil(a.totalNumResults / 100);\n    }\n    me.waitForHIT_callCount++;\n    if (me.waitForHIT_callCount >= me.waitForHIT_waitCount) {\n        if (!me.waitForHIT_reviewableHITs || (time() > me.waitForHIT_reviewableHITsTime + (1000 * 60))) {\n            me.waitForHIT_reviewableHITs = new Set(me.getReviewableHITs());\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n    }\n    if (me.waitForHIT_reviewableHITs) {\n        if (!me.waitForHIT_reviewableHITs[hitId]) {\n            stop();\n        }\n    }\n    var hit = mturk.getHIT(hitId);\n    if (!hit.done) {\n        stop();\n    }\n    verbosePrint(\"hit completed: \" + hitId);\n    return hit;\n}\n",
+				"returnValue" : {
+					"hitId" : "3RDTX9JRTX07JO7CV5GUAC6JLU7796",
+					"hitTypeId" : "24LSCXKNQY2RCLHN82ME7HR0KRFP09",
+					"title" : "Improve/extend description of auction item(s) on pictures",
+					"description" : "Improve and/or extend the description of an auction item based on three images",
+					"keywords" : null,
+					"reward" : 0.2,
+					"question" : "<QuestionForm xmlns=\"http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2005-10-01/QuestionForm.xsd\">\n  <Question>\n    <QuestionIdentifier>newText</QuestionIdentifier>\n    <IsRequired>true</IsRequired>\n    <QuestionContent>\n      <FormattedContent><![CDATA[All the workers who have done a similar task in the past are excluded from this HIT. If you find your worker ID in the following table, your work <b>will be rejected</b>.<br /><br /><table border=\"1\"><tr><td>ANJRINRP821LY</td><td>A3J47737YMH6WK</td><td>A291KO368YRYCR</td><td>A3KUFIF1ULONV1</td><td>A3AJR1PM02424Y</td></tr><tr><td>A2SFEEI806WFP9</td><td>A2Y9ZNZ0F24GHB</td><td>A1IA4CST74I1Q8</td><td>A3JLB1N2CB27BZ</td><td>AJAOE1PSNKGUE</td></tr></table><hr /><table border=\"0\"><tr><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/1/image_1.JPG\" alt=\"Image 1\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/1/image_1.JPG\" target=\"_blank\">Link to full size image 1 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/1/image_2.JPG\" alt=\"Image 2\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/1/image_2.JPG\" target=\"_blank\">Link to full size image 2 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/1/image_3.JPG\" alt=\"Image 3\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/1/image_3.JPG\" target=\"_blank\">Link to full size image 3 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/1/image_4.JPG\" alt=\"Image 4\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/1/image_4.JPG\" target=\"_blank\">Link to full size image 4 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/1/image_5.JPG\" alt=\"Image 5\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/1/image_5.JPG\" target=\"_blank\">Link to full size image 5 (new window)</a></td></tr><tr><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/1/image_6.JPG\" alt=\"Image 6\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/1/image_6.JPG\" target=\"_blank\">Link to full size image 6 (new window)</a></td><td></td><td></td><td></td><td></td></tr></table>\n\t\t\t\t\tThe goal of the requester of the HIT is to generate eBay auctions by MTurk workers based on images of the item.<br /><br />\n\t\t\t\t\t<b>Instructions</b>: Improve and/or extend the description of the auction item(s) on the images. Keep in mind the following remarks:\n\t\t\t\t\t<ul>\n\t\t\t\t\t<li>If the description doesn\'t contain approximately <b>5 sentences</b> then try to add more text\n\t\t\t\t\t<ul>\n\t\t\t\t\t\t<li>Include specific information like size, shape, color, age, manufacture date, company/artist/author, and notable features or markings if possible</li>\n\t\t\t\t\t\t<li>Make the description as readable as possible</li>\n\t\t\t\t\t\t<li>Don\'t say anything that isn\'t true.</li>\n\t\t\t\t\t\t<li>Don\'t use all caps</li>\n\t\t\t\t\t\t<li>Don\'t include email addresses and some links</li>\n\t\t\t\t\t</ul>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li>If the description is long enough then try to improve it</li>\n\t\t\t\t\t</ul>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <FreeTextAnswer>\n        <Constraints>\n          <Length maxLength=\"5000\" minLength=\"80\"/>\n          <AnswerFormatRegex errorText=\"The description cannot be blank.\" regex=\"\\S\"/>\n        </Constraints>\n        <DefaultText>This beautiful watch manufactured by Puma has very many different features on it.  Apart from it\'s sleek black band, the face of this watch is interchangeable, matching your team or country you want to represent. Not only does this watch serve as a stopwatch, it also lights up which is perfect for using at night.  This watch is made with stainless steel.  The watch is also water resistant.</DefaultText>\n        <NumberOfLinesSuggestion>10</NumberOfLinesSuggestion>\n      </FreeTextAnswer>\n    </AnswerSpecification>\n  </Question>\n  <Question>\n    <QuestionIdentifier>description_improve_feedback</QuestionIdentifier>\n    <QuestionContent>\n      <Title>Your personal feedback (optional)</Title>\n      <FormattedContent><![CDATA[Give your personal feedback about the task. This <b>can</b> contain one of the following aspects:\n        <ul>\n        <li>Problems of the task (e.g. images are not visible)</li>\n        <li>Instructions are not clear enough</li>\n        </ul>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <FreeTextAnswer>\n        <NumberOfLinesSuggestion>3</NumberOfLinesSuggestion>\n      </FreeTextAnswer>\n    </AnswerSpecification>\n  </Question>\n</QuestionForm>",
+					"maxAssignments" : 1,
+					"assignmentDurationInSeconds" : 7200,
+					"autoApprovalDelayInSeconds" : 2592000,
+					"requesterAnnotation" : null,
+					"hitStatus" : "Reviewable",
+					"hitReviewStatus" : "NotReviewed",
+					"creationTime" : 1.400170095E12,
+					"expiration" : 1.400774895E12,
+					"assignments" : [
+						{
+							"assignmentId" : "3VELCLL3GKI5WWHHZE4F7IW0L5Q1FS",
+							"workerId" : "A1RZIAVIA68FUE",
+							"hitId" : "3RDTX9JRTX07JO7CV5GUAC6JLU7796",
+							"assignmentStatus" : "Submitted",
+							"autoApprovalTime" : 1.402762661E12,
+							"acceptTime" : 1.400170599E12,
+							"submitTime" : 1.400170661E12,
+							"answer" : {
+								"newText" : "This beautiful watch manufactured by Puma has very many different features on it.  Apart from it\'s sleek black band, the face of this watch is interchangeable, matching your team or country you want to represent. Not only does this watch serve as a stopwatch, it also lights up which is perfect for using at night.  This watch is made with stainless steel.  The watch is also water resistant. Model number Pu910751011.",
+								"description_improve_feedback" : ""
+							},
+							"requesterFeedback" : null,
+							"approvalTime" : null,
+							"deadline" : null,
+							"rejectionTime" : null
+						}
+					],
+					"done" : true
+				},
+				"returnTime" : 1.400171570825E12,
+				"printOutput" : "hit completed: 3RDTX9JRTX07JO7CV5GUAC6JLU7796\r\n"
+			},
+			{
+				"creationTime" : 1.400171570875E12,
+				"onceFunc" : "\nfunction () {\n    return Math.random();\n}\n",
+				"returnValue" : 0.2965370148229547,
+				"returnTime" : 1.400171570881E12,
+				"printOutput" : ""
+			},
+			{
+				"creationTime" : 1.400171570885E12,
+				"onceFunc" : "\nfunction () {\n    return Math.random();\n}\n",
+				"returnValue" : 0.41823486467740234,
+				"returnTime" : 1.40017157089E12,
+				"printOutput" : ""
+			},
+			{
+				"creationTime" : 1.400171570897E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.createHITRaw(params);\n}\n",
+				"returnValue" : "32L724R85KJP0V4FVLGONRW74E1PIF",
+				"returnTime" : 1.400171571335E12,
+				"printOutput" : "created HIT: 32L724R85KJP0V4FVLGONRW74E1PIF\r\n        url: https://www.mturk.com/mturk/preview?groupId=38E1HBOA1QEDDZX1Z7UNFGUC0R380D\r\n"
+			},
+			{
+				"creationTime" : 1.400171571345E12,
+				"onceFunc" : "\nfunction () {\n    if (!me.waitForHIT_callCount) {\n        me.waitForHIT_callCount = 0;\n        var a = me.getReviewableHITs(1);\n        if (a.totalNumResults == a.length) {\n            me.waitForHIT_reviewableHITs = new Set(a);\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n        me.waitForHIT_waitCount = Math.ceil(a.totalNumResults / 100);\n    }\n    me.waitForHIT_callCount++;\n    if (me.waitForHIT_callCount >= me.waitForHIT_waitCount) {\n        if (!me.waitForHIT_reviewableHITs || (time() > me.waitForHIT_reviewableHITsTime + (1000 * 60))) {\n            me.waitForHIT_reviewableHITs = new Set(me.getReviewableHITs());\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n    }\n    if (me.waitForHIT_reviewableHITs) {\n        if (!me.waitForHIT_reviewableHITs[hitId]) {\n            stop();\n        }\n    }\n    var hit = mturk.getHIT(hitId);\n    if (!hit.done) {\n        stop();\n    }\n    verbosePrint(\"hit completed: \" + hitId);\n    return hit;\n}\n",
+				"returnValue" : {
+					"hitId" : "32L724R85KJP0V4FVLGONRW74E1PIF",
+					"hitTypeId" : "38E1HBOA1QEDDZX1Z7UNFGUC0R380D",
+					"title" : "Vote on auction item description improvements",
+					"description" : "Decide which auction item description is better/suitable for the item(s) on three pictures",
+					"keywords" : null,
+					"reward" : 0.01,
+					"question" : "<QuestionForm xmlns=\"http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2005-10-01/QuestionForm.xsd\">\n  <Question>\n    <QuestionIdentifier>vote</QuestionIdentifier>\n    <IsRequired>true</IsRequired>\n    <QuestionContent>\n      <FormattedContent><![CDATA[All the workers who have done a similar task in the past are excluded from this HIT. If you find your worker ID in the following table, your work <b>will be rejected</b>.<br /><br /><table border=\"1\"><tr><td>ANJRINRP821LY</td><td>A3J47737YMH6WK</td><td>A291KO368YRYCR</td><td>A3KUFIF1ULONV1</td><td>A3AJR1PM02424Y</td></tr><tr><td>A2SFEEI806WFP9</td><td>A2Y9ZNZ0F24GHB</td><td>A1IA4CST74I1Q8</td><td>A3JLB1N2CB27BZ</td><td>AJAOE1PSNKGUE</td></tr></table><hr /><table border=\"0\"><tr><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/1/image_1.JPG\" alt=\"Image 1\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/1/image_1.JPG\" target=\"_blank\">Link to full size image 1 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/1/image_2.JPG\" alt=\"Image 2\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/1/image_2.JPG\" target=\"_blank\">Link to full size image 2 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/1/image_3.JPG\" alt=\"Image 3\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/1/image_3.JPG\" target=\"_blank\">Link to full size image 3 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/1/image_4.JPG\" alt=\"Image 4\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/1/image_4.JPG\" target=\"_blank\">Link to full size image 4 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/1/image_5.JPG\" alt=\"Image 5\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/1/image_5.JPG\" target=\"_blank\">Link to full size image 5 (new window)</a></td></tr><tr><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/1/image_6.JPG\" alt=\"Image 6\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/1/image_6.JPG\" target=\"_blank\">Link to full size image 6 (new window)</a></td><td></td><td></td><td></td><td></td></tr></table>\n\t\t\t\t\tThe goal of the requester of the HIT is to generate eBay auctions by MTurk workers based on images of the item.<br /><br />\n\t\t\t\t\t<b>Instructions:</b> Which description of the auction item(s) on the pictures is better? The following factors <b>can</b> affect your decision: \n\t\t\t\t\t<ul>\n\t\t\t\t\t\t<li>One description is more informative than the other</li>\n\t\t\t\t\t\t<li>One description contains more information about the auction item then the other</li>\n\t\t\t\t\t\t<li>One description contains wrong information</li>\n\t\t\t\t\t\t<li>One description has spelling mistakes</li>\n\t\t\t\t\t</ul>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <SelectionAnswer>\n        <Selections>\n          <Selection>\n            <SelectionIdentifier>b</SelectionIdentifier>\n            <Text>This beautiful watch manufactured by Puma has very many different features on it.  Apart from it\'s sleek black band, the face of this watch is interchangeable, matching your team or country you want to represent. Not only does this watch serve as a stopwatch, it also lights up which is perfect for using at night.  This watch is made with stainless steel.  The watch is also water resistant. Model number Pu910751011.</Text>\n          </Selection>\n          <Selection>\n            <SelectionIdentifier>a</SelectionIdentifier>\n            <Text>This beautiful watch manufactured by Puma has very many different features on it.  Apart from it\'s sleek black band, the face of this watch is interchangeable, matching your team or country you want to represent. Not only does this watch serve as a stopwatch, it also lights up which is perfect for using at night.  This watch is made with stainless steel.  The watch is also water resistant.</Text>\n          </Selection>\n        </Selections>\n      </SelectionAnswer>\n    </AnswerSpecification>\n  </Question>\n  <Question>\n    <QuestionIdentifier>description_vote_feedback</QuestionIdentifier>\n    <QuestionContent>\n      <Title>Your personal feedback (optional)</Title>\n      <FormattedContent><![CDATA[Give your personal feedback about the task. This <b>can</b> contain one of the following aspects:\n        <ul>\n        <li>Problems of the task (e.g. images are not visible)</li>\n        <li>Instructions are not clear enough</li>\n        </ul>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <FreeTextAnswer>\n        <NumberOfLinesSuggestion>3</NumberOfLinesSuggestion>\n      </FreeTextAnswer>\n    </AnswerSpecification>\n  </Question>\n</QuestionForm>",
+					"maxAssignments" : 2,
+					"assignmentDurationInSeconds" : 1800,
+					"autoApprovalDelayInSeconds" : 2592000,
+					"requesterAnnotation" : null,
+					"hitStatus" : "Reviewable",
+					"hitReviewStatus" : "NotReviewed",
+					"creationTime" : 1.400171593E12,
+					"expiration" : 1.400776393E12,
+					"assignments" : [
+						{
+							"assignmentId" : "33F859I566CQNQQFW1L4GFLMNX7BHY",
+							"workerId" : "A2KCG73A6QCNCW",
+							"hitId" : "32L724R85KJP0V4FVLGONRW74E1PIF",
+							"assignmentStatus" : "Submitted",
+							"autoApprovalTime" : 1.402767037E12,
+							"acceptTime" : 1.400175007E12,
+							"submitTime" : 1.400175037E12,
+							"answer" : {
+								"vote" : [
+									"b"
+								],
+								"description_vote_feedback" : ""
+							},
+							"requesterFeedback" : null,
+							"approvalTime" : null,
+							"deadline" : null,
+							"rejectionTime" : null
+						},
+						{
+							"assignmentId" : "38F5OAUN5NB3LENPJK9OBDZQ47H7H9",
+							"workerId" : "AWN1PEZWRQSQ9",
+							"hitId" : "32L724R85KJP0V4FVLGONRW74E1PIF",
+							"assignmentStatus" : "Submitted",
+							"autoApprovalTime" : 1.402767617E12,
+							"acceptTime" : 1.400175598E12,
+							"submitTime" : 1.400175617E12,
+							"answer" : {
+								"vote" : [
+									"b"
+								],
+								"description_vote_feedback" : ""
+							},
+							"requesterFeedback" : null,
+							"approvalTime" : null,
+							"deadline" : null,
+							"rejectionTime" : null
+						}
+					],
+					"done" : true
+				},
+				"returnTime" : 1.400256031163E12,
+				"printOutput" : "hit completed: 32L724R85KJP0V4FVLGONRW74E1PIF\r\n"
+			},
+			{
+				"creationTime" : 1.400256031179E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.approveAssignmentRaw(assignment, reason);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.40025603246E12,
+				"printOutput" : "approved assignment 33F859I566CQNQQFW1L4GFLMNX7BHY\r\n"
+			},
+			{
+				"creationTime" : 1.40025603246E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.approveAssignmentRaw(assignment, reason);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.400256032788E12,
+				"printOutput" : "approved assignment 38F5OAUN5NB3LENPJK9OBDZQ47H7H9\r\n"
+			},
+			{
+				"creationTime" : 1.400256032788E12,
+				"onceFunc" : "\nfunction () {\n    mturk.deleteHITRaw(hit);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.400256033257E12,
+				"printOutput" : "disabled HIT: 32L724R85KJP0V4FVLGONRW74E1PIF\r\n"
+			},
+			{
+				"creationTime" : 1.400256033272E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.approveAssignmentRaw(assignment, reason);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.400256033616E12,
+				"printOutput" : "approved assignment 3VELCLL3GKI5WWHHZE4F7IW0L5Q1FS\r\n"
+			},
+			{
+				"creationTime" : 1.400256033632E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.createHITRaw(params);\n}\n",
+				"returnValue" : "39TX062QX0NFJ1ONW9JIDYGLNXXX3Z",
+				"returnTime" : 1.400256034132E12,
+				"printOutput" : "created HIT: 39TX062QX0NFJ1ONW9JIDYGLNXXX3Z\r\n        url: https://www.mturk.com/mturk/preview?groupId=24LSCXKNQY2RCLHN82ME7HR0KRFP09\r\n"
+			},
+			{
+				"creationTime" : 1.400256034132E12,
+				"onceFunc" : "\nfunction () {\n    if (!me.waitForHIT_callCount) {\n        me.waitForHIT_callCount = 0;\n        var a = me.getReviewableHITs(1);\n        if (a.totalNumResults == a.length) {\n            me.waitForHIT_reviewableHITs = new Set(a);\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n        me.waitForHIT_waitCount = Math.ceil(a.totalNumResults / 100);\n    }\n    me.waitForHIT_callCount++;\n    if (me.waitForHIT_callCount >= me.waitForHIT_waitCount) {\n        if (!me.waitForHIT_reviewableHITs || (time() > me.waitForHIT_reviewableHITsTime + (1000 * 60))) {\n            me.waitForHIT_reviewableHITs = new Set(me.getReviewableHITs());\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n    }\n    if (me.waitForHIT_reviewableHITs) {\n        if (!me.waitForHIT_reviewableHITs[hitId]) {\n            stop();\n        }\n    }\n    var hit = mturk.getHIT(hitId);\n    if (!hit.done) {\n        stop();\n    }\n    verbosePrint(\"hit completed: \" + hitId);\n    return hit;\n}\n",
+				"returnValue" : {
+					"hitId" : "39TX062QX0NFJ1ONW9JIDYGLNXXX3Z",
+					"hitTypeId" : "24LSCXKNQY2RCLHN82ME7HR0KRFP09",
+					"title" : "Improve/extend description of auction item(s) on pictures",
+					"description" : "Improve and/or extend the description of an auction item based on three images",
+					"keywords" : null,
+					"reward" : 0.2,
+					"question" : "<QuestionForm xmlns=\"http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2005-10-01/QuestionForm.xsd\">\n  <Question>\n    <QuestionIdentifier>newText</QuestionIdentifier>\n    <IsRequired>true</IsRequired>\n    <QuestionContent>\n      <FormattedContent><![CDATA[All the workers who have done a similar task in the past are excluded from this HIT. If you find your worker ID in the following table, your work <b>will be rejected</b>.<br /><br /><table border=\"1\"><tr><td>ANJRINRP821LY</td><td>A3J47737YMH6WK</td><td>A291KO368YRYCR</td><td>A3KUFIF1ULONV1</td><td>A3AJR1PM02424Y</td></tr><tr><td>A2SFEEI806WFP9</td><td>A2Y9ZNZ0F24GHB</td><td>A1IA4CST74I1Q8</td><td>A3JLB1N2CB27BZ</td><td>AJAOE1PSNKGUE</td></tr></table><hr /><table border=\"0\"><tr><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/1/image_1.JPG\" alt=\"Image 1\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/1/image_1.JPG\" target=\"_blank\">Link to full size image 1 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/1/image_2.JPG\" alt=\"Image 2\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/1/image_2.JPG\" target=\"_blank\">Link to full size image 2 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/1/image_3.JPG\" alt=\"Image 3\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/1/image_3.JPG\" target=\"_blank\">Link to full size image 3 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/1/image_4.JPG\" alt=\"Image 4\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/1/image_4.JPG\" target=\"_blank\">Link to full size image 4 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/1/image_5.JPG\" alt=\"Image 5\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/1/image_5.JPG\" target=\"_blank\">Link to full size image 5 (new window)</a></td></tr><tr><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/1/image_6.JPG\" alt=\"Image 6\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/1/image_6.JPG\" target=\"_blank\">Link to full size image 6 (new window)</a></td><td></td><td></td><td></td><td></td></tr></table>\n\t\t\t\t\tThe goal of the requester of the HIT is to generate eBay auctions by MTurk workers based on images of the item.<br /><br />\n\t\t\t\t\t<b>Instructions</b>: Improve and/or extend the description of the auction item(s) on the images. Keep in mind the following remarks:\n\t\t\t\t\t<ul>\n\t\t\t\t\t<li>If the description doesn\'t contain approximately <b>5 sentences</b> then try to add more text\n\t\t\t\t\t<ul>\n\t\t\t\t\t\t<li>Include specific information like size, shape, color, age, manufacture date, company/artist/author, and notable features or markings if possible</li>\n\t\t\t\t\t\t<li>Make the description as readable as possible</li>\n\t\t\t\t\t\t<li>Don\'t say anything that isn\'t true.</li>\n\t\t\t\t\t\t<li>Don\'t use all caps</li>\n\t\t\t\t\t\t<li>Don\'t include email addresses and some links</li>\n\t\t\t\t\t</ul>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li>If the description is long enough then try to improve it</li>\n\t\t\t\t\t</ul>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <FreeTextAnswer>\n        <Constraints>\n          <Length maxLength=\"5000\" minLength=\"120\"/>\n          <AnswerFormatRegex errorText=\"The description cannot be blank.\" regex=\"\\S\"/>\n        </Constraints>\n        <DefaultText>This beautiful watch manufactured by Puma has very many different features on it.  Apart from it\'s sleek black band, the face of this watch is interchangeable, matching your team or country you want to represent. Not only does this watch serve as a stopwatch, it also lights up which is perfect for using at night.  This watch is made with stainless steel.  The watch is also water resistant. Model number Pu910751011.</DefaultText>\n        <NumberOfLinesSuggestion>10</NumberOfLinesSuggestion>\n      </FreeTextAnswer>\n    </AnswerSpecification>\n  </Question>\n  <Question>\n    <QuestionIdentifier>description_improve_feedback</QuestionIdentifier>\n    <QuestionContent>\n      <Title>Your personal feedback (optional)</Title>\n      <FormattedContent><![CDATA[Give your personal feedback about the task. This <b>can</b> contain one of the following aspects:\n        <ul>\n        <li>Problems of the task (e.g. images are not visible)</li>\n        <li>Instructions are not clear enough</li>\n        </ul>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <FreeTextAnswer>\n        <NumberOfLinesSuggestion>3</NumberOfLinesSuggestion>\n      </FreeTextAnswer>\n    </AnswerSpecification>\n  </Question>\n</QuestionForm>",
+					"maxAssignments" : 1,
+					"assignmentDurationInSeconds" : 7200,
+					"autoApprovalDelayInSeconds" : 2592000,
+					"requesterAnnotation" : null,
+					"hitStatus" : "Reviewable",
+					"hitReviewStatus" : "NotReviewed",
+					"creationTime" : 1.400256033E12,
+					"expiration" : 1.400860833E12,
+					"assignments" : [
+						{
+							"assignmentId" : "3KXIR214I4F2N12OY18ALX9EOSZ426",
+							"workerId" : "AVHQMOR1H9LN0",
+							"hitId" : "39TX062QX0NFJ1ONW9JIDYGLNXXX3Z",
+							"assignmentStatus" : "Submitted",
+							"autoApprovalTime" : 1.402865935E12,
+							"acceptTime" : 1.400273874E12,
+							"submitTime" : 1.400273935E12,
+							"answer" : {
+								"newText" : "This beautiful watch manufactured by Puma has very many different features on it.  Apart from it\'s sleek black band, the face of this watch is interchangeable, matching your team or country you want to represent. Not only does this watch serve as a stopwatch, it also lights up which is perfect for using at night.  This watch is made with stainless steel.  The watch is also water resistant. Model number Pu910751011.",
+								"description_improve_feedback" : "None"
+							},
+							"requesterFeedback" : null,
+							"approvalTime" : null,
+							"deadline" : null,
+							"rejectionTime" : null
+						}
+					],
+					"done" : true
+				},
+				"returnTime" : 1.400516559146E12,
+				"printOutput" : "hit completed: 39TX062QX0NFJ1ONW9JIDYGLNXXX3Z\r\n"
+			},
+			{
+				"creationTime" : 1.400516559177E12,
+				"onceFunc" : "\nfunction () {\n    return Math.random();\n}\n",
+				"returnValue" : 0.9510458459202823,
+				"returnTime" : 1.400516559193E12,
+				"printOutput" : ""
+			},
+			{
+				"creationTime" : 1.400516559193E12,
+				"onceFunc" : "\nfunction () {\n    return Math.random();\n}\n",
+				"returnValue" : 0.7375743600527997,
+				"returnTime" : 1.400516559193E12,
+				"printOutput" : ""
+			},
+			{
+				"creationTime" : 1.400516559208E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.createHITRaw(params);\n}\n",
+				"returnValue" : "3N5YJ55YXF2ARS943IBJ243TR0HAN4",
+				"returnTime" : 1.400516559646E12,
+				"printOutput" : "created HIT: 3N5YJ55YXF2ARS943IBJ243TR0HAN4\r\n        url: https://www.mturk.com/mturk/preview?groupId=38E1HBOA1QEDDZX1Z7UNFGUC0R380D\r\n"
+			},
+			{
+				"creationTime" : 1.400516559661E12,
+				"onceFunc" : "\nfunction () {\n    if (!me.waitForHIT_callCount) {\n        me.waitForHIT_callCount = 0;\n        var a = me.getReviewableHITs(1);\n        if (a.totalNumResults == a.length) {\n            me.waitForHIT_reviewableHITs = new Set(a);\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n        me.waitForHIT_waitCount = Math.ceil(a.totalNumResults / 100);\n    }\n    me.waitForHIT_callCount++;\n    if (me.waitForHIT_callCount >= me.waitForHIT_waitCount) {\n        if (!me.waitForHIT_reviewableHITs || (time() > me.waitForHIT_reviewableHITsTime + (1000 * 60))) {\n            me.waitForHIT_reviewableHITs = new Set(me.getReviewableHITs());\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n    }\n    if (me.waitForHIT_reviewableHITs) {\n        if (!me.waitForHIT_reviewableHITs[hitId]) {\n            stop();\n        }\n    }\n    var hit = mturk.getHIT(hitId);\n    if (!hit.done) {\n        stop();\n    }\n    verbosePrint(\"hit completed: \" + hitId);\n    return hit;\n}\n",
+				"returnValue" : {
+					"hitId" : "3N5YJ55YXF2ARS943IBJ243TR0HAN4",
+					"hitTypeId" : "38E1HBOA1QEDDZX1Z7UNFGUC0R380D",
+					"title" : "Vote on auction item description improvements",
+					"description" : "Decide which auction item description is better/suitable for the item(s) on three pictures",
+					"keywords" : null,
+					"reward" : 0.01,
+					"question" : "<QuestionForm xmlns=\"http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2005-10-01/QuestionForm.xsd\">\n  <Question>\n    <QuestionIdentifier>vote</QuestionIdentifier>\n    <IsRequired>true</IsRequired>\n    <QuestionContent>\n      <FormattedContent><![CDATA[All the workers who have done a similar task in the past are excluded from this HIT. If you find your worker ID in the following table, your work <b>will be rejected</b>.<br /><br /><table border=\"1\"><tr><td>ANJRINRP821LY</td><td>A3J47737YMH6WK</td><td>A291KO368YRYCR</td><td>A3KUFIF1ULONV1</td><td>A3AJR1PM02424Y</td></tr><tr><td>A2SFEEI806WFP9</td><td>A2Y9ZNZ0F24GHB</td><td>A1IA4CST74I1Q8</td><td>A3JLB1N2CB27BZ</td><td>AJAOE1PSNKGUE</td></tr></table><hr /><table border=\"0\"><tr><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/1/image_1.JPG\" alt=\"Image 1\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/1/image_1.JPG\" target=\"_blank\">Link to full size image 1 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/1/image_2.JPG\" alt=\"Image 2\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/1/image_2.JPG\" target=\"_blank\">Link to full size image 2 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/1/image_3.JPG\" alt=\"Image 3\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/1/image_3.JPG\" target=\"_blank\">Link to full size image 3 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/1/image_4.JPG\" alt=\"Image 4\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/1/image_4.JPG\" target=\"_blank\">Link to full size image 4 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/1/image_5.JPG\" alt=\"Image 5\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/1/image_5.JPG\" target=\"_blank\">Link to full size image 5 (new window)</a></td></tr><tr><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/1/image_6.JPG\" alt=\"Image 6\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/1/image_6.JPG\" target=\"_blank\">Link to full size image 6 (new window)</a></td><td></td><td></td><td></td><td></td></tr></table>\n\t\t\t\t\tThe goal of the requester of the HIT is to generate eBay auctions by MTurk workers based on images of the item.<br /><br />\n\t\t\t\t\t<b>Instructions:</b> Which description of the auction item(s) on the pictures is better? The following factors <b>can</b> affect your decision: \n\t\t\t\t\t<ul>\n\t\t\t\t\t\t<li>One description is more informative than the other</li>\n\t\t\t\t\t\t<li>One description contains more information about the auction item then the other</li>\n\t\t\t\t\t\t<li>One description contains wrong information</li>\n\t\t\t\t\t\t<li>One description has spelling mistakes</li>\n\t\t\t\t\t</ul>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <SelectionAnswer>\n        <Selections>\n          <Selection>\n            <SelectionIdentifier>b</SelectionIdentifier>\n            <Text>This beautiful watch manufactured by Puma has very many different features on it.  Apart from it\'s sleek black band, the face of this watch is interchangeable, matching your team or country you want to represent. Not only does this watch serve as a stopwatch, it also lights up which is perfect for using at night.  This watch is made with stainless steel.  The watch is also water resistant. Model number Pu910751011.</Text>\n          </Selection>\n          <Selection>\n            <SelectionIdentifier>a</SelectionIdentifier>\n            <Text>This beautiful watch manufactured by Puma has very many different features on it.  Apart from it\'s sleek black band, the face of this watch is interchangeable, matching your team or country you want to represent. Not only does this watch serve as a stopwatch, it also lights up which is perfect for using at night.  This watch is made with stainless steel.  The watch is also water resistant. Model number Pu910751011.</Text>\n          </Selection>\n        </Selections>\n      </SelectionAnswer>\n    </AnswerSpecification>\n  </Question>\n  <Question>\n    <QuestionIdentifier>description_vote_feedback</QuestionIdentifier>\n    <QuestionContent>\n      <Title>Your personal feedback (optional)</Title>\n      <FormattedContent><![CDATA[Give your personal feedback about the task. This <b>can</b> contain one of the following aspects:\n        <ul>\n        <li>Problems of the task (e.g. images are not visible)</li>\n        <li>Instructions are not clear enough</li>\n        </ul>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <FreeTextAnswer>\n        <NumberOfLinesSuggestion>3</NumberOfLinesSuggestion>\n      </FreeTextAnswer>\n    </AnswerSpecification>\n  </Question>\n</QuestionForm>",
+					"maxAssignments" : 2,
+					"assignmentDurationInSeconds" : 1800,
+					"autoApprovalDelayInSeconds" : 2592000,
+					"requesterAnnotation" : null,
+					"hitStatus" : "Reviewable",
+					"hitReviewStatus" : "NotReviewed",
+					"creationTime" : 1.400516564E12,
+					"expiration" : 1.401121364E12,
+					"assignments" : [
+						{
+							"assignmentId" : "3UNH76FOCS48SCK1XQF1GVRJQA7MYH",
+							"workerId" : "A2IA303OT5BBX0",
+							"hitId" : "3N5YJ55YXF2ARS943IBJ243TR0HAN4",
+							"assignmentStatus" : "Submitted",
+							"autoApprovalTime" : 1.403109892E12,
+							"acceptTime" : 1.400517732E12,
+							"submitTime" : 1.400517892E12,
+							"answer" : {
+								"vote" : [
+									"b"
+								],
+								"description_vote_feedback" : "The two sentences are identical."
+							},
+							"requesterFeedback" : null,
+							"approvalTime" : null,
+							"deadline" : null,
+							"rejectionTime" : null
+						},
+						{
+							"assignmentId" : "340UGXU9DY0A1QU51HJ3064JLIIVUP",
+							"workerId" : "A1OVAN2YSCBNVQ",
+							"hitId" : "3N5YJ55YXF2ARS943IBJ243TR0HAN4",
+							"assignmentStatus" : "Submitted",
+							"autoApprovalTime" : 1.403145609E12,
+							"acceptTime" : 1.400553575E12,
+							"submitTime" : 1.400553609E12,
+							"answer" : {
+								"vote" : [
+									"b"
+								],
+								"description_vote_feedback" : ""
+							},
+							"requesterFeedback" : null,
+							"approvalTime" : null,
+							"deadline" : null,
+							"rejectionTime" : null
+						}
+					],
+					"done" : true
+				},
+				"returnTime" : 1.400602464237E12,
+				"printOutput" : "hit completed: 3N5YJ55YXF2ARS943IBJ243TR0HAN4\r\n"
+			},
+			{
+				"creationTime" : 1.400602464251E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.approveAssignmentRaw(assignment, reason);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.400602464527E12,
+				"printOutput" : "approved assignment 3UNH76FOCS48SCK1XQF1GVRJQA7MYH\r\n"
+			},
+			{
+				"creationTime" : 1.400602464541E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.approveAssignmentRaw(assignment, reason);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.400602464828E12,
+				"printOutput" : "approved assignment 340UGXU9DY0A1QU51HJ3064JLIIVUP\r\n"
+			},
+			{
+				"creationTime" : 1.400602464833E12,
+				"onceFunc" : "\nfunction () {\n    mturk.deleteHITRaw(hit);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.40060246505E12,
+				"printOutput" : "disabled HIT: 3N5YJ55YXF2ARS943IBJ243TR0HAN4\r\n"
+			},
+			{
+				"creationTime" : 1.400602465056E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.approveAssignmentRaw(assignment, reason);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.400602465416E12,
+				"printOutput" : "approved assignment 3KXIR214I4F2N12OY18ALX9EOSZ426\r\n"
+			}
+		]
+	}
+}
+__safetyCounters = {
+	"moneySpent" : 0.6400000000000001,
+	"hitsCreated" : 5
+}
+// end:2341

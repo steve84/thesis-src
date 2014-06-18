@@ -1,0 +1,505 @@
+// begin:d773
+__HITs = {
+	"real:3D0LPO3EAAYT5V7JK3PCKFL5KOXOYP" : {
+		"url" : "https://www.mturk.com/mturk/preview?groupId=24LSCXKNQY2RCLHN82ME7HR0KRFP09"
+	},
+	"real:3RHLQY6EDS3M3R2A5NNPTW5ZLFH4DP" : {
+		"url" : "https://www.mturk.com/mturk/preview?groupId=24LSCXKNQY2RCLHN82ME7HR0KRFP09"
+	},
+	"real:3E6L1VR4XVLXGYKKFHBUEUSYUT66FB" : {
+		"url" : "https://www.mturk.com/mturk/preview?groupId=24LSCXKNQY2RCLHN82ME7HR0KRFP09"
+	}
+}
+__S3_Objects = {
+}
+__stackFrames = {
+	"for-real" : {
+		"sequencialFrames" : [
+			{
+				"creationTime" : 1.400083523614E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.createHITRaw(params);\n}\n",
+				"returnValue" : "3D0LPO3EAAYT5V7JK3PCKFL5KOXOYP",
+				"returnTime" : 1.400083525029E12,
+				"printOutput" : "created HIT: 3D0LPO3EAAYT5V7JK3PCKFL5KOXOYP\r\n        url: https://www.mturk.com/mturk/preview?groupId=24LSCXKNQY2RCLHN82ME7HR0KRFP09\r\n"
+			},
+			{
+				"creationTime" : 1.400083525034E12,
+				"onceFunc" : "\nfunction () {\n    if (!me.waitForHIT_callCount) {\n        me.waitForHIT_callCount = 0;\n        var a = me.getReviewableHITs(1);\n        if (a.totalNumResults == a.length) {\n            me.waitForHIT_reviewableHITs = new Set(a);\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n        me.waitForHIT_waitCount = Math.ceil(a.totalNumResults / 100);\n    }\n    me.waitForHIT_callCount++;\n    if (me.waitForHIT_callCount >= me.waitForHIT_waitCount) {\n        if (!me.waitForHIT_reviewableHITs || (time() > me.waitForHIT_reviewableHITsTime + (1000 * 60))) {\n            me.waitForHIT_reviewableHITs = new Set(me.getReviewableHITs());\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n    }\n    if (me.waitForHIT_reviewableHITs) {\n        if (!me.waitForHIT_reviewableHITs[hitId]) {\n            stop();\n        }\n    }\n    var hit = mturk.getHIT(hitId);\n    if (!hit.done) {\n        stop();\n    }\n    verbosePrint(\"hit completed: \" + hitId);\n    return hit;\n}\n",
+				"returnValue" : {
+					"hitId" : "3D0LPO3EAAYT5V7JK3PCKFL5KOXOYP",
+					"hitTypeId" : "24LSCXKNQY2RCLHN82ME7HR0KRFP09",
+					"title" : "Improve/extend description of auction item(s) on pictures",
+					"description" : "Improve and/or extend the description of an auction item based on three images",
+					"keywords" : null,
+					"reward" : 0.2,
+					"question" : "<QuestionForm xmlns=\"http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2005-10-01/QuestionForm.xsd\">\n  <Question>\n    <QuestionIdentifier>newText</QuestionIdentifier>\n    <IsRequired>true</IsRequired>\n    <QuestionContent>\n      <FormattedContent><![CDATA[All the workers who have done a similar task in the past are excluded from this HIT. If you find your worker ID in the following table, your work <b>will be rejected</b>.<br /><br /><table border=\"1\"><tr><td>ANJRINRP821LY</td><td>A3J47737YMH6WK</td><td>A291KO368YRYCR</td><td>A3KUFIF1ULONV1</td><td>A3AJR1PM02424Y</td></tr><tr><td>A2SFEEI806WFP9</td><td>A2Y9ZNZ0F24GHB</td><td>A1IA4CST74I1Q8</td><td>A3JLB1N2CB27BZ</td><td>AJAOE1PSNKGUE</td></tr></table><hr /><table border=\"0\"><tr><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/3/image_1.JPG\" alt=\"Image 1\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/3/image_1.JPG\" target=\"_blank\">Link to full size image 1 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/3/image_2.JPG\" alt=\"Image 2\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/3/image_2.JPG\" target=\"_blank\">Link to full size image 2 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/3/image_3.JPG\" alt=\"Image 3\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/3/image_3.JPG\" target=\"_blank\">Link to full size image 3 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/3/image_4.JPG\" alt=\"Image 4\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/3/image_4.JPG\" target=\"_blank\">Link to full size image 4 (new window)</a></td><td></td></tr></table>\n\t\t\t\t\tThe goal of the requester of the HIT is to generate eBay auctions by MTurk workers based on images of the item.<br /><br />\n\t\t\t\t\t<b>Instructions</b>: Improve and/or extend the description of the auction item(s) on the images. Keep in mind the following remarks:\n\t\t\t\t\t<ul>\n\t\t\t\t\t<li>If the description doesn\'t contain approximately <b>5 sentences</b> then try to add more text\n\t\t\t\t\t<ul>\n\t\t\t\t\t\t<li>Include specific information like size, shape, color, age, manufacture date, company/artist/author, and notable features or markings if possible</li>\n\t\t\t\t\t\t<li>Make the description as readable as possible</li>\n\t\t\t\t\t\t<li>Don\'t say anything that isn\'t true.</li>\n\t\t\t\t\t\t<li>Don\'t use all caps</li>\n\t\t\t\t\t\t<li>Don\'t include email addresses and some links</li>\n\t\t\t\t\t</ul>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li>If the description is long enough then try to improve it</li>\n\t\t\t\t\t</ul>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <FreeTextAnswer>\n        <Constraints>\n          <Length maxLength=\"5000\" minLength=\"40\"/>\n          <AnswerFormatRegex errorText=\"The description cannot be blank.\" regex=\"\\S\"/>\n        </Constraints>\n        <DefaultText/>\n        <NumberOfLinesSuggestion>10</NumberOfLinesSuggestion>\n      </FreeTextAnswer>\n    </AnswerSpecification>\n  </Question>\n  <Question>\n    <QuestionIdentifier>description_improve_feedback</QuestionIdentifier>\n    <QuestionContent>\n      <Title>Your personal feedback (optional)</Title>\n      <FormattedContent><![CDATA[Give your personal feedback about the task. This <b>can</b> contain one of the following aspects:\n        <ul>\n        <li>Problems of the task (e.g. images are not visible)</li>\n        <li>Instructions are not clear enough</li>\n        </ul>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <FreeTextAnswer>\n        <NumberOfLinesSuggestion>3</NumberOfLinesSuggestion>\n      </FreeTextAnswer>\n    </AnswerSpecification>\n  </Question>\n</QuestionForm>",
+					"maxAssignments" : 1,
+					"assignmentDurationInSeconds" : 7200,
+					"autoApprovalDelayInSeconds" : 2592000,
+					"requesterAnnotation" : null,
+					"hitStatus" : "Reviewable",
+					"hitReviewStatus" : "NotReviewed",
+					"creationTime" : 1.400083545E12,
+					"expiration" : 1.400688345E12,
+					"assignments" : [
+						{
+							"assignmentId" : "3FK0YFF9PZFAE5J567T8WS62Y4EVVU",
+							"workerId" : "A16CDD9GGDTZVE",
+							"hitId" : "3D0LPO3EAAYT5V7JK3PCKFL5KOXOYP",
+							"assignmentStatus" : "Submitted",
+							"autoApprovalTime" : 1.402771768E12,
+							"acceptTime" : 1.400179546E12,
+							"submitTime" : 1.400179768E12,
+							"answer" : {
+								"newText" : "This is a lot of 13 football cards. Various teams. 5 holo-foil RARE cards. Signutures are included. Teams include Texans, Bills, and Buccaneers, among others. They are all in mint or near mint condition.",
+								"description_improve_feedback" : ""
+							},
+							"requesterFeedback" : null,
+							"approvalTime" : null,
+							"deadline" : null,
+							"rejectionTime" : null
+						}
+					],
+					"done" : true
+				},
+				"returnTime" : 1.40025607254E12,
+				"printOutput" : "hit completed: 3D0LPO3EAAYT5V7JK3PCKFL5KOXOYP\r\n"
+			},
+			{
+				"creationTime" : 1.400256072571E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.approveAssignmentRaw(assignment, reason);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.400256079931E12,
+				"printOutput" : "approved assignment 3FK0YFF9PZFAE5J567T8WS62Y4EVVU\r\n"
+			},
+			{
+				"creationTime" : 1.400256079931E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.createHITRaw(params);\n}\n",
+				"returnValue" : "3RHLQY6EDS3M3R2A5NNPTW5ZLFH4DP",
+				"returnTime" : 1.400256081213E12,
+				"printOutput" : "created HIT: 3RHLQY6EDS3M3R2A5NNPTW5ZLFH4DP\r\n        url: https://www.mturk.com/mturk/preview?groupId=24LSCXKNQY2RCLHN82ME7HR0KRFP09\r\n"
+			},
+			{
+				"creationTime" : 1.400256081213E12,
+				"onceFunc" : "\nfunction () {\n    if (!me.waitForHIT_callCount) {\n        me.waitForHIT_callCount = 0;\n        var a = me.getReviewableHITs(1);\n        if (a.totalNumResults == a.length) {\n            me.waitForHIT_reviewableHITs = new Set(a);\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n        me.waitForHIT_waitCount = Math.ceil(a.totalNumResults / 100);\n    }\n    me.waitForHIT_callCount++;\n    if (me.waitForHIT_callCount >= me.waitForHIT_waitCount) {\n        if (!me.waitForHIT_reviewableHITs || (time() > me.waitForHIT_reviewableHITsTime + (1000 * 60))) {\n            me.waitForHIT_reviewableHITs = new Set(me.getReviewableHITs());\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n    }\n    if (me.waitForHIT_reviewableHITs) {\n        if (!me.waitForHIT_reviewableHITs[hitId]) {\n            stop();\n        }\n    }\n    var hit = mturk.getHIT(hitId);\n    if (!hit.done) {\n        stop();\n    }\n    verbosePrint(\"hit completed: \" + hitId);\n    return hit;\n}\n",
+				"returnValue" : {
+					"hitId" : "3RHLQY6EDS3M3R2A5NNPTW5ZLFH4DP",
+					"hitTypeId" : "24LSCXKNQY2RCLHN82ME7HR0KRFP09",
+					"title" : "Improve/extend description of auction item(s) on pictures",
+					"description" : "Improve and/or extend the description of an auction item based on three images",
+					"keywords" : null,
+					"reward" : 0.2,
+					"question" : "<QuestionForm xmlns=\"http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2005-10-01/QuestionForm.xsd\">\n  <Question>\n    <QuestionIdentifier>newText</QuestionIdentifier>\n    <IsRequired>true</IsRequired>\n    <QuestionContent>\n      <FormattedContent><![CDATA[All the workers who have done a similar task in the past are excluded from this HIT. If you find your worker ID in the following table, your work <b>will be rejected</b>.<br /><br /><table border=\"1\"><tr><td>ANJRINRP821LY</td><td>A3J47737YMH6WK</td><td>A291KO368YRYCR</td><td>A3KUFIF1ULONV1</td><td>A3AJR1PM02424Y</td></tr><tr><td>A2SFEEI806WFP9</td><td>A2Y9ZNZ0F24GHB</td><td>A1IA4CST74I1Q8</td><td>A3JLB1N2CB27BZ</td><td>AJAOE1PSNKGUE</td></tr></table><hr /><table border=\"0\"><tr><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/3/image_1.JPG\" alt=\"Image 1\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/3/image_1.JPG\" target=\"_blank\">Link to full size image 1 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/3/image_2.JPG\" alt=\"Image 2\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/3/image_2.JPG\" target=\"_blank\">Link to full size image 2 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/3/image_3.JPG\" alt=\"Image 3\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/3/image_3.JPG\" target=\"_blank\">Link to full size image 3 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/3/image_4.JPG\" alt=\"Image 4\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/3/image_4.JPG\" target=\"_blank\">Link to full size image 4 (new window)</a></td><td></td></tr></table>\n\t\t\t\t\tThe goal of the requester of the HIT is to generate eBay auctions by MTurk workers based on images of the item.<br /><br />\n\t\t\t\t\t<b>Instructions</b>: Improve and/or extend the description of the auction item(s) on the images. Keep in mind the following remarks:\n\t\t\t\t\t<ul>\n\t\t\t\t\t<li>If the description doesn\'t contain approximately <b>5 sentences</b> then try to add more text\n\t\t\t\t\t<ul>\n\t\t\t\t\t\t<li>Include specific information like size, shape, color, age, manufacture date, company/artist/author, and notable features or markings if possible</li>\n\t\t\t\t\t\t<li>Make the description as readable as possible</li>\n\t\t\t\t\t\t<li>Don\'t say anything that isn\'t true.</li>\n\t\t\t\t\t\t<li>Don\'t use all caps</li>\n\t\t\t\t\t\t<li>Don\'t include email addresses and some links</li>\n\t\t\t\t\t</ul>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li>If the description is long enough then try to improve it</li>\n\t\t\t\t\t</ul>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <FreeTextAnswer>\n        <Constraints>\n          <Length maxLength=\"5000\" minLength=\"80\"/>\n          <AnswerFormatRegex errorText=\"The description cannot be blank.\" regex=\"\\S\"/>\n        </Constraints>\n        <DefaultText>This is a lot of 13 football cards. Various teams. 5 holo-foil RARE cards. Signutures are included. Teams include Texans, Bills, and Buccaneers, among others. They are all in mint or near mint condition.</DefaultText>\n        <NumberOfLinesSuggestion>10</NumberOfLinesSuggestion>\n      </FreeTextAnswer>\n    </AnswerSpecification>\n  </Question>\n  <Question>\n    <QuestionIdentifier>description_improve_feedback</QuestionIdentifier>\n    <QuestionContent>\n      <Title>Your personal feedback (optional)</Title>\n      <FormattedContent><![CDATA[Give your personal feedback about the task. This <b>can</b> contain one of the following aspects:\n        <ul>\n        <li>Problems of the task (e.g. images are not visible)</li>\n        <li>Instructions are not clear enough</li>\n        </ul>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <FreeTextAnswer>\n        <NumberOfLinesSuggestion>3</NumberOfLinesSuggestion>\n      </FreeTextAnswer>\n    </AnswerSpecification>\n  </Question>\n</QuestionForm>",
+					"maxAssignments" : 1,
+					"assignmentDurationInSeconds" : 7200,
+					"autoApprovalDelayInSeconds" : 2592000,
+					"requesterAnnotation" : null,
+					"hitStatus" : "Reviewable",
+					"hitReviewStatus" : "NotReviewed",
+					"creationTime" : 1.40025608E12,
+					"expiration" : 1.40086088E12,
+					"assignments" : [
+						{
+							"assignmentId" : "34BBWHLWHAAI7OZAXAZL35ZMXFXIWF",
+							"workerId" : "AXYKTP0YCYJB9",
+							"hitId" : "3RHLQY6EDS3M3R2A5NNPTW5ZLFH4DP",
+							"assignmentStatus" : "Submitted",
+							"autoApprovalTime" : 1.402848463E12,
+							"acceptTime" : 1.400256359E12,
+							"submitTime" : 1.400256463E12,
+							"answer" : {
+								"newText" : "13 football cards that includes 5 holographic RARE cards. There are also various teams and players to choose from. Some of them even have signatures. Teams include Texans, Bills, and Buccaneers, among others. They are all in mint or near mint condition.",
+								"description_improve_feedback" : ""
+							},
+							"requesterFeedback" : null,
+							"approvalTime" : null,
+							"deadline" : null,
+							"rejectionTime" : null
+						}
+					],
+					"done" : true
+				},
+				"returnTime" : 1.40025666168E12,
+				"printOutput" : "hit completed: 3RHLQY6EDS3M3R2A5NNPTW5ZLFH4DP\r\n"
+			},
+			{
+				"creationTime" : 1.400256661695E12,
+				"onceFunc" : "\nfunction () {\n    return Math.random();\n}\n",
+				"returnValue" : 0.43485622484268127,
+				"returnTime" : 1.400256661711E12,
+				"printOutput" : ""
+			},
+			{
+				"creationTime" : 1.400256661711E12,
+				"onceFunc" : "\nfunction () {\n    return Math.random();\n}\n",
+				"returnValue" : 0.5285490804073621,
+				"returnTime" : 1.400256661726E12,
+				"printOutput" : ""
+			},
+			{
+				"creationTime" : 1.400256661726E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.createHITRaw(params);\n}\n",
+				"returnValue" : "3SV8KD29L3RAKUW9IXZ2R5DY6JIKZV",
+				"returnTime" : 1.400256662117E12,
+				"printOutput" : "created HIT: 3SV8KD29L3RAKUW9IXZ2R5DY6JIKZV\r\n        url: https://www.mturk.com/mturk/preview?groupId=38E1HBOA1QEDDZX1Z7UNFGUC0R380D\r\n"
+			},
+			{
+				"creationTime" : 1.400256662117E12,
+				"onceFunc" : "\nfunction () {\n    if (!me.waitForHIT_callCount) {\n        me.waitForHIT_callCount = 0;\n        var a = me.getReviewableHITs(1);\n        if (a.totalNumResults == a.length) {\n            me.waitForHIT_reviewableHITs = new Set(a);\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n        me.waitForHIT_waitCount = Math.ceil(a.totalNumResults / 100);\n    }\n    me.waitForHIT_callCount++;\n    if (me.waitForHIT_callCount >= me.waitForHIT_waitCount) {\n        if (!me.waitForHIT_reviewableHITs || (time() > me.waitForHIT_reviewableHITsTime + (1000 * 60))) {\n            me.waitForHIT_reviewableHITs = new Set(me.getReviewableHITs());\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n    }\n    if (me.waitForHIT_reviewableHITs) {\n        if (!me.waitForHIT_reviewableHITs[hitId]) {\n            stop();\n        }\n    }\n    var hit = mturk.getHIT(hitId);\n    if (!hit.done) {\n        stop();\n    }\n    verbosePrint(\"hit completed: \" + hitId);\n    return hit;\n}\n",
+				"returnValue" : {
+					"hitId" : "3SV8KD29L3RAKUW9IXZ2R5DY6JIKZV",
+					"hitTypeId" : "38E1HBOA1QEDDZX1Z7UNFGUC0R380D",
+					"title" : "Vote on auction item description improvements",
+					"description" : "Decide which auction item description is better/suitable for the item(s) on three pictures",
+					"keywords" : null,
+					"reward" : 0.01,
+					"question" : "<QuestionForm xmlns=\"http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2005-10-01/QuestionForm.xsd\">\n  <Question>\n    <QuestionIdentifier>vote</QuestionIdentifier>\n    <IsRequired>true</IsRequired>\n    <QuestionContent>\n      <FormattedContent><![CDATA[All the workers who have done a similar task in the past are excluded from this HIT. If you find your worker ID in the following table, your work <b>will be rejected</b>.<br /><br /><table border=\"1\"><tr><td>ANJRINRP821LY</td><td>A3J47737YMH6WK</td><td>A291KO368YRYCR</td><td>A3KUFIF1ULONV1</td><td>A3AJR1PM02424Y</td></tr><tr><td>A2SFEEI806WFP9</td><td>A2Y9ZNZ0F24GHB</td><td>A1IA4CST74I1Q8</td><td>A3JLB1N2CB27BZ</td><td>AJAOE1PSNKGUE</td></tr></table><hr /><table border=\"0\"><tr><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/3/image_1.JPG\" alt=\"Image 1\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/3/image_1.JPG\" target=\"_blank\">Link to full size image 1 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/3/image_2.JPG\" alt=\"Image 2\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/3/image_2.JPG\" target=\"_blank\">Link to full size image 2 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/3/image_3.JPG\" alt=\"Image 3\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/3/image_3.JPG\" target=\"_blank\">Link to full size image 3 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/3/image_4.JPG\" alt=\"Image 4\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/3/image_4.JPG\" target=\"_blank\">Link to full size image 4 (new window)</a></td><td></td></tr></table>\n\t\t\t\t\tThe goal of the requester of the HIT is to generate eBay auctions by MTurk workers based on images of the item.<br /><br />\n\t\t\t\t\t<b>Instructions:</b> Which description of the auction item(s) on the pictures is better? The following factors <b>can</b> affect your decision: \n\t\t\t\t\t<ul>\n\t\t\t\t\t\t<li>One description is more informative than the other</li>\n\t\t\t\t\t\t<li>One description contains more information about the auction item then the other</li>\n\t\t\t\t\t\t<li>One description contains wrong information</li>\n\t\t\t\t\t\t<li>One description has spelling mistakes</li>\n\t\t\t\t\t</ul>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <SelectionAnswer>\n        <Selections>\n          <Selection>\n            <SelectionIdentifier>a</SelectionIdentifier>\n            <Text>This is a lot of 13 football cards. Various teams. 5 holo-foil RARE cards. Signutures are included. Teams include Texans, Bills, and Buccaneers, among others. They are all in mint or near mint condition.</Text>\n          </Selection>\n          <Selection>\n            <SelectionIdentifier>b</SelectionIdentifier>\n            <Text>13 football cards that includes 5 holographic RARE cards. There are also various teams and players to choose from. Some of them even have signatures. Teams include Texans, Bills, and Buccaneers, among others. They are all in mint or near mint condition.</Text>\n          </Selection>\n        </Selections>\n      </SelectionAnswer>\n    </AnswerSpecification>\n  </Question>\n  <Question>\n    <QuestionIdentifier>description_vote_feedback</QuestionIdentifier>\n    <QuestionContent>\n      <Title>Your personal feedback (optional)</Title>\n      <FormattedContent><![CDATA[Give your personal feedback about the task. This <b>can</b> contain one of the following aspects:\n        <ul>\n        <li>Problems of the task (e.g. images are not visible)</li>\n        <li>Instructions are not clear enough</li>\n        </ul>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <FreeTextAnswer>\n        <NumberOfLinesSuggestion>3</NumberOfLinesSuggestion>\n      </FreeTextAnswer>\n    </AnswerSpecification>\n  </Question>\n</QuestionForm>",
+					"maxAssignments" : 2,
+					"assignmentDurationInSeconds" : 1800,
+					"autoApprovalDelayInSeconds" : 2592000,
+					"requesterAnnotation" : null,
+					"hitStatus" : "Reviewable",
+					"hitReviewStatus" : "NotReviewed",
+					"creationTime" : 1.400256661E12,
+					"expiration" : 1.400861461E12,
+					"assignments" : [
+						{
+							"assignmentId" : "3IXEICO792IAMN0F04LLJI2IKYQ6TX",
+							"workerId" : "A1XQPDHAN5IY0R",
+							"hitId" : "3SV8KD29L3RAKUW9IXZ2R5DY6JIKZV",
+							"assignmentStatus" : "Submitted",
+							"autoApprovalTime" : 1.402879724E12,
+							"acceptTime" : 1.400287647E12,
+							"submitTime" : 1.400287724E12,
+							"answer" : {
+								"vote" : [
+									"a"
+								],
+								"description_vote_feedback" : ""
+							},
+							"requesterFeedback" : null,
+							"approvalTime" : null,
+							"deadline" : null,
+							"rejectionTime" : null
+						},
+						{
+							"assignmentId" : "3WRFBPLXRANDUR8DK61B3GK6LPEN3J",
+							"workerId" : "A2J843CHDXF45T",
+							"hitId" : "3SV8KD29L3RAKUW9IXZ2R5DY6JIKZV",
+							"assignmentStatus" : "Submitted",
+							"autoApprovalTime" : 1.402886146E12,
+							"acceptTime" : 1.400294119E12,
+							"submitTime" : 1.400294146E12,
+							"answer" : {
+								"vote" : [
+									"b"
+								],
+								"description_vote_feedback" : ""
+							},
+							"requesterFeedback" : null,
+							"approvalTime" : null,
+							"deadline" : null,
+							"rejectionTime" : null
+						}
+					],
+					"done" : true
+				},
+				"returnTime" : 1.40051658335E12,
+				"printOutput" : "hit completed: 3SV8KD29L3RAKUW9IXZ2R5DY6JIKZV\r\n"
+			},
+			{
+				"creationTime" : 1.400516583366E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.extendHITRaw(hit, moreAssignments, moreSeconds);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.4005165836E12,
+				"printOutput" : "extended HIT: 3SV8KD29L3RAKUW9IXZ2R5DY6JIKZV\r\n"
+			},
+			{
+				"creationTime" : 1.4005165836E12,
+				"onceFunc" : "\nfunction () {\n    if (!me.waitForHIT_callCount) {\n        me.waitForHIT_callCount = 0;\n        var a = me.getReviewableHITs(1);\n        if (a.totalNumResults == a.length) {\n            me.waitForHIT_reviewableHITs = new Set(a);\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n        me.waitForHIT_waitCount = Math.ceil(a.totalNumResults / 100);\n    }\n    me.waitForHIT_callCount++;\n    if (me.waitForHIT_callCount >= me.waitForHIT_waitCount) {\n        if (!me.waitForHIT_reviewableHITs || (time() > me.waitForHIT_reviewableHITsTime + (1000 * 60))) {\n            me.waitForHIT_reviewableHITs = new Set(me.getReviewableHITs());\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n    }\n    if (me.waitForHIT_reviewableHITs) {\n        if (!me.waitForHIT_reviewableHITs[hitId]) {\n            stop();\n        }\n    }\n    var hit = mturk.getHIT(hitId);\n    if (!hit.done) {\n        stop();\n    }\n    verbosePrint(\"hit completed: \" + hitId);\n    return hit;\n}\n",
+				"returnValue" : {
+					"hitId" : "3SV8KD29L3RAKUW9IXZ2R5DY6JIKZV",
+					"hitTypeId" : "38E1HBOA1QEDDZX1Z7UNFGUC0R380D",
+					"title" : "Vote on auction item description improvements",
+					"description" : "Decide which auction item description is better/suitable for the item(s) on three pictures",
+					"keywords" : null,
+					"reward" : 0.01,
+					"question" : "<QuestionForm xmlns=\"http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2005-10-01/QuestionForm.xsd\">\n  <Question>\n    <QuestionIdentifier>vote</QuestionIdentifier>\n    <IsRequired>true</IsRequired>\n    <QuestionContent>\n      <FormattedContent><![CDATA[All the workers who have done a similar task in the past are excluded from this HIT. If you find your worker ID in the following table, your work <b>will be rejected</b>.<br /><br /><table border=\"1\"><tr><td>ANJRINRP821LY</td><td>A3J47737YMH6WK</td><td>A291KO368YRYCR</td><td>A3KUFIF1ULONV1</td><td>A3AJR1PM02424Y</td></tr><tr><td>A2SFEEI806WFP9</td><td>A2Y9ZNZ0F24GHB</td><td>A1IA4CST74I1Q8</td><td>A3JLB1N2CB27BZ</td><td>AJAOE1PSNKGUE</td></tr></table><hr /><table border=\"0\"><tr><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/3/image_1.JPG\" alt=\"Image 1\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/3/image_1.JPG\" target=\"_blank\">Link to full size image 1 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/3/image_2.JPG\" alt=\"Image 2\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/3/image_2.JPG\" target=\"_blank\">Link to full size image 2 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/3/image_3.JPG\" alt=\"Image 3\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/3/image_3.JPG\" target=\"_blank\">Link to full size image 3 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/3/image_4.JPG\" alt=\"Image 4\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/3/image_4.JPG\" target=\"_blank\">Link to full size image 4 (new window)</a></td><td></td></tr></table>\n\t\t\t\t\tThe goal of the requester of the HIT is to generate eBay auctions by MTurk workers based on images of the item.<br /><br />\n\t\t\t\t\t<b>Instructions:</b> Which description of the auction item(s) on the pictures is better? The following factors <b>can</b> affect your decision: \n\t\t\t\t\t<ul>\n\t\t\t\t\t\t<li>One description is more informative than the other</li>\n\t\t\t\t\t\t<li>One description contains more information about the auction item then the other</li>\n\t\t\t\t\t\t<li>One description contains wrong information</li>\n\t\t\t\t\t\t<li>One description has spelling mistakes</li>\n\t\t\t\t\t</ul>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <SelectionAnswer>\n        <Selections>\n          <Selection>\n            <SelectionIdentifier>a</SelectionIdentifier>\n            <Text>This is a lot of 13 football cards. Various teams. 5 holo-foil RARE cards. Signutures are included. Teams include Texans, Bills, and Buccaneers, among others. They are all in mint or near mint condition.</Text>\n          </Selection>\n          <Selection>\n            <SelectionIdentifier>b</SelectionIdentifier>\n            <Text>13 football cards that includes 5 holographic RARE cards. There are also various teams and players to choose from. Some of them even have signatures. Teams include Texans, Bills, and Buccaneers, among others. They are all in mint or near mint condition.</Text>\n          </Selection>\n        </Selections>\n      </SelectionAnswer>\n    </AnswerSpecification>\n  </Question>\n  <Question>\n    <QuestionIdentifier>description_vote_feedback</QuestionIdentifier>\n    <QuestionContent>\n      <Title>Your personal feedback (optional)</Title>\n      <FormattedContent><![CDATA[Give your personal feedback about the task. This <b>can</b> contain one of the following aspects:\n        <ul>\n        <li>Problems of the task (e.g. images are not visible)</li>\n        <li>Instructions are not clear enough</li>\n        </ul>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <FreeTextAnswer>\n        <NumberOfLinesSuggestion>3</NumberOfLinesSuggestion>\n      </FreeTextAnswer>\n    </AnswerSpecification>\n  </Question>\n</QuestionForm>",
+					"maxAssignments" : 3,
+					"assignmentDurationInSeconds" : 1800,
+					"autoApprovalDelayInSeconds" : 2592000,
+					"requesterAnnotation" : null,
+					"hitStatus" : "Reviewable",
+					"hitReviewStatus" : "NotReviewed",
+					"creationTime" : 1.400256661E12,
+					"expiration" : 1.400861461E12,
+					"assignments" : [
+						{
+							"assignmentId" : "3IXEICO792IAMN0F04LLJI2IKYQ6TX",
+							"workerId" : "A1XQPDHAN5IY0R",
+							"hitId" : "3SV8KD29L3RAKUW9IXZ2R5DY6JIKZV",
+							"assignmentStatus" : "Submitted",
+							"autoApprovalTime" : 1.402879724E12,
+							"acceptTime" : 1.400287647E12,
+							"submitTime" : 1.400287724E12,
+							"answer" : {
+								"vote" : [
+									"a"
+								],
+								"description_vote_feedback" : ""
+							},
+							"requesterFeedback" : null,
+							"approvalTime" : null,
+							"deadline" : null,
+							"rejectionTime" : null
+						},
+						{
+							"assignmentId" : "3WRFBPLXRANDUR8DK61B3GK6LPEN3J",
+							"workerId" : "A2J843CHDXF45T",
+							"hitId" : "3SV8KD29L3RAKUW9IXZ2R5DY6JIKZV",
+							"assignmentStatus" : "Submitted",
+							"autoApprovalTime" : 1.402886146E12,
+							"acceptTime" : 1.400294119E12,
+							"submitTime" : 1.400294146E12,
+							"answer" : {
+								"vote" : [
+									"b"
+								],
+								"description_vote_feedback" : ""
+							},
+							"requesterFeedback" : null,
+							"approvalTime" : null,
+							"deadline" : null,
+							"rejectionTime" : null
+						},
+						{
+							"assignmentId" : "3VNXK88KKCHCHY6236OC4AH58UZ9VX",
+							"workerId" : "A2IA303OT5BBX0",
+							"hitId" : "3SV8KD29L3RAKUW9IXZ2R5DY6JIKZV",
+							"assignmentStatus" : "Submitted",
+							"autoApprovalTime" : 1.403109723E12,
+							"acceptTime" : 1.400517681E12,
+							"submitTime" : 1.400517723E12,
+							"answer" : {
+								"vote" : [
+									"a"
+								],
+								"description_vote_feedback" : ""
+							},
+							"requesterFeedback" : null,
+							"approvalTime" : null,
+							"deadline" : null,
+							"rejectionTime" : null
+						}
+					],
+					"done" : true
+				},
+				"returnTime" : 1.400602491874E12,
+				"printOutput" : "hit completed: 3SV8KD29L3RAKUW9IXZ2R5DY6JIKZV\r\n"
+			},
+			{
+				"creationTime" : 1.400602491884E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.approveAssignmentRaw(assignment, reason);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.400602492136E12,
+				"printOutput" : "approved assignment 3IXEICO792IAMN0F04LLJI2IKYQ6TX\r\n"
+			},
+			{
+				"creationTime" : 1.40060249214E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.approveAssignmentRaw(assignment, reason);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.40060249236E12,
+				"printOutput" : "approved assignment 3WRFBPLXRANDUR8DK61B3GK6LPEN3J\r\n"
+			},
+			{
+				"creationTime" : 1.400602492365E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.approveAssignmentRaw(assignment, reason);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.400602492748E12,
+				"printOutput" : "approved assignment 3VNXK88KKCHCHY6236OC4AH58UZ9VX\r\n"
+			},
+			{
+				"creationTime" : 1.400602492751E12,
+				"onceFunc" : "\nfunction () {\n    mturk.deleteHITRaw(hit);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.400602493005E12,
+				"printOutput" : "disabled HIT: 3SV8KD29L3RAKUW9IXZ2R5DY6JIKZV\r\n"
+			},
+			{
+				"creationTime" : 1.400602493009E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.approveAssignmentRaw(assignment, reason);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.400602493365E12,
+				"printOutput" : "approved assignment 34BBWHLWHAAI7OZAXAZL35ZMXFXIWF\r\n"
+			},
+			{
+				"creationTime" : 1.400602493378E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.createHITRaw(params);\n}\n",
+				"returnValue" : "3E6L1VR4XVLXGYKKFHBUEUSYUT66FB",
+				"returnTime" : 1.400602493785E12,
+				"printOutput" : "created HIT: 3E6L1VR4XVLXGYKKFHBUEUSYUT66FB\r\n        url: https://www.mturk.com/mturk/preview?groupId=24LSCXKNQY2RCLHN82ME7HR0KRFP09\r\n"
+			},
+			{
+				"creationTime" : 1.40060249379E12,
+				"onceFunc" : "\nfunction () {\n    if (!me.waitForHIT_callCount) {\n        me.waitForHIT_callCount = 0;\n        var a = me.getReviewableHITs(1);\n        if (a.totalNumResults == a.length) {\n            me.waitForHIT_reviewableHITs = new Set(a);\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n        me.waitForHIT_waitCount = Math.ceil(a.totalNumResults / 100);\n    }\n    me.waitForHIT_callCount++;\n    if (me.waitForHIT_callCount >= me.waitForHIT_waitCount) {\n        if (!me.waitForHIT_reviewableHITs || (time() > me.waitForHIT_reviewableHITsTime + (1000 * 60))) {\n            me.waitForHIT_reviewableHITs = new Set(me.getReviewableHITs());\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n    }\n    if (me.waitForHIT_reviewableHITs) {\n        if (!me.waitForHIT_reviewableHITs[hitId]) {\n            stop();\n        }\n    }\n    var hit = mturk.getHIT(hitId);\n    if (!hit.done) {\n        stop();\n    }\n    verbosePrint(\"hit completed: \" + hitId);\n    return hit;\n}\n",
+				"returnValue" : {
+					"hitId" : "3E6L1VR4XVLXGYKKFHBUEUSYUT66FB",
+					"hitTypeId" : "24LSCXKNQY2RCLHN82ME7HR0KRFP09",
+					"title" : "Improve/extend description of auction item(s) on pictures",
+					"description" : "Improve and/or extend the description of an auction item based on three images",
+					"keywords" : null,
+					"reward" : 0.2,
+					"question" : "<QuestionForm xmlns=\"http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2005-10-01/QuestionForm.xsd\">\n  <Question>\n    <QuestionIdentifier>newText</QuestionIdentifier>\n    <IsRequired>true</IsRequired>\n    <QuestionContent>\n      <FormattedContent><![CDATA[All the workers who have done a similar task in the past are excluded from this HIT. If you find your worker ID in the following table, your work <b>will be rejected</b>.<br /><br /><table border=\"1\"><tr><td>ANJRINRP821LY</td><td>A3J47737YMH6WK</td><td>A291KO368YRYCR</td><td>A3KUFIF1ULONV1</td><td>A3AJR1PM02424Y</td></tr><tr><td>A2SFEEI806WFP9</td><td>A2Y9ZNZ0F24GHB</td><td>A1IA4CST74I1Q8</td><td>A3JLB1N2CB27BZ</td><td>AJAOE1PSNKGUE</td></tr></table><hr /><table border=\"0\"><tr><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/3/image_1.JPG\" alt=\"Image 1\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/3/image_1.JPG\" target=\"_blank\">Link to full size image 1 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/3/image_2.JPG\" alt=\"Image 2\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/3/image_2.JPG\" target=\"_blank\">Link to full size image 2 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/3/image_3.JPG\" alt=\"Image 3\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/3/image_3.JPG\" target=\"_blank\">Link to full size image 3 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/3/image_4.JPG\" alt=\"Image 4\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/3/image_4.JPG\" target=\"_blank\">Link to full size image 4 (new window)</a></td><td></td></tr></table>\n\t\t\t\t\tThe goal of the requester of the HIT is to generate eBay auctions by MTurk workers based on images of the item.<br /><br />\n\t\t\t\t\t<b>Instructions</b>: Improve and/or extend the description of the auction item(s) on the images. Keep in mind the following remarks:\n\t\t\t\t\t<ul>\n\t\t\t\t\t<li>If the description doesn\'t contain approximately <b>5 sentences</b> then try to add more text\n\t\t\t\t\t<ul>\n\t\t\t\t\t\t<li>Include specific information like size, shape, color, age, manufacture date, company/artist/author, and notable features or markings if possible</li>\n\t\t\t\t\t\t<li>Make the description as readable as possible</li>\n\t\t\t\t\t\t<li>Don\'t say anything that isn\'t true.</li>\n\t\t\t\t\t\t<li>Don\'t use all caps</li>\n\t\t\t\t\t\t<li>Don\'t include email addresses and some links</li>\n\t\t\t\t\t</ul>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li>If the description is long enough then try to improve it</li>\n\t\t\t\t\t</ul>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <FreeTextAnswer>\n        <Constraints>\n          <Length maxLength=\"5000\" minLength=\"120\"/>\n          <AnswerFormatRegex errorText=\"The description cannot be blank.\" regex=\"\\S\"/>\n        </Constraints>\n        <DefaultText>This is a lot of 13 football cards. Various teams. 5 holo-foil RARE cards. Signutures are included. Teams include Texans, Bills, and Buccaneers, among others. They are all in mint or near mint condition.</DefaultText>\n        <NumberOfLinesSuggestion>10</NumberOfLinesSuggestion>\n      </FreeTextAnswer>\n    </AnswerSpecification>\n  </Question>\n  <Question>\n    <QuestionIdentifier>description_improve_feedback</QuestionIdentifier>\n    <QuestionContent>\n      <Title>Your personal feedback (optional)</Title>\n      <FormattedContent><![CDATA[Give your personal feedback about the task. This <b>can</b> contain one of the following aspects:\n        <ul>\n        <li>Problems of the task (e.g. images are not visible)</li>\n        <li>Instructions are not clear enough</li>\n        </ul>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <FreeTextAnswer>\n        <NumberOfLinesSuggestion>3</NumberOfLinesSuggestion>\n      </FreeTextAnswer>\n    </AnswerSpecification>\n  </Question>\n</QuestionForm>",
+					"maxAssignments" : 1,
+					"assignmentDurationInSeconds" : 7200,
+					"autoApprovalDelayInSeconds" : 2592000,
+					"requesterAnnotation" : null,
+					"hitStatus" : "Reviewable",
+					"hitReviewStatus" : "NotReviewed",
+					"creationTime" : 1.4006025E12,
+					"expiration" : 1.4012073E12,
+					"assignments" : [
+						{
+							"assignmentId" : "34MAJL3QP4MR8JY721MF47E6VWA439",
+							"workerId" : "AN5DX7ARYCC74",
+							"hitId" : "3E6L1VR4XVLXGYKKFHBUEUSYUT66FB",
+							"assignmentStatus" : "Submitted",
+							"autoApprovalTime" : 1.403312078E12,
+							"acceptTime" : 1.400719747E12,
+							"submitTime" : 1.400720078E12,
+							"answer" : {
+								"newText" : "This is a collection of 13 unique football cards. Various teams. \r\nIn this lot you will receive: 8 Jersey cars and 5 holo-foil cards with signatures! All very rare cards, and great for any collector. Teams include Rams, Texans, Bills, and Buccaneers, among others. They are all in mint or near mint condition.",
+								"description_improve_feedback" : ""
+							},
+							"requesterFeedback" : null,
+							"approvalTime" : null,
+							"deadline" : null,
+							"rejectionTime" : null
+						}
+					],
+					"done" : true
+				},
+				"returnTime" : 1.400773895188E12,
+				"printOutput" : "hit completed: 3E6L1VR4XVLXGYKKFHBUEUSYUT66FB\r\n"
+			},
+			{
+				"creationTime" : 1.400773895204E12,
+				"onceFunc" : "\nfunction () {\n    return Math.random();\n}\n",
+				"returnValue" : 0.8137507606072303,
+				"returnTime" : 1.400773895204E12,
+				"printOutput" : ""
+			},
+			{
+				"creationTime" : 1.400773895204E12,
+				"onceFunc" : "\nfunction () {\n    return Math.random();\n}\n",
+				"returnValue" : 0.9000665811483007,
+				"returnTime" : 1.400773895204E12,
+				"printOutput" : ""
+			},
+			{
+				"creationTime" : 1.400773895204E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.createHITRaw(params);\n}\n",
+				"returnValue" : "3IZVJEBJ69J3LFBKGT51HM8G64OZ6S",
+				"returnTime" : 1.400773895579E12,
+				"printOutput" : "created HIT: 3IZVJEBJ69J3LFBKGT51HM8G64OZ6S\r\n        url: https://www.mturk.com/mturk/preview?groupId=38E1HBOA1QEDDZX1Z7UNFGUC0R380D\r\n"
+			},
+			{
+				"creationTime" : 1.400773895579E12,
+				"onceFunc" : "\nfunction () {\n    if (!me.waitForHIT_callCount) {\n        me.waitForHIT_callCount = 0;\n        var a = me.getReviewableHITs(1);\n        if (a.totalNumResults == a.length) {\n            me.waitForHIT_reviewableHITs = new Set(a);\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n        me.waitForHIT_waitCount = Math.ceil(a.totalNumResults / 100);\n    }\n    me.waitForHIT_callCount++;\n    if (me.waitForHIT_callCount >= me.waitForHIT_waitCount) {\n        if (!me.waitForHIT_reviewableHITs || (time() > me.waitForHIT_reviewableHITsTime + (1000 * 60))) {\n            me.waitForHIT_reviewableHITs = new Set(me.getReviewableHITs());\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n    }\n    if (me.waitForHIT_reviewableHITs) {\n        if (!me.waitForHIT_reviewableHITs[hitId]) {\n            stop();\n        }\n    }\n    var hit = mturk.getHIT(hitId);\n    if (!hit.done) {\n        stop();\n    }\n    verbosePrint(\"hit completed: \" + hitId);\n    return hit;\n}\n",
+				"returnValue" : {
+					"hitId" : "3IZVJEBJ69J3LFBKGT51HM8G64OZ6S",
+					"hitTypeId" : "38E1HBOA1QEDDZX1Z7UNFGUC0R380D",
+					"title" : "Vote on auction item description improvements",
+					"description" : "Decide which auction item description is better/suitable for the item(s) on three pictures",
+					"keywords" : null,
+					"reward" : 0.01,
+					"question" : "<QuestionForm xmlns=\"http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2005-10-01/QuestionForm.xsd\">\n  <Question>\n    <QuestionIdentifier>vote</QuestionIdentifier>\n    <IsRequired>true</IsRequired>\n    <QuestionContent>\n      <FormattedContent><![CDATA[All the workers who have done a similar task in the past are excluded from this HIT. If you find your worker ID in the following table, your work <b>will be rejected</b>.<br /><br /><table border=\"1\"><tr><td>ANJRINRP821LY</td><td>A3J47737YMH6WK</td><td>A291KO368YRYCR</td><td>A3KUFIF1ULONV1</td><td>A3AJR1PM02424Y</td></tr><tr><td>A2SFEEI806WFP9</td><td>A2Y9ZNZ0F24GHB</td><td>A1IA4CST74I1Q8</td><td>A3JLB1N2CB27BZ</td><td>AJAOE1PSNKGUE</td></tr></table><hr /><table border=\"0\"><tr><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/3/image_1.JPG\" alt=\"Image 1\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/3/image_1.JPG\" target=\"_blank\">Link to full size image 1 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/3/image_2.JPG\" alt=\"Image 2\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/3/image_2.JPG\" target=\"_blank\">Link to full size image 2 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/3/image_3.JPG\" alt=\"Image 3\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/3/image_3.JPG\" target=\"_blank\">Link to full size image 3 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/3/image_4.JPG\" alt=\"Image 4\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/3/image_4.JPG\" target=\"_blank\">Link to full size image 4 (new window)</a></td><td></td></tr></table>\n\t\t\t\t\tThe goal of the requester of the HIT is to generate eBay auctions by MTurk workers based on images of the item.<br /><br />\n\t\t\t\t\t<b>Instructions:</b> Which description of the auction item(s) on the pictures is better? The following factors <b>can</b> affect your decision: \n\t\t\t\t\t<ul>\n\t\t\t\t\t\t<li>One description is more informative than the other</li>\n\t\t\t\t\t\t<li>One description contains more information about the auction item then the other</li>\n\t\t\t\t\t\t<li>One description contains wrong information</li>\n\t\t\t\t\t\t<li>One description has spelling mistakes</li>\n\t\t\t\t\t</ul>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <SelectionAnswer>\n        <Selections>\n          <Selection>\n            <SelectionIdentifier>b</SelectionIdentifier>\n            <Text>This is a collection of 13 unique football cards. Various teams. &#13;\nIn this lot you will receive: 8 Jersey cars and 5 holo-foil cards with signatures! All very rare cards, and great for any collector. Teams include Rams, Texans, Bills, and Buccaneers, among others. They are all in mint or near mint condition.</Text>\n          </Selection>\n          <Selection>\n            <SelectionIdentifier>a</SelectionIdentifier>\n            <Text>This is a lot of 13 football cards. Various teams. 5 holo-foil RARE cards. Signutures are included. Teams include Texans, Bills, and Buccaneers, among others. They are all in mint or near mint condition.</Text>\n          </Selection>\n        </Selections>\n      </SelectionAnswer>\n    </AnswerSpecification>\n  </Question>\n  <Question>\n    <QuestionIdentifier>description_vote_feedback</QuestionIdentifier>\n    <QuestionContent>\n      <Title>Your personal feedback (optional)</Title>\n      <FormattedContent><![CDATA[Give your personal feedback about the task. This <b>can</b> contain one of the following aspects:\n        <ul>\n        <li>Problems of the task (e.g. images are not visible)</li>\n        <li>Instructions are not clear enough</li>\n        </ul>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <FreeTextAnswer>\n        <NumberOfLinesSuggestion>3</NumberOfLinesSuggestion>\n      </FreeTextAnswer>\n    </AnswerSpecification>\n  </Question>\n</QuestionForm>",
+					"maxAssignments" : 2,
+					"assignmentDurationInSeconds" : 1800,
+					"autoApprovalDelayInSeconds" : 2592000,
+					"requesterAnnotation" : null,
+					"hitStatus" : "Reviewable",
+					"hitReviewStatus" : "NotReviewed",
+					"creationTime" : 1.400773906E12,
+					"expiration" : 1.401378706E12,
+					"assignments" : [
+						{
+							"assignmentId" : "31LM9EDVOLROF5A2NRTYJN1VIDOJNY",
+							"workerId" : "AP37QQ9AABSY9",
+							"hitId" : "3IZVJEBJ69J3LFBKGT51HM8G64OZ6S",
+							"assignmentStatus" : "Submitted",
+							"autoApprovalTime" : 1.403369678E12,
+							"acceptTime" : 1.400777586E12,
+							"submitTime" : 1.400777678E12,
+							"answer" : {
+								"vote" : [
+									"b"
+								],
+								"description_vote_feedback" : ""
+							},
+							"requesterFeedback" : null,
+							"approvalTime" : null,
+							"deadline" : null,
+							"rejectionTime" : null
+						},
+						{
+							"assignmentId" : "3PB5A5BD0V5PLISEZER6QDNPQ6O7GT",
+							"workerId" : "A1Y9H8T37BWX9K",
+							"hitId" : "3IZVJEBJ69J3LFBKGT51HM8G64OZ6S",
+							"assignmentStatus" : "Submitted",
+							"autoApprovalTime" : 1.40337622E12,
+							"acceptTime" : 1.400784176E12,
+							"submitTime" : 1.40078422E12,
+							"answer" : {
+								"vote" : [
+									"b"
+								],
+								"description_vote_feedback" : ""
+							},
+							"requesterFeedback" : null,
+							"approvalTime" : null,
+							"deadline" : null,
+							"rejectionTime" : null
+						}
+					],
+					"done" : true
+				},
+				"returnTime" : 1.400827850762E12,
+				"printOutput" : "hit completed: 3IZVJEBJ69J3LFBKGT51HM8G64OZ6S\r\n"
+			},
+			{
+				"creationTime" : 1.400827850776E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.approveAssignmentRaw(assignment, reason);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.400827851056E12,
+				"printOutput" : "approved assignment 31LM9EDVOLROF5A2NRTYJN1VIDOJNY\r\n"
+			},
+			{
+				"creationTime" : 1.400827851063E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.approveAssignmentRaw(assignment, reason);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.40082785136E12,
+				"printOutput" : "approved assignment 3PB5A5BD0V5PLISEZER6QDNPQ6O7GT\r\n"
+			},
+			{
+				"creationTime" : 1.400827851366E12,
+				"onceFunc" : "\nfunction () {\n    mturk.deleteHITRaw(hit);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.400827851672E12,
+				"printOutput" : "disabled HIT: 3IZVJEBJ69J3LFBKGT51HM8G64OZ6S\r\n"
+			},
+			{
+				"creationTime" : 1.400827851678E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.approveAssignmentRaw(assignment, reason);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.400827851909E12,
+				"printOutput" : "approved assignment 34MAJL3QP4MR8JY721MF47E6VWA439\r\n"
+			}
+		]
+	}
+}
+__safetyCounters = {
+	"moneySpent" : 0.6500000000000001,
+	"hitsCreated" : 5
+}
+// end:d773

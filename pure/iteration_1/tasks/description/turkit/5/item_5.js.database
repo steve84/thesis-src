@@ -1,0 +1,711 @@
+// begin:9908
+__HITs = {
+	"real:2C6X7H57DZKPFG1VLG8DQ25OSZFB15" : {
+		"url" : "https://www.mturk.com/mturk/preview?groupId=24LSCXKNQY2RCLHN82ME7HR0KRFP09"
+	},
+	"real:30U1YOGZG9V55C4LVOJ7RZL5WT7SD0" : {
+		"url" : "https://www.mturk.com/mturk/preview?groupId=24LSCXKNQY2RCLHN82ME7HR0KRFP09"
+	},
+	"real:3Q7TKIAPOS9I1Z9VBFM6FD7A42NLD9" : {
+		"url" : "https://www.mturk.com/mturk/preview?groupId=24LSCXKNQY2RCLHN82ME7HR0KRFP09"
+	}
+}
+__S3_Objects = {
+}
+__stackFrames = {
+	"for-real" : {
+		"sequencialFrames" : [
+			{
+				"creationTime" : 1.395423042596E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.createHITRaw(params);\n}\n",
+				"returnValue" : "2C6X7H57DZKPFG1VLG8DQ25OSZFB15",
+				"returnTime" : 1.395423043633E12,
+				"printOutput" : "created HIT: 2C6X7H57DZKPFG1VLG8DQ25OSZFB15\r\n        url: https://www.mturk.com/mturk/preview?groupId=24LSCXKNQY2RCLHN82ME7HR0KRFP09\r\n"
+			},
+			{
+				"creationTime" : 1.395423043639E12,
+				"onceFunc" : "\nfunction () {\n    if (!me.waitForHIT_callCount) {\n        me.waitForHIT_callCount = 0;\n        var a = me.getReviewableHITs(1);\n        if (a.totalNumResults == a.length) {\n            me.waitForHIT_reviewableHITs = new Set(a);\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n        me.waitForHIT_waitCount = Math.ceil(a.totalNumResults / 100);\n    }\n    me.waitForHIT_callCount++;\n    if (me.waitForHIT_callCount >= me.waitForHIT_waitCount) {\n        if (!me.waitForHIT_reviewableHITs || (time() > me.waitForHIT_reviewableHITsTime + (1000 * 60))) {\n            me.waitForHIT_reviewableHITs = new Set(me.getReviewableHITs());\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n    }\n    if (me.waitForHIT_reviewableHITs) {\n        if (!me.waitForHIT_reviewableHITs[hitId]) {\n            stop();\n        }\n    }\n    var hit = mturk.getHIT(hitId);\n    if (!hit.done) {\n        stop();\n    }\n    verbosePrint(\"hit completed: \" + hitId);\n    return hit;\n}\n",
+				"returnValue" : {
+					"hitId" : "2C6X7H57DZKPFG1VLG8DQ25OSZFB15",
+					"hitTypeId" : "24LSCXKNQY2RCLHN82ME7HR0KRFP09",
+					"title" : "Improve/extend description of auction item(s) on pictures",
+					"description" : "Improve and/or extend the description of an auction item based on three images",
+					"keywords" : null,
+					"reward" : 0.2,
+					"question" : "<QuestionForm xmlns=\"http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2005-10-01/QuestionForm.xsd\">\n  <Question>\n    <QuestionIdentifier>newText</QuestionIdentifier>\n    <IsRequired>true</IsRequired>\n    <QuestionContent>\n      <FormattedContent><![CDATA[The goal of the requester of the HIT is to generate eBay auctions by MTurk workers based on images of the item.<br /><br />\n\t\t\t\t\t<b>Instructions</b>: Improve and/or extend the description of the auction item(s) on the images. Keep in mind the following remarks:\n\t\t\t\t\t<ul>\n\t\t\t\t\t<li>If the description doesn\'t contain approximately <b>5 sentences</b> then try to add more text\n\t\t\t\t\t<ul>\n\t\t\t\t\t\t<li>Include specific information like size, shape, color, age, manufacture date, company/artist/author, and notable features or markings if possible</li>\n\t\t\t\t\t\t<li>Make the description as readable as possible</li>\n\t\t\t\t\t\t<li>Don\'t say anything that isn\'t true.</li>\n\t\t\t\t\t\t<li>Don\'t use all caps</li>\n\t\t\t\t\t\t<li>Don\'t include email addresses and some links</li>\n\t\t\t\t\t</ul>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li>If the description is long enough then try to improve it</li>\n\t\t\t\t\t</ul>\n\t\t\t\t\t<table><tr>\n\t\t\t\t\t<td><img src=\"http://i.ebayimg.com/00/s/MTEwMVgxNDY4/z/v5oAAOxy~dNTJ4wC/$_12.JPG?set_id=880000500F\" alt=\"Image 1\" width=\"250\" border=\"2\"></img></td>\n\t\t\t\t\t<td><img src=\"http://i.ebayimg.com/00/s/MTEwMFgxNTU5/z/8MMAAOxydgZTJ4wq/$_12.JPG?set_id=880000500F\" alt=\"Image 2\" width=\"250\" border=\"2\"></img></td>\n\t\t\t\t\t<td><img src=\"http://i.ebayimg.com/00/s/MTQ2OFgxMTAx/z/tg4AAOxyj4hTJ4xW/$_12.JPG?set_id=880000500F\" alt=\"Image 3\" width=\"250\" border=\"2\"></img></td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t<td><a href=\"http://i.ebayimg.com/00/s/MTEwMVgxNDY4/z/v5oAAOxy~dNTJ4wC/$_12.JPG?set_id=880000500F\" target=\"_blank\">Link to full size image 1 (new window)</a></td>\n\t\t\t\t\t<td><a href=\"http://i.ebayimg.com/00/s/MTEwMFgxNTU5/z/8MMAAOxydgZTJ4wq/$_12.JPG?set_id=880000500F\" target=\"_blank\">Link to full size image 2 (new window)</a></td>\n\t\t\t\t\t<td><a href=\"http://i.ebayimg.com/00/s/MTQ2OFgxMTAx/z/tg4AAOxyj4hTJ4xW/$_12.JPG?set_id=880000500F\" target=\"_blank\">Link to full size image 3 (new window)</a></td>\n\t\t\t\t\t</tr></table>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <FreeTextAnswer>\n        <Constraints>\n          <Length maxLength=\"5000\" minLength=\"40\"/>\n          <AnswerFormatRegex errorText=\"The description cannot be blank.\" regex=\"\\S\"/>\n        </Constraints>\n        <DefaultText/>\n        <NumberOfLinesSuggestion>10</NumberOfLinesSuggestion>\n      </FreeTextAnswer>\n    </AnswerSpecification>\n  </Question>\n  <Question>\n    <QuestionIdentifier>description_improve_feedback</QuestionIdentifier>\n    <QuestionContent>\n      <Title>Your personal feedback (optional)</Title>\n      <FormattedContent><![CDATA[Give your personal feedback about the task. This <b>can</b> contain one of the following aspects:\n        <ul>\n        <li>Problems of the task (e.g. images are not visible)</li>\n        <li>Instructions are not clear enough</li>\n        </ul>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <FreeTextAnswer>\n        <NumberOfLinesSuggestion>3</NumberOfLinesSuggestion>\n      </FreeTextAnswer>\n    </AnswerSpecification>\n  </Question>\n</QuestionForm>",
+					"maxAssignments" : 1,
+					"assignmentDurationInSeconds" : 7200,
+					"autoApprovalDelayInSeconds" : 2592000,
+					"requesterAnnotation" : null,
+					"hitStatus" : "Reviewable",
+					"hitReviewStatus" : "NotReviewed",
+					"creationTime" : 1.395423046E12,
+					"expiration" : 1.396027846E12,
+					"assignments" : [
+						{
+							"assignmentId" : "2NGBDDP8PJWKUFAP2P23U392H075G2",
+							"workerId" : "AF8DIIHK7O7GI",
+							"hitId" : "2C6X7H57DZKPFG1VLG8DQ25OSZFB15",
+							"assignmentStatus" : "Approved",
+							"autoApprovalTime" : 1.398021965E12,
+							"acceptTime" : 1.395429704E12,
+							"submitTime" : 1.395429965E12,
+							"answer" : {
+								"newText" : "Nike Mercurial Vapor soccer boots. \r\n\r\nInspired by festivals of the 2014 host country and patterns found in nature, the Nike reflective pack is a cool way to ring in the ultimate year of soccer. \r\n\r\nThis version of Nike\'s Mercurial Vapor is iridescent white with a pop of color on the outsole and a a subtle cheetah print on the heel. \r\n\r\nThere is also metallic threading in the laces. \r\n\r\nEngineered for uncompromising explosive speed in every direction, the Mercurial Vapor IX has a new composite chassis and a more contoured fit for the ultimate traction and control in any condition. \r\n\r\nCan you handle the speed? \r\n\r\nThe Teijin upper on this pearlized white version of the Mercurial Vapor IX is updated to be as close to the fit and feel of a natural leather as possible while still maintaining the incredible durable and minimal weight of a synthetic. \r\n\r\nThere is a subtle leopard print in white on the heel. \r\n\r\nThe fastest cleat in the game is now equipped with All Conditions Control (ACC) technology for optimal ball control in wet or dry conditions. \r\n\r\nThe lightweight perforated sockliner has a textile liner that mirrors the natural shape of the foot for low profile cushioning. \r\n\r\nContoured last further enhances the glove-like fit. \r\n\r\nFixed cushioning insole is perforated for reduced weight and added breathability. \r\n\r\nTwo-layers of glass fiber are fused together on the outsole for flexibility and responsiveness. \r\n\r\nComposite and direct injected TPU studs dig and release instantly for exceptional traction and explosive speed. \r\n\r\nWith two longer studs on the heel and asymmetrical bladed forefoot stud design, the Vapor IX outsole delivers not just straight-ahead speed, but the traction for quick cuts and turns and explosive take off.",
+								"description_improve_feedback" : ""
+							},
+							"requesterFeedback" : null,
+							"approvalTime" : 1.395490996E12,
+							"deadline" : null,
+							"rejectionTime" : null
+						}
+					],
+					"done" : true
+				},
+				"returnTime" : 1.395767182895E12,
+				"printOutput" : "hit completed: 2C6X7H57DZKPFG1VLG8DQ25OSZFB15\r\n"
+			},
+			{
+				"creationTime" : 1.395855802824E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.approveAssignmentRaw(assignment, reason);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.39585580311E12,
+				"printOutput" : "approved assignment 2NGBDDP8PJWKUFAP2P23U392H075G2\r\n"
+			},
+			{
+				"creationTime" : 1.395767182957E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.createHITRaw(params);\n}\n",
+				"returnValue" : "30U1YOGZG9V55C4LVOJ7RZL5WT7SD0",
+				"returnTime" : 1.39576718341E12,
+				"printOutput" : "created HIT: 30U1YOGZG9V55C4LVOJ7RZL5WT7SD0\r\n        url: https://www.mturk.com/mturk/preview?groupId=24LSCXKNQY2RCLHN82ME7HR0KRFP09\r\n"
+			},
+			{
+				"creationTime" : 1.39576718341E12,
+				"onceFunc" : "\nfunction () {\n    if (!me.waitForHIT_callCount) {\n        me.waitForHIT_callCount = 0;\n        var a = me.getReviewableHITs(1);\n        if (a.totalNumResults == a.length) {\n            me.waitForHIT_reviewableHITs = new Set(a);\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n        me.waitForHIT_waitCount = Math.ceil(a.totalNumResults / 100);\n    }\n    me.waitForHIT_callCount++;\n    if (me.waitForHIT_callCount >= me.waitForHIT_waitCount) {\n        if (!me.waitForHIT_reviewableHITs || (time() > me.waitForHIT_reviewableHITsTime + (1000 * 60))) {\n            me.waitForHIT_reviewableHITs = new Set(me.getReviewableHITs());\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n    }\n    if (me.waitForHIT_reviewableHITs) {\n        if (!me.waitForHIT_reviewableHITs[hitId]) {\n            stop();\n        }\n    }\n    var hit = mturk.getHIT(hitId);\n    if (!hit.done) {\n        stop();\n    }\n    verbosePrint(\"hit completed: \" + hitId);\n    return hit;\n}\n",
+				"returnValue" : {
+					"hitId" : "30U1YOGZG9V55C4LVOJ7RZL5WT7SD0",
+					"hitTypeId" : "24LSCXKNQY2RCLHN82ME7HR0KRFP09",
+					"title" : "Improve/extend description of auction item(s) on pictures",
+					"description" : "Improve and/or extend the description of an auction item based on three images",
+					"keywords" : null,
+					"reward" : 0.2,
+					"question" : "<QuestionForm xmlns=\"http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2005-10-01/QuestionForm.xsd\">\n  <Question>\n    <QuestionIdentifier>newText</QuestionIdentifier>\n    <IsRequired>true</IsRequired>\n    <QuestionContent>\n      <FormattedContent><![CDATA[The goal of the requester of the HIT is to generate eBay auctions by MTurk workers based on images of the item.<br /><br />\n\t\t\t\t\t<b>Instructions</b>: Improve and/or extend the description of the auction item(s) on the images. Keep in mind the following remarks:\n\t\t\t\t\t<ul>\n\t\t\t\t\t<li>If the description doesn\'t contain approximately <b>5 sentences</b> then try to add more text\n\t\t\t\t\t<ul>\n\t\t\t\t\t\t<li>Include specific information like size, shape, color, age, manufacture date, company/artist/author, and notable features or markings if possible</li>\n\t\t\t\t\t\t<li>Make the description as readable as possible</li>\n\t\t\t\t\t\t<li>Don\'t say anything that isn\'t true.</li>\n\t\t\t\t\t\t<li>Don\'t use all caps</li>\n\t\t\t\t\t\t<li>Don\'t include email addresses and some links</li>\n\t\t\t\t\t</ul>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li>If the description is long enough then try to improve it</li>\n\t\t\t\t\t</ul>\n\t\t\t\t\t<table><tr>\n\t\t\t\t\t<td><img src=\"http://i.ebayimg.com/00/s/MTEwMVgxNDY4/z/v5oAAOxy~dNTJ4wC/$_12.JPG?set_id=880000500F\" alt=\"Image 1\" width=\"250\" border=\"2\"></img></td>\n\t\t\t\t\t<td><img src=\"http://i.ebayimg.com/00/s/MTEwMFgxNTU5/z/8MMAAOxydgZTJ4wq/$_12.JPG?set_id=880000500F\" alt=\"Image 2\" width=\"250\" border=\"2\"></img></td>\n\t\t\t\t\t<td><img src=\"http://i.ebayimg.com/00/s/MTQ2OFgxMTAx/z/tg4AAOxyj4hTJ4xW/$_12.JPG?set_id=880000500F\" alt=\"Image 3\" width=\"250\" border=\"2\"></img></td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t<td><a href=\"http://i.ebayimg.com/00/s/MTEwMVgxNDY4/z/v5oAAOxy~dNTJ4wC/$_12.JPG?set_id=880000500F\" target=\"_blank\">Link to full size image 1 (new window)</a></td>\n\t\t\t\t\t<td><a href=\"http://i.ebayimg.com/00/s/MTEwMFgxNTU5/z/8MMAAOxydgZTJ4wq/$_12.JPG?set_id=880000500F\" target=\"_blank\">Link to full size image 2 (new window)</a></td>\n\t\t\t\t\t<td><a href=\"http://i.ebayimg.com/00/s/MTQ2OFgxMTAx/z/tg4AAOxyj4hTJ4xW/$_12.JPG?set_id=880000500F\" target=\"_blank\">Link to full size image 3 (new window)</a></td>\n\t\t\t\t\t</tr></table>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <FreeTextAnswer>\n        <Constraints>\n          <Length maxLength=\"5000\" minLength=\"80\"/>\n          <AnswerFormatRegex errorText=\"The description cannot be blank.\" regex=\"\\S\"/>\n        </Constraints>\n        <DefaultText>Nike Mercurial Vapor soccer boots. &#13;\n&#13;\nInspired by festivals of the 2014 host country and patterns found in nature, the Nike reflective pack is a cool way to ring in the ultimate year of soccer. &#13;\n&#13;\nThis version of Nike\'s Mercurial Vapor is iridescent white with a pop of color on the outsole and a a subtle cheetah print on the heel. &#13;\n&#13;\nThere is also metallic threading in the laces. &#13;\n&#13;\nEngineered for uncompromising explosive speed in every direction, the Mercurial Vapor IX has a new composite chassis and a more contoured fit for the ultimate traction and control in any condition. &#13;\n&#13;\nCan you handle the speed? &#13;\n&#13;\nThe Teijin upper on this pearlized white version of the Mercurial Vapor IX is updated to be as close to the fit and feel of a natural leather as possible while still maintaining the incredible durable and minimal weight of a synthetic. &#13;\n&#13;\nThere is a subtle leopard print in white on the heel. &#13;\n&#13;\nThe fastest cleat in the game is now equipped with All Conditions Control (ACC) technology for optimal ball control in wet or dry conditions. &#13;\n&#13;\nThe lightweight perforated sockliner has a textile liner that mirrors the natural shape of the foot for low profile cushioning. &#13;\n&#13;\nContoured last further enhances the glove-like fit. &#13;\n&#13;\nFixed cushioning insole is perforated for reduced weight and added breathability. &#13;\n&#13;\nTwo-layers of glass fiber are fused together on the outsole for flexibility and responsiveness. &#13;\n&#13;\nComposite and direct injected TPU studs dig and release instantly for exceptional traction and explosive speed. &#13;\n&#13;\nWith two longer studs on the heel and asymmetrical bladed forefoot stud design, the Vapor IX outsole delivers not just straight-ahead speed, but the traction for quick cuts and turns and explosive take off.</DefaultText>\n        <NumberOfLinesSuggestion>10</NumberOfLinesSuggestion>\n      </FreeTextAnswer>\n    </AnswerSpecification>\n  </Question>\n  <Question>\n    <QuestionIdentifier>description_improve_feedback</QuestionIdentifier>\n    <QuestionContent>\n      <Title>Your personal feedback (optional)</Title>\n      <FormattedContent><![CDATA[Give your personal feedback about the task. This <b>can</b> contain one of the following aspects:\n        <ul>\n        <li>Problems of the task (e.g. images are not visible)</li>\n        <li>Instructions are not clear enough</li>\n        </ul>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <FreeTextAnswer>\n        <NumberOfLinesSuggestion>3</NumberOfLinesSuggestion>\n      </FreeTextAnswer>\n    </AnswerSpecification>\n  </Question>\n</QuestionForm>",
+					"maxAssignments" : 1,
+					"assignmentDurationInSeconds" : 7200,
+					"autoApprovalDelayInSeconds" : 2592000,
+					"requesterAnnotation" : null,
+					"hitStatus" : "Reviewable",
+					"hitReviewStatus" : "NotReviewed",
+					"creationTime" : 1.395767193E12,
+					"expiration" : 1.396371993E12,
+					"assignments" : [
+						{
+							"assignmentId" : "3H8DHMCCW9AA4DP7GIF7OXPEB4PDKG",
+							"workerId" : "A2UFB6FRY90EAB",
+							"hitId" : "30U1YOGZG9V55C4LVOJ7RZL5WT7SD0",
+							"assignmentStatus" : "Submitted",
+							"autoApprovalTime" : 1.398360008E12,
+							"acceptTime" : 1.395767988E12,
+							"submitTime" : 1.395768008E12,
+							"answer" : {
+								"newText" : "Nike Mercurial Vapor soccer boots. \r\n\r\nInspired by festivals of the 2014 host country and patterns found in nature, the Nike reflective pack is a cool way to ring in the ultimate year of soccer. \r\n\r\nThis version of Nike\'s Mercurial Vapor is iridescent white with a pop of color on the outsole and a a subtle cheetah print on the heel. \r\n\r\nThere is also metallic threading in the laces. \r\n\r\nEngineered for uncompromising explosive speed in every direction, the Mercurial Vapor IX has a new composite chassis and a more contoured fit for the ultimate traction and control in any condition. \r\n\r\nCan you handle the speed? \r\n\r\nThe Teijin upper on this pearlized white version of the Mercurial Vapor IX is updated to be as close to the fit and feel of a natural leather as possible while still maintaining the incredible durable and minimal weight of a synthetic. \r\n\r\nThere is a subtle leopard print in white on the heel. \r\n\r\nThe fastest cleat in the game is now equipped with All Conditions Control (ACC) technology for optimal ball control in wet or dry conditions. \r\n\r\nThe lightweight perforated sockliner has a textile liner that mirrors the natural shape of the foot for low profile cushioning. \r\n\r\nContoured last further enhances the glove-like fit. \r\n\r\nFixed cushioning insole is perforated for reduced weight and added breathability. \r\n\r\nTwo-layers of glass fiber are fused together on the outsole for flexibility and responsiveness. \r\n\r\nComposite and direct injected TPU studs dig and release instantly for exceptional traction and explosive speed. \r\n\r\nWith two longer studs on the heel and asymmetrical bladed forefoot stud design, the Vapor IX outsole delivers not just straight-ahead speed, but the traction for quick cuts and turns and explosive take off.",
+								"description_improve_feedback" : ""
+							},
+							"requesterFeedback" : null,
+							"approvalTime" : null,
+							"deadline" : null,
+							"rejectionTime" : null
+						}
+					],
+					"done" : true
+				},
+				"returnTime" : 1.395857159385E12,
+				"printOutput" : "hit completed: 30U1YOGZG9V55C4LVOJ7RZL5WT7SD0\r\n"
+			},
+			{
+				"creationTime" : 1.395857159463E12,
+				"onceFunc" : "\nfunction () {\n    return Math.random();\n}\n",
+				"returnValue" : 0.45643413070129535,
+				"returnTime" : 1.395857159463E12,
+				"printOutput" : ""
+			},
+			{
+				"creationTime" : 1.395857159463E12,
+				"onceFunc" : "\nfunction () {\n    return Math.random();\n}\n",
+				"returnValue" : 0.9081512211728768,
+				"returnTime" : 1.395857159463E12,
+				"printOutput" : ""
+			},
+			{
+				"creationTime" : 1.395857159463E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.createHITRaw(params);\n}\n",
+				"returnValue" : "3HYV4299HZVSEY3CDLOMGQ3PKD0E8I",
+				"returnTime" : 1.395857160103E12,
+				"printOutput" : "created HIT: 3HYV4299HZVSEY3CDLOMGQ3PKD0E8I\r\n        url: https://www.mturk.com/mturk/preview?groupId=38E1HBOA1QEDDZX1Z7UNFGUC0R380D\r\n"
+			},
+			{
+				"creationTime" : 1.395857160119E12,
+				"onceFunc" : "\nfunction () {\n    if (!me.waitForHIT_callCount) {\n        me.waitForHIT_callCount = 0;\n        var a = me.getReviewableHITs(1);\n        if (a.totalNumResults == a.length) {\n            me.waitForHIT_reviewableHITs = new Set(a);\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n        me.waitForHIT_waitCount = Math.ceil(a.totalNumResults / 100);\n    }\n    me.waitForHIT_callCount++;\n    if (me.waitForHIT_callCount >= me.waitForHIT_waitCount) {\n        if (!me.waitForHIT_reviewableHITs || (time() > me.waitForHIT_reviewableHITsTime + (1000 * 60))) {\n            me.waitForHIT_reviewableHITs = new Set(me.getReviewableHITs());\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n    }\n    if (me.waitForHIT_reviewableHITs) {\n        if (!me.waitForHIT_reviewableHITs[hitId]) {\n            stop();\n        }\n    }\n    var hit = mturk.getHIT(hitId);\n    if (!hit.done) {\n        stop();\n    }\n    verbosePrint(\"hit completed: \" + hitId);\n    return hit;\n}\n",
+				"returnValue" : {
+					"hitId" : "3HYV4299HZVSEY3CDLOMGQ3PKD0E8I",
+					"hitTypeId" : "38E1HBOA1QEDDZX1Z7UNFGUC0R380D",
+					"title" : "Vote on auction item description improvements",
+					"description" : "Decide which auction item description is better/suitable for the item(s) on three pictures",
+					"keywords" : null,
+					"reward" : 0.01,
+					"question" : "<QuestionForm xmlns=\"http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2005-10-01/QuestionForm.xsd\">\n  <Question>\n    <QuestionIdentifier>vote</QuestionIdentifier>\n    <IsRequired>true</IsRequired>\n    <QuestionContent>\n      <FormattedContent><![CDATA[<b>Instructions:</b> Which description of the auction item(s) on the pictures is better? The following factors <b>can</b> affect your decision: \n\t\t\t\t\t<ul>\n\t\t\t\t\t\t<li>One description is more informative than the other</li>\n\t\t\t\t\t\t<li>One description contains more information about the auction item then the other</li>\n\t\t\t\t\t\t<li>One description contains wrong information</li>\n\t\t\t\t\t\t<li>One description has spelling mistakes</li>\n\t\t\t\t\t</ul>\n\t\t\t\t\t<table><tr>\n\t\t\t\t\t<td><img src=\"http://i.ebayimg.com/00/s/MTEwMVgxNDY4/z/v5oAAOxy~dNTJ4wC/$_12.JPG?set_id=880000500F\" alt=\"Image 1\" width=\"250\" border=\"2\"></img></td>\n\t\t\t\t\t<td><img src=\"http://i.ebayimg.com/00/s/MTEwMFgxNTU5/z/8MMAAOxydgZTJ4wq/$_12.JPG?set_id=880000500F\" alt=\"Image 2\" width=\"250\" border=\"2\"></img></td>\n\t\t\t\t\t<td><img src=\"http://i.ebayimg.com/00/s/MTQ2OFgxMTAx/z/tg4AAOxyj4hTJ4xW/$_12.JPG?set_id=880000500F\" alt=\"Image 3\" width=\"250\" border=\"2\"></img></td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t<td><a href=\"http://i.ebayimg.com/00/s/MTEwMVgxNDY4/z/v5oAAOxy~dNTJ4wC/$_12.JPG?set_id=880000500F\" target=\"_blank\">Link to full size image 1 (new window)</a></td>\n\t\t\t\t\t<td><a href=\"http://i.ebayimg.com/00/s/MTEwMFgxNTU5/z/8MMAAOxydgZTJ4wq/$_12.JPG?set_id=880000500F\" target=\"_blank\">Link to full size image 2 (new window)</a></td>\n\t\t\t\t\t<td><a href=\"http://i.ebayimg.com/00/s/MTQ2OFgxMTAx/z/tg4AAOxyj4hTJ4xW/$_12.JPG?set_id=880000500F\" target=\"_blank\">Link to full size image 3 (new window)</a></td>\n\t\t\t\t\t</tr></table>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <SelectionAnswer>\n        <Selections>\n          <Selection>\n            <SelectionIdentifier>a</SelectionIdentifier>\n            <Text>Nike Mercurial Vapor soccer boots. &#13;\n&#13;\nInspired by festivals of the 2014 host country and patterns found in nature, the Nike reflective pack is a cool way to ring in the ultimate year of soccer. &#13;\n&#13;\nThis version of Nike\'s Mercurial Vapor is iridescent white with a pop of color on the outsole and a a subtle cheetah print on the heel. &#13;\n&#13;\nThere is also metallic threading in the laces. &#13;\n&#13;\nEngineered for uncompromising explosive speed in every direction, the Mercurial Vapor IX has a new composite chassis and a more contoured fit for the ultimate traction and control in any condition. &#13;\n&#13;\nCan you handle the speed? &#13;\n&#13;\nThe Teijin upper on this pearlized white version of the Mercurial Vapor IX is updated to be as close to the fit and feel of a natural leather as possible while still maintaining the incredible durable and minimal weight of a synthetic. &#13;\n&#13;\nThere is a subtle leopard print in white on the heel. &#13;\n&#13;\nThe fastest cleat in the game is now equipped with All Conditions Control (ACC) technology for optimal ball control in wet or dry conditions. &#13;\n&#13;\nThe lightweight perforated sockliner has a textile liner that mirrors the natural shape of the foot for low profile cushioning. &#13;\n&#13;\nContoured last further enhances the glove-like fit. &#13;\n&#13;\nFixed cushioning insole is perforated for reduced weight and added breathability. &#13;\n&#13;\nTwo-layers of glass fiber are fused together on the outsole for flexibility and responsiveness. &#13;\n&#13;\nComposite and direct injected TPU studs dig and release instantly for exceptional traction and explosive speed. &#13;\n&#13;\nWith two longer studs on the heel and asymmetrical bladed forefoot stud design, the Vapor IX outsole delivers not just straight-ahead speed, but the traction for quick cuts and turns and explosive take off.</Text>\n          </Selection>\n          <Selection>\n            <SelectionIdentifier>b</SelectionIdentifier>\n            <Text>Nike Mercurial Vapor soccer boots. &#13;\n&#13;\nInspired by festivals of the 2014 host country and patterns found in nature, the Nike reflective pack is a cool way to ring in the ultimate year of soccer. &#13;\n&#13;\nThis version of Nike\'s Mercurial Vapor is iridescent white with a pop of color on the outsole and a a subtle cheetah print on the heel. &#13;\n&#13;\nThere is also metallic threading in the laces. &#13;\n&#13;\nEngineered for uncompromising explosive speed in every direction, the Mercurial Vapor IX has a new composite chassis and a more contoured fit for the ultimate traction and control in any condition. &#13;\n&#13;\nCan you handle the speed? &#13;\n&#13;\nThe Teijin upper on this pearlized white version of the Mercurial Vapor IX is updated to be as close to the fit and feel of a natural leather as possible while still maintaining the incredible durable and minimal weight of a synthetic. &#13;\n&#13;\nThere is a subtle leopard print in white on the heel. &#13;\n&#13;\nThe fastest cleat in the game is now equipped with All Conditions Control (ACC) technology for optimal ball control in wet or dry conditions. &#13;\n&#13;\nThe lightweight perforated sockliner has a textile liner that mirrors the natural shape of the foot for low profile cushioning. &#13;\n&#13;\nContoured last further enhances the glove-like fit. &#13;\n&#13;\nFixed cushioning insole is perforated for reduced weight and added breathability. &#13;\n&#13;\nTwo-layers of glass fiber are fused together on the outsole for flexibility and responsiveness. &#13;\n&#13;\nComposite and direct injected TPU studs dig and release instantly for exceptional traction and explosive speed. &#13;\n&#13;\nWith two longer studs on the heel and asymmetrical bladed forefoot stud design, the Vapor IX outsole delivers not just straight-ahead speed, but the traction for quick cuts and turns and explosive take off.</Text>\n          </Selection>\n        </Selections>\n      </SelectionAnswer>\n    </AnswerSpecification>\n  </Question>\n  <Question>\n    <QuestionIdentifier>description_vote_feedback</QuestionIdentifier>\n    <QuestionContent>\n      <Title>Your personal feedback (optional)</Title>\n      <FormattedContent><![CDATA[Give your personal feedback about the task. This <b>can</b> contain one of the following aspects:\n        <ul>\n        <li>Problems of the task (e.g. images are not visible)</li>\n        <li>Instructions are not clear enough</li>\n        </ul>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <FreeTextAnswer>\n        <NumberOfLinesSuggestion>3</NumberOfLinesSuggestion>\n      </FreeTextAnswer>\n    </AnswerSpecification>\n  </Question>\n</QuestionForm>",
+					"maxAssignments" : 3,
+					"assignmentDurationInSeconds" : 1800,
+					"autoApprovalDelayInSeconds" : 2592000,
+					"requesterAnnotation" : null,
+					"hitStatus" : "Reviewable",
+					"hitReviewStatus" : "NotReviewed",
+					"creationTime" : 1.395857173E12,
+					"expiration" : 1.396461973E12,
+					"assignments" : [
+						{
+							"assignmentId" : "3O6CYIULED0NGFUARROZM8NXLIZUWO",
+							"workerId" : "A10QVKS005YVLL",
+							"hitId" : "3HYV4299HZVSEY3CDLOMGQ3PKD0E8I",
+							"assignmentStatus" : "Submitted",
+							"autoApprovalTime" : 1.398451097E12,
+							"acceptTime" : 1.395859031E12,
+							"submitTime" : 1.395859097E12,
+							"answer" : {
+								"vote" : [
+									"a"
+								],
+								"description_vote_feedback" : ""
+							},
+							"requesterFeedback" : null,
+							"approvalTime" : null,
+							"deadline" : null,
+							"rejectionTime" : null
+						},
+						{
+							"assignmentId" : "3E47SOBEYQV9TQT5GJZKRBSJZ74IC5",
+							"workerId" : "A165LYRHB4GMMA",
+							"hitId" : "3HYV4299HZVSEY3CDLOMGQ3PKD0E8I",
+							"assignmentStatus" : "Submitted",
+							"autoApprovalTime" : 1.398453772E12,
+							"acceptTime" : 1.395861761E12,
+							"submitTime" : 1.395861772E12,
+							"answer" : {
+								"vote" : [
+									"a"
+								],
+								"description_vote_feedback" : ""
+							},
+							"requesterFeedback" : null,
+							"approvalTime" : null,
+							"deadline" : null,
+							"rejectionTime" : null
+						},
+						{
+							"assignmentId" : "3KGTPGBS6XK14ZW3D7ZSY178HCY2UA",
+							"workerId" : "A3NE7SIDYZCF98",
+							"hitId" : "3HYV4299HZVSEY3CDLOMGQ3PKD0E8I",
+							"assignmentStatus" : "Submitted",
+							"autoApprovalTime" : 1.398459076E12,
+							"acceptTime" : 1.395866937E12,
+							"submitTime" : 1.395867076E12,
+							"answer" : {
+								"vote" : [
+									"a"
+								],
+								"description_vote_feedback" : ""
+							},
+							"requesterFeedback" : null,
+							"approvalTime" : null,
+							"deadline" : null,
+							"rejectionTime" : null
+						}
+					],
+					"done" : true
+				},
+				"returnTime" : 1.395939782167E12,
+				"printOutput" : "hit completed: 3HYV4299HZVSEY3CDLOMGQ3PKD0E8I\r\n"
+			},
+			{
+				"creationTime" : 1.395939782183E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.approveAssignmentRaw(assignment, reason);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.395939782667E12,
+				"printOutput" : "approved assignment 3O6CYIULED0NGFUARROZM8NXLIZUWO\r\n"
+			},
+			{
+				"creationTime" : 1.395939782667E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.approveAssignmentRaw(assignment, reason);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.395939782917E12,
+				"printOutput" : "approved assignment 3E47SOBEYQV9TQT5GJZKRBSJZ74IC5\r\n"
+			},
+			{
+				"creationTime" : 1.395939782917E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.approveAssignmentRaw(assignment, reason);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.395939783277E12,
+				"printOutput" : "approved assignment 3KGTPGBS6XK14ZW3D7ZSY178HCY2UA\r\n"
+			},
+			{
+				"creationTime" : 1.395939783292E12,
+				"onceFunc" : "\nfunction () {\n    mturk.deleteHITRaw(hit);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.395939783495E12,
+				"printOutput" : "disabled HIT: 3HYV4299HZVSEY3CDLOMGQ3PKD0E8I\r\n"
+			},
+			{
+				"creationTime" : 1.395939783495E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.rejectAssignmentRaw(assignment, reason);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.395939783902E12,
+				"printOutput" : "rejected assignment 3H8DHMCCW9AA4DP7GIF7OXPEB4PDKG\r\n"
+			},
+			{
+				"creationTime" : 1.395939783902E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.createHITRaw(params);\n}\n",
+				"returnValue" : "3Q7TKIAPOS9I1Z9VBFM6FD7A42NLD9",
+				"returnTime" : 1.395939784308E12,
+				"printOutput" : "created HIT: 3Q7TKIAPOS9I1Z9VBFM6FD7A42NLD9\r\n        url: https://www.mturk.com/mturk/preview?groupId=24LSCXKNQY2RCLHN82ME7HR0KRFP09\r\n"
+			},
+			{
+				"creationTime" : 1.395939784323E12,
+				"onceFunc" : "\nfunction () {\n    if (!me.waitForHIT_callCount) {\n        me.waitForHIT_callCount = 0;\n        var a = me.getReviewableHITs(1);\n        if (a.totalNumResults == a.length) {\n            me.waitForHIT_reviewableHITs = new Set(a);\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n        me.waitForHIT_waitCount = Math.ceil(a.totalNumResults / 100);\n    }\n    me.waitForHIT_callCount++;\n    if (me.waitForHIT_callCount >= me.waitForHIT_waitCount) {\n        if (!me.waitForHIT_reviewableHITs || (time() > me.waitForHIT_reviewableHITsTime + (1000 * 60))) {\n            me.waitForHIT_reviewableHITs = new Set(me.getReviewableHITs());\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n    }\n    if (me.waitForHIT_reviewableHITs) {\n        if (!me.waitForHIT_reviewableHITs[hitId]) {\n            stop();\n        }\n    }\n    var hit = mturk.getHIT(hitId);\n    if (!hit.done) {\n        stop();\n    }\n    verbosePrint(\"hit completed: \" + hitId);\n    return hit;\n}\n",
+				"returnValue" : {
+					"hitId" : "3Q7TKIAPOS9I1Z9VBFM6FD7A42NLD9",
+					"hitTypeId" : "24LSCXKNQY2RCLHN82ME7HR0KRFP09",
+					"title" : "Improve/extend description of auction item(s) on pictures",
+					"description" : "Improve and/or extend the description of an auction item based on three images",
+					"keywords" : null,
+					"reward" : 0.2,
+					"question" : "<QuestionForm xmlns=\"http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2005-10-01/QuestionForm.xsd\">\n  <Question>\n    <QuestionIdentifier>newText</QuestionIdentifier>\n    <IsRequired>true</IsRequired>\n    <QuestionContent>\n      <FormattedContent><![CDATA[The goal of the requester of the HIT is to generate eBay auctions by MTurk workers based on images of the item.<br /><br />\n\t\t\t\t\t<b>Instructions</b>: Improve and/or extend the description of the auction item(s) on the images. Keep in mind the following remarks:\n\t\t\t\t\t<ul>\n\t\t\t\t\t<li>If the description doesn\'t contain approximately <b>5 sentences</b> then try to add more text\n\t\t\t\t\t<ul>\n\t\t\t\t\t\t<li>Include specific information like size, shape, color, age, manufacture date, company/artist/author, and notable features or markings if possible</li>\n\t\t\t\t\t\t<li>Make the description as readable as possible</li>\n\t\t\t\t\t\t<li>Don\'t say anything that isn\'t true.</li>\n\t\t\t\t\t\t<li>Don\'t use all caps</li>\n\t\t\t\t\t\t<li>Don\'t include email addresses and some links</li>\n\t\t\t\t\t</ul>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li>If the description is long enough then try to improve it</li>\n\t\t\t\t\t</ul>\n\t\t\t\t\t<table><tr>\n\t\t\t\t\t<td><img src=\"http://i.ebayimg.com/00/s/MTEwMVgxNDY4/z/v5oAAOxy~dNTJ4wC/$_12.JPG?set_id=880000500F\" alt=\"Image 1\" width=\"250\" border=\"2\"></img></td>\n\t\t\t\t\t<td><img src=\"http://i.ebayimg.com/00/s/MTEwMFgxNTU5/z/8MMAAOxydgZTJ4wq/$_12.JPG?set_id=880000500F\" alt=\"Image 2\" width=\"250\" border=\"2\"></img></td>\n\t\t\t\t\t<td><img src=\"http://i.ebayimg.com/00/s/MTQ2OFgxMTAx/z/tg4AAOxyj4hTJ4xW/$_12.JPG?set_id=880000500F\" alt=\"Image 3\" width=\"250\" border=\"2\"></img></td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t<td><a href=\"http://i.ebayimg.com/00/s/MTEwMVgxNDY4/z/v5oAAOxy~dNTJ4wC/$_12.JPG?set_id=880000500F\" target=\"_blank\">Link to full size image 1 (new window)</a></td>\n\t\t\t\t\t<td><a href=\"http://i.ebayimg.com/00/s/MTEwMFgxNTU5/z/8MMAAOxydgZTJ4wq/$_12.JPG?set_id=880000500F\" target=\"_blank\">Link to full size image 2 (new window)</a></td>\n\t\t\t\t\t<td><a href=\"http://i.ebayimg.com/00/s/MTQ2OFgxMTAx/z/tg4AAOxyj4hTJ4xW/$_12.JPG?set_id=880000500F\" target=\"_blank\">Link to full size image 3 (new window)</a></td>\n\t\t\t\t\t</tr></table>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <FreeTextAnswer>\n        <Constraints>\n          <Length maxLength=\"5000\" minLength=\"120\"/>\n          <AnswerFormatRegex errorText=\"The description cannot be blank.\" regex=\"\\S\"/>\n        </Constraints>\n        <DefaultText>Nike Mercurial Vapor soccer boots. &#13;\n&#13;\nInspired by festivals of the 2014 host country and patterns found in nature, the Nike reflective pack is a cool way to ring in the ultimate year of soccer. &#13;\n&#13;\nThis version of Nike\'s Mercurial Vapor is iridescent white with a pop of color on the outsole and a a subtle cheetah print on the heel. &#13;\n&#13;\nThere is also metallic threading in the laces. &#13;\n&#13;\nEngineered for uncompromising explosive speed in every direction, the Mercurial Vapor IX has a new composite chassis and a more contoured fit for the ultimate traction and control in any condition. &#13;\n&#13;\nCan you handle the speed? &#13;\n&#13;\nThe Teijin upper on this pearlized white version of the Mercurial Vapor IX is updated to be as close to the fit and feel of a natural leather as possible while still maintaining the incredible durable and minimal weight of a synthetic. &#13;\n&#13;\nThere is a subtle leopard print in white on the heel. &#13;\n&#13;\nThe fastest cleat in the game is now equipped with All Conditions Control (ACC) technology for optimal ball control in wet or dry conditions. &#13;\n&#13;\nThe lightweight perforated sockliner has a textile liner that mirrors the natural shape of the foot for low profile cushioning. &#13;\n&#13;\nContoured last further enhances the glove-like fit. &#13;\n&#13;\nFixed cushioning insole is perforated for reduced weight and added breathability. &#13;\n&#13;\nTwo-layers of glass fiber are fused together on the outsole for flexibility and responsiveness. &#13;\n&#13;\nComposite and direct injected TPU studs dig and release instantly for exceptional traction and explosive speed. &#13;\n&#13;\nWith two longer studs on the heel and asymmetrical bladed forefoot stud design, the Vapor IX outsole delivers not just straight-ahead speed, but the traction for quick cuts and turns and explosive take off.</DefaultText>\n        <NumberOfLinesSuggestion>10</NumberOfLinesSuggestion>\n      </FreeTextAnswer>\n    </AnswerSpecification>\n  </Question>\n  <Question>\n    <QuestionIdentifier>description_improve_feedback</QuestionIdentifier>\n    <QuestionContent>\n      <Title>Your personal feedback (optional)</Title>\n      <FormattedContent><![CDATA[Give your personal feedback about the task. This <b>can</b> contain one of the following aspects:\n        <ul>\n        <li>Problems of the task (e.g. images are not visible)</li>\n        <li>Instructions are not clear enough</li>\n        </ul>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <FreeTextAnswer>\n        <NumberOfLinesSuggestion>3</NumberOfLinesSuggestion>\n      </FreeTextAnswer>\n    </AnswerSpecification>\n  </Question>\n</QuestionForm>",
+					"maxAssignments" : 1,
+					"assignmentDurationInSeconds" : 7200,
+					"autoApprovalDelayInSeconds" : 2592000,
+					"requesterAnnotation" : null,
+					"hitStatus" : "Reviewable",
+					"hitReviewStatus" : "NotReviewed",
+					"creationTime" : 1.395939798E12,
+					"expiration" : 1.396544598E12,
+					"assignments" : [
+						{
+							"assignmentId" : "3E1QT0TDFP87HN3SZ7JFPPW09O0I8W",
+							"workerId" : "A1IA4CST74I1Q8",
+							"hitId" : "3Q7TKIAPOS9I1Z9VBFM6FD7A42NLD9",
+							"assignmentStatus" : "Submitted",
+							"autoApprovalTime" : 1.398535659E12,
+							"acceptTime" : 1.395943606E12,
+							"submitTime" : 1.395943659E12,
+							"answer" : {
+								"newText" : "Nike Mercurial Vapor soccer boots. \r\n\r\nInspired by festivals of the 2014 host country and patterns found in nature, the Nike reflective pack is a cool way to ring in the ultimate year of soccer. \r\n\r\nThis version of Nike\'s Mercurial Vapor is iridescent white with a pop of color on the outsole and a a subtle cheetah print on the heel. \r\n\r\nThere is also metallic threading in the laces. \r\n\r\nEngineered for uncompromising explosive speed in every direction, the Mercurial Vapor IX has a new composite chassis and a more contoured fit for the ultimate traction and control in any condition. \r\n\r\nCan you handle the speed? \r\n\r\nThe Teijin upper on this pearlized white version of the Mercurial Vapor IX is updated to be as close to the fit and feel of a natural leather as possible while still maintaining the incredible durable and minimal weight of a synthetic. \r\n\r\nThere is a subtle leopard print in white on the heel. \r\n\r\nThe fastest cleat in the game is now equipped with All Conditions Control (ACC) technology for optimal ball control in wet or dry conditions. \r\n\r\nThe lightweight perforated sockliner has a textile liner that mirrors the natural shape of the foot for low profile cushioning. \r\n\r\nContoured last further enhances the glove-like fit. \r\n\r\nFixed cushioning insole is perforated for reduced weight and added breathability. \r\n\r\nTwo-layers of glass fiber are fused together on the outsole for flexibility and responsiveness. \r\n\r\nComposite and direct injected TPU studs dig and release instantly for exceptional traction and explosive speed. \r\n\r\nWith two longer studs on the heel and asymmetrical bladed forefoot stud design, the Vapor IX outsole delivers not just straight-ahead speed, but the traction for quick cuts and turns and explosive take off.",
+								"description_improve_feedback" : "instructions are clear"
+							},
+							"requesterFeedback" : null,
+							"approvalTime" : null,
+							"deadline" : null,
+							"rejectionTime" : null
+						}
+					],
+					"done" : true
+				},
+				"returnTime" : 1.39602655636E12,
+				"printOutput" : "hit completed: 3Q7TKIAPOS9I1Z9VBFM6FD7A42NLD9\r\n"
+			},
+			{
+				"creationTime" : 1.396026556454E12,
+				"onceFunc" : "\nfunction () {\n    return Math.random();\n}\n",
+				"returnValue" : 0.9287255354983843,
+				"returnTime" : 1.396026556469E12,
+				"printOutput" : ""
+			},
+			{
+				"creationTime" : 1.396026556469E12,
+				"onceFunc" : "\nfunction () {\n    return Math.random();\n}\n",
+				"returnValue" : 0.7417277764867611,
+				"returnTime" : 1.396026556469E12,
+				"printOutput" : ""
+			},
+			{
+				"creationTime" : 1.396026556485E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.createHITRaw(params);\n}\n",
+				"returnValue" : "386T3MLZLMUTN8OI5EP7V11LQGN80V",
+				"returnTime" : 1.396026557188E12,
+				"printOutput" : "created HIT: 386T3MLZLMUTN8OI5EP7V11LQGN80V\r\n        url: https://www.mturk.com/mturk/preview?groupId=38E1HBOA1QEDDZX1Z7UNFGUC0R380D\r\n"
+			},
+			{
+				"creationTime" : 1.396026557188E12,
+				"onceFunc" : "\nfunction () {\n    if (!me.waitForHIT_callCount) {\n        me.waitForHIT_callCount = 0;\n        var a = me.getReviewableHITs(1);\n        if (a.totalNumResults == a.length) {\n            me.waitForHIT_reviewableHITs = new Set(a);\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n        me.waitForHIT_waitCount = Math.ceil(a.totalNumResults / 100);\n    }\n    me.waitForHIT_callCount++;\n    if (me.waitForHIT_callCount >= me.waitForHIT_waitCount) {\n        if (!me.waitForHIT_reviewableHITs || (time() > me.waitForHIT_reviewableHITsTime + (1000 * 60))) {\n            me.waitForHIT_reviewableHITs = new Set(me.getReviewableHITs());\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n    }\n    if (me.waitForHIT_reviewableHITs) {\n        if (!me.waitForHIT_reviewableHITs[hitId]) {\n            stop();\n        }\n    }\n    var hit = mturk.getHIT(hitId);\n    if (!hit.done) {\n        stop();\n    }\n    verbosePrint(\"hit completed: \" + hitId);\n    return hit;\n}\n",
+				"returnValue" : {
+					"hitId" : "386T3MLZLMUTN8OI5EP7V11LQGN80V",
+					"hitTypeId" : "38E1HBOA1QEDDZX1Z7UNFGUC0R380D",
+					"title" : "Vote on auction item description improvements",
+					"description" : "Decide which auction item description is better/suitable for the item(s) on three pictures",
+					"keywords" : null,
+					"reward" : 0.01,
+					"question" : "<QuestionForm xmlns=\"http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2005-10-01/QuestionForm.xsd\">\n  <Question>\n    <QuestionIdentifier>vote</QuestionIdentifier>\n    <IsRequired>true</IsRequired>\n    <QuestionContent>\n      <FormattedContent><![CDATA[<b>Instructions:</b> Which description of the auction item(s) on the pictures is better? The following factors <b>can</b> affect your decision: \n\t\t\t\t\t<ul>\n\t\t\t\t\t\t<li>One description is more informative than the other</li>\n\t\t\t\t\t\t<li>One description contains more information about the auction item then the other</li>\n\t\t\t\t\t\t<li>One description contains wrong information</li>\n\t\t\t\t\t\t<li>One description has spelling mistakes</li>\n\t\t\t\t\t</ul>\n\t\t\t\t\t<table><tr>\n\t\t\t\t\t<td><img src=\"http://i.ebayimg.com/00/s/MTEwMVgxNDY4/z/v5oAAOxy~dNTJ4wC/$_12.JPG?set_id=880000500F\" alt=\"Image 1\" width=\"250\" border=\"2\"></img></td>\n\t\t\t\t\t<td><img src=\"http://i.ebayimg.com/00/s/MTEwMFgxNTU5/z/8MMAAOxydgZTJ4wq/$_12.JPG?set_id=880000500F\" alt=\"Image 2\" width=\"250\" border=\"2\"></img></td>\n\t\t\t\t\t<td><img src=\"http://i.ebayimg.com/00/s/MTQ2OFgxMTAx/z/tg4AAOxyj4hTJ4xW/$_12.JPG?set_id=880000500F\" alt=\"Image 3\" width=\"250\" border=\"2\"></img></td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t<td><a href=\"http://i.ebayimg.com/00/s/MTEwMVgxNDY4/z/v5oAAOxy~dNTJ4wC/$_12.JPG?set_id=880000500F\" target=\"_blank\">Link to full size image 1 (new window)</a></td>\n\t\t\t\t\t<td><a href=\"http://i.ebayimg.com/00/s/MTEwMFgxNTU5/z/8MMAAOxydgZTJ4wq/$_12.JPG?set_id=880000500F\" target=\"_blank\">Link to full size image 2 (new window)</a></td>\n\t\t\t\t\t<td><a href=\"http://i.ebayimg.com/00/s/MTQ2OFgxMTAx/z/tg4AAOxyj4hTJ4xW/$_12.JPG?set_id=880000500F\" target=\"_blank\">Link to full size image 3 (new window)</a></td>\n\t\t\t\t\t</tr></table>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <SelectionAnswer>\n        <Selections>\n          <Selection>\n            <SelectionIdentifier>b</SelectionIdentifier>\n            <Text>Nike Mercurial Vapor soccer boots. &#13;\n&#13;\nInspired by festivals of the 2014 host country and patterns found in nature, the Nike reflective pack is a cool way to ring in the ultimate year of soccer. &#13;\n&#13;\nThis version of Nike\'s Mercurial Vapor is iridescent white with a pop of color on the outsole and a a subtle cheetah print on the heel. &#13;\n&#13;\nThere is also metallic threading in the laces. &#13;\n&#13;\nEngineered for uncompromising explosive speed in every direction, the Mercurial Vapor IX has a new composite chassis and a more contoured fit for the ultimate traction and control in any condition. &#13;\n&#13;\nCan you handle the speed? &#13;\n&#13;\nThe Teijin upper on this pearlized white version of the Mercurial Vapor IX is updated to be as close to the fit and feel of a natural leather as possible while still maintaining the incredible durable and minimal weight of a synthetic. &#13;\n&#13;\nThere is a subtle leopard print in white on the heel. &#13;\n&#13;\nThe fastest cleat in the game is now equipped with All Conditions Control (ACC) technology for optimal ball control in wet or dry conditions. &#13;\n&#13;\nThe lightweight perforated sockliner has a textile liner that mirrors the natural shape of the foot for low profile cushioning. &#13;\n&#13;\nContoured last further enhances the glove-like fit. &#13;\n&#13;\nFixed cushioning insole is perforated for reduced weight and added breathability. &#13;\n&#13;\nTwo-layers of glass fiber are fused together on the outsole for flexibility and responsiveness. &#13;\n&#13;\nComposite and direct injected TPU studs dig and release instantly for exceptional traction and explosive speed. &#13;\n&#13;\nWith two longer studs on the heel and asymmetrical bladed forefoot stud design, the Vapor IX outsole delivers not just straight-ahead speed, but the traction for quick cuts and turns and explosive take off.</Text>\n          </Selection>\n          <Selection>\n            <SelectionIdentifier>a</SelectionIdentifier>\n            <Text>Nike Mercurial Vapor soccer boots. &#13;\n&#13;\nInspired by festivals of the 2014 host country and patterns found in nature, the Nike reflective pack is a cool way to ring in the ultimate year of soccer. &#13;\n&#13;\nThis version of Nike\'s Mercurial Vapor is iridescent white with a pop of color on the outsole and a a subtle cheetah print on the heel. &#13;\n&#13;\nThere is also metallic threading in the laces. &#13;\n&#13;\nEngineered for uncompromising explosive speed in every direction, the Mercurial Vapor IX has a new composite chassis and a more contoured fit for the ultimate traction and control in any condition. &#13;\n&#13;\nCan you handle the speed? &#13;\n&#13;\nThe Teijin upper on this pearlized white version of the Mercurial Vapor IX is updated to be as close to the fit and feel of a natural leather as possible while still maintaining the incredible durable and minimal weight of a synthetic. &#13;\n&#13;\nThere is a subtle leopard print in white on the heel. &#13;\n&#13;\nThe fastest cleat in the game is now equipped with All Conditions Control (ACC) technology for optimal ball control in wet or dry conditions. &#13;\n&#13;\nThe lightweight perforated sockliner has a textile liner that mirrors the natural shape of the foot for low profile cushioning. &#13;\n&#13;\nContoured last further enhances the glove-like fit. &#13;\n&#13;\nFixed cushioning insole is perforated for reduced weight and added breathability. &#13;\n&#13;\nTwo-layers of glass fiber are fused together on the outsole for flexibility and responsiveness. &#13;\n&#13;\nComposite and direct injected TPU studs dig and release instantly for exceptional traction and explosive speed. &#13;\n&#13;\nWith two longer studs on the heel and asymmetrical bladed forefoot stud design, the Vapor IX outsole delivers not just straight-ahead speed, but the traction for quick cuts and turns and explosive take off.</Text>\n          </Selection>\n        </Selections>\n      </SelectionAnswer>\n    </AnswerSpecification>\n  </Question>\n  <Question>\n    <QuestionIdentifier>description_vote_feedback</QuestionIdentifier>\n    <QuestionContent>\n      <Title>Your personal feedback (optional)</Title>\n      <FormattedContent><![CDATA[Give your personal feedback about the task. This <b>can</b> contain one of the following aspects:\n        <ul>\n        <li>Problems of the task (e.g. images are not visible)</li>\n        <li>Instructions are not clear enough</li>\n        </ul>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <FreeTextAnswer>\n        <NumberOfLinesSuggestion>3</NumberOfLinesSuggestion>\n      </FreeTextAnswer>\n    </AnswerSpecification>\n  </Question>\n</QuestionForm>",
+					"maxAssignments" : 3,
+					"assignmentDurationInSeconds" : 1800,
+					"autoApprovalDelayInSeconds" : 2592000,
+					"requesterAnnotation" : null,
+					"hitStatus" : "Reviewable",
+					"hitReviewStatus" : "NotReviewed",
+					"creationTime" : 1.396026573E12,
+					"expiration" : 1.396631373E12,
+					"assignments" : [
+						{
+							"assignmentId" : "3L2IS5HSFAHXTLLWZQXCQPA6SKYUNS",
+							"workerId" : "A291KO368YRYCR",
+							"hitId" : "386T3MLZLMUTN8OI5EP7V11LQGN80V",
+							"assignmentStatus" : "Submitted",
+							"autoApprovalTime" : 1.398619752E12,
+							"acceptTime" : 1.396027652E12,
+							"submitTime" : 1.396027752E12,
+							"answer" : {
+								"vote" : [
+									"a"
+								],
+								"description_vote_feedback" : "I\'d love to able to make tiny edits to refine this slightly. Thanks!"
+							},
+							"requesterFeedback" : null,
+							"approvalTime" : null,
+							"deadline" : null,
+							"rejectionTime" : null
+						},
+						{
+							"assignmentId" : "3M68NM076H6X68NNWFGQJ310QVMR6S",
+							"workerId" : "AFLY5JTSSM0ZB",
+							"hitId" : "386T3MLZLMUTN8OI5EP7V11LQGN80V",
+							"assignmentStatus" : "Submitted",
+							"autoApprovalTime" : 1.398624303E12,
+							"acceptTime" : 1.396032293E12,
+							"submitTime" : 1.396032303E12,
+							"answer" : {
+								"vote" : [
+									"b"
+								],
+								"description_vote_feedback" : ""
+							},
+							"requesterFeedback" : null,
+							"approvalTime" : null,
+							"deadline" : null,
+							"rejectionTime" : null
+						},
+						{
+							"assignmentId" : "37QW5D2ZRGLWB16O4JDTTR2NIS0S88",
+							"workerId" : "A2C632IGFEOI8S",
+							"hitId" : "386T3MLZLMUTN8OI5EP7V11LQGN80V",
+							"assignmentStatus" : "Submitted",
+							"autoApprovalTime" : 1.398625796E12,
+							"acceptTime" : 1.39603373E12,
+							"submitTime" : 1.396033796E12,
+							"answer" : {
+								"vote" : [
+									"a"
+								],
+								"description_vote_feedback" : ""
+							},
+							"requesterFeedback" : null,
+							"approvalTime" : null,
+							"deadline" : null,
+							"rejectionTime" : null
+						}
+					],
+					"done" : true
+				},
+				"returnTime" : 1.396040056254E12,
+				"printOutput" : "hit completed: 386T3MLZLMUTN8OI5EP7V11LQGN80V\r\n"
+			},
+			{
+				"creationTime" : 1.396040056254E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.extendHITRaw(hit, moreAssignments, moreSeconds);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.396040056519E12,
+				"printOutput" : "extended HIT: 386T3MLZLMUTN8OI5EP7V11LQGN80V\r\n"
+			},
+			{
+				"creationTime" : 1.396040056519E12,
+				"onceFunc" : "\nfunction () {\n    if (!me.waitForHIT_callCount) {\n        me.waitForHIT_callCount = 0;\n        var a = me.getReviewableHITs(1);\n        if (a.totalNumResults == a.length) {\n            me.waitForHIT_reviewableHITs = new Set(a);\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n        me.waitForHIT_waitCount = Math.ceil(a.totalNumResults / 100);\n    }\n    me.waitForHIT_callCount++;\n    if (me.waitForHIT_callCount >= me.waitForHIT_waitCount) {\n        if (!me.waitForHIT_reviewableHITs || (time() > me.waitForHIT_reviewableHITsTime + (1000 * 60))) {\n            me.waitForHIT_reviewableHITs = new Set(me.getReviewableHITs());\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n    }\n    if (me.waitForHIT_reviewableHITs) {\n        if (!me.waitForHIT_reviewableHITs[hitId]) {\n            stop();\n        }\n    }\n    var hit = mturk.getHIT(hitId);\n    if (!hit.done) {\n        stop();\n    }\n    verbosePrint(\"hit completed: \" + hitId);\n    return hit;\n}\n",
+				"returnValue" : {
+					"hitId" : "386T3MLZLMUTN8OI5EP7V11LQGN80V",
+					"hitTypeId" : "38E1HBOA1QEDDZX1Z7UNFGUC0R380D",
+					"title" : "Vote on auction item description improvements",
+					"description" : "Decide which auction item description is better/suitable for the item(s) on three pictures",
+					"keywords" : null,
+					"reward" : 0.01,
+					"question" : "<QuestionForm xmlns=\"http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2005-10-01/QuestionForm.xsd\">\n  <Question>\n    <QuestionIdentifier>vote</QuestionIdentifier>\n    <IsRequired>true</IsRequired>\n    <QuestionContent>\n      <FormattedContent><![CDATA[<b>Instructions:</b> Which description of the auction item(s) on the pictures is better? The following factors <b>can</b> affect your decision: \n\t\t\t\t\t<ul>\n\t\t\t\t\t\t<li>One description is more informative than the other</li>\n\t\t\t\t\t\t<li>One description contains more information about the auction item then the other</li>\n\t\t\t\t\t\t<li>One description contains wrong information</li>\n\t\t\t\t\t\t<li>One description has spelling mistakes</li>\n\t\t\t\t\t</ul>\n\t\t\t\t\t<table><tr>\n\t\t\t\t\t<td><img src=\"http://i.ebayimg.com/00/s/MTEwMVgxNDY4/z/v5oAAOxy~dNTJ4wC/$_12.JPG?set_id=880000500F\" alt=\"Image 1\" width=\"250\" border=\"2\"></img></td>\n\t\t\t\t\t<td><img src=\"http://i.ebayimg.com/00/s/MTEwMFgxNTU5/z/8MMAAOxydgZTJ4wq/$_12.JPG?set_id=880000500F\" alt=\"Image 2\" width=\"250\" border=\"2\"></img></td>\n\t\t\t\t\t<td><img src=\"http://i.ebayimg.com/00/s/MTQ2OFgxMTAx/z/tg4AAOxyj4hTJ4xW/$_12.JPG?set_id=880000500F\" alt=\"Image 3\" width=\"250\" border=\"2\"></img></td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t<td><a href=\"http://i.ebayimg.com/00/s/MTEwMVgxNDY4/z/v5oAAOxy~dNTJ4wC/$_12.JPG?set_id=880000500F\" target=\"_blank\">Link to full size image 1 (new window)</a></td>\n\t\t\t\t\t<td><a href=\"http://i.ebayimg.com/00/s/MTEwMFgxNTU5/z/8MMAAOxydgZTJ4wq/$_12.JPG?set_id=880000500F\" target=\"_blank\">Link to full size image 2 (new window)</a></td>\n\t\t\t\t\t<td><a href=\"http://i.ebayimg.com/00/s/MTQ2OFgxMTAx/z/tg4AAOxyj4hTJ4xW/$_12.JPG?set_id=880000500F\" target=\"_blank\">Link to full size image 3 (new window)</a></td>\n\t\t\t\t\t</tr></table>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <SelectionAnswer>\n        <Selections>\n          <Selection>\n            <SelectionIdentifier>b</SelectionIdentifier>\n            <Text>Nike Mercurial Vapor soccer boots. &#13;\n&#13;\nInspired by festivals of the 2014 host country and patterns found in nature, the Nike reflective pack is a cool way to ring in the ultimate year of soccer. &#13;\n&#13;\nThis version of Nike\'s Mercurial Vapor is iridescent white with a pop of color on the outsole and a a subtle cheetah print on the heel. &#13;\n&#13;\nThere is also metallic threading in the laces. &#13;\n&#13;\nEngineered for uncompromising explosive speed in every direction, the Mercurial Vapor IX has a new composite chassis and a more contoured fit for the ultimate traction and control in any condition. &#13;\n&#13;\nCan you handle the speed? &#13;\n&#13;\nThe Teijin upper on this pearlized white version of the Mercurial Vapor IX is updated to be as close to the fit and feel of a natural leather as possible while still maintaining the incredible durable and minimal weight of a synthetic. &#13;\n&#13;\nThere is a subtle leopard print in white on the heel. &#13;\n&#13;\nThe fastest cleat in the game is now equipped with All Conditions Control (ACC) technology for optimal ball control in wet or dry conditions. &#13;\n&#13;\nThe lightweight perforated sockliner has a textile liner that mirrors the natural shape of the foot for low profile cushioning. &#13;\n&#13;\nContoured last further enhances the glove-like fit. &#13;\n&#13;\nFixed cushioning insole is perforated for reduced weight and added breathability. &#13;\n&#13;\nTwo-layers of glass fiber are fused together on the outsole for flexibility and responsiveness. &#13;\n&#13;\nComposite and direct injected TPU studs dig and release instantly for exceptional traction and explosive speed. &#13;\n&#13;\nWith two longer studs on the heel and asymmetrical bladed forefoot stud design, the Vapor IX outsole delivers not just straight-ahead speed, but the traction for quick cuts and turns and explosive take off.</Text>\n          </Selection>\n          <Selection>\n            <SelectionIdentifier>a</SelectionIdentifier>\n            <Text>Nike Mercurial Vapor soccer boots. &#13;\n&#13;\nInspired by festivals of the 2014 host country and patterns found in nature, the Nike reflective pack is a cool way to ring in the ultimate year of soccer. &#13;\n&#13;\nThis version of Nike\'s Mercurial Vapor is iridescent white with a pop of color on the outsole and a a subtle cheetah print on the heel. &#13;\n&#13;\nThere is also metallic threading in the laces. &#13;\n&#13;\nEngineered for uncompromising explosive speed in every direction, the Mercurial Vapor IX has a new composite chassis and a more contoured fit for the ultimate traction and control in any condition. &#13;\n&#13;\nCan you handle the speed? &#13;\n&#13;\nThe Teijin upper on this pearlized white version of the Mercurial Vapor IX is updated to be as close to the fit and feel of a natural leather as possible while still maintaining the incredible durable and minimal weight of a synthetic. &#13;\n&#13;\nThere is a subtle leopard print in white on the heel. &#13;\n&#13;\nThe fastest cleat in the game is now equipped with All Conditions Control (ACC) technology for optimal ball control in wet or dry conditions. &#13;\n&#13;\nThe lightweight perforated sockliner has a textile liner that mirrors the natural shape of the foot for low profile cushioning. &#13;\n&#13;\nContoured last further enhances the glove-like fit. &#13;\n&#13;\nFixed cushioning insole is perforated for reduced weight and added breathability. &#13;\n&#13;\nTwo-layers of glass fiber are fused together on the outsole for flexibility and responsiveness. &#13;\n&#13;\nComposite and direct injected TPU studs dig and release instantly for exceptional traction and explosive speed. &#13;\n&#13;\nWith two longer studs on the heel and asymmetrical bladed forefoot stud design, the Vapor IX outsole delivers not just straight-ahead speed, but the traction for quick cuts and turns and explosive take off.</Text>\n          </Selection>\n        </Selections>\n      </SelectionAnswer>\n    </AnswerSpecification>\n  </Question>\n  <Question>\n    <QuestionIdentifier>description_vote_feedback</QuestionIdentifier>\n    <QuestionContent>\n      <Title>Your personal feedback (optional)</Title>\n      <FormattedContent><![CDATA[Give your personal feedback about the task. This <b>can</b> contain one of the following aspects:\n        <ul>\n        <li>Problems of the task (e.g. images are not visible)</li>\n        <li>Instructions are not clear enough</li>\n        </ul>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <FreeTextAnswer>\n        <NumberOfLinesSuggestion>3</NumberOfLinesSuggestion>\n      </FreeTextAnswer>\n    </AnswerSpecification>\n  </Question>\n</QuestionForm>",
+					"maxAssignments" : 4,
+					"assignmentDurationInSeconds" : 1800,
+					"autoApprovalDelayInSeconds" : 2592000,
+					"requesterAnnotation" : null,
+					"hitStatus" : "Reviewable",
+					"hitReviewStatus" : "NotReviewed",
+					"creationTime" : 1.396026573E12,
+					"expiration" : 1.396631373E12,
+					"assignments" : [
+						{
+							"assignmentId" : "3L2IS5HSFAHXTLLWZQXCQPA6SKYUNS",
+							"workerId" : "A291KO368YRYCR",
+							"hitId" : "386T3MLZLMUTN8OI5EP7V11LQGN80V",
+							"assignmentStatus" : "Submitted",
+							"autoApprovalTime" : 1.398619752E12,
+							"acceptTime" : 1.396027652E12,
+							"submitTime" : 1.396027752E12,
+							"answer" : {
+								"vote" : [
+									"a"
+								],
+								"description_vote_feedback" : "I\'d love to able to make tiny edits to refine this slightly. Thanks!"
+							},
+							"requesterFeedback" : null,
+							"approvalTime" : null,
+							"deadline" : null,
+							"rejectionTime" : null
+						},
+						{
+							"assignmentId" : "3M68NM076H6X68NNWFGQJ310QVMR6S",
+							"workerId" : "AFLY5JTSSM0ZB",
+							"hitId" : "386T3MLZLMUTN8OI5EP7V11LQGN80V",
+							"assignmentStatus" : "Submitted",
+							"autoApprovalTime" : 1.398624303E12,
+							"acceptTime" : 1.396032293E12,
+							"submitTime" : 1.396032303E12,
+							"answer" : {
+								"vote" : [
+									"b"
+								],
+								"description_vote_feedback" : ""
+							},
+							"requesterFeedback" : null,
+							"approvalTime" : null,
+							"deadline" : null,
+							"rejectionTime" : null
+						},
+						{
+							"assignmentId" : "37QW5D2ZRGLWB16O4JDTTR2NIS0S88",
+							"workerId" : "A2C632IGFEOI8S",
+							"hitId" : "386T3MLZLMUTN8OI5EP7V11LQGN80V",
+							"assignmentStatus" : "Submitted",
+							"autoApprovalTime" : 1.398625796E12,
+							"acceptTime" : 1.39603373E12,
+							"submitTime" : 1.396033796E12,
+							"answer" : {
+								"vote" : [
+									"a"
+								],
+								"description_vote_feedback" : ""
+							},
+							"requesterFeedback" : null,
+							"approvalTime" : null,
+							"deadline" : null,
+							"rejectionTime" : null
+						},
+						{
+							"assignmentId" : "3LEP4MGT3GZ9BALDA52EPU6OPXPBDE",
+							"workerId" : "ALWGGK7LJCILU",
+							"hitId" : "386T3MLZLMUTN8OI5EP7V11LQGN80V",
+							"assignmentStatus" : "Submitted",
+							"autoApprovalTime" : 1.3986441E12,
+							"acceptTime" : 1.396051856E12,
+							"submitTime" : 1.3960521E12,
+							"answer" : {
+								"vote" : [
+									"b"
+								],
+								"description_vote_feedback" : ""
+							},
+							"requesterFeedback" : null,
+							"approvalTime" : null,
+							"deadline" : null,
+							"rejectionTime" : null
+						}
+					],
+					"done" : true
+				},
+				"returnTime" : 1.396080921491E12,
+				"printOutput" : "hit completed: 386T3MLZLMUTN8OI5EP7V11LQGN80V\r\n"
+			},
+			{
+				"creationTime" : 1.396080921514E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.extendHITRaw(hit, moreAssignments, moreSeconds);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.396080921781E12,
+				"printOutput" : "extended HIT: 386T3MLZLMUTN8OI5EP7V11LQGN80V\r\n"
+			},
+			{
+				"creationTime" : 1.396080921786E12,
+				"onceFunc" : "\nfunction () {\n    if (!me.waitForHIT_callCount) {\n        me.waitForHIT_callCount = 0;\n        var a = me.getReviewableHITs(1);\n        if (a.totalNumResults == a.length) {\n            me.waitForHIT_reviewableHITs = new Set(a);\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n        me.waitForHIT_waitCount = Math.ceil(a.totalNumResults / 100);\n    }\n    me.waitForHIT_callCount++;\n    if (me.waitForHIT_callCount >= me.waitForHIT_waitCount) {\n        if (!me.waitForHIT_reviewableHITs || (time() > me.waitForHIT_reviewableHITsTime + (1000 * 60))) {\n            me.waitForHIT_reviewableHITs = new Set(me.getReviewableHITs());\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n    }\n    if (me.waitForHIT_reviewableHITs) {\n        if (!me.waitForHIT_reviewableHITs[hitId]) {\n            stop();\n        }\n    }\n    var hit = mturk.getHIT(hitId);\n    if (!hit.done) {\n        stop();\n    }\n    verbosePrint(\"hit completed: \" + hitId);\n    return hit;\n}\n",
+				"returnValue" : {
+					"hitId" : "386T3MLZLMUTN8OI5EP7V11LQGN80V",
+					"hitTypeId" : "38E1HBOA1QEDDZX1Z7UNFGUC0R380D",
+					"title" : "Vote on auction item description improvements",
+					"description" : "Decide which auction item description is better/suitable for the item(s) on three pictures",
+					"keywords" : null,
+					"reward" : 0.01,
+					"question" : "<QuestionForm xmlns=\"http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2005-10-01/QuestionForm.xsd\">\n  <Question>\n    <QuestionIdentifier>vote</QuestionIdentifier>\n    <IsRequired>true</IsRequired>\n    <QuestionContent>\n      <FormattedContent><![CDATA[<b>Instructions:</b> Which description of the auction item(s) on the pictures is better? The following factors <b>can</b> affect your decision: \n\t\t\t\t\t<ul>\n\t\t\t\t\t\t<li>One description is more informative than the other</li>\n\t\t\t\t\t\t<li>One description contains more information about the auction item then the other</li>\n\t\t\t\t\t\t<li>One description contains wrong information</li>\n\t\t\t\t\t\t<li>One description has spelling mistakes</li>\n\t\t\t\t\t</ul>\n\t\t\t\t\t<table><tr>\n\t\t\t\t\t<td><img src=\"http://i.ebayimg.com/00/s/MTEwMVgxNDY4/z/v5oAAOxy~dNTJ4wC/$_12.JPG?set_id=880000500F\" alt=\"Image 1\" width=\"250\" border=\"2\"></img></td>\n\t\t\t\t\t<td><img src=\"http://i.ebayimg.com/00/s/MTEwMFgxNTU5/z/8MMAAOxydgZTJ4wq/$_12.JPG?set_id=880000500F\" alt=\"Image 2\" width=\"250\" border=\"2\"></img></td>\n\t\t\t\t\t<td><img src=\"http://i.ebayimg.com/00/s/MTQ2OFgxMTAx/z/tg4AAOxyj4hTJ4xW/$_12.JPG?set_id=880000500F\" alt=\"Image 3\" width=\"250\" border=\"2\"></img></td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t<td><a href=\"http://i.ebayimg.com/00/s/MTEwMVgxNDY4/z/v5oAAOxy~dNTJ4wC/$_12.JPG?set_id=880000500F\" target=\"_blank\">Link to full size image 1 (new window)</a></td>\n\t\t\t\t\t<td><a href=\"http://i.ebayimg.com/00/s/MTEwMFgxNTU5/z/8MMAAOxydgZTJ4wq/$_12.JPG?set_id=880000500F\" target=\"_blank\">Link to full size image 2 (new window)</a></td>\n\t\t\t\t\t<td><a href=\"http://i.ebayimg.com/00/s/MTQ2OFgxMTAx/z/tg4AAOxyj4hTJ4xW/$_12.JPG?set_id=880000500F\" target=\"_blank\">Link to full size image 3 (new window)</a></td>\n\t\t\t\t\t</tr></table>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <SelectionAnswer>\n        <Selections>\n          <Selection>\n            <SelectionIdentifier>b</SelectionIdentifier>\n            <Text>Nike Mercurial Vapor soccer boots. &#13;\n&#13;\nInspired by festivals of the 2014 host country and patterns found in nature, the Nike reflective pack is a cool way to ring in the ultimate year of soccer. &#13;\n&#13;\nThis version of Nike\'s Mercurial Vapor is iridescent white with a pop of color on the outsole and a a subtle cheetah print on the heel. &#13;\n&#13;\nThere is also metallic threading in the laces. &#13;\n&#13;\nEngineered for uncompromising explosive speed in every direction, the Mercurial Vapor IX has a new composite chassis and a more contoured fit for the ultimate traction and control in any condition. &#13;\n&#13;\nCan you handle the speed? &#13;\n&#13;\nThe Teijin upper on this pearlized white version of the Mercurial Vapor IX is updated to be as close to the fit and feel of a natural leather as possible while still maintaining the incredible durable and minimal weight of a synthetic. &#13;\n&#13;\nThere is a subtle leopard print in white on the heel. &#13;\n&#13;\nThe fastest cleat in the game is now equipped with All Conditions Control (ACC) technology for optimal ball control in wet or dry conditions. &#13;\n&#13;\nThe lightweight perforated sockliner has a textile liner that mirrors the natural shape of the foot for low profile cushioning. &#13;\n&#13;\nContoured last further enhances the glove-like fit. &#13;\n&#13;\nFixed cushioning insole is perforated for reduced weight and added breathability. &#13;\n&#13;\nTwo-layers of glass fiber are fused together on the outsole for flexibility and responsiveness. &#13;\n&#13;\nComposite and direct injected TPU studs dig and release instantly for exceptional traction and explosive speed. &#13;\n&#13;\nWith two longer studs on the heel and asymmetrical bladed forefoot stud design, the Vapor IX outsole delivers not just straight-ahead speed, but the traction for quick cuts and turns and explosive take off.</Text>\n          </Selection>\n          <Selection>\n            <SelectionIdentifier>a</SelectionIdentifier>\n            <Text>Nike Mercurial Vapor soccer boots. &#13;\n&#13;\nInspired by festivals of the 2014 host country and patterns found in nature, the Nike reflective pack is a cool way to ring in the ultimate year of soccer. &#13;\n&#13;\nThis version of Nike\'s Mercurial Vapor is iridescent white with a pop of color on the outsole and a a subtle cheetah print on the heel. &#13;\n&#13;\nThere is also metallic threading in the laces. &#13;\n&#13;\nEngineered for uncompromising explosive speed in every direction, the Mercurial Vapor IX has a new composite chassis and a more contoured fit for the ultimate traction and control in any condition. &#13;\n&#13;\nCan you handle the speed? &#13;\n&#13;\nThe Teijin upper on this pearlized white version of the Mercurial Vapor IX is updated to be as close to the fit and feel of a natural leather as possible while still maintaining the incredible durable and minimal weight of a synthetic. &#13;\n&#13;\nThere is a subtle leopard print in white on the heel. &#13;\n&#13;\nThe fastest cleat in the game is now equipped with All Conditions Control (ACC) technology for optimal ball control in wet or dry conditions. &#13;\n&#13;\nThe lightweight perforated sockliner has a textile liner that mirrors the natural shape of the foot for low profile cushioning. &#13;\n&#13;\nContoured last further enhances the glove-like fit. &#13;\n&#13;\nFixed cushioning insole is perforated for reduced weight and added breathability. &#13;\n&#13;\nTwo-layers of glass fiber are fused together on the outsole for flexibility and responsiveness. &#13;\n&#13;\nComposite and direct injected TPU studs dig and release instantly for exceptional traction and explosive speed. &#13;\n&#13;\nWith two longer studs on the heel and asymmetrical bladed forefoot stud design, the Vapor IX outsole delivers not just straight-ahead speed, but the traction for quick cuts and turns and explosive take off.</Text>\n          </Selection>\n        </Selections>\n      </SelectionAnswer>\n    </AnswerSpecification>\n  </Question>\n  <Question>\n    <QuestionIdentifier>description_vote_feedback</QuestionIdentifier>\n    <QuestionContent>\n      <Title>Your personal feedback (optional)</Title>\n      <FormattedContent><![CDATA[Give your personal feedback about the task. This <b>can</b> contain one of the following aspects:\n        <ul>\n        <li>Problems of the task (e.g. images are not visible)</li>\n        <li>Instructions are not clear enough</li>\n        </ul>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <FreeTextAnswer>\n        <NumberOfLinesSuggestion>3</NumberOfLinesSuggestion>\n      </FreeTextAnswer>\n    </AnswerSpecification>\n  </Question>\n</QuestionForm>",
+					"maxAssignments" : 5,
+					"assignmentDurationInSeconds" : 1800,
+					"autoApprovalDelayInSeconds" : 2592000,
+					"requesterAnnotation" : null,
+					"hitStatus" : "Reviewable",
+					"hitReviewStatus" : "NotReviewed",
+					"creationTime" : 1.396026573E12,
+					"expiration" : 1.396631373E12,
+					"assignments" : [
+						{
+							"assignmentId" : "3L2IS5HSFAHXTLLWZQXCQPA6SKYUNS",
+							"workerId" : "A291KO368YRYCR",
+							"hitId" : "386T3MLZLMUTN8OI5EP7V11LQGN80V",
+							"assignmentStatus" : "Submitted",
+							"autoApprovalTime" : 1.398619752E12,
+							"acceptTime" : 1.396027652E12,
+							"submitTime" : 1.396027752E12,
+							"answer" : {
+								"vote" : [
+									"a"
+								],
+								"description_vote_feedback" : "I\'d love to able to make tiny edits to refine this slightly. Thanks!"
+							},
+							"requesterFeedback" : null,
+							"approvalTime" : null,
+							"deadline" : null,
+							"rejectionTime" : null
+						},
+						{
+							"assignmentId" : "3M68NM076H6X68NNWFGQJ310QVMR6S",
+							"workerId" : "AFLY5JTSSM0ZB",
+							"hitId" : "386T3MLZLMUTN8OI5EP7V11LQGN80V",
+							"assignmentStatus" : "Submitted",
+							"autoApprovalTime" : 1.398624303E12,
+							"acceptTime" : 1.396032293E12,
+							"submitTime" : 1.396032303E12,
+							"answer" : {
+								"vote" : [
+									"b"
+								],
+								"description_vote_feedback" : ""
+							},
+							"requesterFeedback" : null,
+							"approvalTime" : null,
+							"deadline" : null,
+							"rejectionTime" : null
+						},
+						{
+							"assignmentId" : "37QW5D2ZRGLWB16O4JDTTR2NIS0S88",
+							"workerId" : "A2C632IGFEOI8S",
+							"hitId" : "386T3MLZLMUTN8OI5EP7V11LQGN80V",
+							"assignmentStatus" : "Submitted",
+							"autoApprovalTime" : 1.398625796E12,
+							"acceptTime" : 1.39603373E12,
+							"submitTime" : 1.396033796E12,
+							"answer" : {
+								"vote" : [
+									"a"
+								],
+								"description_vote_feedback" : ""
+							},
+							"requesterFeedback" : null,
+							"approvalTime" : null,
+							"deadline" : null,
+							"rejectionTime" : null
+						},
+						{
+							"assignmentId" : "3LEP4MGT3GZ9BALDA52EPU6OPXPBDE",
+							"workerId" : "ALWGGK7LJCILU",
+							"hitId" : "386T3MLZLMUTN8OI5EP7V11LQGN80V",
+							"assignmentStatus" : "Submitted",
+							"autoApprovalTime" : 1.3986441E12,
+							"acceptTime" : 1.396051856E12,
+							"submitTime" : 1.3960521E12,
+							"answer" : {
+								"vote" : [
+									"b"
+								],
+								"description_vote_feedback" : ""
+							},
+							"requesterFeedback" : null,
+							"approvalTime" : null,
+							"deadline" : null,
+							"rejectionTime" : null
+						},
+						{
+							"assignmentId" : "3OHYZ19UGC4VWX7AU0GY5DYHBVEAOM",
+							"workerId" : "A1POAW2RQBTBXB",
+							"hitId" : "386T3MLZLMUTN8OI5EP7V11LQGN80V",
+							"assignmentStatus" : "Submitted",
+							"autoApprovalTime" : 1.398689745E12,
+							"acceptTime" : 1.396097622E12,
+							"submitTime" : 1.396097745E12,
+							"answer" : {
+								"vote" : [
+									"b"
+								],
+								"description_vote_feedback" : ""
+							},
+							"requesterFeedback" : null,
+							"approvalTime" : null,
+							"deadline" : null,
+							"rejectionTime" : null
+						}
+					],
+					"done" : true
+				},
+				"returnTime" : 1.396099264487E12,
+				"printOutput" : "hit completed: 386T3MLZLMUTN8OI5EP7V11LQGN80V\r\n"
+			},
+			{
+				"creationTime" : 1.396099264498E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.approveAssignmentRaw(assignment, reason);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.396099264782E12,
+				"printOutput" : "approved assignment 3L2IS5HSFAHXTLLWZQXCQPA6SKYUNS\r\n"
+			},
+			{
+				"creationTime" : 1.396099264787E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.approveAssignmentRaw(assignment, reason);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.396099265183E12,
+				"printOutput" : "approved assignment 3M68NM076H6X68NNWFGQJ310QVMR6S\r\n"
+			},
+			{
+				"creationTime" : 1.396099265187E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.approveAssignmentRaw(assignment, reason);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.396099265594E12,
+				"printOutput" : "approved assignment 37QW5D2ZRGLWB16O4JDTTR2NIS0S88\r\n"
+			},
+			{
+				"creationTime" : 1.396099265599E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.approveAssignmentRaw(assignment, reason);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.396099265832E12,
+				"printOutput" : "approved assignment 3LEP4MGT3GZ9BALDA52EPU6OPXPBDE\r\n"
+			},
+			{
+				"creationTime" : 1.396099265836E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.approveAssignmentRaw(assignment, reason);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.396099266051E12,
+				"printOutput" : "approved assignment 3OHYZ19UGC4VWX7AU0GY5DYHBVEAOM\r\n"
+			},
+			{
+				"creationTime" : 1.396099266056E12,
+				"onceFunc" : "\nfunction () {\n    mturk.deleteHITRaw(hit);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.396099266259E12,
+				"printOutput" : "disabled HIT: 386T3MLZLMUTN8OI5EP7V11LQGN80V\r\n"
+			},
+			{
+				"creationTime" : 1.396099266264E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.approveAssignmentRaw(assignment, reason);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.396099266515E12,
+				"printOutput" : "approved assignment 3E1QT0TDFP87HN3SZ7JFPPW09O0I8W\r\n"
+			}
+		]
+	}
+}
+__safetyCounters = {
+	"moneySpent" : 0.6800000000000002,
+	"hitsCreated" : 5
+}
+// end:9908

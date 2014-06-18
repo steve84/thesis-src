@@ -1,0 +1,408 @@
+// begin:877f
+__HITs = {
+	"real:3W0KKJIARQ8V0YVM97ZPELGU5I48KL" : {
+		"url" : "https://www.mturk.com/mturk/preview?groupId=356P7NIWHJM2LF84AIOIA11OHRUFVU"
+	},
+	"real:34R3P23QHR0FO9QW1PCYF93OVDOHW0" : {
+		"url" : "https://www.mturk.com/mturk/preview?groupId=356P7NIWHJM2LF84AIOIA11OHRUFVU"
+	},
+	"real:34F34TZU7VYP3ZNFB5QC3F3E42MJ2M" : {
+		"url" : "https://www.mturk.com/mturk/preview?groupId=356P7NIWHJM2LF84AIOIA11OHRUFVU"
+	}
+}
+__S3_Objects = {
+}
+__stackFrames = {
+	"for-real" : {
+		"sequencialFrames" : [
+			{
+				"creationTime" : 1.396282087646E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.createHITRaw(params);\n}\n",
+				"returnValue" : "3W0KKJIARQ8V0YVM97ZPELGU5I48KL",
+				"returnTime" : 1.396282089734E12,
+				"printOutput" : "created HIT: 3W0KKJIARQ8V0YVM97ZPELGU5I48KL\r\n        url: https://www.mturk.com/mturk/preview?groupId=356P7NIWHJM2LF84AIOIA11OHRUFVU\r\n"
+			},
+			{
+				"creationTime" : 1.396282089738E12,
+				"onceFunc" : "\nfunction () {\n    if (!me.waitForHIT_callCount) {\n        me.waitForHIT_callCount = 0;\n        var a = me.getReviewableHITs(1);\n        if (a.totalNumResults == a.length) {\n            me.waitForHIT_reviewableHITs = new Set(a);\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n        me.waitForHIT_waitCount = Math.ceil(a.totalNumResults / 100);\n    }\n    me.waitForHIT_callCount++;\n    if (me.waitForHIT_callCount >= me.waitForHIT_waitCount) {\n        if (!me.waitForHIT_reviewableHITs || (time() > me.waitForHIT_reviewableHITsTime + (1000 * 60))) {\n            me.waitForHIT_reviewableHITs = new Set(me.getReviewableHITs());\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n    }\n    if (me.waitForHIT_reviewableHITs) {\n        if (!me.waitForHIT_reviewableHITs[hitId]) {\n            stop();\n        }\n    }\n    var hit = mturk.getHIT(hitId);\n    if (!hit.done) {\n        stop();\n    }\n    verbosePrint(\"hit completed: \" + hitId);\n    return hit;\n}\n",
+				"returnValue" : {
+					"hitId" : "3W0KKJIARQ8V0YVM97ZPELGU5I48KL",
+					"hitTypeId" : "356P7NIWHJM2LF84AIOIA11OHRUFVU",
+					"title" : "Improve/extend description of auction item(s) on pictures (receive a commission for good work)",
+					"description" : "Improve and/or extend the description of an auction item based on three images",
+					"keywords" : null,
+					"reward" : 0.2,
+					"question" : "<QuestionForm xmlns=\"http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2005-10-01/QuestionForm.xsd\">\n  <Question>\n    <QuestionIdentifier>newText</QuestionIdentifier>\n    <IsRequired>true</IsRequired>\n    <QuestionContent>\n      <FormattedContent><![CDATA[All the workers who have done a similar task in the past are excluded from this HIT. If you find your worker ID in the following table, your work <b>will be rejected</b>.<br /><br />\n\t\t\t\t\t<table border= \"1\">\n\t\t\t\t\t<tr><td><b>Worker ID</b></td></tr>\n\t\t\t\t\t<tr><td>ALWGGK7LJCILU</td></tr>\n\t\t\t\t\t<tr><td>A1XGSYVGKSVGLC</td></tr>\n\t\t\t\t\t<tr><td>A2UFB6FRY90EAB</td></tr>\n\t\t\t\t\t<tr><td>A291KO368YRYCR</td></tr>\n\t\t\t\t\t<tr><td>A3L99RGPK6FZGH</td></tr>\n\t\t\t\t\t<tr><td>A1IA4CST74I1Q8</td></tr>\n\t\t\t\t\t<tr><td>A28O8FQSUWMXJV</td></tr>\n\t\t\t\t\t<tr><td>A15TKPS92CNG8X</td></tr>\n\t\t\t\t\t<tr><td>A3066746SS2O8Z</td></tr>\n\t\t\t\t\t<tr><td>AD8E316YDQCM2</td></tr>\n\t\t\t\t\t<tr><td>A20NX4K88SQ80Q</td></tr>\n\t\t\t\t\t</table>\n\t\t\t\t\t<hr />\n\t\t\t\t\tThe goal of the requester of the HIT is to generate eBay auctions by MTurk workers based on images of the item.<br /><br />\n\t\t\t\t\tIf the auction will be sucessful then the creator of the final description will receive <b>1% of the selling price as a bonus</b>. The final description will be determined by a voting procedure.<br /><br />\n\t\t\t\t\t<b>Instructions</b>: Improve and/or extend the description of the auction item(s) on the images. Keep in mind the following remarks:\n\t\t\t\t\t<ul>\n\t\t\t\t\t<li>If the description doesn\'t contain approximately <b>5 sentences</b> then try to add more text\n\t\t\t\t\t<ul>\n\t\t\t\t\t\t<li>Include specific information like size, shape, color, age, manufacture date, company/artist/author, and notable features or markings if possible</li>\n\t\t\t\t\t\t<li>Make the description as readable as possible</li>\n\t\t\t\t\t\t<li>Don\'t say anything that isn\'t true.</li>\n\t\t\t\t\t\t<li>Don\'t use all caps</li>\n\t\t\t\t\t\t<li>Don\'t include email addresses and some links</li>\n\t\t\t\t\t</ul>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li>If the description is long enough then try to improve it</li>\n\t\t\t\t\t</ul>\n\t\t\t\t\t<table><tr>\n\t\t\t\t\t<td><img src=\"http://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/hMgAAMXQVT9TA8Ya/$_1.JPG?set_id=880000500F\" alt=\"Image 1\" width=\"250\" border=\"2\"></img></td>\n\t\t\t\t\t<td><img src=\"http://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/~ocAAOxyPepRkaPw/$T2eC16NHJGIFFoTmFfWzBRk,PwiuPw~~60_1.JPG?set_id=880000500F\" alt=\"Image 2\" width=\"250\" border=\"2\"></img></td>\n\t\t\t\t\t<td><img src=\"http://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/TpgAAMXQVs1RkaP0/$T2eC16d,!zoE9s5ngIMdBRk,P0Wnrw~~60_1.JPG?set_id=880000500F\" alt=\"Image 3\" width=\"250\" border=\"2\"></img></td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t<td><a href=\"http://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/hMgAAMXQVT9TA8Ya/$_1.JPG?set_id=880000500F\" target=\"_blank\">Link to full size image 1 (new window)</a></td>\n\t\t\t\t\t<td><a href=\"http://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/~ocAAOxyPepRkaPw/$T2eC16NHJGIFFoTmFfWzBRk,PwiuPw~~60_1.JPG?set_id=880000500F\" target=\"_blank\">Link to full size image 2 (new window)</a></td>\n\t\t\t\t\t<td><a href=\"http://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/TpgAAMXQVs1RkaP0/$T2eC16d,!zoE9s5ngIMdBRk,P0Wnrw~~60_1.JPG?set_id=880000500F\" target=\"_blank\">Link to full size image 3 (new window)</a></td>\n\t\t\t\t\t</tr></table>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <FreeTextAnswer>\n        <Constraints>\n          <Length maxLength=\"5000\" minLength=\"40\"/>\n          <AnswerFormatRegex errorText=\"The description cannot be blank.\" regex=\"\\S\"/>\n        </Constraints>\n        <DefaultText/>\n        <NumberOfLinesSuggestion>10</NumberOfLinesSuggestion>\n      </FreeTextAnswer>\n    </AnswerSpecification>\n  </Question>\n  <Question>\n    <QuestionIdentifier>description_improve_feedback</QuestionIdentifier>\n    <QuestionContent>\n      <Title>Your personal feedback (optional)</Title>\n      <FormattedContent><![CDATA[Give your personal feedback about the task. This <b>can</b> contain one of the following aspects:\n        <ul>\n        <li>Problems of the task (e.g. images are not visible)</li>\n        <li>Instructions are not clear enough</li>\n        </ul>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <FreeTextAnswer>\n        <NumberOfLinesSuggestion>3</NumberOfLinesSuggestion>\n      </FreeTextAnswer>\n    </AnswerSpecification>\n  </Question>\n</QuestionForm>",
+					"maxAssignments" : 1,
+					"assignmentDurationInSeconds" : 7200,
+					"autoApprovalDelayInSeconds" : 2592000,
+					"requesterAnnotation" : null,
+					"hitStatus" : "Reviewable",
+					"hitReviewStatus" : "NotReviewed",
+					"creationTime" : 1.39628211E12,
+					"expiration" : 1.39688691E12,
+					"assignments" : [
+						{
+							"assignmentId" : "3U8YCDAGXPF2GWM8HBB95CH4HP70QA",
+							"workerId" : "ANJRINRP821LY",
+							"hitId" : "3W0KKJIARQ8V0YVM97ZPELGU5I48KL",
+							"assignmentStatus" : "Submitted",
+							"autoApprovalTime" : 1.398903747E12,
+							"acceptTime" : 1.396311483E12,
+							"submitTime" : 1.396311747E12,
+							"answer" : {
+								"newText" : "Puma plastic electronic watch, with original packaging. Includes swappable faces to help style and personalize to fit you. Digital time display, with easy to set buttons and interface. Easy and lightweight snap-back strap makes this watch great for exercising and any physical activity, as well as something comfortable to wear around the house.",
+								"description_improve_feedback" : ""
+							},
+							"requesterFeedback" : null,
+							"approvalTime" : null,
+							"deadline" : null,
+							"rejectionTime" : null
+						}
+					],
+					"done" : true
+				},
+				"returnTime" : 1.396454472537E12,
+				"printOutput" : "hit completed: 3W0KKJIARQ8V0YVM97ZPELGU5I48KL\r\n"
+			},
+			{
+				"creationTime" : 1.396454472569E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.approveAssignmentRaw(assignment, reason);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.396454472928E12,
+				"printOutput" : "approved assignment 3U8YCDAGXPF2GWM8HBB95CH4HP70QA\r\n"
+			},
+			{
+				"creationTime" : 1.396454472944E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.createHITRaw(params);\n}\n",
+				"returnValue" : "34R3P23QHR0FO9QW1PCYF93OVDOHW0",
+				"returnTime" : 1.39645447335E12,
+				"printOutput" : "created HIT: 34R3P23QHR0FO9QW1PCYF93OVDOHW0\r\n        url: https://www.mturk.com/mturk/preview?groupId=356P7NIWHJM2LF84AIOIA11OHRUFVU\r\n"
+			},
+			{
+				"creationTime" : 1.39645447335E12,
+				"onceFunc" : "\nfunction () {\n    if (!me.waitForHIT_callCount) {\n        me.waitForHIT_callCount = 0;\n        var a = me.getReviewableHITs(1);\n        if (a.totalNumResults == a.length) {\n            me.waitForHIT_reviewableHITs = new Set(a);\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n        me.waitForHIT_waitCount = Math.ceil(a.totalNumResults / 100);\n    }\n    me.waitForHIT_callCount++;\n    if (me.waitForHIT_callCount >= me.waitForHIT_waitCount) {\n        if (!me.waitForHIT_reviewableHITs || (time() > me.waitForHIT_reviewableHITsTime + (1000 * 60))) {\n            me.waitForHIT_reviewableHITs = new Set(me.getReviewableHITs());\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n    }\n    if (me.waitForHIT_reviewableHITs) {\n        if (!me.waitForHIT_reviewableHITs[hitId]) {\n            stop();\n        }\n    }\n    var hit = mturk.getHIT(hitId);\n    if (!hit.done) {\n        stop();\n    }\n    verbosePrint(\"hit completed: \" + hitId);\n    return hit;\n}\n",
+				"returnValue" : {
+					"hitId" : "34R3P23QHR0FO9QW1PCYF93OVDOHW0",
+					"hitTypeId" : "356P7NIWHJM2LF84AIOIA11OHRUFVU",
+					"title" : "Improve/extend description of auction item(s) on pictures (receive a commission for good work)",
+					"description" : "Improve and/or extend the description of an auction item based on three images",
+					"keywords" : null,
+					"reward" : 0.2,
+					"question" : "<QuestionForm xmlns=\"http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2005-10-01/QuestionForm.xsd\">\n  <Question>\n    <QuestionIdentifier>newText</QuestionIdentifier>\n    <IsRequired>true</IsRequired>\n    <QuestionContent>\n      <FormattedContent><![CDATA[All the workers who have done a similar task in the past are excluded from this HIT. If you find your worker ID in the following table, your work <b>will be rejected</b>.<br /><br />\n\t\t\t\t\t<table border= \"1\">\n\t\t\t\t\t<tr><td><b>Worker ID</b></td></tr>\n\t\t\t\t\t<tr><td>ALWGGK7LJCILU</td></tr>\n\t\t\t\t\t<tr><td>A1XGSYVGKSVGLC</td></tr>\n\t\t\t\t\t<tr><td>A2UFB6FRY90EAB</td></tr>\n\t\t\t\t\t<tr><td>A291KO368YRYCR</td></tr>\n\t\t\t\t\t<tr><td>A3L99RGPK6FZGH</td></tr>\n\t\t\t\t\t<tr><td>A1IA4CST74I1Q8</td></tr>\n\t\t\t\t\t<tr><td>A28O8FQSUWMXJV</td></tr>\n\t\t\t\t\t<tr><td>A15TKPS92CNG8X</td></tr>\n\t\t\t\t\t<tr><td>A3066746SS2O8Z</td></tr>\n\t\t\t\t\t<tr><td>AD8E316YDQCM2</td></tr>\n\t\t\t\t\t<tr><td>A20NX4K88SQ80Q</td></tr>\n\t\t\t\t\t</table>\n\t\t\t\t\t<hr />\n\t\t\t\t\tThe goal of the requester of the HIT is to generate eBay auctions by MTurk workers based on images of the item.<br /><br />\n\t\t\t\t\tIf the auction will be sucessful then the creator of the final description will receive <b>1% of the selling price as a bonus</b>. The final description will be determined by a voting procedure.<br /><br />\n\t\t\t\t\t<b>Instructions</b>: Improve and/or extend the description of the auction item(s) on the images. Keep in mind the following remarks:\n\t\t\t\t\t<ul>\n\t\t\t\t\t<li>If the description doesn\'t contain approximately <b>5 sentences</b> then try to add more text\n\t\t\t\t\t<ul>\n\t\t\t\t\t\t<li>Include specific information like size, shape, color, age, manufacture date, company/artist/author, and notable features or markings if possible</li>\n\t\t\t\t\t\t<li>Make the description as readable as possible</li>\n\t\t\t\t\t\t<li>Don\'t say anything that isn\'t true.</li>\n\t\t\t\t\t\t<li>Don\'t use all caps</li>\n\t\t\t\t\t\t<li>Don\'t include email addresses and some links</li>\n\t\t\t\t\t</ul>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li>If the description is long enough then try to improve it</li>\n\t\t\t\t\t</ul>\n\t\t\t\t\t<table><tr>\n\t\t\t\t\t<td><img src=\"http://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/hMgAAMXQVT9TA8Ya/$_1.JPG?set_id=880000500F\" alt=\"Image 1\" width=\"250\" border=\"2\"></img></td>\n\t\t\t\t\t<td><img src=\"http://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/~ocAAOxyPepRkaPw/$T2eC16NHJGIFFoTmFfWzBRk,PwiuPw~~60_1.JPG?set_id=880000500F\" alt=\"Image 2\" width=\"250\" border=\"2\"></img></td>\n\t\t\t\t\t<td><img src=\"http://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/TpgAAMXQVs1RkaP0/$T2eC16d,!zoE9s5ngIMdBRk,P0Wnrw~~60_1.JPG?set_id=880000500F\" alt=\"Image 3\" width=\"250\" border=\"2\"></img></td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t<td><a href=\"http://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/hMgAAMXQVT9TA8Ya/$_1.JPG?set_id=880000500F\" target=\"_blank\">Link to full size image 1 (new window)</a></td>\n\t\t\t\t\t<td><a href=\"http://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/~ocAAOxyPepRkaPw/$T2eC16NHJGIFFoTmFfWzBRk,PwiuPw~~60_1.JPG?set_id=880000500F\" target=\"_blank\">Link to full size image 2 (new window)</a></td>\n\t\t\t\t\t<td><a href=\"http://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/TpgAAMXQVs1RkaP0/$T2eC16d,!zoE9s5ngIMdBRk,P0Wnrw~~60_1.JPG?set_id=880000500F\" target=\"_blank\">Link to full size image 3 (new window)</a></td>\n\t\t\t\t\t</tr></table>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <FreeTextAnswer>\n        <Constraints>\n          <Length maxLength=\"5000\" minLength=\"80\"/>\n          <AnswerFormatRegex errorText=\"The description cannot be blank.\" regex=\"\\S\"/>\n        </Constraints>\n        <DefaultText>Puma plastic electronic watch, with original packaging. Includes swappable faces to help style and personalize to fit you. Digital time display, with easy to set buttons and interface. Easy and lightweight snap-back strap makes this watch great for exercising and any physical activity, as well as something comfortable to wear around the house.</DefaultText>\n        <NumberOfLinesSuggestion>10</NumberOfLinesSuggestion>\n      </FreeTextAnswer>\n    </AnswerSpecification>\n  </Question>\n  <Question>\n    <QuestionIdentifier>description_improve_feedback</QuestionIdentifier>\n    <QuestionContent>\n      <Title>Your personal feedback (optional)</Title>\n      <FormattedContent><![CDATA[Give your personal feedback about the task. This <b>can</b> contain one of the following aspects:\n        <ul>\n        <li>Problems of the task (e.g. images are not visible)</li>\n        <li>Instructions are not clear enough</li>\n        </ul>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <FreeTextAnswer>\n        <NumberOfLinesSuggestion>3</NumberOfLinesSuggestion>\n      </FreeTextAnswer>\n    </AnswerSpecification>\n  </Question>\n</QuestionForm>",
+					"maxAssignments" : 1,
+					"assignmentDurationInSeconds" : 7200,
+					"autoApprovalDelayInSeconds" : 2592000,
+					"requesterAnnotation" : null,
+					"hitStatus" : "Reviewable",
+					"hitReviewStatus" : "NotReviewed",
+					"creationTime" : 1.396454499E12,
+					"expiration" : 1.397059299E12,
+					"assignments" : [
+						{
+							"assignmentId" : "3Z7ISHFUH0UTCDS2ZB71PKZQ61R8Z9",
+							"workerId" : "A2SFEEI806WFP9",
+							"hitId" : "34R3P23QHR0FO9QW1PCYF93OVDOHW0",
+							"assignmentStatus" : "Submitted",
+							"autoApprovalTime" : 1.399063869E12,
+							"acceptTime" : 1.396471382E12,
+							"submitTime" : 1.396471869E12,
+							"answer" : {
+								"newText" : "Puma World Cup Digital Display Sports Watch with original packaging.\r\n\r\nIncludes interchangeable country flag face plates:\r\nEngland\r\nSpain\r\nBrazil\r\n\r\nFeatures:\r\nEasy interface with easy to set buttons\r\nLightweight snap-back strap makes this watch great for exercising and any physical activity\r\n50m water resistant\r\nAlarm\r\nStopwatch\r\nBacklight",
+								"description_improve_feedback" : "I\'m sorry it\'s not in sentence format, it\'s just easier for buyers to read and understand this way."
+							},
+							"requesterFeedback" : null,
+							"approvalTime" : null,
+							"deadline" : null,
+							"rejectionTime" : null
+						}
+					],
+					"done" : true
+				},
+				"returnTime" : 1.396540804467E12,
+				"printOutput" : "hit completed: 34R3P23QHR0FO9QW1PCYF93OVDOHW0\r\n"
+			},
+			{
+				"creationTime" : 1.396540804514E12,
+				"onceFunc" : "\nfunction () {\n    return Math.random();\n}\n",
+				"returnValue" : 0.23983302221215996,
+				"returnTime" : 1.396540804514E12,
+				"printOutput" : ""
+			},
+			{
+				"creationTime" : 1.39654080453E12,
+				"onceFunc" : "\nfunction () {\n    return Math.random();\n}\n",
+				"returnValue" : 0.30750323945369473,
+				"returnTime" : 1.39654080453E12,
+				"printOutput" : ""
+			},
+			{
+				"creationTime" : 1.39654080453E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.createHITRaw(params);\n}\n",
+				"returnValue" : "3KTZHH2ONHEQQMVPUJC5TY8YUU28M7",
+				"returnTime" : 1.396540805139E12,
+				"printOutput" : "created HIT: 3KTZHH2ONHEQQMVPUJC5TY8YUU28M7\r\n        url: https://www.mturk.com/mturk/preview?groupId=3KQ8X25AA414RWEXRRIYAH882AO67U\r\n"
+			},
+			{
+				"creationTime" : 1.396540805155E12,
+				"onceFunc" : "\nfunction () {\n    if (!me.waitForHIT_callCount) {\n        me.waitForHIT_callCount = 0;\n        var a = me.getReviewableHITs(1);\n        if (a.totalNumResults == a.length) {\n            me.waitForHIT_reviewableHITs = new Set(a);\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n        me.waitForHIT_waitCount = Math.ceil(a.totalNumResults / 100);\n    }\n    me.waitForHIT_callCount++;\n    if (me.waitForHIT_callCount >= me.waitForHIT_waitCount) {\n        if (!me.waitForHIT_reviewableHITs || (time() > me.waitForHIT_reviewableHITsTime + (1000 * 60))) {\n            me.waitForHIT_reviewableHITs = new Set(me.getReviewableHITs());\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n    }\n    if (me.waitForHIT_reviewableHITs) {\n        if (!me.waitForHIT_reviewableHITs[hitId]) {\n            stop();\n        }\n    }\n    var hit = mturk.getHIT(hitId);\n    if (!hit.done) {\n        stop();\n    }\n    verbosePrint(\"hit completed: \" + hitId);\n    return hit;\n}\n",
+				"returnValue" : {
+					"hitId" : "3KTZHH2ONHEQQMVPUJC5TY8YUU28M7",
+					"hitTypeId" : "3KQ8X25AA414RWEXRRIYAH882AO67U",
+					"title" : "Vote on auction item description improvements (receive a commission for good work)",
+					"description" : "Decide which auction item description is better/suitable for the item(s) on three pictures",
+					"keywords" : null,
+					"reward" : 0.01,
+					"question" : "<QuestionForm xmlns=\"http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2005-10-01/QuestionForm.xsd\">\n  <Question>\n    <QuestionIdentifier>vote</QuestionIdentifier>\n    <IsRequired>true</IsRequired>\n    <QuestionContent>\n      <FormattedContent><![CDATA[The goal of the requester of the HIT is to generate eBay auctions by MTurk workers based on images of the item.<br /><br />\n\t\t\t\t\tIf the auction will be sucessful then the voters, who voted for the final description, will receive <b>0.05% of the selling price as a bonus</b>.<br /><br />\t\t\t\t\t\t\t\t\n\t\t\t\t\t<b>Instructions:</b> Which description of the auction item(s) on the pictures is better? The following factors <b>can</b> affect your decision: \n\t\t\t\t\t<ul>\n\t\t\t\t\t\t<li>One description is more informative than the other</li>\n\t\t\t\t\t\t<li>One description contains more information about the auction item then the other</li>\n\t\t\t\t\t\t<li>One description contains wrong information</li>\n\t\t\t\t\t\t<li>One description has spelling mistakes</li>\n\t\t\t\t\t</ul>\n\t\t\t\t\t<table><tr>\n\t\t\t\t\t<td><img src=\"http://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/hMgAAMXQVT9TA8Ya/$_1.JPG?set_id=880000500F\" alt=\"Image 1\" width=\"250\" border=\"2\"></img></td>\n\t\t\t\t\t<td><img src=\"http://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/~ocAAOxyPepRkaPw/$T2eC16NHJGIFFoTmFfWzBRk,PwiuPw~~60_1.JPG?set_id=880000500F\" alt=\"Image 2\" width=\"250\" border=\"2\"></img></td>\n\t\t\t\t\t<td><img src=\"http://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/TpgAAMXQVs1RkaP0/$T2eC16d,!zoE9s5ngIMdBRk,P0Wnrw~~60_1.JPG?set_id=880000500F\" alt=\"Image 3\" width=\"250\" border=\"2\"></img></td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t<td><a href=\"http://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/hMgAAMXQVT9TA8Ya/$_1.JPG?set_id=880000500F\" target=\"_blank\">Link to full size image 1 (new window)</a></td>\n\t\t\t\t\t<td><a href=\"http://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/~ocAAOxyPepRkaPw/$T2eC16NHJGIFFoTmFfWzBRk,PwiuPw~~60_1.JPG?set_id=880000500F\" target=\"_blank\">Link to full size image 2 (new window)</a></td>\n\t\t\t\t\t<td><a href=\"http://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/TpgAAMXQVs1RkaP0/$T2eC16d,!zoE9s5ngIMdBRk,P0Wnrw~~60_1.JPG?set_id=880000500F\" target=\"_blank\">Link to full size image 3 (new window)</a></td>\n\t\t\t\t\t</tr></table>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <SelectionAnswer>\n        <Selections>\n          <Selection>\n            <SelectionIdentifier>b</SelectionIdentifier>\n            <Text>Puma World Cup Digital Display Sports Watch with original packaging.&#13;\n&#13;\nIncludes interchangeable country flag face plates:&#13;\nEngland&#13;\nSpain&#13;\nBrazil&#13;\n&#13;\nFeatures:&#13;\nEasy interface with easy to set buttons&#13;\nLightweight snap-back strap makes this watch great for exercising and any physical activity&#13;\n50m water resistant&#13;\nAlarm&#13;\nStopwatch&#13;\nBacklight</Text>\n          </Selection>\n          <Selection>\n            <SelectionIdentifier>a</SelectionIdentifier>\n            <Text>Puma plastic electronic watch, with original packaging. Includes swappable faces to help style and personalize to fit you. Digital time display, with easy to set buttons and interface. Easy and lightweight snap-back strap makes this watch great for exercising and any physical activity, as well as something comfortable to wear around the house.</Text>\n          </Selection>\n        </Selections>\n      </SelectionAnswer>\n    </AnswerSpecification>\n  </Question>\n  <Question>\n    <QuestionIdentifier>description_vote_feedback</QuestionIdentifier>\n    <QuestionContent>\n      <Title>Your personal feedback (optional)</Title>\n      <FormattedContent><![CDATA[Give your personal feedback about the task. This <b>can</b> contain one of the following aspects:\n        <ul>\n        <li>Problems of the task (e.g. images are not visible)</li>\n        <li>Instructions are not clear enough</li>\n        </ul>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <FreeTextAnswer>\n        <NumberOfLinesSuggestion>3</NumberOfLinesSuggestion>\n      </FreeTextAnswer>\n    </AnswerSpecification>\n  </Question>\n</QuestionForm>",
+					"maxAssignments" : 2,
+					"assignmentDurationInSeconds" : 1800,
+					"autoApprovalDelayInSeconds" : 2592000,
+					"requesterAnnotation" : null,
+					"hitStatus" : "Reviewable",
+					"hitReviewStatus" : "NotReviewed",
+					"creationTime" : 1.396540832E12,
+					"expiration" : 1.397145632E12,
+					"assignments" : [
+						{
+							"assignmentId" : "3GGAI1SQEVXVP9JW1YXCJ4Z0HTOCM6",
+							"workerId" : "A1UEI01VN6PP0N",
+							"hitId" : "3KTZHH2ONHEQQMVPUJC5TY8YUU28M7",
+							"assignmentStatus" : "Submitted",
+							"autoApprovalTime" : 1.399133064E12,
+							"acceptTime" : 1.396541029E12,
+							"submitTime" : 1.396541064E12,
+							"answer" : {
+								"vote" : [
+									"b"
+								],
+								"description_vote_feedback" : ""
+							},
+							"requesterFeedback" : null,
+							"approvalTime" : null,
+							"deadline" : null,
+							"rejectionTime" : null
+						},
+						{
+							"assignmentId" : "3Q8GYXHFEP1XH2YQ9ZGQ22OEVYXC5F",
+							"workerId" : "A1IA4CST74I1Q8",
+							"hitId" : "3KTZHH2ONHEQQMVPUJC5TY8YUU28M7",
+							"assignmentStatus" : "Submitted",
+							"autoApprovalTime" : 1.399133101E12,
+							"acceptTime" : 1.396541083E12,
+							"submitTime" : 1.396541101E12,
+							"answer" : {
+								"vote" : [
+									"b"
+								],
+								"description_vote_feedback" : ""
+							},
+							"requesterFeedback" : null,
+							"approvalTime" : null,
+							"deadline" : null,
+							"rejectionTime" : null
+						}
+					],
+					"done" : true
+				},
+				"returnTime" : 1.396633786746E12,
+				"printOutput" : "hit completed: 3KTZHH2ONHEQQMVPUJC5TY8YUU28M7\r\n"
+			},
+			{
+				"creationTime" : 1.396633786746E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.approveAssignmentRaw(assignment, reason);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.396633787043E12,
+				"printOutput" : "approved assignment 3GGAI1SQEVXVP9JW1YXCJ4Z0HTOCM6\r\n"
+			},
+			{
+				"creationTime" : 1.396633787043E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.approveAssignmentRaw(assignment, reason);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.396633787261E12,
+				"printOutput" : "approved assignment 3Q8GYXHFEP1XH2YQ9ZGQ22OEVYXC5F\r\n"
+			},
+			{
+				"creationTime" : 1.396633787261E12,
+				"onceFunc" : "\nfunction () {\n    mturk.deleteHITRaw(hit);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.396633787558E12,
+				"printOutput" : "disabled HIT: 3KTZHH2ONHEQQMVPUJC5TY8YUU28M7\r\n"
+			},
+			{
+				"creationTime" : 1.396633787558E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.approveAssignmentRaw(assignment, reason);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.396633787965E12,
+				"printOutput" : "approved assignment 3Z7ISHFUH0UTCDS2ZB71PKZQ61R8Z9\r\n"
+			},
+			{
+				"creationTime" : 1.39663378798E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.createHITRaw(params);\n}\n",
+				"returnValue" : "34F34TZU7VYP3ZNFB5QC3F3E42MJ2M",
+				"returnTime" : 1.396633788308E12,
+				"printOutput" : "created HIT: 34F34TZU7VYP3ZNFB5QC3F3E42MJ2M\r\n        url: https://www.mturk.com/mturk/preview?groupId=356P7NIWHJM2LF84AIOIA11OHRUFVU\r\n"
+			},
+			{
+				"creationTime" : 1.396633788308E12,
+				"onceFunc" : "\nfunction () {\n    if (!me.waitForHIT_callCount) {\n        me.waitForHIT_callCount = 0;\n        var a = me.getReviewableHITs(1);\n        if (a.totalNumResults == a.length) {\n            me.waitForHIT_reviewableHITs = new Set(a);\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n        me.waitForHIT_waitCount = Math.ceil(a.totalNumResults / 100);\n    }\n    me.waitForHIT_callCount++;\n    if (me.waitForHIT_callCount >= me.waitForHIT_waitCount) {\n        if (!me.waitForHIT_reviewableHITs || (time() > me.waitForHIT_reviewableHITsTime + (1000 * 60))) {\n            me.waitForHIT_reviewableHITs = new Set(me.getReviewableHITs());\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n    }\n    if (me.waitForHIT_reviewableHITs) {\n        if (!me.waitForHIT_reviewableHITs[hitId]) {\n            stop();\n        }\n    }\n    var hit = mturk.getHIT(hitId);\n    if (!hit.done) {\n        stop();\n    }\n    verbosePrint(\"hit completed: \" + hitId);\n    return hit;\n}\n",
+				"returnValue" : {
+					"hitId" : "34F34TZU7VYP3ZNFB5QC3F3E42MJ2M",
+					"hitTypeId" : "356P7NIWHJM2LF84AIOIA11OHRUFVU",
+					"title" : "Improve/extend description of auction item(s) on pictures (receive a commission for good work)",
+					"description" : "Improve and/or extend the description of an auction item based on three images",
+					"keywords" : null,
+					"reward" : 0.2,
+					"question" : "<QuestionForm xmlns=\"http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2005-10-01/QuestionForm.xsd\">\n  <Question>\n    <QuestionIdentifier>newText</QuestionIdentifier>\n    <IsRequired>true</IsRequired>\n    <QuestionContent>\n      <FormattedContent><![CDATA[All the workers who have done a similar task in the past are excluded from this HIT. If you find your worker ID in the following table, your work <b>will be rejected</b>.<br /><br />\n\t\t\t\t\t<table border= \"1\">\n\t\t\t\t\t<tr><td><b>Worker ID</b></td></tr>\n\t\t\t\t\t<tr><td>ALWGGK7LJCILU</td></tr>\n\t\t\t\t\t<tr><td>A1XGSYVGKSVGLC</td></tr>\n\t\t\t\t\t<tr><td>A2UFB6FRY90EAB</td></tr>\n\t\t\t\t\t<tr><td>A291KO368YRYCR</td></tr>\n\t\t\t\t\t<tr><td>A3L99RGPK6FZGH</td></tr>\n\t\t\t\t\t<tr><td>A1IA4CST74I1Q8</td></tr>\n\t\t\t\t\t<tr><td>A28O8FQSUWMXJV</td></tr>\n\t\t\t\t\t<tr><td>A15TKPS92CNG8X</td></tr>\n\t\t\t\t\t<tr><td>A3066746SS2O8Z</td></tr>\n\t\t\t\t\t<tr><td>AD8E316YDQCM2</td></tr>\n\t\t\t\t\t<tr><td>A20NX4K88SQ80Q</td></tr>\n\t\t\t\t\t</table>\n\t\t\t\t\t<hr />\n\t\t\t\t\tThe goal of the requester of the HIT is to generate eBay auctions by MTurk workers based on images of the item.<br /><br />\n\t\t\t\t\tIf the auction will be sucessful then the creator of the final description will receive <b>1% of the selling price as a bonus</b>. The final description will be determined by a voting procedure.<br /><br />\n\t\t\t\t\t<b>Instructions</b>: Improve and/or extend the description of the auction item(s) on the images. Keep in mind the following remarks:\n\t\t\t\t\t<ul>\n\t\t\t\t\t<li>If the description doesn\'t contain approximately <b>5 sentences</b> then try to add more text\n\t\t\t\t\t<ul>\n\t\t\t\t\t\t<li>Include specific information like size, shape, color, age, manufacture date, company/artist/author, and notable features or markings if possible</li>\n\t\t\t\t\t\t<li>Make the description as readable as possible</li>\n\t\t\t\t\t\t<li>Don\'t say anything that isn\'t true.</li>\n\t\t\t\t\t\t<li>Don\'t use all caps</li>\n\t\t\t\t\t\t<li>Don\'t include email addresses and some links</li>\n\t\t\t\t\t</ul>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li>If the description is long enough then try to improve it</li>\n\t\t\t\t\t</ul>\n\t\t\t\t\t<table><tr>\n\t\t\t\t\t<td><img src=\"http://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/hMgAAMXQVT9TA8Ya/$_1.JPG?set_id=880000500F\" alt=\"Image 1\" width=\"250\" border=\"2\"></img></td>\n\t\t\t\t\t<td><img src=\"http://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/~ocAAOxyPepRkaPw/$T2eC16NHJGIFFoTmFfWzBRk,PwiuPw~~60_1.JPG?set_id=880000500F\" alt=\"Image 2\" width=\"250\" border=\"2\"></img></td>\n\t\t\t\t\t<td><img src=\"http://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/TpgAAMXQVs1RkaP0/$T2eC16d,!zoE9s5ngIMdBRk,P0Wnrw~~60_1.JPG?set_id=880000500F\" alt=\"Image 3\" width=\"250\" border=\"2\"></img></td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t<td><a href=\"http://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/hMgAAMXQVT9TA8Ya/$_1.JPG?set_id=880000500F\" target=\"_blank\">Link to full size image 1 (new window)</a></td>\n\t\t\t\t\t<td><a href=\"http://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/~ocAAOxyPepRkaPw/$T2eC16NHJGIFFoTmFfWzBRk,PwiuPw~~60_1.JPG?set_id=880000500F\" target=\"_blank\">Link to full size image 2 (new window)</a></td>\n\t\t\t\t\t<td><a href=\"http://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/TpgAAMXQVs1RkaP0/$T2eC16d,!zoE9s5ngIMdBRk,P0Wnrw~~60_1.JPG?set_id=880000500F\" target=\"_blank\">Link to full size image 3 (new window)</a></td>\n\t\t\t\t\t</tr></table>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <FreeTextAnswer>\n        <Constraints>\n          <Length maxLength=\"5000\" minLength=\"120\"/>\n          <AnswerFormatRegex errorText=\"The description cannot be blank.\" regex=\"\\S\"/>\n        </Constraints>\n        <DefaultText>Puma World Cup Digital Display Sports Watch with original packaging.&#13;\n&#13;\nIncludes interchangeable country flag face plates:&#13;\nEngland&#13;\nSpain&#13;\nBrazil&#13;\n&#13;\nFeatures:&#13;\nEasy interface with easy to set buttons&#13;\nLightweight snap-back strap makes this watch great for exercising and any physical activity&#13;\n50m water resistant&#13;\nAlarm&#13;\nStopwatch&#13;\nBacklight</DefaultText>\n        <NumberOfLinesSuggestion>10</NumberOfLinesSuggestion>\n      </FreeTextAnswer>\n    </AnswerSpecification>\n  </Question>\n  <Question>\n    <QuestionIdentifier>description_improve_feedback</QuestionIdentifier>\n    <QuestionContent>\n      <Title>Your personal feedback (optional)</Title>\n      <FormattedContent><![CDATA[Give your personal feedback about the task. This <b>can</b> contain one of the following aspects:\n        <ul>\n        <li>Problems of the task (e.g. images are not visible)</li>\n        <li>Instructions are not clear enough</li>\n        </ul>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <FreeTextAnswer>\n        <NumberOfLinesSuggestion>3</NumberOfLinesSuggestion>\n      </FreeTextAnswer>\n    </AnswerSpecification>\n  </Question>\n</QuestionForm>",
+					"maxAssignments" : 1,
+					"assignmentDurationInSeconds" : 7200,
+					"autoApprovalDelayInSeconds" : 2592000,
+					"requesterAnnotation" : null,
+					"hitStatus" : "Reviewable",
+					"hitReviewStatus" : "NotReviewed",
+					"creationTime" : 1.396633788E12,
+					"expiration" : 1.397238588E12,
+					"assignments" : [
+						{
+							"assignmentId" : "3I02618YA05XW6X9F5A4UEF1T50PUX",
+							"workerId" : "A2Y9ZNZ0F24GHB",
+							"hitId" : "34F34TZU7VYP3ZNFB5QC3F3E42MJ2M",
+							"assignmentStatus" : "Submitted",
+							"autoApprovalTime" : 1.399226603E12,
+							"acceptTime" : 1.396634015E12,
+							"submitTime" : 1.396634603E12,
+							"answer" : {
+								"newText" : "Puma World Cup Digital Display Sports Watch with the original packaging.\r\n\r\nThe packaging includes interchangeable country flag face plates of:\r\nEngland\r\nSpain\r\nand\r\nBrazil\r\n\r\nFeatures:\r\nThe watch has an easy to use interface with easy to set buttons. \r\nThe black lightweight snap-back strap makes this watch great for exercising and any physical activity, and is fastened with a button buckle closure.\r\nIf you enjoy swimming, the watch is water resistant up to 50m.\r\nIt also includes an alarm, stopwatch, and a backlight.\r\nThe Puma logo can be seen in the center of the watch\'s interface. \r\nThe watch is a style that would look good on men and women both.",
+								"description_improve_feedback" : ""
+							},
+							"requesterFeedback" : null,
+							"approvalTime" : null,
+							"deadline" : null,
+							"rejectionTime" : null
+						}
+					],
+					"done" : true
+				},
+				"returnTime" : 1.39688667773E12,
+				"printOutput" : "hit completed: 34F34TZU7VYP3ZNFB5QC3F3E42MJ2M\r\n"
+			},
+			{
+				"creationTime" : 1.396886677785E12,
+				"onceFunc" : "\nfunction () {\n    return Math.random();\n}\n",
+				"returnValue" : 0.6629937467130277,
+				"returnTime" : 1.396886677803E12,
+				"printOutput" : ""
+			},
+			{
+				"creationTime" : 1.396886677807E12,
+				"onceFunc" : "\nfunction () {\n    return Math.random();\n}\n",
+				"returnValue" : 0.6385209500319199,
+				"returnTime" : 1.396886677814E12,
+				"printOutput" : ""
+			},
+			{
+				"creationTime" : 1.396886677823E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.createHITRaw(params);\n}\n",
+				"returnValue" : "36FFXPMST8N7J0HUA3LOYFQ2SKHHOY",
+				"returnTime" : 1.396886678244E12,
+				"printOutput" : "created HIT: 36FFXPMST8N7J0HUA3LOYFQ2SKHHOY\r\n        url: https://www.mturk.com/mturk/preview?groupId=3KQ8X25AA414RWEXRRIYAH882AO67U\r\n"
+			},
+			{
+				"creationTime" : 1.39688667825E12,
+				"onceFunc" : "\nfunction () {\n    if (!me.waitForHIT_callCount) {\n        me.waitForHIT_callCount = 0;\n        var a = me.getReviewableHITs(1);\n        if (a.totalNumResults == a.length) {\n            me.waitForHIT_reviewableHITs = new Set(a);\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n        me.waitForHIT_waitCount = Math.ceil(a.totalNumResults / 100);\n    }\n    me.waitForHIT_callCount++;\n    if (me.waitForHIT_callCount >= me.waitForHIT_waitCount) {\n        if (!me.waitForHIT_reviewableHITs || (time() > me.waitForHIT_reviewableHITsTime + (1000 * 60))) {\n            me.waitForHIT_reviewableHITs = new Set(me.getReviewableHITs());\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n    }\n    if (me.waitForHIT_reviewableHITs) {\n        if (!me.waitForHIT_reviewableHITs[hitId]) {\n            stop();\n        }\n    }\n    var hit = mturk.getHIT(hitId);\n    if (!hit.done) {\n        stop();\n    }\n    verbosePrint(\"hit completed: \" + hitId);\n    return hit;\n}\n",
+				"returnValue" : {
+					"hitId" : "36FFXPMST8N7J0HUA3LOYFQ2SKHHOY",
+					"hitTypeId" : "3KQ8X25AA414RWEXRRIYAH882AO67U",
+					"title" : "Vote on auction item description improvements (receive a commission for good work)",
+					"description" : "Decide which auction item description is better/suitable for the item(s) on three pictures",
+					"keywords" : null,
+					"reward" : 0.01,
+					"question" : "<QuestionForm xmlns=\"http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2005-10-01/QuestionForm.xsd\">\n  <Question>\n    <QuestionIdentifier>vote</QuestionIdentifier>\n    <IsRequired>true</IsRequired>\n    <QuestionContent>\n      <FormattedContent><![CDATA[The goal of the requester of the HIT is to generate eBay auctions by MTurk workers based on images of the item.<br /><br />\n\t\t\t\t\tIf the auction will be sucessful then the voters, who voted for the final description, will receive <b>0.05% of the selling price as a bonus</b>.<br /><br />\t\t\t\t\t\t\t\t\n\t\t\t\t\t<b>Instructions:</b> Which description of the auction item(s) on the pictures is better? The following factors <b>can</b> affect your decision: \n\t\t\t\t\t<ul>\n\t\t\t\t\t\t<li>One description is more informative than the other</li>\n\t\t\t\t\t\t<li>One description contains more information about the auction item then the other</li>\n\t\t\t\t\t\t<li>One description contains wrong information</li>\n\t\t\t\t\t\t<li>One description has spelling mistakes</li>\n\t\t\t\t\t</ul>\n\t\t\t\t\t<table><tr>\n\t\t\t\t\t<td><img src=\"http://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/hMgAAMXQVT9TA8Ya/$_1.JPG?set_id=880000500F\" alt=\"Image 1\" width=\"250\" border=\"2\"></img></td>\n\t\t\t\t\t<td><img src=\"http://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/~ocAAOxyPepRkaPw/$T2eC16NHJGIFFoTmFfWzBRk,PwiuPw~~60_1.JPG?set_id=880000500F\" alt=\"Image 2\" width=\"250\" border=\"2\"></img></td>\n\t\t\t\t\t<td><img src=\"http://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/TpgAAMXQVs1RkaP0/$T2eC16d,!zoE9s5ngIMdBRk,P0Wnrw~~60_1.JPG?set_id=880000500F\" alt=\"Image 3\" width=\"250\" border=\"2\"></img></td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t<td><a href=\"http://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/hMgAAMXQVT9TA8Ya/$_1.JPG?set_id=880000500F\" target=\"_blank\">Link to full size image 1 (new window)</a></td>\n\t\t\t\t\t<td><a href=\"http://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/~ocAAOxyPepRkaPw/$T2eC16NHJGIFFoTmFfWzBRk,PwiuPw~~60_1.JPG?set_id=880000500F\" target=\"_blank\">Link to full size image 2 (new window)</a></td>\n\t\t\t\t\t<td><a href=\"http://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/TpgAAMXQVs1RkaP0/$T2eC16d,!zoE9s5ngIMdBRk,P0Wnrw~~60_1.JPG?set_id=880000500F\" target=\"_blank\">Link to full size image 3 (new window)</a></td>\n\t\t\t\t\t</tr></table>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <SelectionAnswer>\n        <Selections>\n          <Selection>\n            <SelectionIdentifier>b</SelectionIdentifier>\n            <Text>Puma World Cup Digital Display Sports Watch with the original packaging.&#13;\n&#13;\nThe packaging includes interchangeable country flag face plates of:&#13;\nEngland&#13;\nSpain&#13;\nand&#13;\nBrazil&#13;\n&#13;\nFeatures:&#13;\nThe watch has an easy to use interface with easy to set buttons. &#13;\nThe black lightweight snap-back strap makes this watch great for exercising and any physical activity, and is fastened with a button buckle closure.&#13;\nIf you enjoy swimming, the watch is water resistant up to 50m.&#13;\nIt also includes an alarm, stopwatch, and a backlight.&#13;\nThe Puma logo can be seen in the center of the watch\'s interface. &#13;\nThe watch is a style that would look good on men and women both.</Text>\n          </Selection>\n          <Selection>\n            <SelectionIdentifier>a</SelectionIdentifier>\n            <Text>Puma World Cup Digital Display Sports Watch with original packaging.&#13;\n&#13;\nIncludes interchangeable country flag face plates:&#13;\nEngland&#13;\nSpain&#13;\nBrazil&#13;\n&#13;\nFeatures:&#13;\nEasy interface with easy to set buttons&#13;\nLightweight snap-back strap makes this watch great for exercising and any physical activity&#13;\n50m water resistant&#13;\nAlarm&#13;\nStopwatch&#13;\nBacklight</Text>\n          </Selection>\n        </Selections>\n      </SelectionAnswer>\n    </AnswerSpecification>\n  </Question>\n  <Question>\n    <QuestionIdentifier>description_vote_feedback</QuestionIdentifier>\n    <QuestionContent>\n      <Title>Your personal feedback (optional)</Title>\n      <FormattedContent><![CDATA[Give your personal feedback about the task. This <b>can</b> contain one of the following aspects:\n        <ul>\n        <li>Problems of the task (e.g. images are not visible)</li>\n        <li>Instructions are not clear enough</li>\n        </ul>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <FreeTextAnswer>\n        <NumberOfLinesSuggestion>3</NumberOfLinesSuggestion>\n      </FreeTextAnswer>\n    </AnswerSpecification>\n  </Question>\n</QuestionForm>",
+					"maxAssignments" : 2,
+					"assignmentDurationInSeconds" : 1800,
+					"autoApprovalDelayInSeconds" : 2592000,
+					"requesterAnnotation" : null,
+					"hitStatus" : "Reviewable",
+					"hitReviewStatus" : "NotReviewed",
+					"creationTime" : 1.396886683E12,
+					"expiration" : 1.397491483E12,
+					"assignments" : [
+						{
+							"assignmentId" : "3G0WWMR1UVJ51SEFIHD7GODHQG7QNX",
+							"workerId" : "A2FF8HA1OWKS83",
+							"hitId" : "36FFXPMST8N7J0HUA3LOYFQ2SKHHOY",
+							"assignmentStatus" : "Submitted",
+							"autoApprovalTime" : 1.399478879E12,
+							"acceptTime" : 1.396886853E12,
+							"submitTime" : 1.396886879E12,
+							"answer" : {
+								"vote" : [
+									"b"
+								],
+								"description_vote_feedback" : ""
+							},
+							"requesterFeedback" : null,
+							"approvalTime" : null,
+							"deadline" : null,
+							"rejectionTime" : null
+						},
+						{
+							"assignmentId" : "32KTQ2V7RDETRBCTPENLHEYSBQVM99",
+							"workerId" : "AJAOE1PSNKGUE",
+							"hitId" : "36FFXPMST8N7J0HUA3LOYFQ2SKHHOY",
+							"assignmentStatus" : "Submitted",
+							"autoApprovalTime" : 1.399479209E12,
+							"acceptTime" : 1.396887139E12,
+							"submitTime" : 1.396887209E12,
+							"answer" : {
+								"vote" : [
+									"b"
+								],
+								"description_vote_feedback" : ""
+							},
+							"requesterFeedback" : null,
+							"approvalTime" : null,
+							"deadline" : null,
+							"rejectionTime" : null
+						}
+					],
+					"done" : true
+				},
+				"returnTime" : 1.396973229001E12,
+				"printOutput" : "hit completed: 36FFXPMST8N7J0HUA3LOYFQ2SKHHOY\r\n"
+			},
+			{
+				"creationTime" : 1.396973229001E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.approveAssignmentRaw(assignment, reason);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.396973229391E12,
+				"printOutput" : "approved assignment 3G0WWMR1UVJ51SEFIHD7GODHQG7QNX\r\n"
+			},
+			{
+				"creationTime" : 1.396973229391E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.approveAssignmentRaw(assignment, reason);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.396973229798E12,
+				"printOutput" : "approved assignment 32KTQ2V7RDETRBCTPENLHEYSBQVM99\r\n"
+			},
+			{
+				"creationTime" : 1.396973229798E12,
+				"onceFunc" : "\nfunction () {\n    mturk.deleteHITRaw(hit);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.396973230204E12,
+				"printOutput" : "disabled HIT: 36FFXPMST8N7J0HUA3LOYFQ2SKHHOY\r\n"
+			},
+			{
+				"creationTime" : 1.396973230219E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.approveAssignmentRaw(assignment, reason);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.39697323061E12,
+				"printOutput" : "approved assignment 3I02618YA05XW6X9F5A4UEF1T50PUX\r\n"
+			}
+		]
+	}
+}
+__safetyCounters = {
+	"moneySpent" : 0.6400000000000001,
+	"hitsCreated" : 5
+}
+// end:877f

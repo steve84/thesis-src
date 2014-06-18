@@ -1,0 +1,505 @@
+// begin:20c8
+__HITs = {
+	"real:391JB9X4ZX7ALNXQ3898J3HPR99KMB" : {
+		"url" : "https://www.mturk.com/mturk/preview?groupId=24LSCXKNQY2RCLHN82ME7HR0KRFP09"
+	},
+	"real:3WA2XVDZELG5AKKOK6ROWC7YHG46EH" : {
+		"url" : "https://www.mturk.com/mturk/preview?groupId=24LSCXKNQY2RCLHN82ME7HR0KRFP09"
+	},
+	"real:32K26U12DMNLX4LPPJOC2M5CY6GVD8" : {
+		"url" : "https://www.mturk.com/mturk/preview?groupId=24LSCXKNQY2RCLHN82ME7HR0KRFP09"
+	}
+}
+__S3_Objects = {
+}
+__stackFrames = {
+	"for-real" : {
+		"sequencialFrames" : [
+			{
+				"creationTime" : 1.400083572077E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.createHITRaw(params);\n}\n",
+				"returnValue" : "391JB9X4ZX7ALNXQ3898J3HPR99KMB",
+				"returnTime" : 1.400083573051E12,
+				"printOutput" : "created HIT: 391JB9X4ZX7ALNXQ3898J3HPR99KMB\r\n        url: https://www.mturk.com/mturk/preview?groupId=24LSCXKNQY2RCLHN82ME7HR0KRFP09\r\n"
+			},
+			{
+				"creationTime" : 1.400083573056E12,
+				"onceFunc" : "\nfunction () {\n    if (!me.waitForHIT_callCount) {\n        me.waitForHIT_callCount = 0;\n        var a = me.getReviewableHITs(1);\n        if (a.totalNumResults == a.length) {\n            me.waitForHIT_reviewableHITs = new Set(a);\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n        me.waitForHIT_waitCount = Math.ceil(a.totalNumResults / 100);\n    }\n    me.waitForHIT_callCount++;\n    if (me.waitForHIT_callCount >= me.waitForHIT_waitCount) {\n        if (!me.waitForHIT_reviewableHITs || (time() > me.waitForHIT_reviewableHITsTime + (1000 * 60))) {\n            me.waitForHIT_reviewableHITs = new Set(me.getReviewableHITs());\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n    }\n    if (me.waitForHIT_reviewableHITs) {\n        if (!me.waitForHIT_reviewableHITs[hitId]) {\n            stop();\n        }\n    }\n    var hit = mturk.getHIT(hitId);\n    if (!hit.done) {\n        stop();\n    }\n    verbosePrint(\"hit completed: \" + hitId);\n    return hit;\n}\n",
+				"returnValue" : {
+					"hitId" : "391JB9X4ZX7ALNXQ3898J3HPR99KMB",
+					"hitTypeId" : "24LSCXKNQY2RCLHN82ME7HR0KRFP09",
+					"title" : "Improve/extend description of auction item(s) on pictures",
+					"description" : "Improve and/or extend the description of an auction item based on three images",
+					"keywords" : null,
+					"reward" : 0.2,
+					"question" : "<QuestionForm xmlns=\"http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2005-10-01/QuestionForm.xsd\">\n  <Question>\n    <QuestionIdentifier>newText</QuestionIdentifier>\n    <IsRequired>true</IsRequired>\n    <QuestionContent>\n      <FormattedContent><![CDATA[All the workers who have done a similar task in the past are excluded from this HIT. If you find your worker ID in the following table, your work <b>will be rejected</b>.<br /><br /><table border=\"1\"><tr><td>ANJRINRP821LY</td><td>A3J47737YMH6WK</td><td>A291KO368YRYCR</td><td>A3KUFIF1ULONV1</td><td>A3AJR1PM02424Y</td></tr><tr><td>A2SFEEI806WFP9</td><td>A2Y9ZNZ0F24GHB</td><td>A1IA4CST74I1Q8</td><td>A3JLB1N2CB27BZ</td><td>AJAOE1PSNKGUE</td></tr></table><hr /><table border=\"0\"><tr><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_1.JPG\" alt=\"Image 1\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_1.JPG\" target=\"_blank\">Link to full size image 1 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_2.JPG\" alt=\"Image 2\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_2.JPG\" target=\"_blank\">Link to full size image 2 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_3.JPG\" alt=\"Image 3\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_3.JPG\" target=\"_blank\">Link to full size image 3 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_4.JPG\" alt=\"Image 4\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_4.JPG\" target=\"_blank\">Link to full size image 4 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_5.JPG\" alt=\"Image 5\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_5.JPG\" target=\"_blank\">Link to full size image 5 (new window)</a></td></tr><tr><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_6.JPG\" alt=\"Image 6\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_6.JPG\" target=\"_blank\">Link to full size image 6 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_7.JPG\" alt=\"Image 7\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_7.JPG\" target=\"_blank\">Link to full size image 7 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_8.JPG\" alt=\"Image 8\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_8.JPG\" target=\"_blank\">Link to full size image 8 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_9.JPG\" alt=\"Image 9\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_9.JPG\" target=\"_blank\">Link to full size image 9 (new window)</a></td><td></td></tr></table>\n\t\t\t\t\tThe goal of the requester of the HIT is to generate eBay auctions by MTurk workers based on images of the item.<br /><br />\n\t\t\t\t\t<b>Instructions</b>: Improve and/or extend the description of the auction item(s) on the images. Keep in mind the following remarks:\n\t\t\t\t\t<ul>\n\t\t\t\t\t<li>If the description doesn\'t contain approximately <b>5 sentences</b> then try to add more text\n\t\t\t\t\t<ul>\n\t\t\t\t\t\t<li>Include specific information like size, shape, color, age, manufacture date, company/artist/author, and notable features or markings if possible</li>\n\t\t\t\t\t\t<li>Make the description as readable as possible</li>\n\t\t\t\t\t\t<li>Don\'t say anything that isn\'t true.</li>\n\t\t\t\t\t\t<li>Don\'t use all caps</li>\n\t\t\t\t\t\t<li>Don\'t include email addresses and some links</li>\n\t\t\t\t\t</ul>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li>If the description is long enough then try to improve it</li>\n\t\t\t\t\t</ul>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <FreeTextAnswer>\n        <Constraints>\n          <Length maxLength=\"5000\" minLength=\"40\"/>\n          <AnswerFormatRegex errorText=\"The description cannot be blank.\" regex=\"\\S\"/>\n        </Constraints>\n        <DefaultText/>\n        <NumberOfLinesSuggestion>10</NumberOfLinesSuggestion>\n      </FreeTextAnswer>\n    </AnswerSpecification>\n  </Question>\n  <Question>\n    <QuestionIdentifier>description_improve_feedback</QuestionIdentifier>\n    <QuestionContent>\n      <Title>Your personal feedback (optional)</Title>\n      <FormattedContent><![CDATA[Give your personal feedback about the task. This <b>can</b> contain one of the following aspects:\n        <ul>\n        <li>Problems of the task (e.g. images are not visible)</li>\n        <li>Instructions are not clear enough</li>\n        </ul>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <FreeTextAnswer>\n        <NumberOfLinesSuggestion>3</NumberOfLinesSuggestion>\n      </FreeTextAnswer>\n    </AnswerSpecification>\n  </Question>\n</QuestionForm>",
+					"maxAssignments" : 1,
+					"assignmentDurationInSeconds" : 7200,
+					"autoApprovalDelayInSeconds" : 2592000,
+					"requesterAnnotation" : null,
+					"hitStatus" : "Reviewable",
+					"hitReviewStatus" : "NotReviewed",
+					"creationTime" : 1.400083593E12,
+					"expiration" : 1.400688393E12,
+					"assignments" : [
+						{
+							"assignmentId" : "3D8YOU6S9EJPM0F409BVOEOK3ZW6UX",
+							"workerId" : "A3JP1G2RYW59R5",
+							"hitId" : "391JB9X4ZX7ALNXQ3898J3HPR99KMB",
+							"assignmentStatus" : "Submitted",
+							"autoApprovalTime" : 1.402688227E12,
+							"acceptTime" : 1.400095995E12,
+							"submitTime" : 1.400096227E12,
+							"answer" : {
+								"newText" : "For sale is a pair of white Nike cleats, lightly used. Interior soles are fluorescent green. The word \"Nike\" is written on the back of each show in this same color. The  individual cleats on the bottom of the shoe are also fluorescent green. Shoes come with shoelaces, also lightly used.",
+								"description_improve_feedback" : ""
+							},
+							"requesterFeedback" : null,
+							"approvalTime" : null,
+							"deadline" : null,
+							"rejectionTime" : null
+						}
+					],
+					"done" : true
+				},
+				"returnTime" : 1.400170677883E12,
+				"printOutput" : "hit completed: 391JB9X4ZX7ALNXQ3898J3HPR99KMB\r\n"
+			},
+			{
+				"creationTime" : 1.400170677914E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.approveAssignmentRaw(assignment, reason);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.40017067818E12,
+				"printOutput" : "approved assignment 3D8YOU6S9EJPM0F409BVOEOK3ZW6UX\r\n"
+			},
+			{
+				"creationTime" : 1.400170678196E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.createHITRaw(params);\n}\n",
+				"returnValue" : "3WA2XVDZELG5AKKOK6ROWC7YHG46EH",
+				"returnTime" : 1.400170678711E12,
+				"printOutput" : "created HIT: 3WA2XVDZELG5AKKOK6ROWC7YHG46EH\r\n        url: https://www.mturk.com/mturk/preview?groupId=24LSCXKNQY2RCLHN82ME7HR0KRFP09\r\n"
+			},
+			{
+				"creationTime" : 1.400170678711E12,
+				"onceFunc" : "\nfunction () {\n    if (!me.waitForHIT_callCount) {\n        me.waitForHIT_callCount = 0;\n        var a = me.getReviewableHITs(1);\n        if (a.totalNumResults == a.length) {\n            me.waitForHIT_reviewableHITs = new Set(a);\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n        me.waitForHIT_waitCount = Math.ceil(a.totalNumResults / 100);\n    }\n    me.waitForHIT_callCount++;\n    if (me.waitForHIT_callCount >= me.waitForHIT_waitCount) {\n        if (!me.waitForHIT_reviewableHITs || (time() > me.waitForHIT_reviewableHITsTime + (1000 * 60))) {\n            me.waitForHIT_reviewableHITs = new Set(me.getReviewableHITs());\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n    }\n    if (me.waitForHIT_reviewableHITs) {\n        if (!me.waitForHIT_reviewableHITs[hitId]) {\n            stop();\n        }\n    }\n    var hit = mturk.getHIT(hitId);\n    if (!hit.done) {\n        stop();\n    }\n    verbosePrint(\"hit completed: \" + hitId);\n    return hit;\n}\n",
+				"returnValue" : {
+					"hitId" : "3WA2XVDZELG5AKKOK6ROWC7YHG46EH",
+					"hitTypeId" : "24LSCXKNQY2RCLHN82ME7HR0KRFP09",
+					"title" : "Improve/extend description of auction item(s) on pictures",
+					"description" : "Improve and/or extend the description of an auction item based on three images",
+					"keywords" : null,
+					"reward" : 0.2,
+					"question" : "<QuestionForm xmlns=\"http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2005-10-01/QuestionForm.xsd\">\n  <Question>\n    <QuestionIdentifier>newText</QuestionIdentifier>\n    <IsRequired>true</IsRequired>\n    <QuestionContent>\n      <FormattedContent><![CDATA[All the workers who have done a similar task in the past are excluded from this HIT. If you find your worker ID in the following table, your work <b>will be rejected</b>.<br /><br /><table border=\"1\"><tr><td>ANJRINRP821LY</td><td>A3J47737YMH6WK</td><td>A291KO368YRYCR</td><td>A3KUFIF1ULONV1</td><td>A3AJR1PM02424Y</td></tr><tr><td>A2SFEEI806WFP9</td><td>A2Y9ZNZ0F24GHB</td><td>A1IA4CST74I1Q8</td><td>A3JLB1N2CB27BZ</td><td>AJAOE1PSNKGUE</td></tr></table><hr /><table border=\"0\"><tr><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_1.JPG\" alt=\"Image 1\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_1.JPG\" target=\"_blank\">Link to full size image 1 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_2.JPG\" alt=\"Image 2\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_2.JPG\" target=\"_blank\">Link to full size image 2 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_3.JPG\" alt=\"Image 3\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_3.JPG\" target=\"_blank\">Link to full size image 3 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_4.JPG\" alt=\"Image 4\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_4.JPG\" target=\"_blank\">Link to full size image 4 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_5.JPG\" alt=\"Image 5\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_5.JPG\" target=\"_blank\">Link to full size image 5 (new window)</a></td></tr><tr><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_6.JPG\" alt=\"Image 6\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_6.JPG\" target=\"_blank\">Link to full size image 6 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_7.JPG\" alt=\"Image 7\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_7.JPG\" target=\"_blank\">Link to full size image 7 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_8.JPG\" alt=\"Image 8\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_8.JPG\" target=\"_blank\">Link to full size image 8 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_9.JPG\" alt=\"Image 9\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_9.JPG\" target=\"_blank\">Link to full size image 9 (new window)</a></td><td></td></tr></table>\n\t\t\t\t\tThe goal of the requester of the HIT is to generate eBay auctions by MTurk workers based on images of the item.<br /><br />\n\t\t\t\t\t<b>Instructions</b>: Improve and/or extend the description of the auction item(s) on the images. Keep in mind the following remarks:\n\t\t\t\t\t<ul>\n\t\t\t\t\t<li>If the description doesn\'t contain approximately <b>5 sentences</b> then try to add more text\n\t\t\t\t\t<ul>\n\t\t\t\t\t\t<li>Include specific information like size, shape, color, age, manufacture date, company/artist/author, and notable features or markings if possible</li>\n\t\t\t\t\t\t<li>Make the description as readable as possible</li>\n\t\t\t\t\t\t<li>Don\'t say anything that isn\'t true.</li>\n\t\t\t\t\t\t<li>Don\'t use all caps</li>\n\t\t\t\t\t\t<li>Don\'t include email addresses and some links</li>\n\t\t\t\t\t</ul>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li>If the description is long enough then try to improve it</li>\n\t\t\t\t\t</ul>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <FreeTextAnswer>\n        <Constraints>\n          <Length maxLength=\"5000\" minLength=\"80\"/>\n          <AnswerFormatRegex errorText=\"The description cannot be blank.\" regex=\"\\S\"/>\n        </Constraints>\n        <DefaultText>For sale is a pair of white Nike cleats, lightly used. Interior soles are fluorescent green. The word \"Nike\" is written on the back of each show in this same color. The  individual cleats on the bottom of the shoe are also fluorescent green. Shoes come with shoelaces, also lightly used.</DefaultText>\n        <NumberOfLinesSuggestion>10</NumberOfLinesSuggestion>\n      </FreeTextAnswer>\n    </AnswerSpecification>\n  </Question>\n  <Question>\n    <QuestionIdentifier>description_improve_feedback</QuestionIdentifier>\n    <QuestionContent>\n      <Title>Your personal feedback (optional)</Title>\n      <FormattedContent><![CDATA[Give your personal feedback about the task. This <b>can</b> contain one of the following aspects:\n        <ul>\n        <li>Problems of the task (e.g. images are not visible)</li>\n        <li>Instructions are not clear enough</li>\n        </ul>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <FreeTextAnswer>\n        <NumberOfLinesSuggestion>3</NumberOfLinesSuggestion>\n      </FreeTextAnswer>\n    </AnswerSpecification>\n  </Question>\n</QuestionForm>",
+					"maxAssignments" : 1,
+					"assignmentDurationInSeconds" : 7200,
+					"autoApprovalDelayInSeconds" : 2592000,
+					"requesterAnnotation" : null,
+					"hitStatus" : "Reviewable",
+					"hitReviewStatus" : "NotReviewed",
+					"creationTime" : 1.400170701E12,
+					"expiration" : 1.400775501E12,
+					"assignments" : [
+						{
+							"assignmentId" : "3GA6AFUKOONLKVM2H86YYWNAZ4GH3X",
+							"workerId" : "A1RZIAVIA68FUE",
+							"hitId" : "3WA2XVDZELG5AKKOK6ROWC7YHG46EH",
+							"assignmentStatus" : "Submitted",
+							"autoApprovalTime" : 1.402762823E12,
+							"acceptTime" : 1.400170794E12,
+							"submitTime" : 1.400170823E12,
+							"answer" : {
+								"newText" : "For sale is a pair of white Nike lace up cleats, lightly used. Interior soles are fluorescent green. The word \"Nike\" is written on the back of each show in this same color. The  individual cleats on the bottom of the shoe are also fluorescent green. Shoes come with shoelaces, also lightly used.",
+								"description_improve_feedback" : ""
+							},
+							"requesterFeedback" : null,
+							"approvalTime" : null,
+							"deadline" : null,
+							"rejectionTime" : null
+						}
+					],
+					"done" : true
+				},
+				"returnTime" : 1.400171611603E12,
+				"printOutput" : "hit completed: 3WA2XVDZELG5AKKOK6ROWC7YHG46EH\r\n"
+			},
+			{
+				"creationTime" : 1.40017161165E12,
+				"onceFunc" : "\nfunction () {\n    return Math.random();\n}\n",
+				"returnValue" : 0.41414328426099234,
+				"returnTime" : 1.40017161165E12,
+				"printOutput" : ""
+			},
+			{
+				"creationTime" : 1.400171611666E12,
+				"onceFunc" : "\nfunction () {\n    return Math.random();\n}\n",
+				"returnValue" : 0.05419954902923152,
+				"returnTime" : 1.400171611666E12,
+				"printOutput" : ""
+			},
+			{
+				"creationTime" : 1.400171611681E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.createHITRaw(params);\n}\n",
+				"returnValue" : "3I7SHAD35LVMQ8Q6KEKZFYC3LTF7M6",
+				"returnTime" : 1.400171612072E12,
+				"printOutput" : "created HIT: 3I7SHAD35LVMQ8Q6KEKZFYC3LTF7M6\r\n        url: https://www.mturk.com/mturk/preview?groupId=38E1HBOA1QEDDZX1Z7UNFGUC0R380D\r\n"
+			},
+			{
+				"creationTime" : 1.400171612088E12,
+				"onceFunc" : "\nfunction () {\n    if (!me.waitForHIT_callCount) {\n        me.waitForHIT_callCount = 0;\n        var a = me.getReviewableHITs(1);\n        if (a.totalNumResults == a.length) {\n            me.waitForHIT_reviewableHITs = new Set(a);\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n        me.waitForHIT_waitCount = Math.ceil(a.totalNumResults / 100);\n    }\n    me.waitForHIT_callCount++;\n    if (me.waitForHIT_callCount >= me.waitForHIT_waitCount) {\n        if (!me.waitForHIT_reviewableHITs || (time() > me.waitForHIT_reviewableHITsTime + (1000 * 60))) {\n            me.waitForHIT_reviewableHITs = new Set(me.getReviewableHITs());\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n    }\n    if (me.waitForHIT_reviewableHITs) {\n        if (!me.waitForHIT_reviewableHITs[hitId]) {\n            stop();\n        }\n    }\n    var hit = mturk.getHIT(hitId);\n    if (!hit.done) {\n        stop();\n    }\n    verbosePrint(\"hit completed: \" + hitId);\n    return hit;\n}\n",
+				"returnValue" : {
+					"hitId" : "3I7SHAD35LVMQ8Q6KEKZFYC3LTF7M6",
+					"hitTypeId" : "38E1HBOA1QEDDZX1Z7UNFGUC0R380D",
+					"title" : "Vote on auction item description improvements",
+					"description" : "Decide which auction item description is better/suitable for the item(s) on three pictures",
+					"keywords" : null,
+					"reward" : 0.01,
+					"question" : "<QuestionForm xmlns=\"http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2005-10-01/QuestionForm.xsd\">\n  <Question>\n    <QuestionIdentifier>vote</QuestionIdentifier>\n    <IsRequired>true</IsRequired>\n    <QuestionContent>\n      <FormattedContent><![CDATA[All the workers who have done a similar task in the past are excluded from this HIT. If you find your worker ID in the following table, your work <b>will be rejected</b>.<br /><br /><table border=\"1\"><tr><td>ANJRINRP821LY</td><td>A3J47737YMH6WK</td><td>A291KO368YRYCR</td><td>A3KUFIF1ULONV1</td><td>A3AJR1PM02424Y</td></tr><tr><td>A2SFEEI806WFP9</td><td>A2Y9ZNZ0F24GHB</td><td>A1IA4CST74I1Q8</td><td>A3JLB1N2CB27BZ</td><td>AJAOE1PSNKGUE</td></tr></table><hr /><table border=\"0\"><tr><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_1.JPG\" alt=\"Image 1\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_1.JPG\" target=\"_blank\">Link to full size image 1 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_2.JPG\" alt=\"Image 2\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_2.JPG\" target=\"_blank\">Link to full size image 2 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_3.JPG\" alt=\"Image 3\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_3.JPG\" target=\"_blank\">Link to full size image 3 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_4.JPG\" alt=\"Image 4\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_4.JPG\" target=\"_blank\">Link to full size image 4 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_5.JPG\" alt=\"Image 5\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_5.JPG\" target=\"_blank\">Link to full size image 5 (new window)</a></td></tr><tr><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_6.JPG\" alt=\"Image 6\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_6.JPG\" target=\"_blank\">Link to full size image 6 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_7.JPG\" alt=\"Image 7\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_7.JPG\" target=\"_blank\">Link to full size image 7 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_8.JPG\" alt=\"Image 8\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_8.JPG\" target=\"_blank\">Link to full size image 8 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_9.JPG\" alt=\"Image 9\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_9.JPG\" target=\"_blank\">Link to full size image 9 (new window)</a></td><td></td></tr></table>\n\t\t\t\t\tThe goal of the requester of the HIT is to generate eBay auctions by MTurk workers based on images of the item.<br /><br />\n\t\t\t\t\t<b>Instructions:</b> Which description of the auction item(s) on the pictures is better? The following factors <b>can</b> affect your decision: \n\t\t\t\t\t<ul>\n\t\t\t\t\t\t<li>One description is more informative than the other</li>\n\t\t\t\t\t\t<li>One description contains more information about the auction item then the other</li>\n\t\t\t\t\t\t<li>One description contains wrong information</li>\n\t\t\t\t\t\t<li>One description has spelling mistakes</li>\n\t\t\t\t\t</ul>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <SelectionAnswer>\n        <Selections>\n          <Selection>\n            <SelectionIdentifier>b</SelectionIdentifier>\n            <Text>For sale is a pair of white Nike lace up cleats, lightly used. Interior soles are fluorescent green. The word \"Nike\" is written on the back of each show in this same color. The  individual cleats on the bottom of the shoe are also fluorescent green. Shoes come with shoelaces, also lightly used.</Text>\n          </Selection>\n          <Selection>\n            <SelectionIdentifier>a</SelectionIdentifier>\n            <Text>For sale is a pair of white Nike cleats, lightly used. Interior soles are fluorescent green. The word \"Nike\" is written on the back of each show in this same color. The  individual cleats on the bottom of the shoe are also fluorescent green. Shoes come with shoelaces, also lightly used.</Text>\n          </Selection>\n        </Selections>\n      </SelectionAnswer>\n    </AnswerSpecification>\n  </Question>\n  <Question>\n    <QuestionIdentifier>description_vote_feedback</QuestionIdentifier>\n    <QuestionContent>\n      <Title>Your personal feedback (optional)</Title>\n      <FormattedContent><![CDATA[Give your personal feedback about the task. This <b>can</b> contain one of the following aspects:\n        <ul>\n        <li>Problems of the task (e.g. images are not visible)</li>\n        <li>Instructions are not clear enough</li>\n        </ul>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <FreeTextAnswer>\n        <NumberOfLinesSuggestion>3</NumberOfLinesSuggestion>\n      </FreeTextAnswer>\n    </AnswerSpecification>\n  </Question>\n</QuestionForm>",
+					"maxAssignments" : 2,
+					"assignmentDurationInSeconds" : 1800,
+					"autoApprovalDelayInSeconds" : 2592000,
+					"requesterAnnotation" : null,
+					"hitStatus" : "Reviewable",
+					"hitReviewStatus" : "NotReviewed",
+					"creationTime" : 1.400171634E12,
+					"expiration" : 1.400776434E12,
+					"assignments" : [
+						{
+							"assignmentId" : "3ON104KXQKVOZH0VCLXH94P3ST2W4C",
+							"workerId" : "A2KCG73A6QCNCW",
+							"hitId" : "3I7SHAD35LVMQ8Q6KEKZFYC3LTF7M6",
+							"assignmentStatus" : "Submitted",
+							"autoApprovalTime" : 1.402767097E12,
+							"acceptTime" : 1.400175066E12,
+							"submitTime" : 1.400175097E12,
+							"answer" : {
+								"vote" : [
+									"b"
+								],
+								"description_vote_feedback" : ""
+							},
+							"requesterFeedback" : null,
+							"approvalTime" : null,
+							"deadline" : null,
+							"rejectionTime" : null
+						},
+						{
+							"assignmentId" : "3TXMY6UCAENMAOHOTR4T0DJ5W54QCH",
+							"workerId" : "AWN1PEZWRQSQ9",
+							"hitId" : "3I7SHAD35LVMQ8Q6KEKZFYC3LTF7M6",
+							"assignmentStatus" : "Submitted",
+							"autoApprovalTime" : 1.402767554E12,
+							"acceptTime" : 1.400175539E12,
+							"submitTime" : 1.400175554E12,
+							"answer" : {
+								"vote" : [
+									"a"
+								],
+								"description_vote_feedback" : ""
+							},
+							"requesterFeedback" : null,
+							"approvalTime" : null,
+							"deadline" : null,
+							"rejectionTime" : null
+						}
+					],
+					"done" : true
+				},
+				"returnTime" : 1.400256112696E12,
+				"printOutput" : "hit completed: 3I7SHAD35LVMQ8Q6KEKZFYC3LTF7M6\r\n"
+			},
+			{
+				"creationTime" : 1.400256112712E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.extendHITRaw(hit, moreAssignments, moreSeconds);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.400256112962E12,
+				"printOutput" : "extended HIT: 3I7SHAD35LVMQ8Q6KEKZFYC3LTF7M6\r\n"
+			},
+			{
+				"creationTime" : 1.400256112962E12,
+				"onceFunc" : "\nfunction () {\n    if (!me.waitForHIT_callCount) {\n        me.waitForHIT_callCount = 0;\n        var a = me.getReviewableHITs(1);\n        if (a.totalNumResults == a.length) {\n            me.waitForHIT_reviewableHITs = new Set(a);\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n        me.waitForHIT_waitCount = Math.ceil(a.totalNumResults / 100);\n    }\n    me.waitForHIT_callCount++;\n    if (me.waitForHIT_callCount >= me.waitForHIT_waitCount) {\n        if (!me.waitForHIT_reviewableHITs || (time() > me.waitForHIT_reviewableHITsTime + (1000 * 60))) {\n            me.waitForHIT_reviewableHITs = new Set(me.getReviewableHITs());\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n    }\n    if (me.waitForHIT_reviewableHITs) {\n        if (!me.waitForHIT_reviewableHITs[hitId]) {\n            stop();\n        }\n    }\n    var hit = mturk.getHIT(hitId);\n    if (!hit.done) {\n        stop();\n    }\n    verbosePrint(\"hit completed: \" + hitId);\n    return hit;\n}\n",
+				"returnValue" : {
+					"hitId" : "3I7SHAD35LVMQ8Q6KEKZFYC3LTF7M6",
+					"hitTypeId" : "38E1HBOA1QEDDZX1Z7UNFGUC0R380D",
+					"title" : "Vote on auction item description improvements",
+					"description" : "Decide which auction item description is better/suitable for the item(s) on three pictures",
+					"keywords" : null,
+					"reward" : 0.01,
+					"question" : "<QuestionForm xmlns=\"http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2005-10-01/QuestionForm.xsd\">\n  <Question>\n    <QuestionIdentifier>vote</QuestionIdentifier>\n    <IsRequired>true</IsRequired>\n    <QuestionContent>\n      <FormattedContent><![CDATA[All the workers who have done a similar task in the past are excluded from this HIT. If you find your worker ID in the following table, your work <b>will be rejected</b>.<br /><br /><table border=\"1\"><tr><td>ANJRINRP821LY</td><td>A3J47737YMH6WK</td><td>A291KO368YRYCR</td><td>A3KUFIF1ULONV1</td><td>A3AJR1PM02424Y</td></tr><tr><td>A2SFEEI806WFP9</td><td>A2Y9ZNZ0F24GHB</td><td>A1IA4CST74I1Q8</td><td>A3JLB1N2CB27BZ</td><td>AJAOE1PSNKGUE</td></tr></table><hr /><table border=\"0\"><tr><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_1.JPG\" alt=\"Image 1\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_1.JPG\" target=\"_blank\">Link to full size image 1 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_2.JPG\" alt=\"Image 2\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_2.JPG\" target=\"_blank\">Link to full size image 2 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_3.JPG\" alt=\"Image 3\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_3.JPG\" target=\"_blank\">Link to full size image 3 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_4.JPG\" alt=\"Image 4\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_4.JPG\" target=\"_blank\">Link to full size image 4 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_5.JPG\" alt=\"Image 5\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_5.JPG\" target=\"_blank\">Link to full size image 5 (new window)</a></td></tr><tr><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_6.JPG\" alt=\"Image 6\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_6.JPG\" target=\"_blank\">Link to full size image 6 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_7.JPG\" alt=\"Image 7\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_7.JPG\" target=\"_blank\">Link to full size image 7 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_8.JPG\" alt=\"Image 8\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_8.JPG\" target=\"_blank\">Link to full size image 8 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_9.JPG\" alt=\"Image 9\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_9.JPG\" target=\"_blank\">Link to full size image 9 (new window)</a></td><td></td></tr></table>\n\t\t\t\t\tThe goal of the requester of the HIT is to generate eBay auctions by MTurk workers based on images of the item.<br /><br />\n\t\t\t\t\t<b>Instructions:</b> Which description of the auction item(s) on the pictures is better? The following factors <b>can</b> affect your decision: \n\t\t\t\t\t<ul>\n\t\t\t\t\t\t<li>One description is more informative than the other</li>\n\t\t\t\t\t\t<li>One description contains more information about the auction item then the other</li>\n\t\t\t\t\t\t<li>One description contains wrong information</li>\n\t\t\t\t\t\t<li>One description has spelling mistakes</li>\n\t\t\t\t\t</ul>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <SelectionAnswer>\n        <Selections>\n          <Selection>\n            <SelectionIdentifier>b</SelectionIdentifier>\n            <Text>For sale is a pair of white Nike lace up cleats, lightly used. Interior soles are fluorescent green. The word \"Nike\" is written on the back of each show in this same color. The  individual cleats on the bottom of the shoe are also fluorescent green. Shoes come with shoelaces, also lightly used.</Text>\n          </Selection>\n          <Selection>\n            <SelectionIdentifier>a</SelectionIdentifier>\n            <Text>For sale is a pair of white Nike cleats, lightly used. Interior soles are fluorescent green. The word \"Nike\" is written on the back of each show in this same color. The  individual cleats on the bottom of the shoe are also fluorescent green. Shoes come with shoelaces, also lightly used.</Text>\n          </Selection>\n        </Selections>\n      </SelectionAnswer>\n    </AnswerSpecification>\n  </Question>\n  <Question>\n    <QuestionIdentifier>description_vote_feedback</QuestionIdentifier>\n    <QuestionContent>\n      <Title>Your personal feedback (optional)</Title>\n      <FormattedContent><![CDATA[Give your personal feedback about the task. This <b>can</b> contain one of the following aspects:\n        <ul>\n        <li>Problems of the task (e.g. images are not visible)</li>\n        <li>Instructions are not clear enough</li>\n        </ul>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <FreeTextAnswer>\n        <NumberOfLinesSuggestion>3</NumberOfLinesSuggestion>\n      </FreeTextAnswer>\n    </AnswerSpecification>\n  </Question>\n</QuestionForm>",
+					"maxAssignments" : 3,
+					"assignmentDurationInSeconds" : 1800,
+					"autoApprovalDelayInSeconds" : 2592000,
+					"requesterAnnotation" : null,
+					"hitStatus" : "Reviewable",
+					"hitReviewStatus" : "NotReviewed",
+					"creationTime" : 1.400171634E12,
+					"expiration" : 1.400776434E12,
+					"assignments" : [
+						{
+							"assignmentId" : "3ON104KXQKVOZH0VCLXH94P3ST2W4C",
+							"workerId" : "A2KCG73A6QCNCW",
+							"hitId" : "3I7SHAD35LVMQ8Q6KEKZFYC3LTF7M6",
+							"assignmentStatus" : "Submitted",
+							"autoApprovalTime" : 1.402767097E12,
+							"acceptTime" : 1.400175066E12,
+							"submitTime" : 1.400175097E12,
+							"answer" : {
+								"vote" : [
+									"b"
+								],
+								"description_vote_feedback" : ""
+							},
+							"requesterFeedback" : null,
+							"approvalTime" : null,
+							"deadline" : null,
+							"rejectionTime" : null
+						},
+						{
+							"assignmentId" : "3TXMY6UCAENMAOHOTR4T0DJ5W54QCH",
+							"workerId" : "AWN1PEZWRQSQ9",
+							"hitId" : "3I7SHAD35LVMQ8Q6KEKZFYC3LTF7M6",
+							"assignmentStatus" : "Submitted",
+							"autoApprovalTime" : 1.402767554E12,
+							"acceptTime" : 1.400175539E12,
+							"submitTime" : 1.400175554E12,
+							"answer" : {
+								"vote" : [
+									"a"
+								],
+								"description_vote_feedback" : ""
+							},
+							"requesterFeedback" : null,
+							"approvalTime" : null,
+							"deadline" : null,
+							"rejectionTime" : null
+						},
+						{
+							"assignmentId" : "3SITXWYCNV8N9GQU153QJ19GBV1XB4",
+							"workerId" : "A2J843CHDXF45T",
+							"hitId" : "3I7SHAD35LVMQ8Q6KEKZFYC3LTF7M6",
+							"assignmentStatus" : "Submitted",
+							"autoApprovalTime" : 1.402886114E12,
+							"acceptTime" : 1.400294104E12,
+							"submitTime" : 1.400294114E12,
+							"answer" : {
+								"vote" : [
+									"b"
+								],
+								"description_vote_feedback" : ""
+							},
+							"requesterFeedback" : null,
+							"approvalTime" : null,
+							"deadline" : null,
+							"rejectionTime" : null
+						}
+					],
+					"done" : true
+				},
+				"returnTime" : 1.400516608476E12,
+				"printOutput" : "hit completed: 3I7SHAD35LVMQ8Q6KEKZFYC3LTF7M6\r\n"
+			},
+			{
+				"creationTime" : 1.400516608492E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.approveAssignmentRaw(assignment, reason);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.400516608727E12,
+				"printOutput" : "approved assignment 3ON104KXQKVOZH0VCLXH94P3ST2W4C\r\n"
+			},
+			{
+				"creationTime" : 1.400516608727E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.approveAssignmentRaw(assignment, reason);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.400516609101E12,
+				"printOutput" : "approved assignment 3TXMY6UCAENMAOHOTR4T0DJ5W54QCH\r\n"
+			},
+			{
+				"creationTime" : 1.400516609101E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.approveAssignmentRaw(assignment, reason);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.400516609336E12,
+				"printOutput" : "approved assignment 3SITXWYCNV8N9GQU153QJ19GBV1XB4\r\n"
+			},
+			{
+				"creationTime" : 1.400516609336E12,
+				"onceFunc" : "\nfunction () {\n    mturk.deleteHITRaw(hit);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.400516609727E12,
+				"printOutput" : "disabled HIT: 3I7SHAD35LVMQ8Q6KEKZFYC3LTF7M6\r\n"
+			},
+			{
+				"creationTime" : 1.400516609727E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.approveAssignmentRaw(assignment, reason);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.400516610133E12,
+				"printOutput" : "approved assignment 3GA6AFUKOONLKVM2H86YYWNAZ4GH3X\r\n"
+			},
+			{
+				"creationTime" : 1.400516610133E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.createHITRaw(params);\n}\n",
+				"returnValue" : "32K26U12DMNLX4LPPJOC2M5CY6GVD8",
+				"returnTime" : 1.400516610539E12,
+				"printOutput" : "created HIT: 32K26U12DMNLX4LPPJOC2M5CY6GVD8\r\n        url: https://www.mturk.com/mturk/preview?groupId=24LSCXKNQY2RCLHN82ME7HR0KRFP09\r\n"
+			},
+			{
+				"creationTime" : 1.400516610539E12,
+				"onceFunc" : "\nfunction () {\n    if (!me.waitForHIT_callCount) {\n        me.waitForHIT_callCount = 0;\n        var a = me.getReviewableHITs(1);\n        if (a.totalNumResults == a.length) {\n            me.waitForHIT_reviewableHITs = new Set(a);\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n        me.waitForHIT_waitCount = Math.ceil(a.totalNumResults / 100);\n    }\n    me.waitForHIT_callCount++;\n    if (me.waitForHIT_callCount >= me.waitForHIT_waitCount) {\n        if (!me.waitForHIT_reviewableHITs || (time() > me.waitForHIT_reviewableHITsTime + (1000 * 60))) {\n            me.waitForHIT_reviewableHITs = new Set(me.getReviewableHITs());\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n    }\n    if (me.waitForHIT_reviewableHITs) {\n        if (!me.waitForHIT_reviewableHITs[hitId]) {\n            stop();\n        }\n    }\n    var hit = mturk.getHIT(hitId);\n    if (!hit.done) {\n        stop();\n    }\n    verbosePrint(\"hit completed: \" + hitId);\n    return hit;\n}\n",
+				"returnValue" : {
+					"hitId" : "32K26U12DMNLX4LPPJOC2M5CY6GVD8",
+					"hitTypeId" : "24LSCXKNQY2RCLHN82ME7HR0KRFP09",
+					"title" : "Improve/extend description of auction item(s) on pictures",
+					"description" : "Improve and/or extend the description of an auction item based on three images",
+					"keywords" : null,
+					"reward" : 0.2,
+					"question" : "<QuestionForm xmlns=\"http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2005-10-01/QuestionForm.xsd\">\n  <Question>\n    <QuestionIdentifier>newText</QuestionIdentifier>\n    <IsRequired>true</IsRequired>\n    <QuestionContent>\n      <FormattedContent><![CDATA[All the workers who have done a similar task in the past are excluded from this HIT. If you find your worker ID in the following table, your work <b>will be rejected</b>.<br /><br /><table border=\"1\"><tr><td>ANJRINRP821LY</td><td>A3J47737YMH6WK</td><td>A291KO368YRYCR</td><td>A3KUFIF1ULONV1</td><td>A3AJR1PM02424Y</td></tr><tr><td>A2SFEEI806WFP9</td><td>A2Y9ZNZ0F24GHB</td><td>A1IA4CST74I1Q8</td><td>A3JLB1N2CB27BZ</td><td>AJAOE1PSNKGUE</td></tr></table><hr /><table border=\"0\"><tr><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_1.JPG\" alt=\"Image 1\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_1.JPG\" target=\"_blank\">Link to full size image 1 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_2.JPG\" alt=\"Image 2\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_2.JPG\" target=\"_blank\">Link to full size image 2 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_3.JPG\" alt=\"Image 3\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_3.JPG\" target=\"_blank\">Link to full size image 3 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_4.JPG\" alt=\"Image 4\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_4.JPG\" target=\"_blank\">Link to full size image 4 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_5.JPG\" alt=\"Image 5\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_5.JPG\" target=\"_blank\">Link to full size image 5 (new window)</a></td></tr><tr><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_6.JPG\" alt=\"Image 6\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_6.JPG\" target=\"_blank\">Link to full size image 6 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_7.JPG\" alt=\"Image 7\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_7.JPG\" target=\"_blank\">Link to full size image 7 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_8.JPG\" alt=\"Image 8\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_8.JPG\" target=\"_blank\">Link to full size image 8 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_9.JPG\" alt=\"Image 9\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_9.JPG\" target=\"_blank\">Link to full size image 9 (new window)</a></td><td></td></tr></table>\n\t\t\t\t\tThe goal of the requester of the HIT is to generate eBay auctions by MTurk workers based on images of the item.<br /><br />\n\t\t\t\t\t<b>Instructions</b>: Improve and/or extend the description of the auction item(s) on the images. Keep in mind the following remarks:\n\t\t\t\t\t<ul>\n\t\t\t\t\t<li>If the description doesn\'t contain approximately <b>5 sentences</b> then try to add more text\n\t\t\t\t\t<ul>\n\t\t\t\t\t\t<li>Include specific information like size, shape, color, age, manufacture date, company/artist/author, and notable features or markings if possible</li>\n\t\t\t\t\t\t<li>Make the description as readable as possible</li>\n\t\t\t\t\t\t<li>Don\'t say anything that isn\'t true.</li>\n\t\t\t\t\t\t<li>Don\'t use all caps</li>\n\t\t\t\t\t\t<li>Don\'t include email addresses and some links</li>\n\t\t\t\t\t</ul>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li>If the description is long enough then try to improve it</li>\n\t\t\t\t\t</ul>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <FreeTextAnswer>\n        <Constraints>\n          <Length maxLength=\"5000\" minLength=\"120\"/>\n          <AnswerFormatRegex errorText=\"The description cannot be blank.\" regex=\"\\S\"/>\n        </Constraints>\n        <DefaultText>For sale is a pair of white Nike lace up cleats, lightly used. Interior soles are fluorescent green. The word \"Nike\" is written on the back of each show in this same color. The  individual cleats on the bottom of the shoe are also fluorescent green. Shoes come with shoelaces, also lightly used.</DefaultText>\n        <NumberOfLinesSuggestion>10</NumberOfLinesSuggestion>\n      </FreeTextAnswer>\n    </AnswerSpecification>\n  </Question>\n  <Question>\n    <QuestionIdentifier>description_improve_feedback</QuestionIdentifier>\n    <QuestionContent>\n      <Title>Your personal feedback (optional)</Title>\n      <FormattedContent><![CDATA[Give your personal feedback about the task. This <b>can</b> contain one of the following aspects:\n        <ul>\n        <li>Problems of the task (e.g. images are not visible)</li>\n        <li>Instructions are not clear enough</li>\n        </ul>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <FreeTextAnswer>\n        <NumberOfLinesSuggestion>3</NumberOfLinesSuggestion>\n      </FreeTextAnswer>\n    </AnswerSpecification>\n  </Question>\n</QuestionForm>",
+					"maxAssignments" : 1,
+					"assignmentDurationInSeconds" : 7200,
+					"autoApprovalDelayInSeconds" : 2592000,
+					"requesterAnnotation" : null,
+					"hitStatus" : "Reviewable",
+					"hitReviewStatus" : "NotReviewed",
+					"creationTime" : 1.400516614E12,
+					"expiration" : 1.401121414E12,
+					"assignments" : [
+						{
+							"assignmentId" : "39LNWE0K4UV5FKA52AKKLHEPDDAIUX",
+							"workerId" : "A3BL2ZEODD79AZ",
+							"hitId" : "32K26U12DMNLX4LPPJOC2M5CY6GVD8",
+							"assignmentStatus" : "Submitted",
+							"autoApprovalTime" : 1.403109206E12,
+							"acceptTime" : 1.400517073E12,
+							"submitTime" : 1.400517206E12,
+							"answer" : {
+								"newText" : "For sale is a pair of white Nike lace up cleats, lightly used. Interior soles are fluorescent green. The word \"Nike\" is written on the back of each show in this same color. The  individual cleats on the bottom of the shoe are also fluorescent green. Shoes come with shoelaces, also lightly used. Very clean item.",
+								"description_improve_feedback" : ""
+							},
+							"requesterFeedback" : null,
+							"approvalTime" : null,
+							"deadline" : null,
+							"rejectionTime" : null
+						}
+					],
+					"done" : true
+				},
+				"returnTime" : 1.400602523787E12,
+				"printOutput" : "hit completed: 32K26U12DMNLX4LPPJOC2M5CY6GVD8\r\n"
+			},
+			{
+				"creationTime" : 1.400602523815E12,
+				"onceFunc" : "\nfunction () {\n    return Math.random();\n}\n",
+				"returnValue" : 0.32354013101015433,
+				"returnTime" : 1.400602523822E12,
+				"printOutput" : ""
+			},
+			{
+				"creationTime" : 1.400602523826E12,
+				"onceFunc" : "\nfunction () {\n    return Math.random();\n}\n",
+				"returnValue" : 0.12833291451516715,
+				"returnTime" : 1.400602523831E12,
+				"printOutput" : ""
+			},
+			{
+				"creationTime" : 1.400602523836E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.createHITRaw(params);\n}\n",
+				"returnValue" : "38O9DZ0A61MDF488RMWNUBY9LP026M",
+				"returnTime" : 1.400602524398E12,
+				"printOutput" : "created HIT: 38O9DZ0A61MDF488RMWNUBY9LP026M\r\n        url: https://www.mturk.com/mturk/preview?groupId=38E1HBOA1QEDDZX1Z7UNFGUC0R380D\r\n"
+			},
+			{
+				"creationTime" : 1.400602524402E12,
+				"onceFunc" : "\nfunction () {\n    if (!me.waitForHIT_callCount) {\n        me.waitForHIT_callCount = 0;\n        var a = me.getReviewableHITs(1);\n        if (a.totalNumResults == a.length) {\n            me.waitForHIT_reviewableHITs = new Set(a);\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n        me.waitForHIT_waitCount = Math.ceil(a.totalNumResults / 100);\n    }\n    me.waitForHIT_callCount++;\n    if (me.waitForHIT_callCount >= me.waitForHIT_waitCount) {\n        if (!me.waitForHIT_reviewableHITs || (time() > me.waitForHIT_reviewableHITsTime + (1000 * 60))) {\n            me.waitForHIT_reviewableHITs = new Set(me.getReviewableHITs());\n            me.waitForHIT_reviewableHITsTime = time();\n        }\n    }\n    if (me.waitForHIT_reviewableHITs) {\n        if (!me.waitForHIT_reviewableHITs[hitId]) {\n            stop();\n        }\n    }\n    var hit = mturk.getHIT(hitId);\n    if (!hit.done) {\n        stop();\n    }\n    verbosePrint(\"hit completed: \" + hitId);\n    return hit;\n}\n",
+				"returnValue" : {
+					"hitId" : "38O9DZ0A61MDF488RMWNUBY9LP026M",
+					"hitTypeId" : "38E1HBOA1QEDDZX1Z7UNFGUC0R380D",
+					"title" : "Vote on auction item description improvements",
+					"description" : "Decide which auction item description is better/suitable for the item(s) on three pictures",
+					"keywords" : null,
+					"reward" : 0.01,
+					"question" : "<QuestionForm xmlns=\"http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2005-10-01/QuestionForm.xsd\">\n  <Question>\n    <QuestionIdentifier>vote</QuestionIdentifier>\n    <IsRequired>true</IsRequired>\n    <QuestionContent>\n      <FormattedContent><![CDATA[All the workers who have done a similar task in the past are excluded from this HIT. If you find your worker ID in the following table, your work <b>will be rejected</b>.<br /><br /><table border=\"1\"><tr><td>ANJRINRP821LY</td><td>A3J47737YMH6WK</td><td>A291KO368YRYCR</td><td>A3KUFIF1ULONV1</td><td>A3AJR1PM02424Y</td></tr><tr><td>A2SFEEI806WFP9</td><td>A2Y9ZNZ0F24GHB</td><td>A1IA4CST74I1Q8</td><td>A3JLB1N2CB27BZ</td><td>AJAOE1PSNKGUE</td></tr></table><hr /><table border=\"0\"><tr><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_1.JPG\" alt=\"Image 1\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_1.JPG\" target=\"_blank\">Link to full size image 1 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_2.JPG\" alt=\"Image 2\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_2.JPG\" target=\"_blank\">Link to full size image 2 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_3.JPG\" alt=\"Image 3\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_3.JPG\" target=\"_blank\">Link to full size image 3 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_4.JPG\" alt=\"Image 4\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_4.JPG\" target=\"_blank\">Link to full size image 4 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_5.JPG\" alt=\"Image 5\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_5.JPG\" target=\"_blank\">Link to full size image 5 (new window)</a></td></tr><tr><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_6.JPG\" alt=\"Image 6\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_6.JPG\" target=\"_blank\">Link to full size image 6 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_7.JPG\" alt=\"Image 7\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_7.JPG\" target=\"_blank\">Link to full size image 7 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_8.JPG\" alt=\"Image 8\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_8.JPG\" target=\"_blank\">Link to full size image 8 (new window)</a></td><td><img src=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_9.JPG\" alt=\"Image 9\" width=\"250\" border=\"2\"></img><br /><br /><a href=\"http://pegasus84.noip.me/www/unibe/thesis/5/image_9.JPG\" target=\"_blank\">Link to full size image 9 (new window)</a></td><td></td></tr></table>\n\t\t\t\t\tThe goal of the requester of the HIT is to generate eBay auctions by MTurk workers based on images of the item.<br /><br />\n\t\t\t\t\t<b>Instructions:</b> Which description of the auction item(s) on the pictures is better? The following factors <b>can</b> affect your decision: \n\t\t\t\t\t<ul>\n\t\t\t\t\t\t<li>One description is more informative than the other</li>\n\t\t\t\t\t\t<li>One description contains more information about the auction item then the other</li>\n\t\t\t\t\t\t<li>One description contains wrong information</li>\n\t\t\t\t\t\t<li>One description has spelling mistakes</li>\n\t\t\t\t\t</ul>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <SelectionAnswer>\n        <Selections>\n          <Selection>\n            <SelectionIdentifier>b</SelectionIdentifier>\n            <Text>For sale is a pair of white Nike lace up cleats, lightly used. Interior soles are fluorescent green. The word \"Nike\" is written on the back of each show in this same color. The  individual cleats on the bottom of the shoe are also fluorescent green. Shoes come with shoelaces, also lightly used. Very clean item.</Text>\n          </Selection>\n          <Selection>\n            <SelectionIdentifier>a</SelectionIdentifier>\n            <Text>For sale is a pair of white Nike lace up cleats, lightly used. Interior soles are fluorescent green. The word \"Nike\" is written on the back of each show in this same color. The  individual cleats on the bottom of the shoe are also fluorescent green. Shoes come with shoelaces, also lightly used.</Text>\n          </Selection>\n        </Selections>\n      </SelectionAnswer>\n    </AnswerSpecification>\n  </Question>\n  <Question>\n    <QuestionIdentifier>description_vote_feedback</QuestionIdentifier>\n    <QuestionContent>\n      <Title>Your personal feedback (optional)</Title>\n      <FormattedContent><![CDATA[Give your personal feedback about the task. This <b>can</b> contain one of the following aspects:\n        <ul>\n        <li>Problems of the task (e.g. images are not visible)</li>\n        <li>Instructions are not clear enough</li>\n        </ul>]]></FormattedContent>\n    </QuestionContent>\n    <AnswerSpecification>\n      <FreeTextAnswer>\n        <NumberOfLinesSuggestion>3</NumberOfLinesSuggestion>\n      </FreeTextAnswer>\n    </AnswerSpecification>\n  </Question>\n</QuestionForm>",
+					"maxAssignments" : 2,
+					"assignmentDurationInSeconds" : 1800,
+					"autoApprovalDelayInSeconds" : 2592000,
+					"requesterAnnotation" : null,
+					"hitStatus" : "Reviewable",
+					"hitReviewStatus" : "NotReviewed",
+					"creationTime" : 1.40060253E12,
+					"expiration" : 1.40120733E12,
+					"assignments" : [
+						{
+							"assignmentId" : "3VNL7UK1XFI65GTQ1XOPDOFVED7FTK",
+							"workerId" : "A2SY0XL28MLUTW",
+							"hitId" : "38O9DZ0A61MDF488RMWNUBY9LP026M",
+							"assignmentStatus" : "Submitted",
+							"autoApprovalTime" : 1.403197191E12,
+							"acceptTime" : 1.400605155E12,
+							"submitTime" : 1.400605191E12,
+							"answer" : {
+								"vote" : [
+									"b"
+								],
+								"description_vote_feedback" : ""
+							},
+							"requesterFeedback" : null,
+							"approvalTime" : null,
+							"deadline" : null,
+							"rejectionTime" : null
+						},
+						{
+							"assignmentId" : "3LKC68YZ3A2S3AADV5CQN2V8A8SWOP",
+							"workerId" : "A7RAVFS10BUZ1",
+							"hitId" : "38O9DZ0A61MDF488RMWNUBY9LP026M",
+							"assignmentStatus" : "Submitted",
+							"autoApprovalTime" : 1.403199114E12,
+							"acceptTime" : 1.400606888E12,
+							"submitTime" : 1.400607114E12,
+							"answer" : {
+								"vote" : [
+									"b"
+								],
+								"description_vote_feedback" : "I believe from the set of images this is a \"Very clean item\", which is the only difference between the two descriptions. It fits in my opinion.\r\nBoth have the same error in the spelling of \"shoe\" = \"show\".\r\nWith the amount of review necessary to provide you with competent data, I do believe 1\u00a2 is a little low on the pay scale rating. Thanks."
+							},
+							"requesterFeedback" : null,
+							"approvalTime" : null,
+							"deadline" : null,
+							"rejectionTime" : null
+						}
+					],
+					"done" : true
+				},
+				"returnTime" : 1.400688472455E12,
+				"printOutput" : "hit completed: 38O9DZ0A61MDF488RMWNUBY9LP026M\r\n"
+			},
+			{
+				"creationTime" : 1.400688472462E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.approveAssignmentRaw(assignment, reason);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.400688472797E12,
+				"printOutput" : "approved assignment 3VNL7UK1XFI65GTQ1XOPDOFVED7FTK\r\n"
+			},
+			{
+				"creationTime" : 1.400688472802E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.approveAssignmentRaw(assignment, reason);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.400688473187E12,
+				"printOutput" : "approved assignment 3LKC68YZ3A2S3AADV5CQN2V8A8SWOP\r\n"
+			},
+			{
+				"creationTime" : 1.400688473189E12,
+				"onceFunc" : "\nfunction () {\n    mturk.deleteHITRaw(hit);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.400688473412E12,
+				"printOutput" : "disabled HIT: 38O9DZ0A61MDF488RMWNUBY9LP026M\r\n"
+			},
+			{
+				"creationTime" : 1.400688473415E12,
+				"onceFunc" : "\nfunction () {\n    return mturk.approveAssignmentRaw(assignment, reason);\n}\n",
+				"returnValue" : undefined,
+				"returnTime" : 1.400688473802E12,
+				"printOutput" : "approved assignment 39LNWE0K4UV5FKA52AKKLHEPDDAIUX\r\n"
+			}
+		]
+	}
+}
+__safetyCounters = {
+	"moneySpent" : 0.6500000000000001,
+	"hitsCreated" : 5
+}
+// end:20c8

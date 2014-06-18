@@ -1,0 +1,2 @@
+#Ground truth number	Price	Average working time (s)	Average finishing time (s)	Average reaction time (s)	Root Mean Squared Error (Price)	Ground truth price
+1	217.996	1104.0	3705.0	2601.0	278.619697904	4.99
