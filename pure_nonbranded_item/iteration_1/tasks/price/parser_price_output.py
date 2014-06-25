@@ -52,7 +52,7 @@ def RMSError(values, ground_truth):
     return pow(rmse, 0.5)
     
 def loadPrices():
-    path_groundtruth = '../../../../ground_truth/groundTruth.csv'
+    path_groundtruth = '../../item/groundTruth.csv'
     prices = list()
     with open(path_groundtruth, 'rb') as csvfile:
         reader = csv.reader(csvfile, csv.excel_tab)
